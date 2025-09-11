@@ -1,0 +1,55 @@
+[
+  {
+    "id": 8,
+    "name": "Camera"
+  },
+  {
+    "id": 11,
+    "name": "Player"
+  },
+  {
+    "id": 18,
+    "name": "Workflow"
+  },
+  {
+    "id": 29,
+    "name": "Hostility"
+  },
+  {
+    "id": 33,
+    "name": "Physics"
+  },
+  {
+    "id": 39,
+    "name": "Global"
+  },
+  {
+    "id": 40,
+    "name": "InputSystem"
+  },
+  {
+    "id": 42,
+    "name": "Mechanism"
+  },
+  {
+    "id": 34,
+    "name": "MiniMap"
+  },
+  {
+    "id": 25,
+    "name": "Economy"
+  },
+  {
+    "id": 17,
+    "name": "Collection"
+  },
+  {
+    "id": 31,
+    "name": "Database"
+  },
+  {
+    "id": 10,
+    "name": "Other"
+  }
+]
+//"{FE:{"v":"1.14.3883376","c":{"FF":5001},"s":100}

@@ -1,0 +1,9 @@
+import "StdLibrary.fcc" as StdLib
+import "EditorGenLib.fcc" as EditorLib
+import "../Global/GlobalManager/GlobalUIManager.fcg" as GlobalUIManager
+graph PlayerUI {
+    //Executed when entity is created
+    event OnAwake() {
+        start globalEntity<GlobalUIManager>.CreateGlobalOpeningHUD(thisEntity as entity<Player>)
+    }
+}

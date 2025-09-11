@@ -1,0 +1,269 @@
+/* 
+Global Preparation Phase Manager
+Handles all the neccessary actions in Before Combat phase, including setting all necessary player states
+together with teleport players to their designated starting positions.
+*/
+import "StdLibrary.fcc" as StdLib
+import "EditorGenLib.fcc" as EditorLib
+import "Player.fcc" as Player
+import "Workflow.fcc" as Workflow
+import "../GlobalData/PlayersTimerUI.fcg" as PlayersTimerUI
+import "Collection.fcc" as Collection
+import "../GlobalData/SpawnPoints.fcg" as SpawnPoints
+import "Math.fcc" as Math
+import "Strings.fcc" as Strings
+import "List.fcc" as List
+import "../GlobalManager/GlobalGameManager.fcg" as GlobalGameManager
+import "Items.fcc" as Items
+import "../GlobalData/CombatRoundCounter.fcg" as CombatRoundCounter
+import "../../Player/PlayerController.fcg" as PlayerController
+import "../GlobalManager/GlobalUIManager.fcg" as GlobalUIManager
+import "../GlobalData/TeamData.fcg" as TeamData
+import "../GlobalData/GlobalSafeZones.fcg" as GlobalSafeZones
+import "SafeZone.fcc" as SafeZone
+import "../GlobalManager/GlobalSoundManager.fcg" as GlobalSoundManager
+import "Convert.fcc" as Convert
+import "MiniMap.fcc" as MiniMap
+graph GlobalPreparationPhaseManager {
+    // Script variable storing the old stage index
+    oldStageIndex int
+    oldStagesList List<int> = List<int>{} // List to store old stages (up to 4 stages)
+
+    // When the preparation phase starts, get a random stage index and init data for players
+    event OnPhaseStart(phase entity<Phase>) {
+        if List.Length(oldStagesList) > 5 {
+            Clear(oldStagesList) // Clear the list if it has more than 6 stages
+        }
+        if phase<Phase>.Index == EPhase.Vote{
+
+            // Before combat, get a random sage index
+            var randomStageIndex = RandomStage(oldStageIndex)
+            LogWarning("Available Stages: " + globalEntity<GlobalGameManager>.availableStages + " - Chosen stage index " + randomStageIndex); // Debug Info
+
+            // Memorize the old stage index 
+            Append(oldStagesList, randomStageIndex)
+            if globalEntity<CombatRoundCounter>.GetCount() == 0 {
+                globalEntity<GlobalGameManager>.prepPhaseDuration = 20 // Set preparation phase duration faster in the first round
+                globalEntity<GlobalSafeZones>.SetStartShrinkTime(globalEntity<GlobalGameManager>.prepPhaseDuration)
+            } else {
+                globalEntity<GlobalGameManager>.prepPhaseDuration = 10 // Set preparation phase duration to default for subsequent rounds
+                globalEntity<GlobalSafeZones>.SetStartShrinkTime(globalEntity<GlobalGameManager>.prepPhaseDuration)
+            }
+
+            // Initialize data before combat
+            wait InitDataBeforeCombat(globalEntity<GlobalGameManager>.prepPhaseDuration * 1000, oldStagesList[List.Length(oldStagesList) - 1]);
+        }
+    }
+
+
+    // UTILS 
+    /*
+    Sets a delay for the player's gravity to be zero, then restores it after the delay.
+    @param player: The player entity to set the gravity delay for
+    @param delay: The duration of the delay in milliseconds
+    */
+    async func SetGravityDelay(player entity<Player>, delay int) {
+        player<Player>.Gravity = 0
+        WaitForMillisecond(delay)
+        player<Player>.Gravity = -9.81
+    }
+    /* Initialize data before combat
+    This function sets up all necessary data and states for players before the combat phase begins.
+    More detail inside the function implementation.
+    @param duration: The duration of Before Combat phase
+    @param randomStageIndex: The random stage index for the current round
+    */
+    async func InitDataBeforeCombat(duration int, randomStageIndex int) {
+        start globalEntity<GlobalSafeZones>.ActivateSafeZone(randomStageIndex)  // Activate the safe zone
+        globalEntity<CombatRoundCounter>.IncreaseCount(); // Increment the round counter
+
+        // Initialize player states
+        for index, player in GetAllPlayers() {
+            if globalEntity<CombatRoundCounter>.GetCount() == 1 {
+            }   
+            start SetGravityDelay(player, 500) // Set the player's gravity to zero for a short delay
+            globalEntity<GlobalUIManager>.SetVisibilityFullScoreBoard(player, false); // Update the full scoreboard UI
+
+            ResetAmmo(player) // Reset the player's ammo
+            ResetSkill(player); // Reset the player's skills
+
+            SetInvincibilityStatus(player, true); // Set the invincibility status for the player
+            start globalEntity<GlobalUIManager>.CreateRoundInfoHUD(player) // Create round info HUD
+            start globalEntity<GlobalUIManager>.CreateDelay5sCountDownHUD(player, duration - 5000) // Create delay countdown HUD
+        }
+
+        // Update mini score board to init current alives, and team points
+        globalEntity<GlobalUIManager>.UpdateMiniScoreboard();
+
+        InitPlayerWeapons(); // Initialize player weapons
+        var spawnPositions = globalEntity<SpawnPoints>.GetSpawnPositionForRound(randomStageIndex) // Get all spawn positions from the scene
+        globalEntity<SpawnPoints>.SetSpawnPointsActiveStatusForRound(randomStageIndex, true); // Activate spawn points of the current stage
+
+        for index, team in GetAllTeams() {
+            var randomIndex = RandomInt(0, List.Length(spawnPositions)) // Get a random index in spawn list
+            var randomPosition = spawnPositions[randomIndex] // Get the random spawn position
+            // Use a loop to make sure all players in the team are teleported to the same position
+            for index, player in team<Team>.AllTeammates {
+                Teleport(player, randomPosition, Vector3{0, 0, 0}) // Teleport the player to the random position
+                ReviveAtNextFrame(player) // Revive the player at the next frame
+            }
+            RemoveAt(spawnPositions, randomIndex) // Remove the used spawn position from the list
+        }
+
+        WaitForMillisecond(duration) // Wait for the specified duration
+
+        ////////////////////////
+        SwitchPhase(EPhase.Border) // Switch to combat phase
+        // EndCurrentPhase()
+        //////////////////////////
+
+        // When the round starts, reset player states
+        for index, player in GetAllPlayers() {
+            player<Player>.EP = 200; // Set player's initial EP to 200 every round
+            start globalEntity<GlobalUIManager>.EnableTooltipForPlayer(player)
+            SetInvincibilityStatus(player, false); // Disable invincibility for all players
+            SetInvincibility(player, 5); // 5 secs of invincibility
+        }
+
+        globalEntity<SpawnPoints>.SetSpawnPointsActiveStatusForRound(randomStageIndex, false); // Disable all spawn points
+    }
+
+    /* Set Invincibility Status for a player (NO DURATION, TO SET INVINCIBLE WITH DURATION USE SetInvincibility() from Player.fcc library)
+    @param player The player entity
+    @param invincible The invincibility status to set
+    */
+    func SetInvincibilityStatus(player entity<Player>, invincible bool) {
+        player<Player>.Invincible = invincible;
+    }
+
+    /* Set Movement Status for all players
+    @param canMove The movement status to set
+    */
+    func SetMovementStatus(canMove bool) {
+        SetAllPlayersMoveStatus(canMove);
+    }
+
+    // Add a M590 and a random rifle for each player
+    func InitPlayerWeapons() {
+        var rifleList = List<EResItem>{EResItem.AK47, EResItem.SCAR, EResItem.FAMAS, EResItem.XM8, EResItem.GROZAX, EResItem.AUG, EResItem.M4A1}
+        var randomRifle = rifleList[RandomInt(0, List.Length(rifleList))]
+        var m590 = EResItem.M590
+        for index, player in GetAllPlayers(){
+            // Add a list of items to player. Before add, delete all existing items
+            player<PlayerController>.AddItemToPlayer(player, EResItem.VestLv3, 1)
+            player<PlayerController>.AddItemToPlayer(player, EResItem.HelmetLv3, 1)
+            if GetItemCount(player, EResItem.GlooWall as ItemIDType) != 0 && globalEntity<CombatRoundCounter>.GetCount() != 0 {
+                DestroyItem(player, EResItem.GlooWall as ItemIDType, GetItemCount(player, EResItem.GlooWall as ItemIDType)) // Destroy the item when added
+            }
+            // player<PlayerController>.AddItemToPlayer(player, EResItem.GlooWall, 8)
+            AddItem(player, EResItem.GlooWall as ItemIDType, 8, out var newGlooWall) // Add the item to the player
+            if GetItemCount(player, EResItem.MedKit as ItemIDType) != 0 {
+                DestroyItem(player, EResItem.MedKit as ItemIDType, GetItemCount(player, EResItem.MedKit as ItemIDType)) // Destroy the item when added
+            }
+            AddItem(player, EResItem.MedKit as ItemIDType, 4, out var newItem) // Add the item to the player
+            if GetItemCount(player, EResItem.SuperMed as ItemIDType) != 0 {
+                DestroyItem(player, EResItem.SuperMed as ItemIDType, GetItemCount(player, EResItem.SuperMed as ItemIDType)) // Destroy the item when added
+            }
+            AddItem(player, EResItem.SuperMed as ItemIDType, 1, out var newSuperMed) // Add the item to the player
+            if GetItemCount(player, EResItem.Inhaler as ItemIDType) != 0 {
+                DestroyItem(player, EResItem.Inhaler as ItemIDType, GetItemCount(player, EResItem.Inhaler as ItemIDType)) // Destroy the item when added
+            }
+            AddItem(player, EResItem.Inhaler as ItemIDType, 10, out var newInhaler) // Add the item to the player
+            if GetItemCount(player, EResItem.Grenade as ItemIDType) != 0 {
+                DestroyItem(player, EResItem.Grenade as ItemIDType, GetItemCount(player, EResItem.Grenade as ItemIDType)) // Destroy the item when added
+            }
+            AddItem(player, EResItem.Grenade as ItemIDType, 1, out var newGrenade) // Add the item to the player
+            if GetItemCount(player, EResItem.FlashFreeze as ItemIDType) != 0 {
+                DestroyItem(player, EResItem.FlashFreeze as ItemIDType, GetItemCount(player, EResItem.FlashFreeze as ItemIDType)) // Destroy the item when added
+            }
+            AddItem(player, EResItem.FlashFreeze as ItemIDType, 1, out var newFlashFreeze) // Add the item to the player
+            if GetItemCount(player, EResItem.GlooMelter as ItemIDType) != 0 {
+                DestroyItem(player, EResItem.GlooMelter as ItemIDType, GetItemCount(player, EResItem.GlooMelter as ItemIDType)) // Destroy the item when added
+            }
+            AddItem(player, EResItem.GlooMelter as ItemIDType, 2, out var newGlooMelter) // Add the item to the player
+            if(globalEntity<CombatRoundCounter>.GetCount() == 1) {
+                player<PlayerController>.AddItemToPlayer(player, m590, 1) // Add M590 to the player
+                player<PlayerController>.AddItemToPlayer(player, randomRifle, 1) // Add random rifle to the player
+                player<PlayerController>.AddItemToPlayer(player, EResItem.Muzzle, 1)
+                player<PlayerController>.AddItemToPlayer(player, EResItem.Mag, 1)
+                player<PlayerController>.AddItemToPlayer(player, EResItem.Foregrip, 1)
+                player<PlayerController>.AddItemToPlayer(player, EResItem.Scope, 1)
+                player<PlayerController>.AddItemToPlayer(player, EResItem.Stock, 1)
+                // player<PlayerController>.AddItemToPlayer(player, EResItem.UpgradeChip, 1)
+            }
+        }
+    }
+
+    /*
+    As the RandomInt() random mechanism is kinda bad (high chance of getting the same value as the old value every call), keep it inside a loop so that we can ensure a different value is returned.
+    However, to be safe, limit the random time to 20
+    @param oldValue: the old stage index
+    @return: the new stage index
+    */
+    func RandomStage(oldValue int) int{
+        // return 10 // Debug only
+        var attempts = 0
+        while attempts < 20 {
+            // Randomize the new stage index
+            var newValue = RandomInt(0, globalEntity<GlobalGameManager>.availableStages)
+            var diff bool = true
+            for index, oldStage in oldStagesList {
+                if newValue == oldStage {
+                    diff = false // If the new value is the same as any of the old values, set diff to false
+                    break // Break the loop as we found a match
+                }
+            }
+            if diff {
+                return newValue
+            }
+            // Debug only
+            // var newValue = RandomInt(6, 7)
+            // // Stop condition: When the new value is the same as the old value
+            // return newValue // Return the new value immediately
+            // Increase attempts if the new value is the same as the old value
+            attempts++
+        }
+        return oldValue // After 20 attempts, return the old value if no new value is found
+    }
+
+    /*
+    Reset skill of a player, by getting all the player's skills, then set it again.
+    @param player: The player that needs to reset skills.
+
+    NOTE: In 1.14.1, there is problem with the SetSkills function. In detail, the SetSkills() does not work with the List<SkillID>{} getting
+    from GetSkills(). To fix this, the current solution is converting all of the skills to strings and then back to integers.
+    */
+    func ResetSkill(player entity<Player>) {
+        var skills = GetSkills(player)
+        var skillStringList = List<string>{}
+        var updatedPlayerSkillList = List<SkillID>{}
+        for index, skill in skills {
+            Append(skillStringList, Convert.ToString(skill))
+        }
+
+        for index, skill in skillStringList{
+            Convert.StringToInt(skill, out var result, out var isSuccess)
+            if isSuccess {
+                Append(updatedPlayerSkillList, result)
+            } else {
+                LogError("Error in getting skill for player " + player<Player>.NickName)
+            }
+        }
+        SetSkills(player, updatedPlayerSkillList) // Set the skills for the player
+    }
+
+    /*
+    Reset the player's ammo to the default values
+    @param player: The player entity to reset the ammo for
+    */
+    func ResetAmmo(player entity<Player>) {
+        GetEquipments(player, EquipmentSlotType.PrimaryWeaponA, out var primaryWeaponA, out var attachmentsA)
+        GetEquipments(player, EquipmentSlotType.PrimaryWeaponB, out var primaryWeaponB, out var attachmentsB)
+        if (primaryWeaponA != nil) {
+            primaryWeaponA<Weapon>.CurrentAmmo = primaryWeaponA<Weapon>.AmmoMagSize
+        }
+        if (primaryWeaponB != nil) {
+            primaryWeaponB<Weapon>.CurrentAmmo = primaryWeaponB<Weapon>.AmmoMagSize
+        }
+    }
+}

@@ -1,0 +1,4336 @@
+{
+  "_tag": {
+    "type": "UIRootEntity",
+    "resourceId": ""
+  },
+  "_entityId": "ez5Xk3IG",
+  "children": [
+    {
+      "_tag": {
+        "type": "UIEmptyEntity",
+        "resourceId": ""
+      },
+      "_entityId": "wE6jAxdp",
+      "children": [
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "YWDEotI2",
+          "children": [
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "2BrRgiyp",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 35,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": 65,
+                    "y": 28
+                  }
+                },
+                "alpha": 100,
+                "priority": 0,
+                "text": {
+                  "value": "Team 1",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 21,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#000000",
+                  "alignment": {
+                    "h": "left",
+                    "v": "fillV"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_entityName": "Team1Text",
+              "entityTagData": {
+                "tagPointers": []
+              }
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "propsData": {
+            "activeSelf": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 98,
+                "y": 28
+              }
+            },
+            "alpha": 100,
+            "image": {
+              "source": {
+                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#FFFFFF",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "priority": 0
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {},
+            "Component": {}
+          },
+          "_entityName": "Team1Bg",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "componentList": [],
+          "_filters": []
+        },
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "5hCHZSTV",
+          "children": [
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "QZLeM2ue",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": 28,
+                    "y": 28
+                  }
+                },
+                "alpha": 100,
+                "text": {
+                  "value": "0",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 22,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "shadow": true,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "Team1Score",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "propsData": {
+            "activeSelf": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 35,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 28,
+                "y": 28
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": {
+              "source": {
+                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#363636",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            }
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {}
+          },
+          "componentList": [],
+          "_entityName": "Team1ScoreBg",
+          "entityTagData": {
+            "tagPointers": []
+          }
+        },
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "XULa5f6c",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "propsData": {
+            "activeSelf": false,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 98,
+                "y": 4
+              }
+            },
+            "alpha": 100,
+            "image": {
+              "source": {
+                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#FFEB00",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "priority": 0
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {},
+            "Component": {}
+          },
+          "_entityName": "currentTeam1",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "componentList": [],
+          "_filters": []
+        },
+        {
+          "_tag": {
+            "type": "UILayoutEntityV2",
+            "resourceId": ""
+          },
+          "_entityId": "jR4l1K3K",
+          "children": [
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
+              "_entityId": "jdJRotvP",
+              "children": [
+                {
+                  "_tag": {
+                    "type": "UIImageEntity",
+                    "resourceId": ""
+                  },
+                  "_entityId": "9zMixnRE",
+                  "children": [],
+                  "prefabVariant": null,
+                  "activeValue": {
+                    "selfValue": false,
+                    "valueTag": "activeValue"
+                  },
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
+                  "propsData": {
+                    "activeSelf": false,
+                    "transform": {
+                      "rotate": 0,
+                      "anchorMin": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchorMax": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "pivot": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchoredPosition": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 30,
+                        "y": 10
+                      }
+                    },
+                    "alpha": 100,
+                    "image": {
+                      "source": {
+                        "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                        "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                        "_tag": {
+                          "type": "GFileRefer"
+                        },
+                        "fileType": "texture"
+                      },
+                      "color": "#5B5B5B",
+                      "reverse": {
+                        "x": false,
+                        "y": false
+                      },
+                      "fillType": 0,
+                      "slicedBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "tiledBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "centerInvisible": false,
+                      "fillDir": 0,
+                      "fillAmount": 0,
+                      "invertFill": false,
+                      "flip": 0,
+                      "gradient": 1,
+                      "gradientTop": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      },
+                      "gradientBottom": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      }
+                    },
+                    "priority": 0
+                  },
+                  "ecaScripts": [],
+                  "ecaProps": {
+                    "HudImageWidget": {},
+                    "HudWidget": {},
+                    "Entity": {},
+                    "Component": {}
+                  },
+                  "_entityName": "player1_T1_knock",
+                  "entityTagData": {
+                    "tagPointers": []
+                  },
+                  "editorLockValue": false,
+                  "editorVisibleValue": true,
+                  "componentList": [],
+                  "_filters": []
+                }
+              ],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": -30,
+                    "y": 22
+                  },
+                  "sizeDelta": {
+                    "x": 40,
+                    "y": 10
+                  }
+                },
+                "alpha": 100,
+                "image": {
+                  "source": {
+                    "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#5B5B5B",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "P1T1",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            },
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
+              "_entityId": "lpeyT7pJ",
+              "children": [
+                {
+                  "_tag": {
+                    "type": "UIImageEntity",
+                    "resourceId": ""
+                  },
+                  "_entityId": "c6nzLUHE",
+                  "children": [],
+                  "prefabVariant": null,
+                  "activeValue": {
+                    "selfValue": false,
+                    "valueTag": "activeValue"
+                  },
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
+                  "propsData": {
+                    "activeSelf": false,
+                    "transform": {
+                      "rotate": 0,
+                      "anchorMin": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchorMax": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "pivot": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchoredPosition": {
+                        "x": -0.0010000000474974513,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 30,
+                        "y": 10
+                      }
+                    },
+                    "alpha": 100,
+                    "image": {
+                      "source": {
+                        "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                        "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                        "_tag": {
+                          "type": "GFileRefer"
+                        },
+                        "fileType": "texture"
+                      },
+                      "color": "#5B5B5B",
+                      "reverse": {
+                        "x": false,
+                        "y": false
+                      },
+                      "fillType": 0,
+                      "slicedBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "tiledBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "centerInvisible": false,
+                      "fillDir": 0,
+                      "fillAmount": 0,
+                      "invertFill": false,
+                      "flip": 0,
+                      "gradient": 1,
+                      "gradientTop": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      },
+                      "gradientBottom": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      }
+                    },
+                    "priority": 0
+                  },
+                  "ecaScripts": [],
+                  "ecaProps": {
+                    "HudImageWidget": {},
+                    "HudWidget": {},
+                    "Entity": {},
+                    "Component": {}
+                  },
+                  "_entityName": "player2_T1_knock",
+                  "entityTagData": {
+                    "tagPointers": []
+                  },
+                  "editorLockValue": false,
+                  "editorVisibleValue": true,
+                  "componentList": [],
+                  "_filters": []
+                }
+              ],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 20,
+                    "y": 22
+                  },
+                  "sizeDelta": {
+                    "x": 40,
+                    "y": 10
+                  }
+                },
+                "alpha": 100,
+                "image": {
+                  "source": {
+                    "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#5B5B5B",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "P2T1",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "propsData": {
+            "activeSelf": false,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 100,
+                "y": 32
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "layout": {
+              "enable": true,
+              "type": "grid",
+              "corner": 0,
+              "offset": {
+                "up": 5,
+                "down": 0,
+                "left": 0,
+                "right": 0
+              },
+              "space": {
+                "x": 10,
+                "y": 0
+              },
+              "size": {
+                "x": 40,
+                "y": 10
+              },
+              "constraint": 0,
+              "direction": 0,
+              "fixedRowCount": 2,
+              "fixedColumnCount": 2,
+              "tableOffset": {
+                "up": 0,
+                "down": 0,
+                "left": 0,
+                "right": 0
+              },
+              "tableSpace": 15,
+              "sortType": 0
+            }
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudLayout": {},
+            "HudWidget": {},
+            "Entity": {}
+          },
+          "componentList": [],
+          "_entityName": "Team1AlivesLayout",
+          "entityTagData": {
+            "tagPointers": []
+          }
+        }
+      ],
+      "prefabVariant": null,
+      "activeValue": {
+        "selfValue": true,
+        "valueTag": "activeValue"
+      },
+      "unlockedValue": {
+        "selfValue": true,
+        "valueTag": "unlockedValue"
+      },
+      "editorLockValue": false,
+      "editorVisibleValue": true,
+      "propsData": {
+        "activeSelf": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 0.5,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": -280,
+            "y": -30
+          },
+          "sizeDelta": {
+            "x": 100,
+            "y": 32
+          }
+        },
+        "alpha": 100,
+        "priority": 0
+      },
+      "ecaScripts": [],
+      "ecaProps": {
+        "HudEmptyWidget": {},
+        "HudWidget": {},
+        "Entity": {},
+        "Component": {}
+      },
+      "_entityName": "T1",
+      "entityTagData": {
+        "tagPointers": []
+      },
+      "componentList": [],
+      "_filters": []
+    },
+    {
+      "_tag": {
+        "type": "UIEmptyEntity",
+        "resourceId": ""
+      },
+      "_entityId": "HsjMuCFl",
+      "children": [
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "GutoDdIX",
+          "children": [
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "CJpDeHuT",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 35,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": 65,
+                    "y": 28
+                  }
+                },
+                "alpha": 100,
+                "priority": 0,
+                "text": {
+                  "value": "Team 2",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 22,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#000000",
+                  "alignment": {
+                    "h": "left",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_entityName": "Team2Score",
+              "entityTagData": {
+                "tagPointers": []
+              }
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "propsData": {
+            "activeSelf": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 98,
+                "y": 28
+              }
+            },
+            "alpha": 100,
+            "image": {
+              "source": {
+                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#FFFFFF",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "priority": 0
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {},
+            "Component": {}
+          },
+          "_entityName": "Team2Bg",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "componentList": [],
+          "_filters": []
+        },
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "1HKkbBQY",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "propsData": {
+            "activeSelf": false,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 98,
+                "y": 4
+              }
+            },
+            "alpha": 100,
+            "image": {
+              "source": {
+                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#FFEB00",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "priority": 0
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {},
+            "Component": {}
+          },
+          "_entityName": "currentTeam2",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "componentList": [],
+          "_filters": []
+        },
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "F1U7YX3M",
+          "children": [
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "gp5Gm0xn",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": 28,
+                    "y": 28
+                  }
+                },
+                "alpha": 100,
+                "text": {
+                  "value": "0",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 22,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "shadow": true,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "T2_score",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "propsData": {
+            "activeSelf": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 35,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 28,
+                "y": 28
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": {
+              "source": {
+                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#363636",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            }
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {}
+          },
+          "componentList": [],
+          "_entityName": "ScoreBackGround",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        },
+        {
+          "_tag": {
+            "type": "UILayoutEntityV2",
+            "resourceId": ""
+          },
+          "_entityId": "gSh8PKIa",
+          "children": [
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
+              "_entityId": "Cc4BuVxg",
+              "children": [
+                {
+                  "_tag": {
+                    "type": "UIImageEntity",
+                    "resourceId": ""
+                  },
+                  "_entityId": "RcRC70Xq",
+                  "children": [],
+                  "prefabVariant": null,
+                  "activeValue": {
+                    "selfValue": false,
+                    "valueTag": "activeValue"
+                  },
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
+                  "propsData": {
+                    "activeSelf": false,
+                    "transform": {
+                      "rotate": 0,
+                      "anchorMin": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchorMax": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "pivot": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchoredPosition": {
+                        "x": -0.0010000000474974513,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 30,
+                        "y": 10
+                      }
+                    },
+                    "alpha": 100,
+                    "image": {
+                      "source": {
+                        "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                        "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                        "_tag": {
+                          "type": "GFileRefer"
+                        },
+                        "fileType": "texture"
+                      },
+                      "color": "#5B5B5B",
+                      "reverse": {
+                        "x": false,
+                        "y": false
+                      },
+                      "fillType": 0,
+                      "slicedBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "tiledBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "centerInvisible": false,
+                      "fillDir": 0,
+                      "fillAmount": 0,
+                      "invertFill": false,
+                      "flip": 0,
+                      "gradient": 1,
+                      "gradientTop": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      },
+                      "gradientBottom": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      }
+                    },
+                    "priority": 0
+                  },
+                  "ecaScripts": [],
+                  "ecaProps": {
+                    "HudImageWidget": {},
+                    "HudWidget": {},
+                    "Entity": {},
+                    "Component": {}
+                  },
+                  "_entityName": "player2_T2_knock",
+                  "entityTagData": {
+                    "tagPointers": []
+                  },
+                  "editorLockValue": false,
+                  "editorVisibleValue": true,
+                  "componentList": [],
+                  "_filters": []
+                }
+              ],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": -30,
+                    "y": 22
+                  },
+                  "sizeDelta": {
+                    "x": 40,
+                    "y": 10
+                  }
+                },
+                "alpha": 100,
+                "image": {
+                  "source": {
+                    "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#5B5B5B",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "P2T2",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            },
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
+              "_entityId": "lcV6MMFq",
+              "children": [
+                {
+                  "_tag": {
+                    "type": "UIImageEntity",
+                    "resourceId": ""
+                  },
+                  "_entityId": "bKTkOeQb",
+                  "children": [],
+                  "prefabVariant": null,
+                  "activeValue": {
+                    "selfValue": false,
+                    "valueTag": "activeValue"
+                  },
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
+                  "propsData": {
+                    "activeSelf": false,
+                    "transform": {
+                      "rotate": 0,
+                      "anchorMin": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchorMax": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "pivot": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchoredPosition": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 30,
+                        "y": 10
+                      }
+                    },
+                    "alpha": 100,
+                    "image": {
+                      "source": {
+                        "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                        "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                        "_tag": {
+                          "type": "GFileRefer"
+                        },
+                        "fileType": "texture"
+                      },
+                      "color": "#5B5B5B",
+                      "reverse": {
+                        "x": false,
+                        "y": false
+                      },
+                      "fillType": 0,
+                      "slicedBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "tiledBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "centerInvisible": false,
+                      "fillDir": 0,
+                      "fillAmount": 0,
+                      "invertFill": false,
+                      "flip": 0,
+                      "gradient": 1,
+                      "gradientTop": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      },
+                      "gradientBottom": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      }
+                    },
+                    "priority": 0
+                  },
+                  "ecaScripts": [],
+                  "ecaProps": {
+                    "HudImageWidget": {},
+                    "HudWidget": {},
+                    "Entity": {},
+                    "Component": {}
+                  },
+                  "_entityName": "player1_T2_knock",
+                  "entityTagData": {
+                    "tagPointers": []
+                  },
+                  "editorLockValue": false,
+                  "editorVisibleValue": true,
+                  "componentList": [],
+                  "_filters": []
+                }
+              ],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 20,
+                    "y": 22
+                  },
+                  "sizeDelta": {
+                    "x": 40,
+                    "y": 10
+                  }
+                },
+                "alpha": 100,
+                "image": {
+                  "source": {
+                    "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#5B5B5B",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "P1T2",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "propsData": {
+            "activeSelf": false,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 100,
+                "y": 32
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "layout": {
+              "enable": true,
+              "type": "grid",
+              "corner": 0,
+              "offset": {
+                "up": 5,
+                "down": 0,
+                "left": 0,
+                "right": 0
+              },
+              "space": {
+                "x": 10,
+                "y": 0
+              },
+              "size": {
+                "x": 40,
+                "y": 10
+              },
+              "constraint": 0,
+              "direction": 0,
+              "fixedRowCount": 2,
+              "fixedColumnCount": 2,
+              "tableOffset": {
+                "up": 0,
+                "down": 0,
+                "left": 0,
+                "right": 0
+              },
+              "tableSpace": 15,
+              "sortType": 0
+            }
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudLayout": {},
+            "HudWidget": {},
+            "Entity": {}
+          },
+          "componentList": [],
+          "_entityName": "Team2AlivesLayout",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        }
+      ],
+      "prefabVariant": null,
+      "activeValue": {
+        "selfValue": true,
+        "valueTag": "activeValue"
+      },
+      "unlockedValue": {
+        "selfValue": true,
+        "valueTag": "unlockedValue"
+      },
+      "propsData": {
+        "activeSelf": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 0.5,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": -125,
+            "y": -30
+          },
+          "sizeDelta": {
+            "x": 100,
+            "y": 32
+          }
+        },
+        "alpha": 100,
+        "priority": 0
+      },
+      "ecaScripts": [],
+      "ecaProps": {
+        "HudEmptyWidget": {},
+        "HudWidget": {},
+        "Entity": {},
+        "Component": {}
+      },
+      "_entityName": "T2",
+      "entityTagData": {
+        "tagPointers": []
+      },
+      "editorLockValue": false,
+      "editorVisibleValue": true,
+      "componentList": [],
+      "_filters": []
+    },
+    {
+      "_tag": {
+        "type": "UIEmptyEntity",
+        "resourceId": ""
+      },
+      "_entityId": "PcWxlY4v",
+      "children": [
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "V86h3lie",
+          "children": [
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "I7mCr3vf",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 35,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": 65,
+                    "y": 28
+                  }
+                },
+                "alpha": 100,
+                "priority": 0,
+                "text": {
+                  "value": "Team 3",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 22,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#000000",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_entityName": "Team3Score",
+              "entityTagData": {
+                "tagPointers": []
+              }
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "propsData": {
+            "activeSelf": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 98,
+                "y": 28
+              }
+            },
+            "alpha": 100,
+            "image": {
+              "source": {
+                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#FFFFFF",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "priority": 0
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {},
+            "Component": {}
+          },
+          "_entityName": "Team3Bg",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "componentList": [],
+          "_filters": []
+        },
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "zUOC3h8J",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "propsData": {
+            "activeSelf": false,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 98,
+                "y": 4
+              }
+            },
+            "alpha": 100,
+            "image": {
+              "source": {
+                "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#FFEB00",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "priority": 0
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {},
+            "Component": {}
+          },
+          "_entityName": "currentTeam3",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "componentList": [],
+          "_filters": []
+        },
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "2GO0D01H",
+          "children": [
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "4aapDIxN",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": 28,
+                    "y": 28
+                  }
+                },
+                "alpha": 100,
+                "text": {
+                  "value": "0",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 22,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "shadow": true,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "T3_score",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "propsData": {
+            "activeSelf": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 35,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 28,
+                "y": 28
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": {
+              "source": {
+                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#363636",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            }
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {}
+          },
+          "componentList": [],
+          "_entityName": "ScoreBackground",
+          "entityTagData": {
+            "tagPointers": []
+          }
+        },
+        {
+          "_tag": {
+            "type": "UILayoutEntityV2",
+            "resourceId": ""
+          },
+          "_entityId": "2blNwQhe",
+          "children": [
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
+              "_entityId": "CRqwsQ1H",
+              "children": [
+                {
+                  "_tag": {
+                    "type": "UIImageEntity",
+                    "resourceId": ""
+                  },
+                  "_entityId": "tiamrf22",
+                  "children": [],
+                  "prefabVariant": null,
+                  "activeValue": {
+                    "selfValue": false,
+                    "valueTag": "activeValue"
+                  },
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
+                  "propsData": {
+                    "activeSelf": false,
+                    "transform": {
+                      "rotate": 0,
+                      "anchorMin": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchorMax": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "pivot": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchoredPosition": {
+                        "x": -0.0010000000474974513,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 30,
+                        "y": 10
+                      }
+                    },
+                    "alpha": 100,
+                    "image": {
+                      "source": {
+                        "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                        "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                        "_tag": {
+                          "type": "GFileRefer"
+                        },
+                        "fileType": "texture"
+                      },
+                      "color": "#5B5B5B",
+                      "reverse": {
+                        "x": false,
+                        "y": false
+                      },
+                      "fillType": 0,
+                      "slicedBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "tiledBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "centerInvisible": false,
+                      "fillDir": 0,
+                      "fillAmount": 0,
+                      "invertFill": false,
+                      "flip": 0,
+                      "gradient": 1,
+                      "gradientTop": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      },
+                      "gradientBottom": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      }
+                    },
+                    "priority": 0
+                  },
+                  "ecaScripts": [],
+                  "ecaProps": {
+                    "HudImageWidget": {},
+                    "HudWidget": {},
+                    "Entity": {},
+                    "Component": {}
+                  },
+                  "_entityName": "player2_T3_knock",
+                  "entityTagData": {
+                    "tagPointers": []
+                  },
+                  "editorLockValue": false,
+                  "editorVisibleValue": true,
+                  "componentList": [],
+                  "_filters": []
+                }
+              ],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": -30,
+                    "y": 22
+                  },
+                  "sizeDelta": {
+                    "x": 40,
+                    "y": 10
+                  }
+                },
+                "alpha": 100,
+                "image": {
+                  "source": {
+                    "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#5B5B5B",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "P2T3",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            },
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
+              "_entityId": "mHvQ3L2c",
+              "children": [
+                {
+                  "_tag": {
+                    "type": "UIImageEntity",
+                    "resourceId": ""
+                  },
+                  "_entityId": "1sTxYBb2",
+                  "children": [],
+                  "prefabVariant": null,
+                  "activeValue": {
+                    "selfValue": false,
+                    "valueTag": "activeValue"
+                  },
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
+                  "propsData": {
+                    "activeSelf": false,
+                    "transform": {
+                      "rotate": 0,
+                      "anchorMin": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchorMax": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "pivot": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchoredPosition": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 30,
+                        "y": 10
+                      }
+                    },
+                    "alpha": 100,
+                    "image": {
+                      "source": {
+                        "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                        "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                        "_tag": {
+                          "type": "GFileRefer"
+                        },
+                        "fileType": "texture"
+                      },
+                      "color": "#5B5B5B",
+                      "reverse": {
+                        "x": false,
+                        "y": false
+                      },
+                      "fillType": 0,
+                      "slicedBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "tiledBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "centerInvisible": false,
+                      "fillDir": 0,
+                      "fillAmount": 0,
+                      "invertFill": false,
+                      "flip": 0,
+                      "gradient": 1,
+                      "gradientTop": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      },
+                      "gradientBottom": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      }
+                    },
+                    "priority": 0
+                  },
+                  "ecaScripts": [],
+                  "ecaProps": {
+                    "HudImageWidget": {},
+                    "HudWidget": {},
+                    "Entity": {},
+                    "Component": {}
+                  },
+                  "_entityName": "player1_T3_knock",
+                  "entityTagData": {
+                    "tagPointers": []
+                  },
+                  "editorLockValue": false,
+                  "editorVisibleValue": true,
+                  "componentList": [],
+                  "_filters": []
+                }
+              ],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 20,
+                    "y": 22
+                  },
+                  "sizeDelta": {
+                    "x": 40,
+                    "y": 10
+                  }
+                },
+                "alpha": 100,
+                "image": {
+                  "source": {
+                    "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#5B5B5B",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "P1T3",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "propsData": {
+            "activeSelf": false,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 100,
+                "y": 32
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "layout": {
+              "enable": true,
+              "type": "grid",
+              "corner": 0,
+              "offset": {
+                "up": 5,
+                "down": 0,
+                "left": 0,
+                "right": 0
+              },
+              "space": {
+                "x": 10,
+                "y": 0
+              },
+              "size": {
+                "x": 40,
+                "y": 10
+              },
+              "constraint": 0,
+              "direction": 0,
+              "fixedRowCount": 2,
+              "fixedColumnCount": 2,
+              "tableOffset": {
+                "up": 0,
+                "down": 0,
+                "left": 0,
+                "right": 0
+              },
+              "tableSpace": 15,
+              "sortType": 0
+            }
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudLayout": {},
+            "HudWidget": {},
+            "Entity": {}
+          },
+          "componentList": [],
+          "_entityName": "Team3AlivesLayout",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        }
+      ],
+      "prefabVariant": null,
+      "activeValue": {
+        "selfValue": true,
+        "valueTag": "activeValue"
+      },
+      "unlockedValue": {
+        "selfValue": true,
+        "valueTag": "unlockedValue"
+      },
+      "propsData": {
+        "activeSelf": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 0.5,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 125,
+            "y": -30
+          },
+          "sizeDelta": {
+            "x": 100,
+            "y": 32
+          }
+        },
+        "alpha": 100,
+        "priority": 0
+      },
+      "ecaScripts": [],
+      "ecaProps": {
+        "HudEmptyWidget": {},
+        "HudWidget": {},
+        "Entity": {},
+        "Component": {}
+      },
+      "_entityName": "T3",
+      "entityTagData": {
+        "tagPointers": []
+      },
+      "editorLockValue": false,
+      "editorVisibleValue": true,
+      "componentList": [],
+      "_filters": []
+    },
+    {
+      "_tag": {
+        "type": "UIEmptyEntity",
+        "resourceId": ""
+      },
+      "_entityId": "jc9q2Aw3",
+      "children": [
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "7UsV8MZH",
+          "children": [
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "4gim79DO",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 35,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": 65,
+                    "y": 28
+                  }
+                },
+                "alpha": 100,
+                "priority": 0,
+                "text": {
+                  "value": "Team 4",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 22,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#000000",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_entityName": "Team4Score",
+              "entityTagData": {
+                "tagPointers": []
+              }
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "propsData": {
+            "activeSelf": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 98,
+                "y": 28
+              }
+            },
+            "alpha": 100,
+            "image": {
+              "source": {
+                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#FFFFFF",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "priority": 0
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {},
+            "Component": {}
+          },
+          "_entityName": "Team4Bg",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "componentList": [],
+          "_filters": []
+        },
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "ZoLnnEk4",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "propsData": {
+            "activeSelf": false,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 98,
+                "y": 4
+              }
+            },
+            "alpha": 100,
+            "image": {
+              "source": {
+                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#FFEB00",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "priority": 0
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {},
+            "Component": {}
+          },
+          "_entityName": "currentTeam4",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "componentList": [],
+          "_filters": []
+        },
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "6DPfhjgV",
+          "children": [
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "35r1OTaU",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": 28,
+                    "y": 28
+                  }
+                },
+                "alpha": 100,
+                "text": {
+                  "value": "0",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 24,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "shadow": true,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "T4_score",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "propsData": {
+            "activeSelf": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 1
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 1
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 35,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 28,
+                "y": 28
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": {
+              "source": {
+                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#363636",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 1,
+              "gradientTop": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            }
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {}
+          },
+          "componentList": [],
+          "_entityName": "ScoreBackground",
+          "entityTagData": {
+            "tagPointers": []
+          }
+        },
+        {
+          "_tag": {
+            "type": "UILayoutEntityV2",
+            "resourceId": ""
+          },
+          "_entityId": "lrWI23bF",
+          "children": [
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
+              "_entityId": "JlQl8RkZ",
+              "children": [
+                {
+                  "_tag": {
+                    "type": "UIImageEntity",
+                    "resourceId": ""
+                  },
+                  "_entityId": "afeGwjWc",
+                  "children": [],
+                  "prefabVariant": null,
+                  "activeValue": {
+                    "selfValue": false,
+                    "valueTag": "activeValue"
+                  },
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
+                  "propsData": {
+                    "activeSelf": false,
+                    "transform": {
+                      "rotate": 0,
+                      "anchorMin": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchorMax": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "pivot": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchoredPosition": {
+                        "x": -0.0010000000474974513,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 30,
+                        "y": 10
+                      }
+                    },
+                    "alpha": 100,
+                    "image": {
+                      "source": {
+                        "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                        "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                        "_tag": {
+                          "type": "GFileRefer"
+                        },
+                        "fileType": "texture"
+                      },
+                      "color": "#5B5B5B",
+                      "reverse": {
+                        "x": false,
+                        "y": false
+                      },
+                      "fillType": 0,
+                      "slicedBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "tiledBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "centerInvisible": false,
+                      "fillDir": 0,
+                      "fillAmount": 0,
+                      "invertFill": false,
+                      "flip": 0,
+                      "gradient": 1,
+                      "gradientTop": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      },
+                      "gradientBottom": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      }
+                    },
+                    "priority": 0
+                  },
+                  "ecaScripts": [],
+                  "ecaProps": {
+                    "HudImageWidget": {},
+                    "HudWidget": {},
+                    "Entity": {},
+                    "Component": {}
+                  },
+                  "_entityName": "player2_T4_knock",
+                  "entityTagData": {
+                    "tagPointers": []
+                  },
+                  "editorLockValue": false,
+                  "editorVisibleValue": true,
+                  "componentList": [],
+                  "_filters": []
+                }
+              ],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": -30,
+                    "y": 22
+                  },
+                  "sizeDelta": {
+                    "x": 40,
+                    "y": 10
+                  }
+                },
+                "alpha": 100,
+                "image": {
+                  "source": {
+                    "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#5B5B5B",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "P2T4",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            },
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
+              "_entityId": "47wMmqUm",
+              "children": [
+                {
+                  "_tag": {
+                    "type": "UIImageEntity",
+                    "resourceId": ""
+                  },
+                  "_entityId": "jxR6F4c3",
+                  "children": [],
+                  "prefabVariant": null,
+                  "activeValue": {
+                    "selfValue": false,
+                    "valueTag": "activeValue"
+                  },
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
+                  "propsData": {
+                    "activeSelf": false,
+                    "transform": {
+                      "rotate": 0,
+                      "anchorMin": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchorMax": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "pivot": {
+                        "x": 0.5,
+                        "y": 0.5
+                      },
+                      "anchoredPosition": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "sizeDelta": {
+                        "x": 30,
+                        "y": 10
+                      }
+                    },
+                    "alpha": 100,
+                    "image": {
+                      "source": {
+                        "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                        "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                        "_tag": {
+                          "type": "GFileRefer"
+                        },
+                        "fileType": "texture"
+                      },
+                      "color": "#5B5B5B",
+                      "reverse": {
+                        "x": false,
+                        "y": false
+                      },
+                      "fillType": 0,
+                      "slicedBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "tiledBorder": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 0
+                      },
+                      "centerInvisible": false,
+                      "fillDir": 0,
+                      "fillAmount": 0,
+                      "invertFill": false,
+                      "flip": 0,
+                      "gradient": 1,
+                      "gradientTop": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      },
+                      "gradientBottom": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "a": 1
+                      }
+                    },
+                    "priority": 0
+                  },
+                  "ecaScripts": [],
+                  "ecaProps": {
+                    "HudImageWidget": {},
+                    "HudWidget": {},
+                    "Entity": {},
+                    "Component": {}
+                  },
+                  "_entityName": "player1_T4_knock",
+                  "entityTagData": {
+                    "tagPointers": []
+                  },
+                  "editorLockValue": false,
+                  "editorVisibleValue": true,
+                  "componentList": [],
+                  "_filters": []
+                }
+              ],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 20,
+                    "y": 22
+                  },
+                  "sizeDelta": {
+                    "x": 40,
+                    "y": 10
+                  }
+                },
+                "alpha": 100,
+                "image": {
+                  "source": {
+                    "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#5B5B5B",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                },
+                "priority": 0
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {},
+                "Component": {}
+              },
+              "_entityName": "P1T4",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true,
+              "componentList": [],
+              "_filters": []
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "propsData": {
+            "activeSelf": false,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 100,
+                "y": 32
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "layout": {
+              "enable": true,
+              "type": "grid",
+              "corner": 0,
+              "offset": {
+                "up": 5,
+                "down": 0,
+                "left": 0,
+                "right": 0
+              },
+              "space": {
+                "x": 10,
+                "y": 0
+              },
+              "size": {
+                "x": 40,
+                "y": 10
+              },
+              "constraint": 0,
+              "direction": 0,
+              "fixedRowCount": 2,
+              "fixedColumnCount": 2,
+              "tableOffset": {
+                "up": 0,
+                "down": 0,
+                "left": 0,
+                "right": 0
+              },
+              "tableSpace": 15,
+              "sortType": 0
+            }
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudLayout": {},
+            "HudWidget": {},
+            "Entity": {}
+          },
+          "componentList": [],
+          "_entityName": "Team4AlivesLayout",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        }
+      ],
+      "prefabVariant": null,
+      "activeValue": {
+        "selfValue": true,
+        "valueTag": "activeValue"
+      },
+      "unlockedValue": {
+        "selfValue": true,
+        "valueTag": "unlockedValue"
+      },
+      "propsData": {
+        "activeSelf": true,
+        "transform": {
+          "rotate": 0,
+          "anchorMin": {
+            "x": 0.5,
+            "y": 1
+          },
+          "anchorMax": {
+            "x": 0.5,
+            "y": 1
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "anchoredPosition": {
+            "x": 280,
+            "y": -30
+          },
+          "sizeDelta": {
+            "x": 100,
+            "y": 32
+          }
+        },
+        "alpha": 100,
+        "priority": 0
+      },
+      "ecaScripts": [],
+      "ecaProps": {
+        "HudEmptyWidget": {},
+        "HudWidget": {},
+        "Entity": {},
+        "Component": {}
+      },
+      "_entityName": "T4",
+      "entityTagData": {
+        "tagPointers": []
+      },
+      "editorLockValue": false,
+      "editorVisibleValue": true,
+      "componentList": [],
+      "_filters": []
+    }
+  ],
+  "prefabVariant": null,
+  "activeValue": {
+    "selfValue": true,
+    "valueTag": "activeValue"
+  },
+  "unlockedValue": {
+    "selfValue": true,
+    "valueTag": "unlockedValue"
+  },
+  "editorLockValue": false,
+  "editorVisibleValue": true,
+  "propsData": {
+    "activeSelf": true,
+    "transform": {
+      "rotate": 0,
+      "anchorMin": {
+        "x": 0,
+        "y": 0
+      },
+      "anchorMax": {
+        "x": 0,
+        "y": 0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchoredPosition": {
+        "x": 667,
+        "y": 375
+      },
+      "sizeDelta": {
+        "x": 1334,
+        "y": 750
+      }
+    },
+    "alpha": 100,
+    "priority": 0
+  },
+  "ecaScripts": [],
+  "ecaProps": {
+    "CustomHud": {},
+    "Entity": {},
+    "Component": {}
+  },
+  "_entityName": "teamScoreHUD",
+  "entityTagData": {
+    "tagPointers": []
+  },
+  "layer": 1,
+  "discriminator": "ISceneLike",
+  "version": 3,
+  "componentList": [],
+  "_filters": []
+}
+//"{FE:{"v":"1.14.3883376","c":{"FF":5001},"s":100}
