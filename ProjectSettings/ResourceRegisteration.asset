@@ -35,22 +35,6 @@
               "scriptName": "Team4Bg"
             },
             {
-              "id": "QZLeM2ue",
-              "scriptName": "Team1Score"
-            },
-            {
-              "id": "CJpDeHuT",
-              "scriptName": "Team2Score"
-            },
-            {
-              "id": "I7mCr3vf",
-              "scriptName": "Team3Score"
-            },
-            {
-              "id": "4gim79DO",
-              "scriptName": "Team4Score"
-            },
-            {
               "id": "jR4l1K3K",
               "scriptName": "Team1AlivesLayout"
             },
@@ -65,6 +49,86 @@
             {
               "id": "lrWI23bF",
               "scriptName": "Team4AlivesLayout"
+            },
+            {
+              "id": "QZLeM2ue",
+              "scriptName": "Team1Score"
+            },
+            {
+              "id": "gp5Gm0xn",
+              "scriptName": "Team2Score"
+            },
+            {
+              "id": "4aapDIxN",
+              "scriptName": "Team3Score"
+            },
+            {
+              "id": "35r1OTaU",
+              "scriptName": "Team4Score"
+            },
+            {
+              "id": "jdJRotvP",
+              "scriptName": "P1T1"
+            },
+            {
+              "id": "9zMixnRE",
+              "scriptName": "P1T1Knock"
+            },
+            {
+              "id": "lpeyT7pJ",
+              "scriptName": "P2T1"
+            },
+            {
+              "id": "c6nzLUHE",
+              "scriptName": "P2T1Knock"
+            },
+            {
+              "id": "lcV6MMFq",
+              "scriptName": "P1T2"
+            },
+            {
+              "id": "bKTkOeQb",
+              "scriptName": "P1T2Knock"
+            },
+            {
+              "id": "Cc4BuVxg",
+              "scriptName": "P2T2"
+            },
+            {
+              "id": "RcRC70Xq",
+              "scriptName": "P2T2Knock"
+            },
+            {
+              "id": "mHvQ3L2c",
+              "scriptName": "P1T3"
+            },
+            {
+              "id": "1sTxYBb2",
+              "scriptName": "P1T3Knock"
+            },
+            {
+              "id": "CRqwsQ1H",
+              "scriptName": "P2T3"
+            },
+            {
+              "id": "tiamrf22",
+              "scriptName": "P2T3Knock"
+            },
+            {
+              "id": "47wMmqUm",
+              "scriptName": "P1T4"
+            },
+            {
+              "id": "jxR6F4c3",
+              "scriptName": "P1T4Knock"
+            },
+            {
+              "id": "JlQl8RkZ",
+              "scriptName": "P2T4"
+            },
+            {
+              "id": "afeGwjWc",
+              "scriptName": "P2T4Knock"
             }
           ]
         },

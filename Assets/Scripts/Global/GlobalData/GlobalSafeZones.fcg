@@ -15,7 +15,7 @@ import "AI.fcc" as AI
 import "../GlobalManager/GlobalGameManager.fcg" as GlobalGameManager
 import "Workflow.fcc" as Workflow
 graph GlobalSafeZones {
-    safeZoneDefaultDmg int = 40
+    safeZoneDefaultDmg int = 30 
     safeZoneStartPoints Map<int, Vector3> = Map<int, Vector3>{}
     safeZoneEndPoints Map<int, List<entity<Entity>>> = Map<int, List<entity<Entity>>>{}
     safeZoneInitRadius Map<int, float> = Map<int, float>{}
@@ -24,7 +24,7 @@ graph GlobalSafeZones {
 
     // Init data when game starts
     event OnGameStart() {
-        safeZoneInitRadius[0] = 25.0
+        safeZoneInitRadius[0] = 100.0 
         safeZoneInitRadius[1] = 25.0
         safeZoneInitRadius[2] = 40.0
         safeZoneInitRadius[3] = 40.0
@@ -35,7 +35,7 @@ graph GlobalSafeZones {
         safeZoneInitRadius[8] = 30.0
         safeZoneInitRadius[9] = 35.0
         safeZoneInitRadius[10] = 30.0
-        safeZoneStartShrinkTimes[0] = globalEntity<GlobalGameManager>.prepPhaseDuration + 8 
+        safeZoneStartShrinkTimes[0] = globalEntity<GlobalGameManager>.prepPhaseDuration + 15 
         safeZoneStartShrinkTimes[1] = globalEntity<GlobalGameManager>.prepPhaseDuration + 10 
         safeZoneStartShrinkTimes[2] = globalEntity<GlobalGameManager>.prepPhaseDuration
         safeZoneStartShrinkTimes[3] = globalEntity<GlobalGameManager>.prepPhaseDuration + 8
@@ -46,7 +46,7 @@ graph GlobalSafeZones {
         safeZoneStartShrinkTimes[8] = globalEntity<GlobalGameManager>.prepPhaseDuration + 8 
         safeZoneStartShrinkTimes[9] = globalEntity<GlobalGameManager>.prepPhaseDuration + 10
         safeZoneStartShrinkTimes[10] = globalEntity<GlobalGameManager>.prepPhaseDuration + 12
-        safeZonesShrinkDuration[0] = 55
+        safeZonesShrinkDuration[0] = 90 
         safeZonesShrinkDuration[1] = 50
         safeZonesShrinkDuration[2] = 60
         safeZonesShrinkDuration[3] = 60
@@ -83,7 +83,7 @@ graph GlobalSafeZones {
 
     // Update safe zone start shrink time when prep phase duration is changed
     func SetStartShrinkTime(prepDuration int){
-        safeZoneStartShrinkTimes[0] = globalEntity<GlobalGameManager>.prepPhaseDuration + 8 
+        safeZoneStartShrinkTimes[0] = globalEntity<GlobalGameManager>.prepPhaseDuration + 30
         safeZoneStartShrinkTimes[1] = globalEntity<GlobalGameManager>.prepPhaseDuration + 10 
         safeZoneStartShrinkTimes[2] = globalEntity<GlobalGameManager>.prepPhaseDuration
         safeZoneStartShrinkTimes[3] = globalEntity<GlobalGameManager>.prepPhaseDuration + 8

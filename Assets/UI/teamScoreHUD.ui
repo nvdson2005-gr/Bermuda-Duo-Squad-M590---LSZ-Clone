@@ -402,112 +402,6 @@
         },
         {
           "_tag": {
-            "type": "UIImageEntity",
-            "resourceId": ""
-          },
-          "_entityId": "XULa5f6c",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": false,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "propsData": {
-            "activeSelf": false,
-            "transform": {
-              "rotate": 0,
-              "anchorMin": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "anchorMax": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "pivot": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "anchoredPosition": {
-                "x": 0,
-                "y": 0
-              },
-              "sizeDelta": {
-                "x": 98,
-                "y": 4
-              }
-            },
-            "alpha": 100,
-            "image": {
-              "source": {
-                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
-                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
-                "_tag": {
-                  "type": "GFileRefer"
-                },
-                "fileType": "texture"
-              },
-              "color": "#FFEB00",
-              "reverse": {
-                "x": false,
-                "y": false
-              },
-              "fillType": 1,
-              "slicedBorder": {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0
-              },
-              "tiledBorder": {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0
-              },
-              "centerInvisible": false,
-              "fillDir": 0,
-              "fillAmount": 0,
-              "invertFill": false,
-              "flip": 0,
-              "gradient": 1,
-              "gradientTop": {
-                "r": 255,
-                "g": 255,
-                "b": 255,
-                "a": 1
-              },
-              "gradientBottom": {
-                "r": 255,
-                "g": 255,
-                "b": 255,
-                "a": 1
-              }
-            },
-            "priority": 0
-          },
-          "ecaScripts": [],
-          "ecaProps": {
-            "HudImageWidget": {},
-            "HudWidget": {},
-            "Entity": {},
-            "Component": {}
-          },
-          "_entityName": "currentTeam1",
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "componentList": [],
-          "_filters": []
-        },
-        {
-          "_tag": {
             "type": "UILayoutEntityV2",
             "resourceId": ""
           },
@@ -537,7 +431,7 @@
                     "valueTag": "unlockedValue"
                   },
                   "propsData": {
-                    "activeSelf": false,
+                    "activeSelf": true,
                     "transform": {
                       "rotate": 0,
                       "anchorMin": {
@@ -617,7 +511,7 @@
                     "Entity": {},
                     "Component": {}
                   },
-                  "_entityName": "player1_T1_knock",
+                  "_entityName": "P1T1Knock",
                   "entityTagData": {
                     "tagPointers": []
                   },
@@ -629,7 +523,7 @@
               ],
               "prefabVariant": null,
               "activeValue": {
-                "selfValue": true,
+                "selfValue": false,
                 "valueTag": "activeValue"
               },
               "unlockedValue": {
@@ -637,7 +531,7 @@
                 "valueTag": "unlockedValue"
               },
               "propsData": {
-                "activeSelf": true,
+                "activeSelf": false,
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
@@ -671,7 +565,7 @@
                     },
                     "fileType": "texture"
                   },
-                  "color": "#5B5B5B",
+                  "color": "#FFFFFF",
                   "reverse": {
                     "x": false,
                     "y": false
@@ -830,7 +724,7 @@
                     "Entity": {},
                     "Component": {}
                   },
-                  "_entityName": "player2_T1_knock",
+                  "_entityName": "P2T1Knock",
                   "entityTagData": {
                     "tagPointers": []
                   },
@@ -842,7 +736,7 @@
               ],
               "prefabVariant": null,
               "activeValue": {
-                "selfValue": true,
+                "selfValue": false,
                 "valueTag": "activeValue"
               },
               "unlockedValue": {
@@ -850,7 +744,7 @@
                 "valueTag": "unlockedValue"
               },
               "propsData": {
-                "activeSelf": true,
+                "activeSelf": false,
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
@@ -884,7 +778,7 @@
                     },
                     "fileType": "texture"
                   },
-                  "color": "#5B5B5B",
+                  "color": "#FFFFFF",
                   "reverse": {
                     "x": false,
                     "y": false
@@ -942,14 +836,17 @@
           ],
           "prefabVariant": null,
           "activeValue": {
-            "selfValue": false,
+            "selfValue": true,
             "valueTag": "activeValue"
           },
-          "unlockedValue": null,
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
           "propsData": {
-            "activeSelf": false,
+            "activeSelf": true,
             "transform": {
               "rotate": 0,
               "anchorMin": {
@@ -1048,7 +945,7 @@
             "y": 0.5
           },
           "anchoredPosition": {
-            "x": -280,
+            "x": -210,
             "y": -30
           },
           "sizeDelta": {
@@ -1172,7 +1069,7 @@
                 "Entity": {}
               },
               "componentList": [],
-              "_entityName": "Team2Score",
+              "_entityName": "Team2Text",
               "entityTagData": {
                 "tagPointers": []
               }
@@ -1282,112 +1179,6 @@
             "type": "UIImageEntity",
             "resourceId": ""
           },
-          "_entityId": "1HKkbBQY",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": false,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "propsData": {
-            "activeSelf": false,
-            "transform": {
-              "rotate": 0,
-              "anchorMin": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "anchorMax": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "pivot": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "anchoredPosition": {
-                "x": 0,
-                "y": 0
-              },
-              "sizeDelta": {
-                "x": 98,
-                "y": 4
-              }
-            },
-            "alpha": 100,
-            "image": {
-              "source": {
-                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
-                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
-                "_tag": {
-                  "type": "GFileRefer"
-                },
-                "fileType": "texture"
-              },
-              "color": "#FFEB00",
-              "reverse": {
-                "x": false,
-                "y": false
-              },
-              "fillType": 1,
-              "slicedBorder": {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0
-              },
-              "tiledBorder": {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0
-              },
-              "centerInvisible": false,
-              "fillDir": 0,
-              "fillAmount": 0,
-              "invertFill": false,
-              "flip": 0,
-              "gradient": 1,
-              "gradientTop": {
-                "r": 255,
-                "g": 255,
-                "b": 255,
-                "a": 1
-              },
-              "gradientBottom": {
-                "r": 255,
-                "g": 255,
-                "b": 255,
-                "a": 1
-              }
-            },
-            "priority": 0
-          },
-          "ecaScripts": [],
-          "ecaProps": {
-            "HudImageWidget": {},
-            "HudWidget": {},
-            "Entity": {},
-            "Component": {}
-          },
-          "_entityName": "currentTeam2",
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "componentList": [],
-          "_filters": []
-        },
-        {
-          "_tag": {
-            "type": "UIImageEntity",
-            "resourceId": ""
-          },
           "_entityId": "F1U7YX3M",
           "children": [
             {
@@ -1467,7 +1258,7 @@
                 "Entity": {},
                 "Component": {}
               },
-              "_entityName": "T2_score",
+              "_entityName": "Team2Score",
               "entityTagData": {
                 "tagPointers": []
               },
@@ -1685,7 +1476,7 @@
                     "Entity": {},
                     "Component": {}
                   },
-                  "_entityName": "player2_T2_knock",
+                  "_entityName": "P2T2Knock",
                   "entityTagData": {
                     "tagPointers": []
                   },
@@ -1697,7 +1488,7 @@
               ],
               "prefabVariant": null,
               "activeValue": {
-                "selfValue": true,
+                "selfValue": false,
                 "valueTag": "activeValue"
               },
               "unlockedValue": {
@@ -1705,7 +1496,7 @@
                 "valueTag": "unlockedValue"
               },
               "propsData": {
-                "activeSelf": true,
+                "activeSelf": false,
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
@@ -1739,7 +1530,7 @@
                     },
                     "fileType": "texture"
                   },
-                  "color": "#5B5B5B",
+                  "color": "#FFFFFF",
                   "reverse": {
                     "x": false,
                     "y": false
@@ -1898,7 +1689,7 @@
                     "Entity": {},
                     "Component": {}
                   },
-                  "_entityName": "player1_T2_knock",
+                  "_entityName": "P1T2Knock",
                   "entityTagData": {
                     "tagPointers": []
                   },
@@ -1910,7 +1701,7 @@
               ],
               "prefabVariant": null,
               "activeValue": {
-                "selfValue": true,
+                "selfValue": false,
                 "valueTag": "activeValue"
               },
               "unlockedValue": {
@@ -1918,7 +1709,7 @@
                 "valueTag": "unlockedValue"
               },
               "propsData": {
-                "activeSelf": true,
+                "activeSelf": false,
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
@@ -1952,7 +1743,7 @@
                     },
                     "fileType": "texture"
                   },
-                  "color": "#5B5B5B",
+                  "color": "#FFFFFF",
                   "reverse": {
                     "x": false,
                     "y": false
@@ -2010,12 +1801,15 @@
           ],
           "prefabVariant": null,
           "activeValue": {
-            "selfValue": false,
+            "selfValue": true,
             "valueTag": "activeValue"
           },
-          "unlockedValue": null,
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "propsData": {
-            "activeSelf": false,
+            "activeSelf": true,
             "transform": {
               "rotate": 0,
               "anchorMin": {
@@ -2114,7 +1908,7 @@
             "y": 0.5
           },
           "anchoredPosition": {
-            "x": -125,
+            "x": -100,
             "y": -30
           },
           "sizeDelta": {
@@ -2240,7 +2034,7 @@
                 "Entity": {}
               },
               "componentList": [],
-              "_entityName": "Team3Score",
+              "_entityName": "Team3Text",
               "entityTagData": {
                 "tagPointers": []
               }
@@ -2350,112 +2144,6 @@
             "type": "UIImageEntity",
             "resourceId": ""
           },
-          "_entityId": "zUOC3h8J",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": false,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "propsData": {
-            "activeSelf": false,
-            "transform": {
-              "rotate": 0,
-              "anchorMin": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "anchorMax": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "pivot": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "anchoredPosition": {
-                "x": 0,
-                "y": 0
-              },
-              "sizeDelta": {
-                "x": 98,
-                "y": 4
-              }
-            },
-            "alpha": 100,
-            "image": {
-              "source": {
-                "fileId": "5d250edc7ccde0be5ccab1e2cf53b57f",
-                "filePath": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_White.png",
-                "_tag": {
-                  "type": "GFileRefer"
-                },
-                "fileType": "texture"
-              },
-              "color": "#FFEB00",
-              "reverse": {
-                "x": false,
-                "y": false
-              },
-              "fillType": 1,
-              "slicedBorder": {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0
-              },
-              "tiledBorder": {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0
-              },
-              "centerInvisible": false,
-              "fillDir": 0,
-              "fillAmount": 0,
-              "invertFill": false,
-              "flip": 0,
-              "gradient": 1,
-              "gradientTop": {
-                "r": 255,
-                "g": 255,
-                "b": 255,
-                "a": 1
-              },
-              "gradientBottom": {
-                "r": 255,
-                "g": 255,
-                "b": 255,
-                "a": 1
-              }
-            },
-            "priority": 0
-          },
-          "ecaScripts": [],
-          "ecaProps": {
-            "HudImageWidget": {},
-            "HudWidget": {},
-            "Entity": {},
-            "Component": {}
-          },
-          "_entityName": "currentTeam3",
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "componentList": [],
-          "_filters": []
-        },
-        {
-          "_tag": {
-            "type": "UIImageEntity",
-            "resourceId": ""
-          },
           "_entityId": "2GO0D01H",
           "children": [
             {
@@ -2535,7 +2223,7 @@
                 "Entity": {},
                 "Component": {}
               },
-              "_entityName": "T3_score",
+              "_entityName": "Team3Score",
               "entityTagData": {
                 "tagPointers": []
               },
@@ -2753,7 +2441,7 @@
                     "Entity": {},
                     "Component": {}
                   },
-                  "_entityName": "player2_T3_knock",
+                  "_entityName": "P2T3Knock",
                   "entityTagData": {
                     "tagPointers": []
                   },
@@ -2765,7 +2453,7 @@
               ],
               "prefabVariant": null,
               "activeValue": {
-                "selfValue": true,
+                "selfValue": false,
                 "valueTag": "activeValue"
               },
               "unlockedValue": {
@@ -2773,7 +2461,7 @@
                 "valueTag": "unlockedValue"
               },
               "propsData": {
-                "activeSelf": true,
+                "activeSelf": false,
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
@@ -2807,7 +2495,7 @@
                     },
                     "fileType": "texture"
                   },
-                  "color": "#5B5B5B",
+                  "color": "#FFFFFF",
                   "reverse": {
                     "x": false,
                     "y": false
@@ -2966,7 +2654,7 @@
                     "Entity": {},
                     "Component": {}
                   },
-                  "_entityName": "player1_T3_knock",
+                  "_entityName": "P1T3Knock",
                   "entityTagData": {
                     "tagPointers": []
                   },
@@ -2978,7 +2666,7 @@
               ],
               "prefabVariant": null,
               "activeValue": {
-                "selfValue": true,
+                "selfValue": false,
                 "valueTag": "activeValue"
               },
               "unlockedValue": {
@@ -2986,7 +2674,7 @@
                 "valueTag": "unlockedValue"
               },
               "propsData": {
-                "activeSelf": true,
+                "activeSelf": false,
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
@@ -3020,7 +2708,7 @@
                     },
                     "fileType": "texture"
                   },
-                  "color": "#5B5B5B",
+                  "color": "#FFFFFF",
                   "reverse": {
                     "x": false,
                     "y": false
@@ -3078,12 +2766,15 @@
           ],
           "prefabVariant": null,
           "activeValue": {
-            "selfValue": false,
+            "selfValue": true,
             "valueTag": "activeValue"
           },
-          "unlockedValue": null,
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "propsData": {
-            "activeSelf": false,
+            "activeSelf": true,
             "transform": {
               "rotate": 0,
               "anchorMin": {
@@ -3182,7 +2873,7 @@
             "y": 0.5
           },
           "anchoredPosition": {
-            "x": 125,
+            "x": 100,
             "y": -30
           },
           "sizeDelta": {
@@ -3308,7 +2999,7 @@
                 "Entity": {}
               },
               "componentList": [],
-              "_entityName": "Team4Score",
+              "_entityName": "Team4Text",
               "entityTagData": {
                 "tagPointers": []
               }
@@ -3418,112 +3109,6 @@
             "type": "UIImageEntity",
             "resourceId": ""
           },
-          "_entityId": "ZoLnnEk4",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": false,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "propsData": {
-            "activeSelf": false,
-            "transform": {
-              "rotate": 0,
-              "anchorMin": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "anchorMax": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "pivot": {
-                "x": 0.5,
-                "y": 0.5
-              },
-              "anchoredPosition": {
-                "x": 0,
-                "y": 0
-              },
-              "sizeDelta": {
-                "x": 98,
-                "y": 4
-              }
-            },
-            "alpha": 100,
-            "image": {
-              "source": {
-                "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
-                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
-                "_tag": {
-                  "type": "GFileRefer"
-                },
-                "fileType": "texture"
-              },
-              "color": "#FFEB00",
-              "reverse": {
-                "x": false,
-                "y": false
-              },
-              "fillType": 1,
-              "slicedBorder": {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0
-              },
-              "tiledBorder": {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0
-              },
-              "centerInvisible": false,
-              "fillDir": 0,
-              "fillAmount": 0,
-              "invertFill": false,
-              "flip": 0,
-              "gradient": 1,
-              "gradientTop": {
-                "r": 255,
-                "g": 255,
-                "b": 255,
-                "a": 1
-              },
-              "gradientBottom": {
-                "r": 255,
-                "g": 255,
-                "b": 255,
-                "a": 1
-              }
-            },
-            "priority": 0
-          },
-          "ecaScripts": [],
-          "ecaProps": {
-            "HudImageWidget": {},
-            "HudWidget": {},
-            "Entity": {},
-            "Component": {}
-          },
-          "_entityName": "currentTeam4",
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "componentList": [],
-          "_filters": []
-        },
-        {
-          "_tag": {
-            "type": "UIImageEntity",
-            "resourceId": ""
-          },
           "_entityId": "6DPfhjgV",
           "children": [
             {
@@ -3603,7 +3188,7 @@
                 "Entity": {},
                 "Component": {}
               },
-              "_entityName": "T4_score",
+              "_entityName": "Team4Score",
               "entityTagData": {
                 "tagPointers": []
               },
@@ -3821,7 +3406,7 @@
                     "Entity": {},
                     "Component": {}
                   },
-                  "_entityName": "player2_T4_knock",
+                  "_entityName": "P2T4Knock",
                   "entityTagData": {
                     "tagPointers": []
                   },
@@ -3833,7 +3418,7 @@
               ],
               "prefabVariant": null,
               "activeValue": {
-                "selfValue": true,
+                "selfValue": false,
                 "valueTag": "activeValue"
               },
               "unlockedValue": {
@@ -3841,7 +3426,7 @@
                 "valueTag": "unlockedValue"
               },
               "propsData": {
-                "activeSelf": true,
+                "activeSelf": false,
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
@@ -3875,7 +3460,7 @@
                     },
                     "fileType": "texture"
                   },
-                  "color": "#5B5B5B",
+                  "color": "#FFFFFF",
                   "reverse": {
                     "x": false,
                     "y": false
@@ -4034,7 +3619,7 @@
                     "Entity": {},
                     "Component": {}
                   },
-                  "_entityName": "player1_T4_knock",
+                  "_entityName": "P1T4Knock",
                   "entityTagData": {
                     "tagPointers": []
                   },
@@ -4046,7 +3631,7 @@
               ],
               "prefabVariant": null,
               "activeValue": {
-                "selfValue": true,
+                "selfValue": false,
                 "valueTag": "activeValue"
               },
               "unlockedValue": {
@@ -4054,7 +3639,7 @@
                 "valueTag": "unlockedValue"
               },
               "propsData": {
-                "activeSelf": true,
+                "activeSelf": false,
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
@@ -4088,7 +3673,7 @@
                     },
                     "fileType": "texture"
                   },
-                  "color": "#5B5B5B",
+                  "color": "#FFFFFF",
                   "reverse": {
                     "x": false,
                     "y": false
@@ -4146,12 +3731,15 @@
           ],
           "prefabVariant": null,
           "activeValue": {
-            "selfValue": false,
+            "selfValue": true,
             "valueTag": "activeValue"
           },
-          "unlockedValue": null,
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "propsData": {
-            "activeSelf": false,
+            "activeSelf": true,
             "transform": {
               "rotate": 0,
               "anchorMin": {
@@ -4250,7 +3838,7 @@
             "y": 0.5
           },
           "anchoredPosition": {
-            "x": 280,
+            "x": 210,
             "y": -30
           },
           "sizeDelta": {

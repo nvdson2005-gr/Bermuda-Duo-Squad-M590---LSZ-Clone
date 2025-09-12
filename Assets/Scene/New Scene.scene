@@ -169,9 +169,9 @@
               "editorLockValue": false,
               "editorVisibleValue": true,
               "position": {
-                "x": 222.822998046875,
-                "y": 13,
-                "z": -106.6780014038086
+                "x": 168.93,
+                "y": 3.79194,
+                "z": -113.584
               },
               "scale": {
                 "x": 4.449999809265137,
@@ -180,7 +180,7 @@
               },
               "rotation": {
                 "x": 0,
-                "y": 305,
+                "y": 126,
                 "z": 0
               },
               "BTPath": [
@@ -248,9 +248,9 @@
               "editorLockValue": false,
               "editorVisibleValue": true,
               "position": {
-                "x": 216.1179962158203,
-                "y": 9.958000183105469,
-                "z": -95.72799682617188
+                "x": 226.133,
+                "y": 0.206313,
+                "z": -173.087
               },
               "scale": {
                 "x": 4.5,
@@ -323,9 +323,9 @@
                 "valueTag": "unlockedValue"
               },
               "position": {
-                "x": 216.26165771484375,
-                "y": 13,
-                "z": -95.81507873535156
+                "x": 239.554,
+                "y": 2.261,
+                "z": -42.6055
               },
               "scale": {
                 "x": 4.5,
@@ -334,7 +334,7 @@
               },
               "rotation": {
                 "x": 0,
-                "y": 34,
+                "y": 218,
                 "z": 0
               },
               "BTPath": [
@@ -378,6 +378,83 @@
                 "spawnPointCount": 4,
                 "teamID": 0,
                 "_levelObjectID": 6,
+                "teamIDStr": "All teams"
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "SceneEditEntity",
+                "resourceId": "Primitive/Empty"
+              },
+              "_entityId": "sCDK40Hu",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "position": {
+                "x": 296.0064392089844,
+                "y": 2.250999927520752,
+                "z": -88.46092224121094
+              },
+              "scale": {
+                "x": 4.5,
+                "y": 1,
+                "z": 3
+              },
+              "rotation": {
+                "x": 0,
+                "y": 305,
+                "z": 0
+              },
+              "BTPath": [
+                null
+              ],
+              "visible": true,
+              "VisibilityLayer": 0,
+              "modelOptimization": 0,
+              "streamingLayer": "",
+              "attributes": [
+                2,
+                4
+              ],
+              "isTrigger": false,
+              "collidable": true,
+              "physicalLayer": 0,
+              "physicalMaterial": null,
+              "aoiSetting": 0,
+              "initialTypes": {},
+              "componentList": [],
+              "_filters": [],
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "tempIndex": 69,
+              "itemID": 143,
+              "seParent": null,
+              "ecaScripts": [
+                null
+              ],
+              "ecaProps": {
+                "SpawnBox": {},
+                "SpawnPos": {},
+                "LevelObject": {},
+                "Transform": {},
+                "Entity": {},
+                "Visibility": {}
+              },
+              "_entityName": "Team 4",
+              "propsData": {
+                "spawnPointCount": 4,
+                "teamID": 0,
+                "_levelObjectID": 35,
                 "teamIDStr": "All teams"
               },
               "editorLockValue": false,
@@ -3463,7 +3540,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 59,
+              "tempIndex": 31,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3542,7 +3619,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 60,
+              "tempIndex": 32,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3619,7 +3696,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 61,
+              "tempIndex": 33,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3793,7 +3870,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 31,
+              "tempIndex": 34,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -14152,7 +14229,7 @@
       "entityTagData": {
         "tagPointers": []
       },
-      "tempIndex": 32,
+      "tempIndex": 35,
       "itemID": 211,
       "seParent": null,
       "ecaScripts": [
@@ -14544,7 +14621,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 33,
+              "tempIndex": 36,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -14615,7 +14692,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 34,
+              "tempIndex": 37,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -14686,7 +14763,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 35,
+              "tempIndex": 38,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -14850,7 +14927,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 36,
+              "tempIndex": 39,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -14921,7 +14998,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 37,
+              "tempIndex": 40,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -14992,7 +15069,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 38,
+              "tempIndex": 41,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15156,7 +15233,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 39,
+              "tempIndex": 42,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15227,7 +15304,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 40,
+              "tempIndex": 43,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15298,7 +15375,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 41,
+              "tempIndex": 44,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15462,7 +15539,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 42,
+              "tempIndex": 45,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15533,7 +15610,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 43,
+              "tempIndex": 46,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15604,7 +15681,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 44,
+              "tempIndex": 47,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15768,7 +15845,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 45,
+              "tempIndex": 48,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15839,7 +15916,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 46,
+              "tempIndex": 49,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15910,7 +15987,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 47,
+              "tempIndex": 50,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16074,7 +16151,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 48,
+              "tempIndex": 51,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16145,7 +16222,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 49,
+              "tempIndex": 52,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16216,7 +16293,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 50,
+              "tempIndex": 53,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16380,7 +16457,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 51,
+              "tempIndex": 54,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16451,7 +16528,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 52,
+              "tempIndex": 55,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16522,7 +16599,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 53,
+              "tempIndex": 56,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16684,7 +16761,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 54,
+              "tempIndex": 57,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16755,7 +16832,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 55,
+              "tempIndex": 58,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16826,7 +16903,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 56,
+              "tempIndex": 59,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16990,7 +17067,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 72,
+              "tempIndex": 60,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17061,7 +17138,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 73,
+              "tempIndex": 61,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17132,7 +17209,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 74,
+              "tempIndex": 62,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17296,7 +17373,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 75,
+              "tempIndex": 63,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17367,7 +17444,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 76,
+              "tempIndex": 64,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17438,7 +17515,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 77,
+              "tempIndex": 65,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17602,7 +17679,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 78,
+              "tempIndex": 66,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17673,7 +17750,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 79,
+              "tempIndex": 67,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17744,7 +17821,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 80,
+              "tempIndex": 68,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [

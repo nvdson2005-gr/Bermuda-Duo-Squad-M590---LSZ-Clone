@@ -146,12 +146,12 @@ graph GlobalUIManager {
     func UpdateMiniScoreboard(){
         for index, team in GetAllTeams() {
             var point = globalEntity<TeamData>.GetTeamPoint(team)
-            var aliveCount = 0
-            for index, player in team<Team>.AllTeammates {
-                if player<Player>.HP > 0 {
-                    aliveCount = aliveCount + 1
-                }
-            }
+            // var aliveCount = 0
+            // for index, player in team<Team>.AllTeammates {
+            //     if player<Player>.HP > 0 {
+            //         aliveCount = aliveCount + 1
+            //     }
+            // }
             for index, player in GetAllPlayers() {
                 if(Map.ContainKey(miniScoreBoardUIdict, player)) {
                     var ui = miniScoreBoardUIdict[player]
@@ -172,13 +172,23 @@ graph GlobalUIManager {
                     }
                     widget<UIWidgetLabel>.Content = ToString(point) 
                     var aliveWidgetList = GetChildren(alivesWidget)
-                    for index, widget in aliveWidgetList {
-                        if index >= aliveCount {
-                            widget<UIWidget>.Active = false // Hide the widget if the index is greater than or equal to the alive count
-                        } else {
-                            widget<UIWidget>.Active = true // Show the widget if the index is less than the alive count
+                    for index, teammate in team<Team>.AllTeammates{
+                        if teammate<Player>.PlayerStatus == 1 {
+                            aliveWidgetList[index]<UIWidget>.Active = true
+                        } else if teammate<Player>.PlayerStatus == 2 {
+                            var knockWidget = GetChildren(aliveWidgetList[index])
+                            knockWidget[0]<UIWidget>.Active = true
+                        } else if teammate<Player>.PlayerStatus == 3 {
+                            aliveWidgetList[index]<UIWidget>.Active = false
                         }
                     }
+                    // for index, widget in aliveWidgetList {
+                    //     if index >= aliveCount {
+                    //         widget<UIWidget>.Active = false // Hide the widget if the index is greater than or equal to the alive count
+                    //     } else {
+                    //         widget<UIWidget>.Active = true // Show the widget if the index is less than the alive count
+                    //     }
+                    // }
                 }
             }
         }

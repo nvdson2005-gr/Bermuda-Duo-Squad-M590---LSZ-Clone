@@ -18,6 +18,7 @@ import "../Global/GlobalData/CombatRoundCounter.fcg" as CombatRoundCounter
 import "LevelObject.fcc" as LevelObject
 import "../Global/GlobalManager/GlobalPreparationPhaseManager.fcg" as GlobalPreparationPhaseManager
 import "../Global/GlobalManager/GlobalCombatManager.fcg" as GlobalCombatManager
+import "../Global/GlobalManager/GlobalUIManager.fcg" as GlobalUIManager
 import "Workflow.fcc" as Workflow
 graph PlayerController {
     playerShopHUD entity<BuiltInUI>; // Variable to hold the player's shop HUD
@@ -36,6 +37,12 @@ graph PlayerController {
         if(player == thisEntity) {
             player<PlayerUtils>.RemoveAllDropItems(player);
         }
+    }
+
+    // On Player Knocked Down, update mini scoreboard
+    event OnKnockedDown(attacker entity<Combatable>) {
+        // LogError("<PlayerController.fcg>: Player Knocked Down event triggered")
+        globalEntity<GlobalUIManager>.UpdateMiniScoreboard() // Update the mini scoreboard UI after a player is knocked down to update current alives
     }
 
     // Moved to GlobalCombatManager.fcg

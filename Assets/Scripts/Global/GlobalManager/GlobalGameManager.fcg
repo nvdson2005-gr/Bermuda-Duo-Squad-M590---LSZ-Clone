@@ -154,7 +154,7 @@ graph GlobalGameManager {
         }
         LogInfo("<GlobalGameManager.fcg>: Round ended. Winning team: " + winningTeam) // Debug Info
         globalEntity<TeamData>.AddPointsToTeam(winningTeam, 1) // Add points to the winning team
-        globalEntity<GlobalUIManager>.CreatePlusAnimation(winningTeam)
+        // globalEntity<GlobalUIManager>.CreatePlusAnimation(winningTeam)
         globalEntity<GlobalUIManager>.UpdateMiniScoreboard(); // Update the scoreboard for the winning team
         for index, teammate in winningTeam<Team>.AllTeammates {
             if teammate<Player>.HP > 0 {
@@ -173,7 +173,8 @@ graph GlobalGameManager {
         } else {
             wait globalEntity<GlobalUIManager>.CreateEndRoundHUD(winningTeam); // Create the end round HUD for all players
             start globalEntity<GlobalUIManager>.UpdateFullScoreBoardWinTeam(winningTeam);
-            EndCurrentPhase()
+            // EndCurrentPhase()
+            SwitchPhase(EPhase.EndCombat) // Switch to the end combat phase to allow players to see the full scoreboard
         }
     }
 

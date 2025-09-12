@@ -43,6 +43,7 @@ graph GlobalCombatManager {
         globalEntity<GlobalUIManager>.UpdateMiniScoreboard() // Update the mini scoreboard UI after a player is eliminated to update current alives
     }
 
+
     // On Player Eliminate, update mini scoreboard and full scoreboard
     event OnPlayerEliminate(player entity<Player>, eliminatedPlayer entity<Player>, damageType DamageType) {
         if damageType != DamageType.ElectricZone && damageType != DamageType.Falling && damageType != DamageType.Exit && damageType != DamageType.Disconnect  {
@@ -74,7 +75,7 @@ graph GlobalCombatManager {
     */
     func CheckEndCombatCondition() {
         var teamCount int = 0 
-        var isTeamAliveList List<bool> = List<bool>{false, false, false}
+        var isTeamAliveList List<bool> = List<bool>{false, false, false, false}
         for index, team in GetAllTeams() {
             if(!team<Team>.IsAced) {
                 isTeamAliveList[index] = true
