@@ -173,8 +173,12 @@ graph GlobalUIManager {
                     widget<UIWidgetLabel>.Content = ToString(point) 
                     var aliveWidgetList = GetChildren(alivesWidget)
                     for index, teammate in team<Team>.AllTeammates{
+                        var knockWidget = GetChildren(aliveWidgetList[index])
                         if teammate<Player>.PlayerStatus == 1 {
                             aliveWidgetList[index]<UIWidget>.Active = true
+                            if knockWidget[0]<UIWidget>.Active == true {
+                                knockWidget[0]<UIWidget>.Active = false
+                            }
                         } else if teammate<Player>.PlayerStatus == 2 {
                             var knockWidget = GetChildren(aliveWidgetList[index])
                             knockWidget[0]<UIWidget>.Active = true

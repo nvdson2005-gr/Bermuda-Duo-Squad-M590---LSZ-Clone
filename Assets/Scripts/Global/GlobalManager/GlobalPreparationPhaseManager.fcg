@@ -201,29 +201,29 @@ graph GlobalPreparationPhaseManager {
     @return: the new stage index
     */
     func RandomStage(oldValue int) int{
-        return 0 // Debug only
-        // var attempts = 0
-        // while attempts < 20 {
-        //     // Randomize the new stage index
-        //     var newValue = RandomInt(0, globalEntity<GlobalGameManager>.availableStages)
-        //     var diff bool = true
-        //     for index, oldStage in oldStagesList {
-        //         if newValue == oldStage {
-        //             diff = false // If the new value is the same as any of the old values, set diff to false
-        //             break // Break the loop as we found a match
-        //         }
-        //     }
-        //     if diff {
-        //         return newValue
-        //     }
-        //     // Debug only
-        //     // var newValue = RandomInt(6, 7)
-        //     // // Stop condition: When the new value is the same as the old value
-        //     // return newValue // Return the new value immediately
-        //     // Increase attempts if the new value is the same as the old value
-        //     attempts++
-        // }
-        // return oldValue // After 20 attempts, return the old value if no new value is found
+        return 4 // Debug only
+        var attempts = 0
+        while attempts < 20 {
+            // Randomize the new stage index
+            var newValue = RandomInt(0, globalEntity<GlobalGameManager>.availableStages)
+            var diff bool = true
+            for index, oldStage in oldStagesList {
+                if newValue == oldStage {
+                    diff = false // If the new value is the same as any of the old values, set diff to false
+                    break // Break the loop as we found a match
+                }
+            }
+            if diff {
+                return newValue
+            }
+            // Debug only
+            // var newValue = RandomInt(6, 7)
+            // // Stop condition: When the new value is the same as the old value
+            // return newValue // Return the new value immediately
+            // Increase attempts if the new value is the same as the old value
+            attempts++
+        }
+        return oldValue // After 20 attempts, return the old value if no new value is found
     }
 
     /*
@@ -260,10 +260,10 @@ graph GlobalPreparationPhaseManager {
         GetEquipments(player, EquipmentSlotType.PrimaryWeaponA, out var primaryWeaponA, out var attachmentsA)
         GetEquipments(player, EquipmentSlotType.PrimaryWeaponB, out var primaryWeaponB, out var attachmentsB)
         if (primaryWeaponA != nil) {
-            primaryWeaponA<Weapon>.CurrentAmmo = primaryWeaponA<Weapon>.AmmoMagSize
+            primaryWeaponA<Weapon>.CurrentAmmo = 100
         }
         if (primaryWeaponB != nil) {
-            primaryWeaponB<Weapon>.CurrentAmmo = primaryWeaponB<Weapon>.AmmoMagSize
+            primaryWeaponB<Weapon>.CurrentAmmo = 100
         }
     }
 }

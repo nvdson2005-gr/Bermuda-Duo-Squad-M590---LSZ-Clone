@@ -431,7 +431,7 @@
                     "valueTag": "unlockedValue"
                   },
                   "propsData": {
-                    "activeSelf": true,
+                    "activeSelf": false,
                     "transform": {
                       "rotate": 0,
                       "anchorMin": {
@@ -451,8 +451,8 @@
                         "y": 0
                       },
                       "sizeDelta": {
-                        "x": 30,
-                        "y": 10
+                        "x": 36,
+                        "y": 6
                       }
                     },
                     "alpha": 100,
@@ -470,7 +470,7 @@
                         "x": false,
                         "y": false
                       },
-                      "fillType": 0,
+                      "fillType": 1,
                       "slicedBorder": {
                         "left": 0,
                         "right": 0,
@@ -664,8 +664,8 @@
                         "y": 0
                       },
                       "sizeDelta": {
-                        "x": 30,
-                        "y": 10
+                        "x": 36,
+                        "y": 6
                       }
                     },
                     "alpha": 100,
@@ -683,7 +683,7 @@
                         "x": false,
                         "y": false
                       },
-                      "fillType": 0,
+                      "fillType": 1,
                       "slicedBorder": {
                         "left": 0,
                         "right": 0,
@@ -1416,8 +1416,8 @@
                         "y": 0
                       },
                       "sizeDelta": {
-                        "x": 30,
-                        "y": 10
+                        "x": 36,
+                        "y": 6
                       }
                     },
                     "alpha": 100,
@@ -1435,7 +1435,7 @@
                         "x": false,
                         "y": false
                       },
-                      "fillType": 0,
+                      "fillType": 1,
                       "slicedBorder": {
                         "left": 0,
                         "right": 0,
@@ -1629,8 +1629,8 @@
                         "y": 0
                       },
                       "sizeDelta": {
-                        "x": 30,
-                        "y": 10
+                        "x": 36,
+                        "y": 6
                       }
                     },
                     "alpha": 100,
@@ -1648,7 +1648,7 @@
                         "x": false,
                         "y": false
                       },
-                      "fillType": 0,
+                      "fillType": 1,
                       "slicedBorder": {
                         "left": 0,
                         "right": 0,
@@ -2381,8 +2381,8 @@
                         "y": 0
                       },
                       "sizeDelta": {
-                        "x": 30,
-                        "y": 10
+                        "x": 36,
+                        "y": 6
                       }
                     },
                     "alpha": 100,
@@ -2400,7 +2400,7 @@
                         "x": false,
                         "y": false
                       },
-                      "fillType": 0,
+                      "fillType": 1,
                       "slicedBorder": {
                         "left": 0,
                         "right": 0,
@@ -2594,8 +2594,8 @@
                         "y": 0
                       },
                       "sizeDelta": {
-                        "x": 30,
-                        "y": 10
+                        "x": 36,
+                        "y": 6
                       }
                     },
                     "alpha": 100,
@@ -2613,7 +2613,7 @@
                         "x": false,
                         "y": false
                       },
-                      "fillType": 0,
+                      "fillType": 1,
                       "slicedBorder": {
                         "left": 0,
                         "right": 0,
@@ -3346,8 +3346,8 @@
                         "y": 0
                       },
                       "sizeDelta": {
-                        "x": 30,
-                        "y": 10
+                        "x": 36,
+                        "y": 6
                       }
                     },
                     "alpha": 100,
@@ -3365,7 +3365,7 @@
                         "x": false,
                         "y": false
                       },
-                      "fillType": 0,
+                      "fillType": 1,
                       "slicedBorder": {
                         "left": 0,
                         "right": 0,
@@ -3559,8 +3559,8 @@
                         "y": 0
                       },
                       "sizeDelta": {
-                        "x": 30,
-                        "y": 10
+                        "x": 36,
+                        "y": 6
                       }
                     },
                     "alpha": 100,
@@ -3578,7 +3578,7 @@
                         "x": false,
                         "y": false
                       },
-                      "fillType": 0,
+                      "fillType": 1,
                       "slicedBorder": {
                         "left": 0,
                         "right": 0,

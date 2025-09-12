@@ -469,7 +469,7 @@
               },
               "anchoredPosition": {
                 "x": 0,
-                "y": 0
+                "y": -5
               },
               "sizeDelta": {
                 "x": 100,
@@ -4511,7 +4511,7 @@
               },
               "anchoredPosition": {
                 "x": 0,
-                "y": 223
+                "y": 215
               },
               "sizeDelta": {
                 "x": 1110,
@@ -4666,7 +4666,7 @@
                   },
                   "anchoredPosition": {
                     "x": 300,
-                    "y": -4
+                    "y": -10
                   },
                   "sizeDelta": {
                     "x": 48,
@@ -4841,7 +4841,7 @@
               },
               "anchoredPosition": {
                 "x": 0,
-                "y": 56
+                "y": 60
               },
               "sizeDelta": {
                 "x": 1110,
@@ -5536,7 +5536,10 @@
         "selfValue": true,
         "valueTag": "activeValue"
       },
-      "unlockedValue": null,
+      "unlockedValue": {
+        "selfValue": true,
+        "valueTag": "unlockedValue"
+      },
       "editorLockValue": false,
       "editorVisibleValue": true,
       "propsData": {
