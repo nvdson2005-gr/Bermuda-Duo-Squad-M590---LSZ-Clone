@@ -89,6 +89,14 @@
         "type": "GFileRefer"
       },
       "fileType": "ugcscript"
+    },
+    {
+      "fileId": "5zzfh6rkw4-mfnob9k4-ie9v8fne0e",
+      "filePath": "Assets\\Scripts\\Player\\PlayerRandomEventHandler.fcg",
+      "_tag": {
+        "type": "GFileRefer"
+      },
+      "fileType": "ugcscript"
     }
   ],
   "avatarInfo": null,

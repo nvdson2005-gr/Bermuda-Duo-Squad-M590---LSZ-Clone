@@ -1,0 +1,119 @@
+import "StdLibrary.fcc" as StdLib
+import "EditorGenLib.fcc" as EditorLib
+import "Avatar.fcc" as Avatar
+import "List.fcc" as List
+import "Math.fcc" as Math
+
+graph GlobalGunCombo {
+    availableOptions int = 4 // Number of available options for the gun combo
+    // gunNames Map<ItemIDType, string> = Map<ItemIDType, string>{}
+    gunImgs Map<ItemIDType, SpriteID> = Map<ItemIDType, SpriteID>{}
+    gunCombos List<List<ItemIDType>> = List<List<ItemIDType>>{}
+    
+    event OnAwake() {
+        // Initialize gun names
+        // gunNames[EResItem.M10143 as ItemIDType] = "M1014-III"
+        // gunNames[EResItem.M1887 as ItemIDType] = "M1887"
+        // gunNames[EResItem.M82B as ItemIDType] = "M82B"
+        // gunNames[EResItem.SCAR3 as ItemIDType] = "SCAR-III"
+        // gunNames[EResItem.GROZAX as ItemIDType] = "GROZA-X"
+        // gunNames[EResItem.MP53 as ItemIDType] = "MP5-III"
+        // gunNames[EResItem.SVDY as ItemIDType] = "SVD-Y"
+        // gunNames[EResItem.M603 as ItemIDType] = "M60-III"
+        // gunNames[EResItem.MP40 as ItemIDType] = "MP40"
+        // gunNames[EResItem.WOODPECKER as ItemIDType] = "WOODPECKER"
+        // gunNames[EResItem.VSS as ItemIDType] = "VSS"
+        // gunNames[EResItem.MAC10 as ItemIDType] = "MAC-10"
+        // gunNames[EResItem.SKS as ItemIDType] = "SKS"
+        // gunNames[EResItem.KATANA as ItemIDType] = "KATANA"
+        // gunNames[EResItem.JUMPINGSHOES as ItemIDType] = "JUMPING SHOES"
+        // gunNames[EResItem.AWMY as ItemIDType] = "AWM-Y"
+        // gunNames[EResItem.M590 as ItemIDType] = "M590"
+        // gunNames[EResItem.KAR98K as ItemIDType] = "KAR98K"
+        // gunNames[EResItem.AC80 as ItemIDType] = "AC-80"
+        // gunNames[EResItem.AK47 as ItemIDType] = "AK-47"
+        // gunNames[EResItem.M249 as ItemIDType] = "M249"
+        // gunNames[EResItem.FAMAS3 as ItemIDType] = "FAMAS-III"
+
+        // Initialize gun images
+        gunImgs[EResItem.M10143 as ItemIDType] = EResSprite.M10143
+        gunImgs[EResItem.M1887 as ItemIDType] = EResSprite.M1887
+        gunImgs[EResItem.M82B as ItemIDType] = EResSprite.M82B
+        gunImgs[EResItem.SCAR3 as ItemIDType] = EResSprite.SCAR3
+        gunImgs[EResItem.GROZAX as ItemIDType] = EResSprite.GROZAX
+        gunImgs[EResItem.MP53 as ItemIDType] = EResSprite.MP53
+        gunImgs[EResItem.SVDY as ItemIDType] = EResSprite.SVDY
+        gunImgs[EResItem.M603 as ItemIDType] = EResSprite.M603
+        gunImgs[EResItem.MP40 as ItemIDType] = EResSprite.MP40
+        gunImgs[EResItem.WOODPECKER as ItemIDType] = EResSprite.WOODPECKER
+        gunImgs[EResItem.VSS as ItemIDType] = EResSprite.VSS
+        gunImgs[EResItem.MAC10 as ItemIDType] = EResSprite.MAC10
+        gunImgs[EResItem.SKS as ItemIDType] = EResSprite.SKS
+        gunImgs[EResItem.KATANA as ItemIDType] = EResSprite.KATANA
+        gunImgs[EResItem.JUMPINGSHOES as ItemIDType] = EResSprite.JUMPINGSHOES
+        gunImgs[EResItem.AWMY as ItemIDType] = EResSprite.AWMY
+        gunImgs[EResItem.M590 as ItemIDType] = EResSprite.M590
+        gunImgs[EResItem.KAR98K as ItemIDType] = EResSprite.KAR98K
+        gunImgs[EResItem.AC80 as ItemIDType] = EResSprite.AC80
+        gunImgs[EResItem.AK47 as ItemIDType] = EResSprite.AK47
+        gunImgs[EResItem.M249 as ItemIDType] = EResSprite.M249
+        gunImgs[EResItem.FAMAS3 as ItemIDType] = EResSprite.FAMAS3
+
+        // Initialize gun combos
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.WOODPECKER as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.M82B as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.M590 as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.GROZAX as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.SVDY as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.AC80 as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.VSS as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.SKS as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.JUMPINGSHOES as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.AWMY as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.AK47 as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.M249 as ItemIDType})
+        Append(gunCombos, List<ItemIDType>{EResItem.M590 as ItemIDType, EResItem.FAMAS3 as ItemIDType})
+    }
+
+    /*
+    Get the gun combo at a specific index.
+    @param index The index of the gun combo
+    @return List<ItemIDType>: The gun combo at the specific index
+    */
+    func GetGunComboAtIndex(index int) List<ItemIDType> {
+        return gunCombos[index]
+    }
+
+    /*
+    Get the name of a gun.
+    @param itemID The item ID of the gun
+    @return string: The name of the gun
+    */
+    // func GetGunName(itemID ItemIDType) string {
+    //     return gunNames[itemID]
+    // }
+
+    /*
+    Get the image of a gun.
+    @param itemID The item ID of the gun
+    @return SpriteID: The image of the gun
+    */
+    func GetGunImg(itemID ItemIDType) SpriteID {
+        return gunImgs[itemID]
+    }
+
+    /*
+    Get a random gun combo. The number of available options is defined in the availableOptions variable.
+    @return List<List<ItemIDType>>: The random gun combo
+    */
+    func GetRandomGunCombos() List<List<ItemIDType>> {
+        var randomCombos = List<List<ItemIDType>>{}
+        while List.Length(randomCombos) < availableOptions {
+            var randomCombo = gunCombos[Math.RandomInt(0, List.Length(gunCombos))]
+            if !List.Contain(randomCombos, randomCombo) {
+                Append(randomCombos, randomCombo)
+            }
+        }
+        return randomCombos
+    }
+}

@@ -86,8 +86,17 @@
           },
           "editorLockValue": false,
           "editorVisibleValue": true,
-          "gameDuration": 10,
-          "ecaScripts": [],
+          "gameDuration": 20,
+          "ecaScripts": [
+            {
+              "fileId": "hpzmb3xb8pp-mfklo00c-0v7profgka9m",
+              "filePath": "Assets\\Scripts\\Phases\\VotePhaseManager.fcg",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "ugcscript"
+            }
+          ],
           "ecaProps": {
             "Phase": {},
             "Entity": {}
@@ -101,11 +110,48 @@
             "type": "ff.PhaseEntity1",
             "resourceId": "Phase"
           },
-          "_entityId": "dZopUKF6",
+          "_entityId": "uUTIzQdp",
           "children": [],
           "prefabVariant": null,
           "activeValue": null,
           "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "gameDuration": 8,
+          "ecaScripts": [
+            {
+              "fileId": "uu0xfccf4s-mfno990d-a2o0xz2ql27",
+              "filePath": "Assets\\Scripts\\Phases\\RandomEventPhaseManager.fcg",
+              "_tag": {
+                "type": "GFileRefer"
+              },
+              "fileType": "ugcscript"
+            }
+          ],
+          "ecaProps": {
+            "Phase": {},
+            "Entity": {}
+          },
+          "modId": 18,
+          "_entityName": "RandomEventInit",
+          "phaseIndex": 1029
+        },
+        {
+          "_tag": {
+            "type": "ff.PhaseEntity1",
+            "resourceId": "Phase"
+          },
+          "_entityId": "dZopUKF6",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
           "gameDuration": 85,
@@ -126,8 +172,14 @@
           "_entityId": "4ZgDIWrZ",
           "children": [],
           "prefabVariant": null,
-          "activeValue": null,
-          "unlockedValue": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
           "gameDuration": 80,
@@ -239,28 +291,31 @@
       "type": "ff.PhaseEntity1",
       "resourceId": "Phase"
     },
-    "_entityId": "k9ZGiCvw",
+    "_entityId": "uUTIzQdp",
     "children": [],
     "prefabVariant": null,
-    "activeValue": {
-      "selfValue": true,
-      "valueTag": "activeValue"
-    },
-    "unlockedValue": {
-      "selfValue": true,
-      "valueTag": "unlockedValue"
-    },
+    "activeValue": null,
+    "unlockedValue": null,
     "editorLockValue": false,
     "editorVisibleValue": true,
-    "gameDuration": 10,
-    "ecaScripts": [],
+    "gameDuration": 8,
+    "ecaScripts": [
+      {
+        "fileId": "uu0xfccf4s-mfno990d-a2o0xz2ql27",
+        "filePath": "Assets\\Scripts\\Phases\\RandomEventPhaseManager.fcg",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "ugcscript"
+      }
+    ],
     "ecaProps": {
       "Phase": {},
       "Entity": {}
     },
     "modId": 18,
-    "_entityName": "EndCombat",
-    "phaseIndex": 5474
+    "_entityName": "RandomEventInit",
+    "phaseIndex": 1029
   },
   "roundCount": 4,
   "discriminator": "ISceneLike",

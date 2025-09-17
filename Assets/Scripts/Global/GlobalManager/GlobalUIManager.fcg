@@ -34,9 +34,13 @@ graph GlobalUIManager {
     miniScoreBoardUIdict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their mini scoreboard UIs
     tooltipUIDict Map<entity<Player>, entity<BuiltInUI>> // Map to associate players with their tooltip UIs
     roundInfoUIDitct Map<entity<Player>, entity<UISimpleRoundStartBanner>> // Map to associate players with their round info UIs
-
+    voteUIDict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their vote UIs
+    eventUIDict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their event UIs
+    roundInfoDuration int = 3000 // Duration of the round info UI
+    
     // Init when the game starts
     event OnAwake() {
+        voteUIDict = Map<entity<Player>, entity<CustomUI>>{} // Initialize the map of players' vote UIs at the start of the game
         miniScoreBoardUIdict = Map<entity<Player>, entity<CustomUI>>{} // Initialize the map of players' mini scoreboards at the start of the game
         fullScoreBoardUIDict = Map<entity<Player>, entity<CustomUI>>{} // Initialize the map of players' full scoreboards at the start of the game
         tooltipUIDict = Map<entity<Player>, entity<UISimpleRoundStartBanner>>{} // Initialize the map of players' tooltip UIs at the start of the game
@@ -77,6 +81,75 @@ graph GlobalUIManager {
         }
     }
 
+    // ==================================== EVENT UI ====================================
+    /*
+    Register the player's event UI.
+    @param player The player entity to register the UI for
+    @return bool: True if success, otherwise false
+    */
+    func RegisterEventUI(player entity<Player>) bool {
+        CreateCustomUI(out var eventUI, player, EResUI.EventUI);
+        if (eventUIDict == nil) { 
+            eventUIDict = Map<entity<Player>, entity<CustomUI>>{} // Initialize the map if it is null
+        }
+        if (!Map.ContainKey(eventUIDict, player)) {
+            eventUIDict[player] = eventUI // Associate the player with their event UI
+            eventUIDict[player]<CustomUI>.IsVisible = false // Set the event UI to be invisible initially
+            return true
+        } else {
+            LogWarning("<GlobalUIManager.fcg>: Event UI already registered for player: " + player<Entity>.Name) // Warning Info
+            return false // Return false to indicate the operation was unsuccessful
+        }
+        LogError("<GlobalUIManager.fcg>: Event UI not registered for player: " + player<Entity>.Name) // Error Info
+        return false
+    }
+
+    /*
+    Unregister the player's event UI.
+    @param player The player entity to unregister the UI for
+    @return bool: True if success, otherwise false
+    */
+    func UnregisterEventUI(player entity<Player>) bool {
+        if (Map.ContainKey(eventUIDict, player)) {
+            DestroyCustomUI(eventUIDict[player]) // Destroy the event UI
+            Map.Remove(eventUIDict, player) // Remove the event UI from the map
+            return true
+        }
+        LogError("<GlobalUIManager.fcg>: Event UI not unregistered for player: " + player<Entity>.Name) // Error Info
+        return false
+    }
+
+    /*
+    Set the visibility of the player's event UI.
+    @param player The player entity to set the visibility for
+    @param isVisible The visibility state to set
+    */
+    func SetVisibilityEventUI(player entity<Player>, isVisible bool) {
+        if (Map.ContainKey(eventUIDict, player)) {
+            eventUIDict[player]<CustomUI>.IsVisible = isVisible
+        }
+    }
+
+    /*
+    Update the player's event UI.
+    @param player The player entity to update the UI for
+    @param eventDesc The description of the event
+    @param eventLogo The logo of the event
+    */
+    func UpdateEventUI(player entity<Player>, eventDesc string, eventLogo SpriteID) {
+        if (Map.ContainKey(eventUIDict, player)) {
+            var eventUI = eventUIDict[player]
+            eventUI<CustomUI>.IsVisible = true
+            var eventDescWidget entity<UIWidget>
+            var eventLogoWidget entity<UIWidget>
+            eventDescWidget = GetWidgetFromCustomUI(player, eventUI, EResUIEventUI.EVENT_CONTENT as CustomUIWidgetID)
+            eventLogoWidget = GetWidgetFromCustomUI(player, eventUI, EResUIEventUI.EVENT_ICON as CustomUIWidgetID)
+            eventDescWidget<UIWidgetLabel>.Content = eventDesc
+            eventLogoWidget<UIWidgetImage>.SpriteName = eventLogo
+        }
+    }
+
+    // ==================================== MINI SCOREBOARD UI ====================================
     /*
     Registers the mini scoreboard UI for a player.
     @param player: The player entity to register the mini scoreboard for
@@ -180,7 +253,6 @@ graph GlobalUIManager {
                                 knockWidget[0]<UIWidget>.Active = false
                             }
                         } else if teammate<Player>.PlayerStatus == 2 {
-                            var knockWidget = GetChildren(aliveWidgetList[index])
                             knockWidget[0]<UIWidget>.Active = true
                         } else if teammate<Player>.PlayerStatus == 3 {
                             aliveWidgetList[index]<UIWidget>.Active = false
@@ -242,6 +314,7 @@ graph GlobalUIManager {
         }
     }
 
+    // ==================================== FULL SCOREBOARD UI ====================================
     /*
     Sets the visibility of the full scoreboard for a player.
     @param player: The player entity to set the visibility for
@@ -394,6 +467,7 @@ graph GlobalUIManager {
         }
     }
 
+    // ==================================== ROUND INFO UI ====================================
     /*
     Creates the round information HUD for a player.
     @param player: The player entity to create the HUD for
@@ -408,10 +482,11 @@ graph GlobalUIManager {
         roundInfoUIDitct[player]<UISimpleRoundStartBanner>.RoundNumKey = LocString{"ROUND_INFO_2", List<string>{ToString(currentCount), currentStageName}}
         globalEntity<TargetAndCombatTimer>.UpdateRoundStageInfo(player, currentCount, currentStageName)
         roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = true // Set the round info UI to be visible
-    WaitForMillisecond(3000)
+    WaitForMillisecond(roundInfoDuration)
         roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = false // Hide the round info UI after a short delay
     }
 
+    // ==================================== END ROUND INFO UI ====================================
     /*
     Creates the end round HUD for a winning team.
     @param winningTeam: The winning team entity
@@ -503,6 +578,7 @@ graph GlobalUIManager {
         createdUI2<UIMultiTeamResultPanel>.Scores3 = dmgList
     }
 
+    // ==================================== TOOLTIP UI ====================================
     /*
     Registers a tooltip UI for a player.
     @param player: The player entity to register the tooltip UI for
@@ -562,6 +638,7 @@ graph GlobalUIManager {
         }
     }
 
+    // ==================================== UNREGISTER ALL UIS ====================================
     /* Unregister player from all registered UIs
     @param player The player entity to unregister
     @return void
@@ -585,8 +662,13 @@ graph GlobalUIManager {
             DestroyCustomUI(miniScoreBoardUIdict[player]) // Destroy the mini scoreboard UI
             Map.Remove(miniScoreBoardUIdict, player) // Remove the mini scoreboard UI from the dictionary after destroying it
         }
+        if (Map.ContainKey(voteUIDict, player)) {
+            DestroyCustomUI(voteUIDict[player]) // Destroy the vote UI
+            Map.Remove(voteUIDict, player) // Remove the vote UI from the dictionary after destroying it
+        }
     }
 
+    // ==================================== 5 SECONDS COUNT DOWN HUD ====================================
     /* Create a 5 seconds countdown HUD for the player
     This function creates a countdown HUD that is displayed for 5 seconds before the game starts.
     @param player The player entity to create the HUD for
@@ -614,6 +696,109 @@ graph GlobalUIManager {
         NotifyPlaySoundV2(player, EResSound.FIVE_SEC_COUNT_DOWN as AudioID, 1.0)
         WaitForMillisecond(5000)
         DestroyBuiltInUI(createdUI) // Destroy the countdown HUD after 5 seconds
+    }
+
+    // ==================================== VOTE UI ====================================
+    /*
+    Register the player's vote UI.
+    @param player The player entity to register the UI for
+    @return bool: True if success, otherwise false
+    */
+    func RegisterVoteUI(player entity<Player>) bool {
+        if (voteUIDict == nil) {
+            voteUIDict = Map<entity<Player>, entity<CustomUI>>{} // Initialize the map if it is null
+        }
+        if (!Map.ContainKey(voteUIDict, player)) {
+            CreateCustomUI(out var voteUI, player, EResUI.GunVote) // Create a new vote UI for the player
+            voteUIDict[player] = voteUI // Associate the player with their vote UI
+            voteUIDict[player]<CustomUI>.IsVisible = false // Set the vote UI to be invisible initially
+            return true // Return true to indicate the operation was successful
+        } else {
+            LogWarning("<GlobalUIManager.fcg>: Vote UI already registered for player: " + player<Entity>.Name) // Warning Info
+            return false // Return false to indicate the operation was unsuccessful
+        }
+        LogError("<GlobalUIManager.fcg>: Vote UI not registered for player: " + player<Entity>.Name) // Error Info
+        return false
+    }
+
+    /*
+    Unregister the player's vote UI.
+    @param player The player entity to unregister the UI for
+    @return bool: True if success, otherwise false
+    */
+    func UnregisterVoteUI(player entity<Player>) bool {
+        if (Map.ContainKey(voteUIDict, player)) {
+            DestroyCustomUI(voteUIDict[player]) // Destroy the vote UI
+            Map.Remove(voteUIDict, player) // Remove the vote UI from the dictionary after destroying it
+            return true // Return true to indicate the operation was successful
+        } else {
+            LogWarning("<GlobalUIManager.fcg>: Vote UI not registered for player: " + player<Entity>.Name) // Warning Info
+            return false // Return false to indicate the operation was unsuccessful
+        }
+    }
+
+    /*
+    Set the visibility of the vote UI for a player.
+    @param player The player entity to set the visibility for
+    @param isVisible The visibility state to set
+    */
+    func SetVisibilityVoteUI(player entity<Player>, isVisible bool) {
+        if (Map.ContainKey(voteUIDict, player)) {
+            voteUIDict[player]<CustomUI>.IsVisible = isVisible // Set the visibility of the vote UI
+        } else {
+            LogWarning("<GlobalUIManager.fcg>: Vote UI not registered for player: " + player<Entity>.Name) // Warning Info
+        }
+    }
+
+
+    /*
+    Update the vote UI for a player.
+    @param player The player entity to update the UI for
+    @param randomGunNames The list of random gun names
+    @param randomGunImgs The list of random gun images
+    */
+    func UpdateVoteUI(player entity<Player>, randomGunImgs List<List<SpriteID>>) {
+        var counter int = 0 
+        if (Map.ContainKey(voteUIDict, player)) {
+            var voteUI = voteUIDict[player]
+            var gun11imgWidget = GetWidgetFromCustomUI(player, voteUI, EResUIGunVote.gun1_1)
+            var gun21imgWidget = GetWidgetFromCustomUI(player, voteUI, EResUIGunVote.gun2_1)
+            var gun12imgWidget = GetWidgetFromCustomUI(player, voteUI, EResUIGunVote.gun1_2)
+            var gun22imgWidget = GetWidgetFromCustomUI(player, voteUI, EResUIGunVote.gun2_2)
+            var gun13imgWidget = GetWidgetFromCustomUI(player, voteUI, EResUIGunVote.gun1_3)
+            var gun23imgWidget = GetWidgetFromCustomUI(player, voteUI, EResUIGunVote.gun2_3)
+            var gun14imgWidget = GetWidgetFromCustomUI(player, voteUI, EResUIGunVote.gun1_4)
+            var gun24imgWidget = GetWidgetFromCustomUI(player, voteUI, EResUIGunVote.gun2_4)
+            while counter < List.Length(randomGunImgs) {
+                if counter == 0 {
+                    gun11imgWidget<UIWidgetImage>.SpriteName = randomGunImgs[counter][0] as SpriteID
+                    gun21imgWidget<UIWidgetImage>.SpriteName = randomGunImgs[counter][1] as SpriteID
+                } else if counter == 1 {
+                    gun12imgWidget<UIWidgetImage>.SpriteName = randomGunImgs[counter][0] as SpriteID
+                    gun22imgWidget<UIWidgetImage>.SpriteName = randomGunImgs[counter][1] as SpriteID
+                } else if counter == 2 {
+                    gun13imgWidget<UIWidgetImage>.SpriteName = randomGunImgs[counter][0] as SpriteID
+                    gun23imgWidget<UIWidgetImage>.SpriteName = randomGunImgs[counter][1] as SpriteID
+                } else if counter == 3 {
+                    gun14imgWidget<UIWidgetImage>.SpriteName = randomGunImgs[counter][0] as SpriteID
+                    gun24imgWidget<UIWidgetImage>.SpriteName = randomGunImgs[counter][1] as SpriteID
+                }
+                counter = counter + 1
+            }
+            voteUI<CustomUI>.IsVisible = true // Set the vote UI to be visible
+        }
+    }
+
+    /*
+    Update the vote countdown for a player.
+    @param player The player entity to update the countdown for
+    @param countdown The countdown value to update
+    */
+    func UpdateVoteCountdown(player entity<Player>, countdown int) {
+        if (Map.ContainKey(voteUIDict, player)) {
+            var timerWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.VoteTimer)
+            timerWidget<UIWidgetLabel>.Content = ToString(countdown) + "s"
+        }
     }
 }
 

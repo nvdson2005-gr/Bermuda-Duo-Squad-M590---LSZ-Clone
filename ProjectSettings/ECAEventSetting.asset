@@ -65,14 +65,37 @@
       "apiTargetV2": "both",
       "version": 45,
       "key": "signal_86426040"
+    },
+    "signal_93346066": {
+      "name": "OnChoosingWeapon",
+      "eventType": 0,
+      "enitityType": "Component",
+      "typeID": 100004,
+      "props": [
+        {
+          "name": "player",
+          "value": "Player",
+          "key": 1
+        },
+        {
+          "name": "comboIndex",
+          "value": "Int",
+          "key": 2
+        }
+      ],
+      "propCount": 2,
+      "apiTargetV2": "both",
+      "version": 45,
+      "key": "signal_93346066"
     }
   },
   "customName": {
     "wutdehel": "signal_68600453",
     "NoTeamWinException": "signal_76192606",
     "CombatEnd": "signal_86504563",
-    "PlaySoundInClient": "signal_86426040"
+    "PlaySoundInClient": "signal_86426040",
+    "OnChoosingWeapon": "signal_93346066"
   },
   "children": []
 }
-//"{FE:{"v":"1.14.3847898","c":{"FF":5001},"s":100}
+//"{FE:{"v":"1.14.3883376","c":{"FF":5001},"s":100}

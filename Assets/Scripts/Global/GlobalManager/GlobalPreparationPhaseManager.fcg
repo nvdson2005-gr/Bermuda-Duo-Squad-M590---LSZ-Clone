@@ -24,6 +24,7 @@ import "SafeZone.fcc" as SafeZone
 import "../GlobalManager/GlobalSoundManager.fcg" as GlobalSoundManager
 import "Convert.fcc" as Convert
 import "MiniMap.fcc" as MiniMap
+import "../../Phases/VotePhaseManager.fcg" as VotePhaseManager
 graph GlobalPreparationPhaseManager {
     // Script variable storing the old stage index
     oldStageIndex int
@@ -35,7 +36,6 @@ graph GlobalPreparationPhaseManager {
             Clear(oldStagesList) // Clear the list if it has more than 6 stages
         }
         if phase<Phase>.Index == EPhase.Vote{
-
             // Before combat, get a random sage index
             var randomStageIndex = RandomStage(oldStageIndex)
             LogWarning("Available Stages: " + globalEntity<GlobalGameManager>.availableStages + " - Chosen stage index " + randomStageIndex); // Debug Info
@@ -43,13 +43,11 @@ graph GlobalPreparationPhaseManager {
             // Memorize the old stage index 
             Append(oldStagesList, randomStageIndex)
             if globalEntity<CombatRoundCounter>.GetCount() == 0 {
-                globalEntity<GlobalGameManager>.prepPhaseDuration = 20 // Set preparation phase duration faster in the first round
                 globalEntity<GlobalSafeZones>.SetStartShrinkTime(globalEntity<GlobalGameManager>.prepPhaseDuration)
             } else {
-                globalEntity<GlobalGameManager>.prepPhaseDuration = 10 // Set preparation phase duration to default for subsequent rounds
+                // globalEntity<GlobalGameManager>.prepPhaseDuration = 15 // UPDATED: Set preparation phase duration to default for subsequent rounds
                 globalEntity<GlobalSafeZones>.SetStartShrinkTime(globalEntity<GlobalGameManager>.prepPhaseDuration)
             }
-
             // Initialize data before combat
             wait InitDataBeforeCombat(globalEntity<GlobalGameManager>.prepPhaseDuration * 1000, oldStagesList[List.Length(oldStagesList) - 1]);
         }
@@ -79,8 +77,6 @@ graph GlobalPreparationPhaseManager {
 
         // Initialize player states
         for index, player in GetAllPlayers() {
-            if globalEntity<CombatRoundCounter>.GetCount() == 1 {
-            }   
             start SetGravityDelay(player, 500) // Set the player's gravity to zero for a short delay
             globalEntity<GlobalUIManager>.SetVisibilityFullScoreBoard(player, false); // Update the full scoreboard UI
 
@@ -88,8 +84,7 @@ graph GlobalPreparationPhaseManager {
             ResetSkill(player); // Reset the player's skills
 
             SetInvincibilityStatus(player, true); // Set the invincibility status for the player
-            start globalEntity<GlobalUIManager>.CreateRoundInfoHUD(player) // Create round info HUD
-            start globalEntity<GlobalUIManager>.CreateDelay5sCountDownHUD(player, duration - 5000) // Create delay countdown HUD
+            // start globalEntity<GlobalUIManager>.CreateDelay5sCountDownHUD(player, duration - 5000) // Create delay countdown HUD
         }
 
         // Update mini score board to init current alives, and team points
@@ -110,22 +105,25 @@ graph GlobalPreparationPhaseManager {
             RemoveAt(spawnPositions, randomIndex) // Remove the used spawn position from the list
         }
 
+        LogInfo("<GlobalPreparationPhaseManager.fcg>: Waiting for " + duration + " milliseconds")
         WaitForMillisecond(duration) // Wait for the specified duration
 
         ////////////////////////
-        SwitchPhase(EPhase.Border) // Switch to combat phase
+        // SwitchPhase(EPhase.Border) // Switch to combat phase
+        SwitchPhase(EPhase.RandomEventInit)
         // EndCurrentPhase()
         //////////////////////////
 
         // When the round starts, reset player states
         for index, player in GetAllPlayers() {
             player<Player>.EP = 200; // Set player's initial EP to 200 every round
-            start globalEntity<GlobalUIManager>.EnableTooltipForPlayer(player)
+            // start globalEntity<GlobalUIManager>.EnableTooltipForPlayer(player)
             SetInvincibilityStatus(player, false); // Disable invincibility for all players
             SetInvincibility(player, 5); // 5 secs of invincibility
+            start globalEntity<GlobalUIManager>.CreateRoundInfoHUD(player) // Create round info HUD
         }
 
-        globalEntity<SpawnPoints>.SetSpawnPointsActiveStatusForRound(randomStageIndex, false); // Disable all spawn points
+        // globalEntity<SpawnPoints>.SetSpawnPointsActiveStatusForRound(randomStageIndex, false); // Disable all spawn points (MOVED TO RandomEventPhaseManager.fcg)
     }
 
     /* Set Invincibility Status for a player (NO DURATION, TO SET INVINCIBLE WITH DURATION USE SetInvincibility() from Player.fcc library)
@@ -145,13 +143,13 @@ graph GlobalPreparationPhaseManager {
 
     // Add a M590 and a random rifle for each player
     func InitPlayerWeapons() {
-        var rifleList = List<EResItem>{EResItem.AK47, EResItem.SCAR, EResItem.FAMAS, EResItem.XM8, EResItem.GROZAX, EResItem.AUG, EResItem.M4A1}
-        var randomRifle = rifleList[RandomInt(0, List.Length(rifleList))]
-        var m590 = EResItem.M590
+        // var rifleList = List<EResItem>{EResItem.AK47, EResItem.SCAR, EResItem.FAMAS, EResItem.XM8, EResItem.GROZAX, EResItem.AUG, EResItem.M4A1}
+        // var randomRifle = rifleList[RandomInt(0, List.Length(rifleList))]
+        // var m590 = EResItem.M590
         for index, player in GetAllPlayers(){
             // Add a list of items to player. Before add, delete all existing items
-            player<PlayerController>.AddItemToPlayer(player, EResItem.VestLv3, 1)
-            player<PlayerController>.AddItemToPlayer(player, EResItem.HelmetLv3, 1)
+            // player<PlayerController>.AddItemToPlayer(player, EResItem.VestLv3, 1)
+            // player<PlayerController>.AddItemToPlayer(player, EResItem.HelmetLv3, 1)
             if GetItemCount(player, EResItem.GlooWall as ItemIDType) != 0 && globalEntity<CombatRoundCounter>.GetCount() != 0 {
                 DestroyItem(player, EResItem.GlooWall as ItemIDType, GetItemCount(player, EResItem.GlooWall as ItemIDType)) // Destroy the item when added
             }
@@ -182,8 +180,8 @@ graph GlobalPreparationPhaseManager {
             }
             AddItem(player, EResItem.GlooMelter as ItemIDType, 2, out var newGlooMelter) // Add the item to the player
             if(globalEntity<CombatRoundCounter>.GetCount() == 1) {
-                player<PlayerController>.AddItemToPlayer(player, m590, 1) // Add M590 to the player
-                player<PlayerController>.AddItemToPlayer(player, randomRifle, 1) // Add random rifle to the player
+                // player<PlayerController>.AddItemToPlayer(player, m590, 1) // Add M590 to the player
+                // player<PlayerController>.AddItemToPlayer(player, randomRifle, 1) // Add random rifle to the player
                 player<PlayerController>.AddItemToPlayer(player, EResItem.Muzzle, 1)
                 player<PlayerController>.AddItemToPlayer(player, EResItem.Mag, 1)
                 player<PlayerController>.AddItemToPlayer(player, EResItem.Foregrip, 1)

@@ -1,0 +1,58 @@
+/*
+Vote Phase Manager
+Handles all the neccessary actions in Vote phase, including showing the vote UI and handling the vote results.
+This scripts is embedded in the Vote phase entity (inside Workflow module)
+*/
+import "StdLibrary.fcc" as StdLib
+import "EditorGenLib.fcc" as EditorLib
+import "../Global/GlobalData/GlobalGunCombo.fcg" as GlobalGunCombo
+import "../Global/GlobalManager/GlobalUIManager.fcg" as GlobalUIManager
+import "../Global/GlobalManager/GlobalGameManager.fcg" as GlobalGameManager
+import "../Global/GlobalManager/GlobalSoundManager.fcg" as GlobalSoundManager
+import "../Player/PlayerController.fcg" as PlayerController
+import "List.fcc" as List
+import "Math.fcc" as Math
+import "../Player/PlayerUI.fcg" as PlayerUI
+graph VotePhaseManager {
+    //Executed when entity is created
+    countdown int
+    // Store the random gun combos for each player in the current vote phase
+    // playerCombos Map<entity<Player>, List<List<ItemIDType>>> = Map<entity<Player>, List<List<ItemIDType>>>{}
+    // Check if the player has chosen a combo or not. If not, random a new combo for them when this phase ends
+    // playerCheckChosen Map<entity<Player>, bool> = Map<entity<Player>, bool>{}
+    /*
+    Executed when entity is created
+    */
+    event OnAwake() {
+        LogWarning("<VotePhaseManager.fcg>: Vote phase manager awake")
+        countdown = globalEntity<GlobalGameManager>.prepPhaseDuration 
+        LogWarning("<VotePhaseManager.fcg>: Current players: " + List.Length(GetAllPlayers()))
+        for index, player in GetAllPlayers() {
+            start player<PlayerUI>.SetUpVoteUI(player)
+            start player<PlayerUI>.StartCountdown(countdown)
+        }
+    }
+
+    /*
+    Executed when entity is destroyed
+    */
+    event OnDestroy() {
+        LogWarning("<VotePhaseManager.fcg>: Vote phase manager destroyed")
+        // for index, player in GetAllPlayers() {
+        //     globalEntity<GlobalUIManager>.SetVisibilityVoteUI(player, false)
+        //     if playerCheckChosen[player] == false {
+        //         var randomGunCombo List<ItemIDType> = playerCombos[player][Math.RandomInt(0, List.Length(playerCombos[player]))]
+        //         player<PlayerController>.AddItemToPlayer(player, randomGunCombo[0] as EResItem, 1)
+        //         player<PlayerController>.AddItemToPlayer(player, randomGunCombo[1] as EResItem, 1)
+        //     }
+        // }
+    }
+
+
+
+
+    // event OnChoosingWeapon(player entity<Player>, comboIndex int) {
+    //     LogWarning("<VotePhaseManager.fcg>: Combo " + comboIndex + " chosen for player " + player<Player>.NickName)
+    //     HandleChosenCombo(player, comboIndex)
+    // }
+}

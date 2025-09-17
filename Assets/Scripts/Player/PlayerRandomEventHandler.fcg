@@ -1,0 +1,99 @@
+import "StdLibrary.fcc" as StdLib
+import "EditorGenLib.fcc" as EditorLib
+import "Combat.fcc" as Combat
+import "Player.fcc" as Player
+
+graph PlayerRandomEventHandler {
+    // Whether the player's body should be bigger when hit
+    isBiggerWhenHit bool = false
+    // Whether the player's body should be smaller when hit
+    isSmallerWhenHit bool = false
+
+    // Mutex lock for the body scale, to avoid race conditions
+    mutexLock bool = false
+
+    // The current body scale of the player
+    currentBodyScale float = 1.0
+
+    event OnTakeDamage(attacker entity<Entity>, damageType DamageType, damage int, damagedBodyPart DamagedBodyPartType) {
+        // Ignore environmental damage types
+        if damageType == DamageType.KillZone || damageType == DamageType.ElectricZone || damageType == DamageType.Falling || damageType == DamageType.Airdrop {
+            return
+        }
+        if isSmallerWhenHit == true && isBiggerWhenHit == true {
+            LogWarning("<PlayerRandomEventHandler.fcg>: Player is both smaller and bigger when hit. This should not happen.")
+            ResetBodyScale()
+            return
+        }
+        if isSmallerWhenHit == true {
+            ReduceBodyScale()
+        } else if isBiggerWhenHit == true {
+            IncreaseBodyScale()
+        }
+    }
+
+    async func ReduceBodyScale(){
+        if mutexLock == true {
+            return
+        }
+        mutexLock = true
+        if currentBodyScale > 0.5 {
+            currentBodyScale = currentBodyScale - 0.02
+            var skeleton entity<Skeleton> = thisEntity<Player>.Skeleton
+            if skeleton == nil {
+                LogError("Skeleton is nil for player: " + thisEntity<Player>.NickName)
+                mutexLock = false
+                return
+            }
+            skeleton<Skeleton>.Head<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            skeleton<Skeleton>.LeftArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            skeleton<Skeleton>.RightArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            skeleton<Skeleton>.LeftHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            skeleton<Skeleton>.RightHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        }
+        WaitForMillisecond(50)
+        mutexLock = false
+    }
+
+    async func IncreaseBodyScale(){
+        if mutexLock == true {
+            return
+        }
+        mutexLock = true
+        if currentBodyScale <= 1.3 {
+            currentBodyScale = currentBodyScale + 0.03
+            var skeleton entity<Skeleton> = thisEntity<Player>.Skeleton
+            if skeleton == nil {
+                LogError("Skeleton is nil for player: " + thisEntity<Player>.NickName)
+                mutexLock = false
+                return
+            }
+            skeleton<Skeleton>.Head<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            skeleton<Skeleton>.LeftArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            skeleton<Skeleton>.RightArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            skeleton<Skeleton>.LeftHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            skeleton<Skeleton>.RightHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        }
+        WaitForMillisecond(50)
+        mutexLock = false
+    }
+
+    async func ResetBodyScale(){
+        if mutexLock == true {
+            return
+        }
+        mutexLock = true
+        currentBodyScale = 1.0
+        var skeleton entity<Skeleton> = thisEntity<Player>.Skeleton
+        if skeleton == nil {
+            LogError("Skeleton is nil for player: " + thisEntity<Player>.NickName)
+        }
+        skeleton<Skeleton>.Head<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        skeleton<Skeleton>.LeftArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        skeleton<Skeleton>.RightArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        skeleton<Skeleton>.LeftHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        skeleton<Skeleton>.RightHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        WaitForMillisecond(50)
+        mutexLock = false
+    }
+}

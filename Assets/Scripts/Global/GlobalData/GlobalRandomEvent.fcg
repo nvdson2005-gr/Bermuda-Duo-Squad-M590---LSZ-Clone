@@ -1,0 +1,254 @@
+import "StdLibrary.fcc" as StdLib
+import "EditorGenLib.fcc" as EditorLib
+import "List.fcc" as List
+import "Avatar.fcc" as Avatar
+import "Player.fcc" as Player
+import "Items.fcc" as Items
+import "Scene.fcc" as Scene
+import "Math.fcc" as Math
+import "../../Player/PlayerRandomEventHandler.fcg" as PlayerRandomEventHandler
+import "Workflow.fcc" as Workflow
+graph GlobalRandomEvent {
+    // Chosen event this round
+    chosenEvent int = -1
+    // Current event counts
+    currentEventsCount int = 9
+
+    // The list of logos and descriptions for random events
+    eventLogos List<SpriteID> = List<SpriteID>{}
+    eventDescriptions List<string> = List<string>{}
+
+    // The list of weights for each event. The greater the weight, the higher the chance of being selected.
+    eventWeights List<int> = List<int>{}
+
+    // Store the list of old events to avoid repetition
+    oldEvents List<int> = List<int>{}
+
+    //Executed when entity is created
+    event OnAwake() {
+        // Init event logos
+        Append(eventLogos, EResSprite.ZOMBIE as SpriteID)          // Big Head Event
+        Append(eventLogos, EResSprite.DOUBLEJUMPSHOE as SpriteID)        // zero gravity event
+        Append(eventLogos, EResSprite.KENTA as SpriteID)      // lots of gloo walls event
+        Append(eventLogos, EResSprite.GRENADESPLIT as SpriteID)      // lots of grenades event
+        Append(eventLogos, EResSprite.NUTTYMOVEMENT as SpriteID)      // fast movement event
+        Append(eventLogos, EResSprite.PLAYER as SpriteID)      // body gets smaller when get shot event
+        Append(eventLogos, EResSprite.SANTINO1 as SpriteID)      // body gets bigger when get shot event
+        Append(eventLogos, EResSprite.JETSHOE as SpriteID)      // has jet pack shoe event
+        Append(eventLogos, EResSprite.ACTIVENOON as SpriteID)// DARK mode event
+
+        // Init event descriptions
+        Append(eventDescriptions, LocString{"EVENT_0", List<string>{}}) // Big Head Event
+        Append(eventDescriptions, LocString{"EVENT_1", List<string>{}}) // zero gravity event
+        Append(eventDescriptions, LocString{"EVENT_2", List<string>{}}) // lots of gloo walls event
+        Append(eventDescriptions, LocString{"EVENT_3", List<string>{}}) // lots of grenades event
+        Append(eventDescriptions, LocString{"EVENT_4", List<string>{}}) // fast movement event
+        Append(eventDescriptions, LocString{"EVENT_5", List<string>{}}) // body gets smaller when get shot event
+        Append(eventDescriptions, LocString{"EVENT_6", List<string>{}}) // body gets bigger when get shot event
+        Append(eventDescriptions, LocString{"EVENT_7", List<string>{}}) // has jet pack shoe event
+        Append(eventDescriptions, LocString{"EVENT_8", List<string>{}}) // DARK mode event
+
+        // Init event weights
+        eventWeights = List<int>{3, 2, 2, 1, 1, 3, 3, 2, 1}
+    }
+
+    // UTILS
+    // Randomly select an event based on weights and apply the event effects to all players
+    func ApplyRandomEvent() {
+        LogWarning("<GlobalRandomEvent.fcg>: Applying random event")
+        if List.Length(oldEvents) >= currentEventsCount {
+            List.Clear(oldEvents) // Reset old events if all events have been used
+        }
+        var chosenIndex int = -1
+        var totalWeight int = 0
+        for index, weight in eventWeights {
+            if !List.Contain(oldEvents, index) {
+                totalWeight += weight
+            }
+        }
+        var random = RandomInt(0, totalWeight)
+        for index, weight in eventWeights {
+            if List.Contain(oldEvents, index) {
+                continue
+            }
+            if random < weight {
+                Append(oldEvents, index)
+                chosenIndex = index
+                break
+            } else {
+                random = random - weight
+            }
+        }
+        chosenEvent = chosenIndex
+        if chosenIndex == -1 {
+            LogError("No event was chosen. This should not happen.")
+            return
+        }
+        LogWarning("<GlobalRandomEvent.fcg>: Chosen event: " + chosenIndex)
+        if chosenIndex == 0 {
+            SetBigHeadEvent(true)
+        } else if chosenIndex == 1 {
+            SetZeroGravityEvent(true)
+        } else if chosenIndex == 2 {
+            SetLotsOfGlooWallsEvent()
+        } else if chosenIndex == 3 {
+            SetLotsOfGrenadesEvent()
+        } else if chosenIndex == 4 {
+            SetFastMovementEvent(true)
+        } else if chosenIndex == 5 {
+            SetSmallBodyWhenShotEvent(true)
+        } else if chosenIndex == 6 {
+            SetBigBodyWhenShotEvent(true)
+        } else if chosenIndex == 7 {
+            SetJetPackShoeEvent()
+        } else if chosenIndex == 8 {
+            SetDarkModeEvent(true)
+        } else {
+            LogError("Chosen index out of range: " + chosenIndex)
+        }
+    }
+    // ========================== LIST OF EVENTS HANDLERS ==========================A
+    // Event handler for Big Head Event
+    func SetBigHeadEvent(activate bool){
+        for index, player in GetAllPlayers() {
+            var skeleton entity<Skeleton> = player<Player>.Skeleton
+            var headScale = skeleton<Skeleton>.Head<SkeletonPart>
+            if headScale == nil {
+                LogError("Head SkeletonPart is nil for player: " + player<Player>.NickName)
+            }
+            if activate == true {
+                headScale<SkeletonPart>.BoneScale = Vector3{2.0, 2.0, 2.0}
+            } else {
+                headScale<SkeletonPart>.BoneScale = Vector3{1.0, 1.0, 1.0}
+            }
+        }
+    }
+
+    // Event handler for Zero Gravity Event
+    func SetZeroGravityEvent(activate bool){
+        for index, player in GetAllPlayers() {
+            if activate == true {
+                player<Player>.JumpHeightScale = 8.0
+            } else {
+                player<Player>.JumpHeightScale = 1.0
+            }
+            player<Player>.IsSkipStaggerAnimation = false
+            player<Player>.DisableFallDamage = true
+        }
+    }
+
+    // Event handler for Lots of Gloo Walls Event
+    func SetLotsOfGlooWallsEvent(){
+        for index, player in GetAllPlayers() {
+            AddItem(player, ItemIDType.GlooWall, 20, out var createdGloos)
+        }
+    }
+
+    // Event handler for Lots of Grenades Event
+    func SetLotsOfGrenadesEvent(){
+        for index, player in GetAllPlayers() {
+            AddItem(player, ItemIDType.Grenade, 20, out var createdGrenades)
+        }
+    }
+
+    // Event handler for Fast Movement Event
+    func SetFastMovementEvent(activate bool){
+        for index, player in GetAllPlayers() {
+            if activate == true {
+                player<Player>.RunSpeedScale = 1.3
+            } else {
+                player<Player>.RunSpeedScale = 1.0
+            }
+        }
+    }
+
+    // Event handler for Small Body When Shot Event
+    func SetSmallBodyWhenShotEvent(activate bool){
+        // // Set true for isSmallerBodyWhenShot (define when creating the player)
+        // LogError("<GlobalRandomEvent>: SetSmallBodyWhenShotEvent called - implement later")
+        for index, player in GetAllPlayers(){
+            if player<PlayerRandomEventHandler>.isBiggerWhenHit == true{
+                player<PlayerRandomEventHandler>.isBiggerWhenHit = false
+            }
+            if activate == true {
+                player<PlayerRandomEventHandler>.isSmallerWhenHit = true
+            } else {
+                player<PlayerRandomEventHandler>.isSmallerWhenHit = false
+            }
+        }
+    }
+
+    // Event handler for Big Body When Shot Event
+    func SetBigBodyWhenShotEvent(activate bool){
+        // Set true for isBiggerBodyWhenShot (define when creating the player)
+        // LogError("<GlobalRandomEvent>: SetBigBodyWhenShotEvent called - implement later")
+        for index, player in GetAllPlayers(){
+            if player<PlayerRandomEventHandler>.isSmallerWhenHit == true{
+                player<PlayerRandomEventHandler>.isSmallerWhenHit = false
+            }
+            if activate == true {
+                player<PlayerRandomEventHandler>.isBiggerWhenHit = true
+            } else {
+                player<PlayerRandomEventHandler>.isBiggerWhenHit = false
+            }
+        }
+    }
+
+    // Event handler for Jet Pack Shoe Event
+    func SetJetPackShoeEvent(){
+        for index, player in GetAllPlayers() {
+            AddItem(player, EResItem.JETPACKSHOES as ItemIDType, 1, out var createdJetPackShoe)
+            player<Player>.IsSkipStaggerAnimation = false
+            player<Player>.DisableFallDamage = true
+        }
+    }
+
+    // Event handler for Dark Mode Event
+    func SetDarkModeEvent(activate bool){
+        if activate == true {
+            SetSkybox(SkyboxType.Night) 
+            var skybox entity<SkyBox> = GetSceneSkybox("New Scene")
+            skybox<SkyBox>.LightIntensity = 0.5
+            skybox<SkyBox>.Darkness = 0.9
+            skybox<SkyBox>.ShadowStrength = 0.663
+        } else {
+            SetSkybox(SkyboxType.Day)
+            var skybox entity<SkyBox> = GetSceneSkybox("New Scene")
+            skybox<SkyBox>.LightIntensity = 1.06
+            skybox<SkyBox>.Darkness = 0.03
+            skybox<SkyBox>.ShadowStrength = 0.6
+        }
+    }
+
+    func ResetChosenEvent(){
+        // For event 2, 3, 7 only need to remove all gloo walls and grenades
+        if chosenEvent == 0 {
+            SetBigHeadEvent(false)
+        } else if chosenEvent == 1 {
+            SetZeroGravityEvent(false)
+        } else if chosenEvent == 4 {
+            SetFastMovementEvent(false)
+        } else if chosenEvent == 5 {
+            SetSmallBodyWhenShotEvent(false)
+        } else if chosenEvent == 8 {
+            SetDarkModeEvent(false)
+        }
+        chosenEvent = -1
+    }
+
+    func GetCurrentEventDesc() string {
+        if chosenEvent == -1 {
+            LogError("No event was chosen. This should not happen.")
+            return ""
+        }
+        return eventDescriptions[chosenEvent]
+    }
+
+    func GetCurrentEventLogo() SpriteID {
+        if chosenEvent == -1 {
+            LogError("No event was chosen. This should not happen.")
+            return nil as SpriteID
+        }
+        return eventLogos[chosenEvent]
+    }
+}

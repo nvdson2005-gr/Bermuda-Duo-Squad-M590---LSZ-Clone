@@ -34,9 +34,9 @@
         "z": 1
       },
       "rotation": {
-        "x": 42,
-        "y": 166,
-        "z": 117
+        "x": 45,
+        "y": -204,
+        "z": -9
       },
       "BTPath": [
         null
@@ -56,7 +56,7 @@
       "initialTypes": {},
       "componentList": [],
       "_filters": [],
-      "curWeatherPresetID": 999,
+      "curWeatherPresetID": 1,
       "_entityName": "FE_0_ZZ_SKYENV_SKY",
       "currentWeather": {
         "lightColor": {
@@ -65,10 +65,10 @@
           "b": 248,
           "a": 1
         },
-        "lightIntensity": 1.96,
+        "lightIntensity": 1.06,
         "darkness": 0.03,
-        "shadowStrength": 0.7,
-        "terrainWetness": 0.2,
+        "shadowStrength": 0.6,
+        "terrainWetness": 0,
         "lensFlare": 0.65,
         "fogColor": {
           "r": 123,
@@ -99,30 +99,30 @@
       "aoiSetting": 0,
       "customWeather": {
         "lightColor": {
-          "r": 248,
-          "g": 248,
-          "b": 248,
+          "r": 87,
+          "g": 106,
+          "b": 147,
           "a": 1
         },
-        "lightIntensity": 1.96,
-        "darkness": 0.03,
-        "shadowStrength": 0.7,
-        "terrainWetness": 0.2,
-        "lensFlare": 0.65,
+        "lightIntensity": 0.5,
+        "darkness": 0.9,
+        "shadowStrength": 0.663,
+        "terrainWetness": 0,
+        "lensFlare": 0,
         "fogColor": {
-          "r": 123,
-          "g": 158,
-          "b": 192,
+          "r": 0,
+          "g": 24,
+          "b": 128,
           "a": 1
         },
         "ambientColor": {
-          "r": 149,
-          "g": 149,
-          "b": 149,
+          "r": 24,
+          "g": 63,
+          "b": 161,
           "a": 1
         },
-        "nightMode": false,
-        "resId": "UGC_SKYENV_DAY",
+        "nightMode": true,
+        "resId": "UGC_SKYENV_NIGHT",
         "enableFog": true,
         "fogType": 1,
         "startDistance": 50,
@@ -436,7 +436,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 69,
+              "tempIndex": 4,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -606,7 +606,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 4,
+              "tempIndex": 5,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -685,7 +685,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 5,
+              "tempIndex": 6,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -762,7 +762,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 6,
+              "tempIndex": 7,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -839,7 +839,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 74,
+              "tempIndex": 8,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -1009,7 +1009,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 7,
+              "tempIndex": 9,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -1088,7 +1088,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 8,
+              "tempIndex": 10,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -1165,7 +1165,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 9,
+              "tempIndex": 11,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -1242,7 +1242,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 77,
+              "tempIndex": 12,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -1412,7 +1412,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 10,
+              "tempIndex": 13,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -1491,7 +1491,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 11,
+              "tempIndex": 14,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -1568,7 +1568,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 12,
+              "tempIndex": 15,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -1645,7 +1645,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 80,
+              "tempIndex": 16,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -1815,7 +1815,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 13,
+              "tempIndex": 17,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -1894,7 +1894,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 14,
+              "tempIndex": 18,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -1971,7 +1971,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 15,
+              "tempIndex": 19,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -2048,7 +2048,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 83,
+              "tempIndex": 20,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -2218,7 +2218,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 16,
+              "tempIndex": 21,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -2297,7 +2297,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 17,
+              "tempIndex": 22,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -2374,7 +2374,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 18,
+              "tempIndex": 23,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -2451,7 +2451,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 86,
+              "tempIndex": 24,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -2621,7 +2621,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 19,
+              "tempIndex": 25,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -2700,7 +2700,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 20,
+              "tempIndex": 26,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -2777,7 +2777,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 21,
+              "tempIndex": 27,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -2854,7 +2854,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 87,
+              "tempIndex": 28,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3024,7 +3024,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 22,
+              "tempIndex": 29,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3103,7 +3103,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 23,
+              "tempIndex": 30,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3180,7 +3180,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 24,
+              "tempIndex": 31,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3257,7 +3257,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 92,
+              "tempIndex": 32,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3427,7 +3427,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 25,
+              "tempIndex": 33,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3506,7 +3506,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 26,
+              "tempIndex": 34,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3583,7 +3583,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 27,
+              "tempIndex": 35,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3660,7 +3660,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 95,
+              "tempIndex": 36,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3830,7 +3830,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 28,
+              "tempIndex": 37,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3909,7 +3909,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 29,
+              "tempIndex": 38,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -3986,7 +3986,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 30,
+              "tempIndex": 39,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -4063,7 +4063,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 96,
+              "tempIndex": 40,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -4233,7 +4233,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 31,
+              "tempIndex": 41,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -4312,7 +4312,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 32,
+              "tempIndex": 42,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -4389,7 +4389,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 33,
+              "tempIndex": 43,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -4466,7 +4466,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 101,
+              "tempIndex": 44,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -4640,7 +4640,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 34,
+              "tempIndex": 45,
               "itemID": 143,
               "seParent": null,
               "ecaScripts": [
@@ -14999,7 +14999,7 @@
       "entityTagData": {
         "tagPointers": []
       },
-      "tempIndex": 35,
+      "tempIndex": 46,
       "itemID": 211,
       "seParent": null,
       "ecaScripts": [
@@ -15391,7 +15391,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 36,
+              "tempIndex": 47,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15462,7 +15462,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 37,
+              "tempIndex": 48,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15533,7 +15533,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 38,
+              "tempIndex": 49,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15697,7 +15697,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 39,
+              "tempIndex": 50,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15768,7 +15768,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 40,
+              "tempIndex": 51,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -15839,7 +15839,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 41,
+              "tempIndex": 52,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16003,7 +16003,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 42,
+              "tempIndex": 53,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16074,7 +16074,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 43,
+              "tempIndex": 54,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16145,7 +16145,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 44,
+              "tempIndex": 55,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16309,7 +16309,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 45,
+              "tempIndex": 56,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16380,7 +16380,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 46,
+              "tempIndex": 57,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16451,7 +16451,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 47,
+              "tempIndex": 58,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16615,7 +16615,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 48,
+              "tempIndex": 59,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16686,7 +16686,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 49,
+              "tempIndex": 60,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16757,7 +16757,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 50,
+              "tempIndex": 61,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16921,7 +16921,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 51,
+              "tempIndex": 62,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -16992,7 +16992,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 52,
+              "tempIndex": 63,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17063,7 +17063,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 53,
+              "tempIndex": 64,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17227,7 +17227,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 54,
+              "tempIndex": 65,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17298,7 +17298,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 55,
+              "tempIndex": 66,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17369,7 +17369,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 56,
+              "tempIndex": 67,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17531,7 +17531,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 57,
+              "tempIndex": 68,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17602,7 +17602,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 58,
+              "tempIndex": 69,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17673,7 +17673,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 59,
+              "tempIndex": 70,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17837,7 +17837,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 60,
+              "tempIndex": 71,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17908,7 +17908,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 61,
+              "tempIndex": 72,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -17979,7 +17979,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 62,
+              "tempIndex": 73,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -18143,7 +18143,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 63,
+              "tempIndex": 74,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -18214,7 +18214,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 64,
+              "tempIndex": 75,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -18285,7 +18285,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 65,
+              "tempIndex": 76,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -18449,7 +18449,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 66,
+              "tempIndex": 77,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -18520,7 +18520,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 67,
+              "tempIndex": 78,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [
@@ -18591,7 +18591,7 @@
               "entityTagData": {
                 "tagPointers": []
               },
-              "tempIndex": 68,
+              "tempIndex": 79,
               "itemID": 218,
               "seParent": null,
               "ecaScripts": [

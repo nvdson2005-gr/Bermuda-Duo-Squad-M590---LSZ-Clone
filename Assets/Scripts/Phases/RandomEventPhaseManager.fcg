@@ -1,0 +1,39 @@
+import "StdLibrary.fcc" as StdLib
+import "EditorGenLib.fcc" as EditorLib
+import "../Global/GlobalData/GlobalRandomEvent.fcg" as GlobalRandomEvent
+import "../Global/GlobalManager/GlobalUIManager.fcg" as GlobalUIManager
+import "Workflow.fcc" as Workflow
+import "../Global/GlobalData/SpawnPoints.fcg" as SpawnPoints
+import "../Global/GlobalManager/GlobalPreparationPhaseManager.fcg" as GlobalPreparationPhaseManager
+import "List.fcc" as List
+graph RandomEventPhaseManager {
+    event OnAwake() {
+        // for index, player in GetAllPlayers() {
+        //     globalEntity<GlobalUIManager>.UpdateEventUI(player, globalEntity<GlobalRandomEvent>.GetCurrentEventDesc(), globalEntity<GlobalRandomEvent>.GetCurrentEventLogo())
+        //     globalEntity<GlobalUIManager>.SetVisibilityEventUI(player, true)
+        // }
+        wait RandomEventHandler()
+    }
+
+    // event OnPhaseStart(phase entity<Phase>) {
+    //     if phase<Phase>.Index == EPhase.RandomEventInit {
+    //     }
+    // }
+
+    event OnDestroy() {
+        for index, player in GetAllPlayers() {
+            globalEntity<GlobalUIManager>.SetVisibilityEventUI(player, false)
+        }
+        globalEntity<SpawnPoints>.SetSpawnPointsActiveStatusForRound(globalEntity<GlobalPreparationPhaseManager>.oldStagesList[List.Length(globalEntity<GlobalPreparationPhaseManager>.oldStagesList) - 1], false)
+    }
+
+    async func RandomEventHandler(){
+        WaitForMillisecond(globalEntity<GlobalUIManager>.roundInfoDuration)
+        globalEntity<GlobalRandomEvent>.ApplyRandomEvent()
+        WaitForMillisecond(500)
+        for index, player in GetAllPlayers() {
+            globalEntity<GlobalUIManager>.SetVisibilityEventUI(player, true)
+            globalEntity<GlobalUIManager>.UpdateEventUI(player, globalEntity<GlobalRandomEvent>.GetCurrentEventDesc(), globalEntity<GlobalRandomEvent>.GetCurrentEventLogo())
+        }
+    }
+}
