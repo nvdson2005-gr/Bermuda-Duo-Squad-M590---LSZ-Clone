@@ -4,7 +4,26 @@
   },
   "_entityId": "RxYHnl8B",
   "enumCount": 0,
-  "enumDefines": {},
-  "enumNameMap": {}
+  "enumDefines": {
+    "CustomEnum80722868": {
+      "label": "Custom Enum",
+      "key": "CustomEnum80722868",
+      "type": "Float",
+      "info": [
+        {
+          "label": "DURATION_PREPARATION_PHASE",
+          "key": "E91565839",
+          "value": 0,
+          "type": "Float"
+        }
+      ],
+      "isCustom": true,
+      "isDirty": false
+    }
+  },
+  "enumNameMap": {
+    "Custom Enum": "CustomEnum80722868"
+  },
+  "children": []
 }
-//"{FE:{"v":"0.1.2974255","c":{"FF":4404},"s":100}
+//"{FE:{"v":"1.14.3883376","c":{"FF":5001},"s":100}

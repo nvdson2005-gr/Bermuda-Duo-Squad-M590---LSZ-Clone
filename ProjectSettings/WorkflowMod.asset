@@ -113,8 +113,14 @@
           "_entityId": "uUTIzQdp",
           "children": [],
           "prefabVariant": null,
-          "activeValue": null,
-          "unlockedValue": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
           "gameDuration": 8,
@@ -135,6 +141,28 @@
           "modId": 18,
           "_entityName": "RandomEventInit",
           "phaseIndex": 1029
+        },
+        {
+          "_tag": {
+            "type": "ff.PhaseEntity1",
+            "resourceId": "Phase"
+          },
+          "_entityId": "0rpR1Bnz",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": null,
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "gameDuration": 10,
+          "ecaScripts": [],
+          "ecaProps": {
+            "Phase": {},
+            "Entity": {}
+          },
+          "modId": 18,
+          "_entityName": "FirstBorderDelay",
+          "phaseIndex": 750
         },
         {
           "_tag": {
@@ -169,6 +197,28 @@
             "type": "ff.PhaseEntity1",
             "resourceId": "Phase"
           },
+          "_entityId": "E4EWHOGw",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": null,
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "gameDuration": 10,
+          "ecaScripts": [],
+          "ecaProps": {
+            "Phase": {},
+            "Entity": {}
+          },
+          "modId": 18,
+          "_entityName": "SecondBorderDelay",
+          "phaseIndex": 928
+        },
+        {
+          "_tag": {
+            "type": "ff.PhaseEntity1",
+            "resourceId": "Phase"
+          },
           "_entityId": "4ZgDIWrZ",
           "children": [],
           "prefabVariant": null,
@@ -191,6 +241,50 @@
           "modId": 18,
           "_entityName": "Border 2",
           "phaseIndex": 279
+        },
+        {
+          "_tag": {
+            "type": "ff.PhaseEntity1",
+            "resourceId": "Phase"
+          },
+          "_entityId": "PIOpFVsn",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": null,
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "gameDuration": 10,
+          "ecaScripts": [],
+          "ecaProps": {
+            "Phase": {},
+            "Entity": {}
+          },
+          "modId": 18,
+          "_entityName": "ShrinkingDelay",
+          "phaseIndex": 2101
+        },
+        {
+          "_tag": {
+            "type": "ff.PhaseEntity1",
+            "resourceId": "Phase"
+          },
+          "_entityId": "OPoLo46L",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": null,
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "gameDuration": 900,
+          "ecaScripts": [],
+          "ecaProps": {
+            "Phase": {},
+            "Entity": {}
+          },
+          "modId": 18,
+          "_entityName": "LastShrink",
+          "phaseIndex": 2227
         },
         {
           "_tag": {
@@ -291,31 +385,22 @@
       "type": "ff.PhaseEntity1",
       "resourceId": "Phase"
     },
-    "_entityId": "uUTIzQdp",
+    "_entityId": "PIOpFVsn",
     "children": [],
     "prefabVariant": null,
     "activeValue": null,
     "unlockedValue": null,
     "editorLockValue": false,
     "editorVisibleValue": true,
-    "gameDuration": 8,
-    "ecaScripts": [
-      {
-        "fileId": "uu0xfccf4s-mfno990d-a2o0xz2ql27",
-        "filePath": "Assets\\Scripts\\Phases\\RandomEventPhaseManager.fcg",
-        "_tag": {
-          "type": "GFileRefer"
-        },
-        "fileType": "ugcscript"
-      }
-    ],
+    "gameDuration": 10,
+    "ecaScripts": [],
     "ecaProps": {
       "Phase": {},
       "Entity": {}
     },
     "modId": 18,
-    "_entityName": "RandomEventInit",
-    "phaseIndex": 1029
+    "_entityName": "ShrinkingDelay",
+    "phaseIndex": 2101
   },
   "roundCount": 4,
   "discriminator": "ISceneLike",

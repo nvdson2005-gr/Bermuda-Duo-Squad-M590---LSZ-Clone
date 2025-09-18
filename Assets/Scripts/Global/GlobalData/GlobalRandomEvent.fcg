@@ -173,6 +173,7 @@ graph GlobalRandomEvent {
             if activate == true {
                 player<PlayerRandomEventHandler>.isSmallerWhenHit = true
             } else {
+                start player<PlayerRandomEventHandler>.ResetBodyScale()
                 player<PlayerRandomEventHandler>.isSmallerWhenHit = false
             }
         }
@@ -197,6 +198,12 @@ graph GlobalRandomEvent {
     // Event handler for Jet Pack Shoe Event
     func SetJetPackShoeEvent(){
         for index, player in GetAllPlayers() {
+            if GetItemCount(player, EResItem.JETPACKSHOES as ItemIDType) != 0 {
+                DestroyItem(player, EResItem.JETPACKSHOES as ItemIDType, GetItemCount(player, EResItem.JETPACKSHOES as ItemIDType)) // Destroy the item when added
+            }
+            if GetItemCount(player, EResItem.JUMPINGSHOES as ItemIDType) != 0 {
+                DestroyItem(player, EResItem.JUMPINGSHOES as ItemIDType, GetItemCount(player, EResItem.JUMPINGSHOES as ItemIDType)) // Destroy the item when added
+            }
             AddItem(player, EResItem.JETPACKSHOES as ItemIDType, 1, out var createdJetPackShoe)
             player<Player>.IsSkipStaggerAnimation = false
             player<Player>.DisableFallDamage = true
@@ -222,10 +229,20 @@ graph GlobalRandomEvent {
 
     func ResetChosenEvent(){
         // For event 2, 3, 7 only need to remove all gloo walls and grenades
+        LogWarning("<GlobalRandomEvent.fcg>: Resetting chosen event: " + chosenEvent)
         if chosenEvent == 0 {
             SetBigHeadEvent(false)
         } else if chosenEvent == 1 {
             SetZeroGravityEvent(false)
+        } else if chosenEvent == 2 {
+            for index, player in GetAllPlayers() {
+                if GetItemCount(player, EResItem.JETPACKSHOES as ItemIDType) != 0 {
+                    DestroyItem(player, EResItem.JETPACKSHOES as ItemIDType, GetItemCount(player, EResItem.JETPACKSHOES as ItemIDType)) // Destroy the item when added
+                }
+                if GetItemCount(player, EResItem.JUMPINGSHOES as ItemIDType) != 0 {
+                    DestroyItem(player, EResItem.JUMPINGSHOES as ItemIDType, GetItemCount(player, EResItem.JUMPINGSHOES as ItemIDType)) // Destroy the item when added
+                }
+            }
         } else if chosenEvent == 4 {
             SetFastMovementEvent(false)
         } else if chosenEvent == 5 {

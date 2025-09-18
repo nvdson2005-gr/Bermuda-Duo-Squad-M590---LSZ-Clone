@@ -1405,7 +1405,7 @@
                         "y": 0.5
                       },
                       "anchoredPosition": {
-                        "x": -17.999969482421875,
+                        "x": -18,
                         "y": 0
                       },
                       "sizeDelta": {
@@ -1416,8 +1416,8 @@
                     "alpha": 100,
                     "image": {
                       "source": {
-                        "fileId": "8ee2623eb2e4f53126873c6024f6f23d",
-                        "filePath": "lib://fftextures/WorkshopIconLibrary/icon_Helmet_2.png",
+                        "fileId": "orzk76tokfl-mfpbmelr-pt1g9coflao",
+                        "filePath": "Assets\\Resources\\WeaponImages\\icon_equipment_militaryhelmet_02.png",
                         "_tag": {
                           "type": "GFileRefer"
                         },
@@ -1511,7 +1511,7 @@
                         "y": 0.5
                       },
                       "anchoredPosition": {
-                        "x": 48.000030517578125,
+                        "x": 48,
                         "y": 0
                       },
                       "sizeDelta": {
@@ -1522,8 +1522,8 @@
                     "alpha": 100,
                     "image": {
                       "source": {
-                        "fileId": "63ab37a5c84be651ed40d35213ffe9ea",
-                        "filePath": "lib://fftextures/WorkshopIconLibrary/icon_Vest_2.png",
+                        "fileId": "rhjfv0rdsyo-mfpbme5b-d41ya39l6td",
+                        "filePath": "Assets\\Resources\\WeaponImages\\icon_equipment_vest_02.png",
                         "_tag": {
                           "type": "GFileRefer"
                         },
@@ -2423,8 +2423,8 @@
                     "alpha": 100,
                     "image": {
                       "source": {
-                        "fileId": "8ee2623eb2e4f53126873c6024f6f23d",
-                        "filePath": "lib://fftextures/WorkshopIconLibrary/icon_Helmet_2.png",
+                        "fileId": "orzk76tokfl-mfpbmelr-pt1g9coflao",
+                        "filePath": "Assets\\Resources\\WeaponImages\\icon_equipment_militaryhelmet_02.png",
                         "_tag": {
                           "type": "GFileRefer"
                         },
@@ -2529,8 +2529,8 @@
                     "alpha": 100,
                     "image": {
                       "source": {
-                        "fileId": "63ab37a5c84be651ed40d35213ffe9ea",
-                        "filePath": "lib://fftextures/WorkshopIconLibrary/icon_Vest_2.png",
+                        "fileId": "rhjfv0rdsyo-mfpbme5b-d41ya39l6td",
+                        "filePath": "Assets\\Resources\\WeaponImages\\icon_equipment_vest_02.png",
                         "_tag": {
                           "type": "GFileRefer"
                         },
@@ -3430,8 +3430,8 @@
                     "alpha": 100,
                     "image": {
                       "source": {
-                        "fileId": "8ee2623eb2e4f53126873c6024f6f23d",
-                        "filePath": "lib://fftextures/WorkshopIconLibrary/icon_Helmet_2.png",
+                        "fileId": "orzk76tokfl-mfpbmelr-pt1g9coflao",
+                        "filePath": "Assets\\Resources\\WeaponImages\\icon_equipment_militaryhelmet_02.png",
                         "_tag": {
                           "type": "GFileRefer"
                         },
@@ -3536,8 +3536,8 @@
                     "alpha": 100,
                     "image": {
                       "source": {
-                        "fileId": "63ab37a5c84be651ed40d35213ffe9ea",
-                        "filePath": "lib://fftextures/WorkshopIconLibrary/icon_Vest_2.png",
+                        "fileId": "rhjfv0rdsyo-mfpbme5b-d41ya39l6td",
+                        "filePath": "Assets\\Resources\\WeaponImages\\icon_equipment_vest_02.png",
                         "_tag": {
                           "type": "GFileRefer"
                         },
@@ -4437,8 +4437,8 @@
                     "alpha": 100,
                     "image": {
                       "source": {
-                        "fileId": "8ee2623eb2e4f53126873c6024f6f23d",
-                        "filePath": "lib://fftextures/WorkshopIconLibrary/icon_Helmet_2.png",
+                        "fileId": "orzk76tokfl-mfpbmelr-pt1g9coflao",
+                        "filePath": "Assets\\Resources\\WeaponImages\\icon_equipment_militaryhelmet_02.png",
                         "_tag": {
                           "type": "GFileRefer"
                         },
@@ -4543,8 +4543,8 @@
                     "alpha": 100,
                     "image": {
                       "source": {
-                        "fileId": "63ab37a5c84be651ed40d35213ffe9ea",
-                        "filePath": "lib://fftextures/WorkshopIconLibrary/icon_Vest_2.png",
+                        "fileId": "rhjfv0rdsyo-mfpbme5b-d41ya39l6td",
+                        "filePath": "Assets\\Resources\\WeaponImages\\icon_equipment_vest_02.png",
                         "_tag": {
                           "type": "GFileRefer"
                         },

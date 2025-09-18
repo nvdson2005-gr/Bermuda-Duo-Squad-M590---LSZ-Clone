@@ -26,10 +26,13 @@ import "Hud.fcc" as Hud
 import "Combat.fcc" as Combat
 import "SafeZone.fcc" as SafeZone
 import "MiniMap.fcc" as MiniMap
+import "../GlobalData/GlobalRandomEvent.fcg" as GlobalRandomEvent
+import "../GlobalData/GlobalConfig.fcg" as GlobalConfig
 graph GlobalGameManager {
-    winPoints int = 3 // Number of points required to win the game
-    availableStages int = 8 // Number of available stages in the game, goes together with the number of safe zones and spawn point groups in GlobalSafeZones.cfg and SpawnPoints.cfg
+    // winPoints int = 3 // Number of points required to win the game
+    availableStages int = 11 // Number of available stages in the game, goes together with the number of safe zones and spawn point groups in GlobalSafeZones.cfg and SpawnPoints.cfg
     prepPhaseDuration int = 15 // Use this to customize the buying phase duration
+    phaseDuration Map<EPhase, float> = Map<EPhase, float>{}
 
     /* 
     When the game starts:
@@ -158,6 +161,7 @@ graph GlobalGameManager {
         globalEntity<TeamData>.AddPointsToTeam(winningTeam, 1) // Add points to the winning team
         // globalEntity<GlobalUIManager>.CreatePlusAnimation(winningTeam)
         globalEntity<GlobalUIManager>.UpdateMiniScoreboard(); // Update the scoreboard for the winning team
+        globalEntity<GlobalRandomEvent>.ResetChosenEvent()
         for index, teammate in winningTeam<Team>.AllTeammates {
             if teammate<Player>.HP > 0 {
                 SetInvincibility(teammate, 60)
@@ -195,7 +199,7 @@ graph GlobalGameManager {
     */
     func CheckWinningCondition(team entity<Team>) bool {
         // LogError("Current Points: " + globalEntity<TeamData>.GetTeamPoints())
-        if globalEntity<TeamData>.GetTeamPoint(team) >= winPoints {
+        if globalEntity<TeamData>.GetTeamPoint(team) >= GlobalConfig.WIN_POINTS {
             return true
         }
         return false

@@ -14,6 +14,7 @@ import "../GlobalData/CombatRoundCounter.fcg" as CombatRoundCounter
 import "../GlobalData/SpawnPoints.fcg" as SpawnPoints
 import "../GlobalManager/GlobalPreparationPhaseManager.fcg" as GlobalPreparationPhaseManager
 import "Player.fcc" as Player
+import "../GlobalData/GlobalConfig.fcg" as GlobalConfig
 graph TargetAndCombatTimer {
     // Map to store the main custom UI (for unregister)
     mainCustomUIDict Map<entity<Player>, entity<CustomUI>>
@@ -79,7 +80,7 @@ graph TargetAndCombatTimer {
             var targetTextWidget = GetWidgetFromCustomUI(player, createdUI, EResUIGameInfo.TargetCount)
             var roundStageTextWidget = GetWidgetFromCustomUI(player, createdUI, EResUIGameInfo.RoundStageText)
             combatStageDict[player] = roundStageTextWidget 
-            targetTextWidget<UIWidgetLabel>.Content = globalEntity<GlobalGameManager>.winPoints
+            targetTextWidget<UIWidgetLabel>.Content = GlobalConfig.WIN_POINTS
         }
     }
 

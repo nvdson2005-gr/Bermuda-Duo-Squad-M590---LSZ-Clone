@@ -766,6 +766,18 @@
           },
           "scriptName": "GlobalUIManager",
           "children": []
+        },
+        {
+          "refer": {
+            "fileId": "q4gk8uv9o7-mfp8s05t-pzgw1zx8js",
+            "filePath": "Assets\\Scripts\\Global\\GlobalData\\GlobalConfig.fcg",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "ugcscript"
+          },
+          "scriptName": "GlobalConfig",
+          "children": []
         }
       ]
     },
