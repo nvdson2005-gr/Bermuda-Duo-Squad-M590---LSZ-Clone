@@ -161,11 +161,15 @@ graph GlobalGameManager {
         globalEntity<TeamData>.AddPointsToTeam(winningTeam, 1) // Add points to the winning team
         // globalEntity<GlobalUIManager>.CreatePlusAnimation(winningTeam)
         globalEntity<GlobalUIManager>.UpdateMiniScoreboard(); // Update the scoreboard for the winning team
-        globalEntity<GlobalRandomEvent>.ResetChosenEvent()
         for index, teammate in winningTeam<Team>.AllTeammates {
             if teammate<Player>.HP > 0 {
                 SetInvincibility(teammate, 60)
             }
+        }
+        ClearResidualLevelObjects()
+        globalEntity<GlobalRandomEvent>.ResetChosenEvent()
+        for index, player in GetAllPlayers() {
+            ClearBackpack(player)
         }
         if CheckWinningCondition(winningTeam) {
             LogInfo("<GlobalGameManager.fcg>: Team " + winningTeam<Entity> + " has won the game!") // Debug Info
@@ -187,7 +191,7 @@ graph GlobalGameManager {
     // Custom event, used to handle the case where no team wins
     event NoTeamWinException() {
         LogError("<GlobalGameManager.fcg>: No team won this round, skipping to the next round") // Debug Info
-        EndCurrentPhase()
+        SwitchPhase(EPhase.EndCombat)
     }
 
     // =========== UTILS FUNCTIONS ================

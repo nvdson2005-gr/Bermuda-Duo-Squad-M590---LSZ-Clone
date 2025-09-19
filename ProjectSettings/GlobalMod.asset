@@ -190,6 +190,14 @@
         "type": "GFileRefer"
       },
       "fileType": "ugcscript"
+    },
+    {
+      "fileId": "ax4ncghxal7-mfqcn86z-3f4ew4lbfpx",
+      "filePath": "Assets\\ECA\\Test.eca",
+      "_tag": {
+        "type": "GFileRefer"
+      },
+      "fileType": "eca"
     }
   ],
   "_entityName": "T_43_YU_WS_MODULE_GLOBAL",

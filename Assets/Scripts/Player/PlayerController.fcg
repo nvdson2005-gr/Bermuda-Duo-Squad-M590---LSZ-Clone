@@ -166,10 +166,10 @@ graph PlayerController {
     @param item: The item to be added, specified by its ID
     */
     func AddItemToPlayer(player entity<Player>, item EResItem, amount int) {
-        if(item == EResItem.HelmetLv3) {
+        if(item == EResItem.HelmetLv3 || item == EResItem.HELMET_2) {
             DestroyEquipment(player, EquipmentType.Helmet, 1, out var destroyedHelmet) // Destroy the existing helmet if it is level 3
         }
-        if(item == EResItem.VestLv3) {
+        if(item == EResItem.VestLv3 || item == EResItem.VEST_2) {
             DestroyEquipment(player, EquipmentType.Vest, 1, out var destroyedVest) // Destroy the existing vest if it is level 3
         }
         AddItem(player, item as ItemIDType, amount, out var newItem) // Adds the specified amount of items to the player

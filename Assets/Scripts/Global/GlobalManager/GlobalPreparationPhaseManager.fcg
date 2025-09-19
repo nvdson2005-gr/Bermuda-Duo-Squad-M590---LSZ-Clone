@@ -144,18 +144,19 @@ graph GlobalPreparationPhaseManager {
 
     // Add a M590 and a random rifle for each player
     func InitPlayerWeapons() {
-        // var rifleList = List<EResItem>{EResItem.AK47, EResItem.SCAR, EResItem.FAMAS, EResItem.XM8, EResItem.GROZAX, EResItem.AUG, EResItem.M4A1}
-        // var randomRifle = rifleList[RandomInt(0, List.Length(rifleList))]
-        // var m590 = EResItem.M590
         for index, player in GetAllPlayers(){
             // Add a list of items to player. Before add, delete all existing items
             // player<PlayerController>.AddItemToPlayer(player, EResItem.VestLv3, 1)
             // player<PlayerController>.AddItemToPlayer(player, EResItem.HelmetLv3, 1)
-            if GetItemCount(player, EResItem.GlooWall as ItemIDType) != 0 && globalEntity<CombatRoundCounter>.GetCount() != 0 {
+            if GetItemCount(player, EResItem.BAG_3 as ItemIDType) != 0 && globalEntity<CombatRoundCounter>.GetCount() != 0 {
+                DestroyItem(player, EResItem.BAG_3 as ItemIDType, GetItemCount(player, EResItem.BAG_3 as ItemIDType)) // Destroy the item when added
+            }
+            AddItem(player, EResItem.BAG_3 as ItemIDType, 1, out var newBag) // Add the item to the player
+            if GetItemCount(player, EResItem.GlooWall as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.GlooWall as ItemIDType, GetItemCount(player, EResItem.GlooWall as ItemIDType)) // Destroy the item when added
             }
-            // player<PlayerController>.AddItemToPlayer(player, EResItem.GlooWall, 8)
-            AddItem(player, EResItem.GlooWall as ItemIDType, 8, out var newGlooWall) // Add the item to the player
+            // player<PlayerController>.AddItemToPlayer(player, EResItem.GlooWall, 10)
+            AddItem(player, EResItem.GlooWall as ItemIDType, 10, out var newGlooWall) // Add the item to the player
             if GetItemCount(player, EResItem.MedKit as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.MedKit as ItemIDType, GetItemCount(player, EResItem.MedKit as ItemIDType)) // Destroy the item when added
             }
@@ -167,7 +168,7 @@ graph GlobalPreparationPhaseManager {
             if GetItemCount(player, EResItem.Inhaler as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.Inhaler as ItemIDType, GetItemCount(player, EResItem.Inhaler as ItemIDType)) // Destroy the item when added
             }
-            AddItem(player, EResItem.Inhaler as ItemIDType, 10, out var newInhaler) // Add the item to the player
+            AddItem(player, EResItem.Inhaler as ItemIDType, 5, out var newInhaler) // Add the item to the player
             if GetItemCount(player, EResItem.Grenade as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.Grenade as ItemIDType, GetItemCount(player, EResItem.Grenade as ItemIDType)) // Destroy the item when added
             }
@@ -175,21 +176,43 @@ graph GlobalPreparationPhaseManager {
             if GetItemCount(player, EResItem.FlashFreeze as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.FlashFreeze as ItemIDType, GetItemCount(player, EResItem.FlashFreeze as ItemIDType)) // Destroy the item when added
             }
-            AddItem(player, EResItem.FlashFreeze as ItemIDType, 1, out var newFlashFreeze) // Add the item to the player
+            AddItem(player, EResItem.FlashFreeze as ItemIDType, 2, out var newFlashFreeze) // Add the item to the player
             if GetItemCount(player, EResItem.GlooMelter as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.GlooMelter as ItemIDType, GetItemCount(player, EResItem.GlooMelter as ItemIDType)) // Destroy the item when added
             }
             AddItem(player, EResItem.GlooMelter as ItemIDType, 2, out var newGlooMelter) // Add the item to the player
-            if(globalEntity<CombatRoundCounter>.GetCount() == 1) {
-                // player<PlayerController>.AddItemToPlayer(player, m590, 1) // Add M590 to the player
-                // player<PlayerController>.AddItemToPlayer(player, randomRifle, 1) // Add random rifle to the player
-                player<PlayerController>.AddItemToPlayer(player, EResItem.Muzzle, 1)
-                player<PlayerController>.AddItemToPlayer(player, EResItem.Mag, 1)
-                player<PlayerController>.AddItemToPlayer(player, EResItem.Foregrip, 1)
-                player<PlayerController>.AddItemToPlayer(player, EResItem.Scope, 1)
-                player<PlayerController>.AddItemToPlayer(player, EResItem.Stock, 1)
-                // player<PlayerController>.AddItemToPlayer(player, EResItem.UpgradeChip, 1)
+            if GetItemCount(player, EResItem.SMOKE_GRENADE as ItemIDType) != 0 {
+                DestroyItem(player, EResItem.SMOKE_GRENADE as ItemIDType, GetItemCount(player, EResItem.SMOKE_GRENADE as ItemIDType)) // Destroy the item when added
             }
+            AddItem(player, EResItem.SMOKE_GRENADE as ItemIDType, 1, out var newSmokeGrenade) // Add the item to the player
+            // if(globalEntity<CombatRoundCounter>.GetCount() == 1) {
+            // if GetItemCount(player, EResItem.Muzzle as ItemIDType) != 0 {
+            //     DestroyItem(player, EResItem.Muzzle as ItemIDType, GetItemCount(player, EResItem.Muzzle as ItemIDType)) // Destroy the item when added
+            // }
+            AddItem(player, EResItem.Muzzle as ItemIDType, 1, out var newMuzzle) // Add the item to the player
+            // if GetItemCount(player, EResItem.Mag as ItemIDType) != 0 {
+            //     DestroyItem(player, EResItem.Mag as ItemIDType, GetItemCount(player, EResItem.Mag as ItemIDType)) // Destroy the item when added
+            // }
+            AddItem(player, EResItem.Mag as ItemIDType, 1, out var newMag) // Add the item to the player
+            // if GetItemCount(player, EResItem.Foregrip as ItemIDType) != 0 {
+            //     DestroyItem(player, EResItem.Foregrip as ItemIDType, GetItemCount(player, EResItem.Foregrip as ItemIDType)) // Destroy the item when added
+            // }
+            AddItem(player, EResItem.Foregrip as ItemIDType, 1, out var newForegrip) // Add the item to the player
+            // if GetItemCount(player, EResItem.Scope as ItemIDType) != 0 {
+            //     DestroyItem(player, EResItem.Scope as ItemIDType, GetItemCount(player, EResItem.Scope as ItemIDType)) // Destroy the item when added
+            // }
+            AddItem(player, EResItem.Scope as ItemIDType, 1, out var newScope) // Add the item to the player
+            // if GetItemCount(player, EResItem.Stock as ItemIDType) != 0 {
+            //     DestroyItem(player, EResItem.Stock as ItemIDType, GetItemCount(player, EResItem.Stock as ItemIDType)) // Destroy the item when added
+            // }
+            AddItem(player, EResItem.Stock as ItemIDType, 1, out var newStock) // Add the item to the player
+            // if(globalEntity<CombatRoundCounter>.GetCount() == 1) {
+                // player<PlayerController>.AddItemToPlayer(player, EResItem.Muzzle, 1)
+                // player<PlayerController>.AddItemToPlayer(player, EResItem.Mag, 1)
+                // player<PlayerController>.AddItemToPlayer(player, EResItem.Foregrip, 1)
+                // player<PlayerController>.AddItemToPlayer(player, EResItem.Scope, 1)
+                // player<PlayerController>.AddItemToPlayer(player, EResItem.Stock, 1)
+            // }
         }
     }
 

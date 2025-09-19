@@ -12,7 +12,8 @@ graph GlobalRandomEvent {
     // Chosen event this round
     chosenEvent int = -1
     // Current event counts
-    currentEventsCount int = 9
+    // currentEventsCount int = 9
+    currentEventsCount int = 7
 
     // The list of logos and descriptions for random events
     eventLogos List<SpriteID> = List<SpriteID>{}
@@ -49,13 +50,18 @@ graph GlobalRandomEvent {
         Append(eventDescriptions, LocString{"EVENT_8", List<string>{}}) // DARK mode event
 
         // Init event weights
-        eventWeights = List<int>{3, 2, 2, 1, 1, 3, 3, 2, 1}
+        eventWeights = List<int>{3, 0, 2, 1, 1, 3, 3, 0, 1}
     }
 
     // UTILS
     // Randomly select an event based on weights and apply the event effects to all players
     func ApplyRandomEvent() {
         LogWarning("<GlobalRandomEvent.fcg>: Applying random event")
+        // Debug only
+        // chosenEvent = 8 
+        // SetDarkModeEvent(true)
+        // return
+        // End of debug only
         if List.Length(oldEvents) >= currentEventsCount {
             List.Clear(oldEvents) // Reset old events if all events have been used
         }
@@ -90,9 +96,9 @@ graph GlobalRandomEvent {
         } else if chosenIndex == 1 {
             SetZeroGravityEvent(true)
         } else if chosenIndex == 2 {
-            SetLotsOfGlooWallsEvent()
+            SetLotsOfGlooWallsEvent(true)
         } else if chosenIndex == 3 {
-            SetLotsOfGrenadesEvent()
+            SetLotsOfGrenadesEvent(true)
         } else if chosenIndex == 4 {
             SetFastMovementEvent(true)
         } else if chosenIndex == 5 {
@@ -100,7 +106,7 @@ graph GlobalRandomEvent {
         } else if chosenIndex == 6 {
             SetBigBodyWhenShotEvent(true)
         } else if chosenIndex == 7 {
-            SetJetPackShoeEvent()
+            SetJetPackShoeEvent(true)
         } else if chosenIndex == 8 {
             SetDarkModeEvent(true)
         } else {
@@ -138,16 +144,28 @@ graph GlobalRandomEvent {
     }
 
     // Event handler for Lots of Gloo Walls Event
-    func SetLotsOfGlooWallsEvent(){
+    func SetLotsOfGlooWallsEvent(activate bool){
         for index, player in GetAllPlayers() {
-            AddItem(player, ItemIDType.GlooWall, 20, out var createdGloos)
+            if GetItemCount(player, EResItem.GlooWall as ItemIDType) != 0 {
+                DestroyItem(player, EResItem.GlooWall as ItemIDType, GetItemCount(player, EResItem.GlooWall as ItemIDType))
+            }
+            if activate == true {
+                AddItem(player, EResItem.GlooWall as ItemIDType, 20, out var createdGloos)
+            }
         }
     }
 
     // Event handler for Lots of Grenades Event
-    func SetLotsOfGrenadesEvent(){
+    func SetLotsOfGrenadesEvent(activate bool){
+        LogWarning("<GlobalRandomEvent.fcg>: SetLotsOfGrenadesEvent called")
         for index, player in GetAllPlayers() {
-            AddItem(player, ItemIDType.Grenade, 20, out var createdGrenades)
+            // if GetItemCount(player, EResItem.Grenade as ItemIDType) != 0 {
+            //     DestroyItem(player, EResItem.Grenade as ItemIDType, GetItemCount(player, EResItem.Grenade as ItemIDType))
+            // }
+            if GetItemCount(player, EResItem.Grenade as ItemIDType) != 0 {
+                DestroyItem(player, EResItem.Grenade as ItemIDType, GetItemCount(player, EResItem.Grenade as ItemIDType)) // Destroy the item when added
+            }
+            AddItem(player, EResItem.Grenade as ItemIDType, 20, out var newGrenade) // Add the item to the player
         }
     }
 
@@ -190,13 +208,14 @@ graph GlobalRandomEvent {
             if activate == true {
                 player<PlayerRandomEventHandler>.isBiggerWhenHit = true
             } else {
+                start player<PlayerRandomEventHandler>.ResetBodyScale()
                 player<PlayerRandomEventHandler>.isBiggerWhenHit = false
             }
         }
     }
 
     // Event handler for Jet Pack Shoe Event
-    func SetJetPackShoeEvent(){
+    func SetJetPackShoeEvent(activate bool){
         for index, player in GetAllPlayers() {
             if GetItemCount(player, EResItem.JETPACKSHOES as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.JETPACKSHOES as ItemIDType, GetItemCount(player, EResItem.JETPACKSHOES as ItemIDType)) // Destroy the item when added
@@ -204,9 +223,14 @@ graph GlobalRandomEvent {
             if GetItemCount(player, EResItem.JUMPINGSHOES as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.JUMPINGSHOES as ItemIDType, GetItemCount(player, EResItem.JUMPINGSHOES as ItemIDType)) // Destroy the item when added
             }
-            AddItem(player, EResItem.JETPACKSHOES as ItemIDType, 1, out var createdJetPackShoe)
-            player<Player>.IsSkipStaggerAnimation = false
-            player<Player>.DisableFallDamage = true
+            if activate == true {
+                AddItem(player, EResItem.JETPACKSHOES as ItemIDType, 1, out var createdJetPackShoe)
+                player<Player>.IsSkipStaggerAnimation = false
+                player<Player>.DisableFallDamage = true
+            } else {
+                player<Player>.IsSkipStaggerAnimation = true
+                player<Player>.DisableFallDamage = false 
+            }
         }
     }
 
@@ -215,9 +239,9 @@ graph GlobalRandomEvent {
         if activate == true {
             SetSkybox(SkyboxType.Night) 
             var skybox entity<SkyBox> = GetSceneSkybox("New Scene")
-            skybox<SkyBox>.LightIntensity = 0.5
-            skybox<SkyBox>.Darkness = 0.9
-            skybox<SkyBox>.ShadowStrength = 0.663
+            skybox<SkyBox>.LightIntensity = 0.8
+            skybox<SkyBox>.Darkness = 0.8
+            skybox<SkyBox>.ShadowStrength = 0.8
         } else {
             SetSkybox(SkyboxType.Day)
             var skybox entity<SkyBox> = GetSceneSkybox("New Scene")
@@ -235,18 +259,17 @@ graph GlobalRandomEvent {
         } else if chosenEvent == 1 {
             SetZeroGravityEvent(false)
         } else if chosenEvent == 2 {
-            for index, player in GetAllPlayers() {
-                if GetItemCount(player, EResItem.JETPACKSHOES as ItemIDType) != 0 {
-                    DestroyItem(player, EResItem.JETPACKSHOES as ItemIDType, GetItemCount(player, EResItem.JETPACKSHOES as ItemIDType)) // Destroy the item when added
-                }
-                if GetItemCount(player, EResItem.JUMPINGSHOES as ItemIDType) != 0 {
-                    DestroyItem(player, EResItem.JUMPINGSHOES as ItemIDType, GetItemCount(player, EResItem.JUMPINGSHOES as ItemIDType)) // Destroy the item when added
-                }
-            }
+            SetLotsOfGlooWallsEvent(false)
+        } else if chosenEvent == 3 {
+            SetLotsOfGrenadesEvent(false)
         } else if chosenEvent == 4 {
             SetFastMovementEvent(false)
         } else if chosenEvent == 5 {
             SetSmallBodyWhenShotEvent(false)
+        } else if chosenEvent == 6 {
+            SetBigBodyWhenShotEvent(false)
+        } else if chosenEvent == 7 {
+            SetJetPackShoeEvent(false)
         } else if chosenEvent == 8 {
             SetDarkModeEvent(false)
         }

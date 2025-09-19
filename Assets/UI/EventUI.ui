@@ -14,14 +14,17 @@
       "children": [],
       "prefabVariant": null,
       "activeValue": {
-        "selfValue": true,
+        "selfValue": false,
         "valueTag": "activeValue"
       },
-      "unlockedValue": null,
+      "unlockedValue": {
+        "selfValue": true,
+        "valueTag": "unlockedValue"
+      },
       "editorLockValue": false,
       "editorVisibleValue": true,
       "propsData": {
-        "activeSelf": true,
+        "activeSelf": false,
         "transform": {
           "rotate": 0,
           "anchorMin": {
@@ -264,7 +267,7 @@
               "value": "\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis sodales dolor. Aliquam ac volutpat ligula. ",
               "key": "",
               "font": "Default",
-              "fontSize": 23,
+              "fontSize": 19,
               "fontStyle": {
                 "bold": false,
                 "italic": false,
@@ -273,7 +276,7 @@
               "color": "#ffffff",
               "alignment": {
                 "h": "left",
-                "v": "top"
+                "v": "fillV"
               },
               "lineSpacing": 0,
               "background": false,

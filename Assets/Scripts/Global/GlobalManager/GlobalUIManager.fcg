@@ -27,6 +27,7 @@ import "../GlobalData/SpawnPoints.fcg" as SpawnPoints
 import "../GlobalManager/GlobalPreparationPhaseManager.fcg" as GlobalPreparationPhaseManager
 import "../GlobalData/TargetAndCombatTimer.fcg" as TargetAndCombatTimer
 import "../GlobalData/PlayersTimerUI.fcg" as PlayersTimerUI
+import "../../Player/PlayerUI.fcg" as PlayerUI
 import Res from "EditorGenLib.fcc"
 
 graph GlobalUIManager {
@@ -75,7 +76,7 @@ graph GlobalUIManager {
             CreateBuiltInUI(out var createdHUD, player, EResInternalHud.OpeningBannerHud as BuiltInUIType)
             createdHUD<UIOpeningBanner>.Title = LocString{"GAME_NAME", List<string>{}}
             createdHUD<UIOpeningBanner>.Description = LocString{"GAME_DESCRIPTION", List<string>{}}
-            createdHUD<UIOpeningBanner>.Icon = EResSprite.logo
+            // createdHUD<UIOpeningBanner>.Icon = EResSprite.logo
             WaitForMillisecond(8000)
             DestroyBuiltInUI(createdHUD)
         }
@@ -698,7 +699,7 @@ graph GlobalUIManager {
         DestroyBuiltInUI(createdUI) // Destroy the countdown HUD after 5 seconds
     }
 
-    // ==================================== VOTE UI ====================================
+    // ==================================== GUN VOTE UI ====================================
     /*
     Register the player's vote UI.
     @param player The player entity to register the UI for
@@ -719,6 +720,48 @@ graph GlobalUIManager {
         }
         LogError("<GlobalUIManager.fcg>: Vote UI not registered for player: " + player<Entity>.Name) // Error Info
         return false
+    }
+
+    func OpenSelectUI(player entity<Player>, newComboIndex int) {
+        if player<PlayerUI>.currentComboIndex != -1 && player<PlayerUI>.currentComboIndex == newComboIndex {
+            var selectWidget entity<UIWidget>
+            if newComboIndex == 0 {
+                selectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_1)
+            } else if newComboIndex == 1 {
+                selectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_2)
+            } else if newComboIndex == 2 {
+                selectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_3)
+            } else if newComboIndex == 3 {
+                selectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_4)
+            }
+            selectWidget<CustomUI>.IsVisible = false
+            return
+        }
+        if player<PlayerUI>.currentComboIndex != -1 {
+            var oldComboIndex = player<PlayerUI>.currentComboIndex
+            var oldSelectWidget entity<UIWidget>
+            if oldComboIndex == 0 {
+                oldSelectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_1)
+            } else if oldComboIndex == 1 {
+                oldSelectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_2)
+            } else if oldComboIndex == 2 {
+                oldSelectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_3)
+            } else if oldComboIndex == 3 {
+                oldSelectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_4)
+            }
+            oldSelectWidget<CustomUI>.IsVisible = false
+        }
+        var newSelectWidget entity<UIWidget>
+        if newComboIndex == 0 {
+            newSelectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_1)
+        } else if newComboIndex == 1 {
+            newSelectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_2)
+        } else if newComboIndex == 2 {
+            newSelectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_3)
+        } else if newComboIndex == 3 {
+            newSelectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_4)
+        }
+        newSelectWidget<CustomUI>.IsVisible = true
     }
 
     /*

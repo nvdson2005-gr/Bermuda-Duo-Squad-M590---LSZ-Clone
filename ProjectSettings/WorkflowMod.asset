@@ -150,8 +150,14 @@
           "_entityId": "0rpR1Bnz",
           "children": [],
           "prefabVariant": null,
-          "activeValue": null,
-          "unlockedValue": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
           "gameDuration": 10,
@@ -200,8 +206,14 @@
           "_entityId": "E4EWHOGw",
           "children": [],
           "prefabVariant": null,
-          "activeValue": null,
-          "unlockedValue": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
           "gameDuration": 10,
@@ -250,11 +262,17 @@
           "_entityId": "PIOpFVsn",
           "children": [],
           "prefabVariant": null,
-          "activeValue": null,
-          "unlockedValue": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
-          "gameDuration": 10,
+          "gameDuration": 5,
           "ecaScripts": [],
           "ecaProps": {
             "Phase": {},
@@ -272,8 +290,14 @@
           "_entityId": "OPoLo46L",
           "children": [],
           "prefabVariant": null,
-          "activeValue": null,
-          "unlockedValue": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
           "gameDuration": 900,
@@ -385,22 +409,28 @@
       "type": "ff.PhaseEntity1",
       "resourceId": "Phase"
     },
-    "_entityId": "PIOpFVsn",
+    "_entityId": "OPoLo46L",
     "children": [],
     "prefabVariant": null,
-    "activeValue": null,
-    "unlockedValue": null,
+    "activeValue": {
+      "selfValue": true,
+      "valueTag": "activeValue"
+    },
+    "unlockedValue": {
+      "selfValue": true,
+      "valueTag": "unlockedValue"
+    },
     "editorLockValue": false,
     "editorVisibleValue": true,
-    "gameDuration": 10,
+    "gameDuration": 900,
     "ecaScripts": [],
     "ecaProps": {
       "Phase": {},
       "Entity": {}
     },
     "modId": 18,
-    "_entityName": "ShrinkingDelay",
-    "phaseIndex": 2101
+    "_entityName": "LastShrink",
+    "phaseIndex": 2227
   },
   "roundCount": 4,
   "discriminator": "ISceneLike",

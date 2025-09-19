@@ -104,9 +104,9 @@
           "b": 147,
           "a": 1
         },
-        "lightIntensity": 0.5,
-        "darkness": 0.9,
-        "shadowStrength": 0.663,
+        "lightIntensity": 0.8,
+        "darkness": 0.8,
+        "shadowStrength": 0.8,
         "terrainWetness": 0,
         "lensFlare": 0,
         "fogColor": {

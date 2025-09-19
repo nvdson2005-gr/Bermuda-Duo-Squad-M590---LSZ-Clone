@@ -5,7 +5,7 @@ static graph GlobalConfig {
     WIN_POINTS int = 3
     FIRST_BORDER_DURATION float = 85 
     SECOND_BORDER_DURATION float = 80
-    FINAL_BORDER_SHRINK_TIME float = 90
+    FINAL_BORDER_SHRINK_TIME float = 60
     FIRST_BORDER_DAMAGE float = 20
     SECOND_BORDER_DAMAGE float = 40
     FIRST_BORDER_INIT_RADIUS float = 100

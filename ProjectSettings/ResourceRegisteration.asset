@@ -356,6 +356,22 @@
             {
               "id": "FnJHVVZB",
               "scriptName": "VoteTimer"
+            },
+            {
+              "id": "vmZXaypj",
+              "scriptName": "SELECT_BG_1"
+            },
+            {
+              "id": "1OMdk6yS",
+              "scriptName": "SELECT_BG_2"
+            },
+            {
+              "id": "vzJVqKZH",
+              "scriptName": "SELECT_BG_3"
+            },
+            {
+              "id": "yu6GGKSo",
+              "scriptName": "SELECT_BG_4"
             }
           ]
         },
@@ -630,7 +646,20 @@
     },
     "prefab": {
       "id": "prefab",
-      "children": []
+      "children": [
+        {
+          "refer": {
+            "fileId": "hby9b2zsjmj-mfqqdh9o-5kj1b01hxrt",
+            "filePath": "Assets\\UI\\Prefabs\\SelectBg.prefab",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "prefab"
+          },
+          "scriptName": "SelectBg",
+          "children": []
+        }
+      ]
     },
     "ugcscript": {
       "id": "ugcscript",
@@ -1808,6 +1837,66 @@
             "fileType": "fitem"
           },
           "scriptName": "HORIZALINE",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "e648583de196edd3e8257cdb066bf089",
+            "filePath": "lib://ffitem/item_403",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "fitem"
+          },
+          "scriptName": "BAG_3",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "73781e2c917b6f0b26cd6db29e421018",
+            "filePath": "lib://ffitem/item_106",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "fitem"
+          },
+          "scriptName": "REPAIR_KIT",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "3bda3ec15bba6e99f8e396ae1c6cab72",
+            "filePath": "lib://ffitem/item_603",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "fitem"
+          },
+          "scriptName": "SMOKE_GRENADE",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "3765013d3b24931d6c5b5c93c001eafe",
+            "filePath": "lib://ffitem/item_302",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "fitem"
+          },
+          "scriptName": "VEST_2",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "2904a40fb0e10f5119d535035b261f28",
+            "filePath": "lib://ffitem/item_305",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "fitem"
+          },
+          "scriptName": "HELMET_2",
           "children": []
         }
       ]
