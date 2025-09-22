@@ -646,20 +646,7 @@
     },
     "prefab": {
       "id": "prefab",
-      "children": [
-        {
-          "refer": {
-            "fileId": "hby9b2zsjmj-mfqqdh9o-5kj1b01hxrt",
-            "filePath": "Assets\\UI\\Prefabs\\SelectBg.prefab",
-            "_tag": {
-              "type": "GFileRefer"
-            },
-            "fileType": "prefab"
-          },
-          "scriptName": "SelectBg",
-          "children": []
-        }
-      ]
+      "children": []
     },
     "ugcscript": {
       "id": "ugcscript",

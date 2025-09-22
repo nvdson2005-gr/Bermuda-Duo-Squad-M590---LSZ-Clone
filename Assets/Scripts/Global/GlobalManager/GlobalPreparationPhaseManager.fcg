@@ -28,7 +28,7 @@ import "../../Phases/VotePhaseManager.fcg" as VotePhaseManager
 graph GlobalPreparationPhaseManager {
     // Script variable storing the old stage index
     oldStageIndex int
-    oldStagesList List<int> = List<int>{} // List to store old stages (up to 4 stages)
+    oldStagesList List<int> = List<int>{} // List to store old stages 
     currentStageIndex int = -1
     // When the preparation phase starts, get a random stage index and init data for players
     event OnPhaseStart(phase entity<Phase>) {
@@ -124,7 +124,7 @@ graph GlobalPreparationPhaseManager {
             start globalEntity<GlobalUIManager>.CreateRoundInfoHUD(player) // Create round info HUD
         }
 
-        // globalEntity<SpawnPoints>.SetSpawnPointsActiveStatusForRound(randomStageIndex, false); // Disable all spawn points (MOVED TO RandomEventPhaseManager.fcg)
+        globalEntity<SpawnPoints>.SetSpawnPointsActiveStatusForRound(randomStageIndex, false); // Disable all spawn points (MOVED TO RandomEventPhaseManager.fcg)
     }
 
     /* Set Invincibility Status for a player (NO DURATION, TO SET INVINCIBLE WITH DURATION USE SetInvincibility() from Player.fcc library)

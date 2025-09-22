@@ -24,7 +24,7 @@ graph RandomEventPhaseManager {
         for index, player in GetAllPlayers() {
             globalEntity<GlobalUIManager>.SetVisibilityEventUI(player, false)
         }
-        globalEntity<SpawnPoints>.SetSpawnPointsActiveStatusForRound(globalEntity<GlobalPreparationPhaseManager>.oldStagesList[List.Length(globalEntity<GlobalPreparationPhaseManager>.oldStagesList) - 1], false)
+        // globalEntity<SpawnPoints>.SetSpawnPointsActiveStatusForRound(globalEntity<GlobalPreparationPhaseManager>.oldStagesList[List.Length(globalEntity<GlobalPreparationPhaseManager>.oldStagesList) - 1], false)
     }
 
     async func RandomEventHandler(){

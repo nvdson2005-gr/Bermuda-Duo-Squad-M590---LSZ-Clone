@@ -734,7 +734,7 @@ graph GlobalUIManager {
             } else if newComboIndex == 3 {
                 selectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_4)
             }
-            selectWidget<CustomUI>.IsVisible = false
+            selectWidget<UIWidget>.Active = false
             return
         }
         if player<PlayerUI>.currentComboIndex != -1 {
@@ -749,7 +749,7 @@ graph GlobalUIManager {
             } else if oldComboIndex == 3 {
                 oldSelectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_4)
             }
-            oldSelectWidget<CustomUI>.IsVisible = false
+            oldSelectWidget<UIWidget>.Active = false
         }
         var newSelectWidget entity<UIWidget>
         if newComboIndex == 0 {
@@ -761,7 +761,8 @@ graph GlobalUIManager {
         } else if newComboIndex == 3 {
             newSelectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_4)
         }
-        newSelectWidget<CustomUI>.IsVisible = true
+        LogWarning("<GlobalUIManager.fcg>: New select widget: " + newSelectWidget<UIWidget>.Active)
+        newSelectWidget<UIWidget>.Active = true
     }
 
     /*

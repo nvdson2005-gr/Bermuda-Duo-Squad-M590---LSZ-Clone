@@ -1761,7 +1761,10 @@
                     "selfValue": true,
                     "valueTag": "activeValue"
                   },
-                  "unlockedValue": null,
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
                   "editorLockValue": false,
                   "editorVisibleValue": true,
                   "propsData": {
@@ -1862,7 +1865,10 @@
                     "selfValue": true,
                     "valueTag": "activeValue"
                   },
-                  "unlockedValue": null,
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
                   "editorLockValue": false,
                   "editorVisibleValue": true,
                   "propsData": {
@@ -1952,256 +1958,15 @@
                   }
                 }
               ],
-              "prefabVariant": {
-                "prefabFile": {
-                  "fileId": "hby9b2zsjmj-mfqqdh9o-5kj1b01hxrt",
-                  "filePath": "Assets\\UI\\Prefabs\\SelectBg.prefab",
-                  "_tag": {
-                    "type": "GFileRefer"
-                  },
-                  "fileType": "Prefab"
-                },
-                "snapShots": {
-                  "vmZXaypj": {
-                    "_entityId": "xBEw0NOd",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchorMax": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": 0,
-                          "y": 0
-                        },
-                        "sizeDelta": {
-                          "x": 240,
-                          "y": 330
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudEmptyWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "_entityName": "SelectBg",
-                    "entityTagData": {
-                      "tagPointers": []
-                    },
-                    "editorLockValue": false,
-                    "editorVisibleValue": true
-                  },
-                  "eLxv4zXb": {
-                    "_entityId": "0fpjOCL1",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchorMax": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": 0,
-                          "y": 0
-                        },
-                        "sizeDelta": {
-                          "x": 240,
-                          "y": 330
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0,
-                      "image": {
-                        "source": {
-                          "fileId": "src5katp2ul-lqxgdcvq-0n96ubtog69",
-                          "filePath": "Assets\\Resources\\frame_selected.png",
-                          "fileType": "texture"
-                        },
-                        "color": "#FF7D7D",
-                        "reverse": {
-                          "x": false,
-                          "y": false
-                        },
-                        "fillType": 1,
-                        "slicedBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "tiledBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "centerInvisible": false,
-                        "fillDir": 0,
-                        "fillAmount": 0,
-                        "invertFill": false,
-                        "flip": 0,
-                        "gradient": 1,
-                        "gradientTop": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        },
-                        "gradientBottom": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        }
-                      }
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudImageWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "_entityName": "Border",
-                    "entityTagData": {
-                      "tagPointers": []
-                    },
-                    "editorLockValue": false,
-                    "editorVisibleValue": true
-                  },
-                  "AN52oK05": {
-                    "_entityId": "b22LW2gs",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 1,
-                          "y": 0
-                        },
-                        "anchorMax": {
-                          "x": 1,
-                          "y": 0
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": -20,
-                          "y": 20
-                        },
-                        "sizeDelta": {
-                          "x": 40,
-                          "y": 40
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0,
-                      "image": {
-                        "source": {
-                          "fileId": "1tundeay0f6-lqop61kh-xopspy7q3t",
-                          "filePath": "Assets\\Resources\\achievement_check.png",
-                          "fileType": "texture"
-                        },
-                        "color": "#ffffff",
-                        "reverse": {
-                          "x": false,
-                          "y": false
-                        },
-                        "fillType": 1,
-                        "slicedBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "tiledBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "centerInvisible": false,
-                        "fillDir": 0,
-                        "fillAmount": 0,
-                        "invertFill": false,
-                        "flip": 0,
-                        "gradient": 1,
-                        "gradientTop": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        },
-                        "gradientBottom": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        }
-                      }
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudImageWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "_entityName": "Tick",
-                    "entityTagData": {
-                      "tagPointers": []
-                    },
-                    "editorLockValue": false,
-                    "editorVisibleValue": true
-                  }
-                }
-              },
+              "prefabVariant": null,
               "activeValue": {
                 "selfValue": false,
                 "valueTag": "activeValue"
               },
-              "unlockedValue": null,
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
               "editorLockValue": false,
               "editorVisibleValue": true,
               "propsData": {
@@ -3269,7 +3034,10 @@
                     "selfValue": true,
                     "valueTag": "activeValue"
                   },
-                  "unlockedValue": null,
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
                   "propsData": {
                     "activeSelf": true,
                     "transform": {
@@ -3356,7 +3124,8 @@
                     "tagPointers": []
                   },
                   "editorLockValue": false,
-                  "editorVisibleValue": true
+                  "editorVisibleValue": true,
+                  "prefabVariant": null
                 },
                 {
                   "_tag": {
@@ -3369,7 +3138,10 @@
                     "selfValue": true,
                     "valueTag": "activeValue"
                   },
-                  "unlockedValue": null,
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
                   "propsData": {
                     "activeSelf": true,
                     "transform": {
@@ -3456,258 +3228,19 @@
                     "tagPointers": []
                   },
                   "editorLockValue": false,
-                  "editorVisibleValue": true
+                  "editorVisibleValue": true,
+                  "prefabVariant": null
                 }
               ],
-              "prefabVariant": {
-                "prefabFile": {
-                  "fileId": "hby9b2zsjmj-mfqqdh9o-5kj1b01hxrt",
-                  "filePath": "Assets\\UI\\Prefabs\\SelectBg.prefab",
-                  "_tag": {
-                    "type": "GFileRefer"
-                  },
-                  "fileType": "Prefab"
-                },
-                "snapShots": {
-                  "1OMdk6yS": {
-                    "_entityId": "xBEw0NOd",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchorMax": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": 0,
-                          "y": 0
-                        },
-                        "sizeDelta": {
-                          "x": 240,
-                          "y": 330
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudEmptyWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "entityTagData": {
-                      "tagPointers": []
-                    },
-                    "editorLockValue": false,
-                    "editorVisibleValue": true
-                  },
-                  "83iIu2JI": {
-                    "_entityId": "0fpjOCL1",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchorMax": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": 0,
-                          "y": 0
-                        },
-                        "sizeDelta": {
-                          "x": 240,
-                          "y": 330
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0,
-                      "image": {
-                        "source": {
-                          "fileId": "src5katp2ul-lqxgdcvq-0n96ubtog69",
-                          "filePath": "Assets\\Resources\\frame_selected.png",
-                          "fileType": "texture"
-                        },
-                        "color": "#FF7D7D",
-                        "reverse": {
-                          "x": false,
-                          "y": false
-                        },
-                        "fillType": 1,
-                        "slicedBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "tiledBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "centerInvisible": false,
-                        "fillDir": 0,
-                        "fillAmount": 0,
-                        "invertFill": false,
-                        "flip": 0,
-                        "gradient": 1,
-                        "gradientTop": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        },
-                        "gradientBottom": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        }
-                      }
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudImageWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "_entityName": "Border",
-                    "entityTagData": {
-                      "tagPointers": []
-                    },
-                    "editorLockValue": false,
-                    "editorVisibleValue": true
-                  },
-                  "toPE9LAt": {
-                    "_entityId": "b22LW2gs",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 1,
-                          "y": 0
-                        },
-                        "anchorMax": {
-                          "x": 1,
-                          "y": 0
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": -20,
-                          "y": 20
-                        },
-                        "sizeDelta": {
-                          "x": 40,
-                          "y": 40
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0,
-                      "image": {
-                        "source": {
-                          "fileId": "1tundeay0f6-lqop61kh-xopspy7q3t",
-                          "filePath": "Assets\\Resources\\achievement_check.png",
-                          "fileType": "texture"
-                        },
-                        "color": "#FFADAD",
-                        "reverse": {
-                          "x": false,
-                          "y": false
-                        },
-                        "fillType": 1,
-                        "slicedBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "tiledBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "centerInvisible": false,
-                        "fillDir": 0,
-                        "fillAmount": 0,
-                        "invertFill": false,
-                        "flip": 0,
-                        "gradient": 1,
-                        "gradientTop": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        },
-                        "gradientBottom": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        }
-                      }
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudImageWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "_entityName": "Tick",
-                    "entityTagData": {
-                      "tagPointers": []
-                    },
-                    "editorLockValue": false,
-                    "editorVisibleValue": true
-                  }
-                }
-              },
+              "prefabVariant": null,
               "activeValue": {
                 "selfValue": false,
                 "valueTag": "activeValue"
               },
-              "unlockedValue": null,
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
               "propsData": {
                 "activeSelf": false,
                 "transform": {
@@ -4776,7 +4309,10 @@
                     "selfValue": true,
                     "valueTag": "activeValue"
                   },
-                  "unlockedValue": null,
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
                   "propsData": {
                     "activeSelf": true,
                     "transform": {
@@ -4877,7 +4413,10 @@
                     "selfValue": true,
                     "valueTag": "activeValue"
                   },
-                  "unlockedValue": null,
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
                   "propsData": {
                     "activeSelf": true,
                     "transform": {
@@ -4967,250 +4506,15 @@
                   "editorVisibleValue": true
                 }
               ],
-              "prefabVariant": {
-                "prefabFile": {
-                  "fileId": "hby9b2zsjmj-mfqqdh9o-5kj1b01hxrt",
-                  "filePath": "Assets\\UI\\Prefabs\\SelectBg.prefab",
-                  "_tag": {
-                    "type": "GFileRefer"
-                  },
-                  "fileType": "Prefab"
-                },
-                "snapShots": {
-                  "vzJVqKZH": {
-                    "_entityId": "xBEw0NOd",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchorMax": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": 0,
-                          "y": 0
-                        },
-                        "sizeDelta": {
-                          "x": 240,
-                          "y": 330
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudEmptyWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "_entityName": "SelectBg",
-                    "entityTagData": {
-                      "tagPointers": []
-                    }
-                  },
-                  "3RqZKrrW": {
-                    "_entityId": "0fpjOCL1",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchorMax": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": 0,
-                          "y": 0
-                        },
-                        "sizeDelta": {
-                          "x": 240,
-                          "y": 330
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0,
-                      "image": {
-                        "source": {
-                          "fileId": "src5katp2ul-lqxgdcvq-0n96ubtog69",
-                          "filePath": "Assets\\Resources\\frame_selected.png",
-                          "fileType": "texture"
-                        },
-                        "color": "#FF7D7D",
-                        "reverse": {
-                          "x": false,
-                          "y": false
-                        },
-                        "fillType": 1,
-                        "slicedBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "tiledBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "centerInvisible": false,
-                        "fillDir": 0,
-                        "fillAmount": 0,
-                        "invertFill": false,
-                        "flip": 0,
-                        "gradient": 1,
-                        "gradientTop": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        },
-                        "gradientBottom": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        }
-                      }
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudImageWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "_entityName": "Border",
-                    "entityTagData": {
-                      "tagPointers": []
-                    }
-                  },
-                  "JW7eRYRB": {
-                    "_entityId": "b22LW2gs",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 1,
-                          "y": 0
-                        },
-                        "anchorMax": {
-                          "x": 1,
-                          "y": 0
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": -20,
-                          "y": 20
-                        },
-                        "sizeDelta": {
-                          "x": 40,
-                          "y": 40
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0,
-                      "image": {
-                        "source": {
-                          "fileId": "1tundeay0f6-lqop61kh-xopspy7q3t",
-                          "filePath": "Assets\\Resources\\achievement_check.png",
-                          "fileType": "texture"
-                        },
-                        "color": "#ffffff",
-                        "reverse": {
-                          "x": false,
-                          "y": false
-                        },
-                        "fillType": 1,
-                        "slicedBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "tiledBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "centerInvisible": false,
-                        "fillDir": 0,
-                        "fillAmount": 0,
-                        "invertFill": false,
-                        "flip": 0,
-                        "gradient": 1,
-                        "gradientTop": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        },
-                        "gradientBottom": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        }
-                      }
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudImageWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "_entityName": "Tick",
-                    "entityTagData": {
-                      "tagPointers": []
-                    }
-                  }
-                }
-              },
+              "prefabVariant": null,
               "activeValue": {
                 "selfValue": false,
                 "valueTag": "activeValue"
               },
-              "unlockedValue": null,
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
               "propsData": {
                 "activeSelf": false,
                 "transform": {
@@ -6279,7 +5583,10 @@
                     "selfValue": true,
                     "valueTag": "activeValue"
                   },
-                  "unlockedValue": null,
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
                   "propsData": {
                     "activeSelf": true,
                     "transform": {
@@ -6380,7 +5687,10 @@
                     "selfValue": true,
                     "valueTag": "activeValue"
                   },
-                  "unlockedValue": null,
+                  "unlockedValue": {
+                    "selfValue": true,
+                    "valueTag": "unlockedValue"
+                  },
                   "propsData": {
                     "activeSelf": true,
                     "transform": {
@@ -6470,250 +5780,15 @@
                   "editorVisibleValue": true
                 }
               ],
-              "prefabVariant": {
-                "prefabFile": {
-                  "fileId": "hby9b2zsjmj-mfqqdh9o-5kj1b01hxrt",
-                  "filePath": "Assets\\UI\\Prefabs\\SelectBg.prefab",
-                  "_tag": {
-                    "type": "GFileRefer"
-                  },
-                  "fileType": "Prefab"
-                },
-                "snapShots": {
-                  "yu6GGKSo": {
-                    "_entityId": "xBEw0NOd",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchorMax": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": 0,
-                          "y": 0
-                        },
-                        "sizeDelta": {
-                          "x": 240,
-                          "y": 330
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudEmptyWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "_entityName": "SelectBg",
-                    "entityTagData": {
-                      "tagPointers": []
-                    }
-                  },
-                  "JV0C9pyO": {
-                    "_entityId": "0fpjOCL1",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchorMax": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": 0,
-                          "y": 0
-                        },
-                        "sizeDelta": {
-                          "x": 240,
-                          "y": 330
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0,
-                      "image": {
-                        "source": {
-                          "fileId": "src5katp2ul-lqxgdcvq-0n96ubtog69",
-                          "filePath": "Assets\\Resources\\frame_selected.png",
-                          "fileType": "texture"
-                        },
-                        "color": "#FF7D7D",
-                        "reverse": {
-                          "x": false,
-                          "y": false
-                        },
-                        "fillType": 1,
-                        "slicedBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "tiledBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "centerInvisible": false,
-                        "fillDir": 0,
-                        "fillAmount": 0,
-                        "invertFill": false,
-                        "flip": 0,
-                        "gradient": 1,
-                        "gradientTop": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        },
-                        "gradientBottom": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        }
-                      }
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudImageWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "_entityName": "Border",
-                    "entityTagData": {
-                      "tagPointers": []
-                    }
-                  },
-                  "0NT4cYIB": {
-                    "_entityId": "b22LW2gs",
-                    "activeValue": {
-                      "selfValue": true,
-                      "valueTag": "activeValue"
-                    },
-                    "unlockedValue": null,
-                    "propsData": {
-                      "activeSelf": true,
-                      "transform": {
-                        "rotate": 0,
-                        "anchorMin": {
-                          "x": 1,
-                          "y": 0
-                        },
-                        "anchorMax": {
-                          "x": 1,
-                          "y": 0
-                        },
-                        "pivot": {
-                          "x": 0.5,
-                          "y": 0.5
-                        },
-                        "anchoredPosition": {
-                          "x": -20,
-                          "y": 20
-                        },
-                        "sizeDelta": {
-                          "x": 40,
-                          "y": 40
-                        }
-                      },
-                      "alpha": 100,
-                      "priority": 0,
-                      "image": {
-                        "source": {
-                          "fileId": "1tundeay0f6-lqop61kh-xopspy7q3t",
-                          "filePath": "Assets\\Resources\\achievement_check.png",
-                          "fileType": "texture"
-                        },
-                        "color": "#ffffff",
-                        "reverse": {
-                          "x": false,
-                          "y": false
-                        },
-                        "fillType": 1,
-                        "slicedBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "tiledBorder": {
-                          "left": 0,
-                          "right": 0,
-                          "top": 0,
-                          "bottom": 0
-                        },
-                        "centerInvisible": false,
-                        "fillDir": 0,
-                        "fillAmount": 0,
-                        "invertFill": false,
-                        "flip": 0,
-                        "gradient": 1,
-                        "gradientTop": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        },
-                        "gradientBottom": {
-                          "r": 255,
-                          "g": 255,
-                          "b": 255,
-                          "a": 1
-                        }
-                      }
-                    },
-                    "ecaScripts": [],
-                    "ecaProps": {
-                      "HudImageWidget": {},
-                      "HudWidget": {},
-                      "Entity": {}
-                    },
-                    "componentList": [],
-                    "_entityName": "Tick",
-                    "entityTagData": {
-                      "tagPointers": []
-                    }
-                  }
-                }
-              },
+              "prefabVariant": null,
               "activeValue": {
                 "selfValue": false,
                 "valueTag": "activeValue"
               },
-              "unlockedValue": null,
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
               "propsData": {
                 "activeSelf": false,
                 "transform": {
