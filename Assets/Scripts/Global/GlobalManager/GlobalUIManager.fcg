@@ -28,6 +28,7 @@ import "../GlobalManager/GlobalPreparationPhaseManager.fcg" as GlobalPreparation
 import "../GlobalData/TargetAndCombatTimer.fcg" as TargetAndCombatTimer
 import "../GlobalData/PlayersTimerUI.fcg" as PlayersTimerUI
 import "../../Player/PlayerUI.fcg" as PlayerUI
+import "../GlobalData/GlobalRandomEvent.fcg" as GlobalRandomEvent
 import Res from "EditorGenLib.fcc"
 
 graph GlobalUIManager {
@@ -761,7 +762,7 @@ graph GlobalUIManager {
         } else if newComboIndex == 3 {
             newSelectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_4)
         }
-        LogWarning("<GlobalUIManager.fcg>: New select widget: " + newSelectWidget<UIWidget>.Active)
+        // LogWarning("<GlobalUIManager.fcg>: New select widget: " + newSelectWidget<UIWidget>.Active)
         newSelectWidget<UIWidget>.Active = true
     }
 

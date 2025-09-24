@@ -11,57 +11,15 @@ import "Convert.fcc" as Convert
 import "Other.fcc" as Other
 import "../GlobalManager/GlobalGameManager.fcg" as GlobalGameManager
 import "../GlobalData/CombatRoundCounter.fcg" as CombatRoundCounter
-import "../GlobalData/SpawnPoints.fcg" as SpawnPoints
-import "../GlobalManager/GlobalPreparationPhaseManager.fcg" as GlobalPreparationPhaseManager
 import "Player.fcc" as Player
 import "../GlobalData/GlobalConfig.fcg" as GlobalConfig
 graph TargetAndCombatTimer {
     // Map to store the main custom UI (for unregister)
     mainCustomUIDict Map<entity<Player>, entity<CustomUI>>
 
-    // Map to store combat stage UI elements for each player
-    combatStageDict Map<entity<Player>, entity<UIWidget>>
-
-    // Map to store user timer UI elements for each player
-    userTimerDict Map<entity<Player>, entity<UIWidgetLabel>>
-
-    // Timer variables
-    timer int = 0
-    second int = 0
-    minute int = 0
-    isStart bool = false
-
     //Executed when entity is created
     event OnAwake() {
-        timer = 0 
-        userTimerDict = Map<entity<Player>, entity<UIWidgetLabel>>{}
-        combatStageDict = Map<entity<Player>, entity<UIWidget>>{}
         mainCustomUIDict = Map<entity<Player>, entity<CustomUI>>{}
-    }
-
-    // Update the timer UI for all players
-    event OnFixedUpdate() {
-        if isStart {
-            timer = timer + globalEntity<Global>.FixedDeltaTime
-            var elapsedTime = timer / 1000
-            second = elapsedTime % 60
-            minute = elapsedTime / 60
-            for player, ui in userTimerDict{
-                if ContainKey(userTimerDict, player) {
-                    if minute < 10 {
-                        ui<UIWidgetLabel>.Content = "0" + ToString(minute) 
-                    } else {
-                        ui<UIWidgetLabel>.Content = ToString(minute)
-                    }
-                    ui<UIWidgetLabel>.Content = ui<UIWidgetLabel>.Content + ":"
-                    if second < 10 {
-                        ui<UIWidgetLabel>.Content = ui<UIWidgetLabel>.Content + "0" + ToString(second)
-                    } else {
-                        ui<UIWidgetLabel>.Content = ui<UIWidgetLabel>.Content + ToString(second)
-                    }
-                }
-            }
-        }
     }
 
     /*
@@ -71,16 +29,9 @@ graph TargetAndCombatTimer {
     @param player The player entity to register the UI for
     */
     func RegisterGameInfo(player entity<Player>) {
-        if !ContainKey(userTimerDict, player) {
+        if !ContainKey(mainCustomUIDict, player) {
             CreateCustomUI(out var createdUI, player, EResUI.GameInfo)
             mainCustomUIDict[player] = createdUI
-            var timerTextWidget = GetWidgetFromCustomUI(player, createdUI, EResUIGameInfo.Counter)
-            userTimerDict[player] = timerTextWidget<UIWidgetLabel>
-            userTimerDict[player]<UIWidgetLabel>.Content = "00:00" // Initialize the timer UI with 0:00
-            var targetTextWidget = GetWidgetFromCustomUI(player, createdUI, EResUIGameInfo.TargetCount)
-            var roundStageTextWidget = GetWidgetFromCustomUI(player, createdUI, EResUIGameInfo.RoundStageText)
-            combatStageDict[player] = roundStageTextWidget 
-            targetTextWidget<UIWidgetLabel>.Content = GlobalConfig.WIN_POINTS
         }
     }
 
@@ -91,8 +42,6 @@ graph TargetAndCombatTimer {
     func UnregisterGameInfo(player entity<Player>) {
         if Map.ContainKey(mainCustomUIDict, player) {
             DestroyCustomUI(mainCustomUIDict[player]) // Destroy the player's timer UI
-            Remove(userTimerDict, player) // Remove the player's timer UI from the map
-            Remove(combatStageDict, player) // Remove the player's combat stage UI from the map
             Remove(mainCustomUIDict, player) // Remove the player's main custom UI from the map
         }
         LogError("Unregistered game info for player: " + player<Player>.NickName)
@@ -104,36 +53,20 @@ graph TargetAndCombatTimer {
     @param player The player entity to register the UI for
     */
     func UpdateRoundStageInfo(player entity<Player>, stage int, stageName string) {
-        if ContainKey(combatStageDict, player) {
-            combatStageDict[player]<UIWidgetLabel>.Content = LocString{"ROUND_INFO", List<string>{stageName}}
+        if ContainKey(mainCustomUIDict, player) {
+            var stageTextWidget entity<UIWidget>
+            stageTextWidget = GetWidgetFromCustomUI(player, mainCustomUIDict[player], EResUIGameInfo.RoundStageText as CustomUIWidgetID)
+            stageTextWidget<UIWidgetLabel>.Content = LocString{"ROUND_INFO", List<string>{stageName}}
         } else {
             LogError("Player does not have a combat stage UI registered.")
         }
     }
 
-    /*
-    Reset the timer and UI for all players.
-    */
-    func ResetTimer() {
-        isStart = false
-        timer = 0
-        second = 0
-        minute = 0
-        for player, ui in userTimerDict {
-            ui<UIWidgetLabel>.Content = "00:00" // Reset the timer UI for all players
+    func UpdateEventShortDescription(player entity<Player>, eventShortDesc string) {
+        if ContainKey(mainCustomUIDict, player) {
+            var eventShortDescWidget entity<UIWidget>
+            eventShortDescWidget = GetWidgetFromCustomUI(player, mainCustomUIDict[player], EResUIGameInfo.EventShortDesc as CustomUIWidgetID)
+            eventShortDescWidget<UIWidgetLabel>.Content = eventShortDesc
         }
-    }
-
-    /*
-    Start the timer and update the UI for all players.
-    */
-    func StartTimer() {
-        timer = 0 // Reset the timer to 0 when starting
-        second = 0
-        minute = 0
-        for player, ui in userTimerDict {
-            ui<UIWidgetLabel>.Content = "00:00" // Reset the timer UI for all players
-        }
-        isStart = true
     }
 }

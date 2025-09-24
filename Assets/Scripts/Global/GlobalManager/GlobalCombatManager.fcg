@@ -26,7 +26,7 @@ graph GlobalCombatManager {
     // When the combat phase starts, activate the timer also
     event OnPhaseStart(phase entity<Phase>) {
         if phase<Phase>.Index == EPhase.Border{
-            globalEntity<TargetAndCombatTimer>.StartTimer()
+            // globalEntity<TargetAndCombatTimer>.StartTimer()
         }
     }
 
@@ -86,7 +86,7 @@ graph GlobalCombatManager {
         if(teamCount <= 1) {
             for index, team in isTeamAliveList {
                 if team == true {
-                    globalEntity<TargetAndCombatTimer>.ResetTimer()
+                    // globalEntity<TargetAndCombatTimer>.ResetTimer()
                     LogInfo("<GlobalCombatManager.fcg>: Team " + index + " is the last team standing.")
                     ClearAllItemsOnGround()
                     DispatchEvent(CombatEnd, thisEntity, List<object>{GetAllTeams()[index]})
@@ -97,7 +97,7 @@ graph GlobalCombatManager {
         // Exception: No team wins
         if(teamCount == 0) {
             ClearAllItemsOnGround()
-            globalEntity<TargetAndCombatTimer>.ResetTimer()
+            // globalEntity<TargetAndCombatTimer>.ResetTimer()
             DispatchEvent(NoTeamWinException, thisEntity, List<object>{})
         }
     }

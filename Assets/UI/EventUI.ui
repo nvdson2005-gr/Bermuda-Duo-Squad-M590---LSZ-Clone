@@ -267,7 +267,7 @@
               "value": "\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis sodales dolor. Aliquam ac volutpat ligula. ",
               "key": "",
               "font": "Default",
-              "fontSize": 19,
+              "fontSize": 20,
               "fontStyle": {
                 "bold": false,
                 "italic": false,
@@ -276,7 +276,7 @@
               "color": "#ffffff",
               "alignment": {
                 "h": "left",
-                "v": "fillV"
+                "v": "middle"
               },
               "lineSpacing": 0,
               "background": false,

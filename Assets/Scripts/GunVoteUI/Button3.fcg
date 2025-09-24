@@ -7,6 +7,6 @@ import "Hud.fcc" as Hud
 graph Button3 {
     event OnPressed(player entity<Player>) {
         DispatchEvent(OnChoosingWeapon, player, List<object>{player, 2})
-        LogInfo("<Button3.fcg>: Combo 3 chosen for player " + player<Player>.NickName)
+        // LogInfo("<Button3.fcg>: Combo 3 chosen for player " + player<Player>.NickName)
     }
 }

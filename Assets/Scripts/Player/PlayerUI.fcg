@@ -9,37 +9,48 @@ import "List.fcc" as List
 import "Workflow.fcc" as Workflow
 import "Math.fcc" as Math
 import "Items.fcc" as Items
+import "Hud.fcc" as Hud
+import "../Global/GlobalData/GlobalConfig.fcg" as GlobalConfig
+import "Convert.fcc" as Convert
 graph PlayerUI {
     gunCombosThisRound List<List<ItemIDType>> = List<List<ItemIDType>>{}
     gunVoteCountdown int 
     didChooseCombo bool = false
     currentComboIndex int = -1
-
+    phaseCountDownHUD entity<BuiltInUI>
+    matchInfoSubtitleHUD entity<BuiltInUI>
     chosenMutexLock bool = false
     //Executed when entity is created
     event OnAwake() {
         start globalEntity<GlobalUIManager>.CreateGlobalOpeningHUD(thisEntity as entity<Player>)
         gunVoteCountdown = globalEntity<GlobalGameManager>.prepPhaseDuration
+        CreateBuiltInUI(out var createdPhaseCountDownHUD, thisEntity as entity<Player>, EResInternalHud.PhaseCountDownHud as BuiltInUIType)
+        phaseCountDownHUD = createdPhaseCountDownHUD
+        CreateBuiltInUI(out var createdMatchInfoSubtitleHUD, thisEntity as entity<Player>, EResInternalHud.MatchInfoSubTitleHud as BuiltInUIType)
+        matchInfoSubtitleHUD = createdMatchInfoSubtitleHUD
+        matchInfoSubtitleHUD<UIMatchSubtitle>.TextKey = LocString{"TARGET_UI_TITLE_TEXT", List<string>{ToString(GlobalConfig.WIN_POINTS)}}
+        // matchInfoSubtitleHUD<UIMatchSubtitle>.TextKeyParams = List<int>{GlobalConfig.WIN_POINTS}
     }
 
     event OnPhaseEnd(phase entity<Phase>) {
         if phase<Phase>.Index == EPhase.Vote {
+            var gunCombo List<ItemIDType> 
+            globalEntity<GlobalUIManager>.SetVisibilityVoteUI(thisEntity as entity<Player>, false)
             if didChooseCombo == false {
-                var randomGunCombo List<ItemIDType> = gunCombosThisRound[Math.RandomInt(0, List.Length(gunCombosThisRound))]
-                for index, weapon in randomGunCombo {
-                    thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, weapon as EResItem, 1)
-                }
-                globalEntity<GlobalUIManager>.SetVisibilityVoteUI(thisEntity as entity<Player>, false)
-                if GetItemCount(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType) != 0 {
-                    DestroyItem(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType, GetItemCount(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType)) // Destroy the item when added
-                }
-                AddItem(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType, 1, out var newHorizaline) // Add the item to the player
-                thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, EResItem.VEST_2, 1)
-                thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, EResItem.HELMET_2, 1)
+                gunCombo = gunCombosThisRound[Math.RandomInt(0, List.Length(gunCombosThisRound))]
             } else {
                 didChooseCombo = false
-                globalEntity<GlobalUIManager>.SetVisibilityVoteUI(thisEntity as entity<Player>, false)
+                gunCombo = gunCombosThisRound[currentComboIndex]
             }
+            for index, weapon in gunCombo {
+                thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, weapon as EResItem, 1)
+            }
+            if GetItemCount(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType) != 0 {
+                DestroyItem(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType, GetItemCount(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType)) // Destroy the item when added
+            }
+            AddItem(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType, 1, out var newHorizaline) // Add the item to the player
+            thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, EResItem.VEST_2, 1)
+            thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, EResItem.HELMET_2, 1)
         }
     }
     /*
@@ -109,24 +120,11 @@ graph PlayerUI {
                 currentComboIndex = chosenComboIndex
             }
         }
-        WaitForMillisecond(100)
+        WaitForMillisecond(200)
         chosenMutexLock = false
-        // TODO: Move this to the accept combo button or when the voting phase ends (Next week)
-        // var weaponChosenList = gunCombosThisRound[chosenComboIndex]
-        // for index, weapon in weaponChosenList {
-        //     thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, weapon as EResItem, 1)
-        // }
-        // globalEntity<GlobalUIManager>.SetVisibilityVoteUI(thisEntity as entity<Player>, false)
-        // if GetItemCount(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType) != 0 {
-        //     DestroyItem(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType, GetItemCount(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType)) // Destroy the item when added
-        // }
-        // AddItem(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType, 1, out var newHorizaline) // Add the item to the player
-        // thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, EResItem.VestLv3, 1)
-        // thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, EResItem.HelmetLv3, 1)
-        // didChooseCombo = true
     }
 
     event OnChoosingWeapon(player entity<Player>, comboIndex int) {
-        HandleChosenCombo(comboIndex)
+        wait HandleChosenCombo(comboIndex)
     }
 }

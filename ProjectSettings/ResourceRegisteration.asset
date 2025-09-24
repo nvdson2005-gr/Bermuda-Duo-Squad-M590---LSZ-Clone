@@ -261,12 +261,8 @@
           "scriptName": "GameInfo",
           "children": [
             {
-              "id": "ip85tDjm",
-              "scriptName": "Counter"
-            },
-            {
-              "id": "JiGXvtKV",
-              "scriptName": "TargetCount"
+              "id": "GVgqPt1C",
+              "scriptName": "EventShortDesc"
             },
             {
               "id": "JYpiVrsO",
@@ -410,7 +406,7 @@
             },
             "fileType": "scene"
           },
-          "scriptName": "NewScene",
+          "scriptName": "BERMUDA",
           "children": [
             {
               "id": "BQWhjc5C",
@@ -639,6 +635,23 @@
             {
               "id": "8BFdoX9B",
               "scriptName": "EndPos11List"
+            }
+          ]
+        },
+        {
+          "refer": {
+            "fileId": "juo5lzj1ada-mfxr4c1z-nf7yqoslaxb",
+            "filePath": "Assets\\Scene\\Test.scene",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "scene"
+          },
+          "scriptName": "ELPASTELO",
+          "children": [
+            {
+              "id": "5SUTdwTT",
+              "scriptName": "GameStartSpawnPoint"
             }
           ]
         }
@@ -1234,6 +1247,30 @@
             "fileType": "texture"
           },
           "scriptName": "GRENADESPLIT",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "b014bab90b6c451c1e059cafacab7b65",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_Agent.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "scriptName": "INCREASE_DMG_ICON",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "501b0879e2bdb5e161b9132129e4f0cc",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/ui_icon_skill_Hitman.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "scriptName": "DECREASE_DMG_ICON",
           "children": []
         }
       ]
@@ -2057,6 +2094,30 @@
             "fileType": "internalhudtype"
           },
           "scriptName": "MultiTeamScoreBoard",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "InternalHud_PhaseCountDownHud",
+            "filePath": "lib://ffInternalHuds/PhaseCountDownHud",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "internalhudtype"
+          },
+          "scriptName": "PhaseCountDownHud",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "InternalHud_MatchInfoSubTitleHud",
+            "filePath": "lib://ffInternalHuds/MatchInfoSubTitleHud",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "internalhudtype"
+          },
+          "scriptName": "MatchInfoSubTitleHud",
           "children": []
         }
       ]

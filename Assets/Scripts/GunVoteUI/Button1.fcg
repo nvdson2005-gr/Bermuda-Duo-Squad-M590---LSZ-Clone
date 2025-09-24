@@ -7,6 +7,6 @@ import "../Global/GlobalManager/GlobalPreparationPhaseManager.fcg" as GlobalPrep
 graph Button1 {
     event OnPressed(player entity<Player>) {
         DispatchEvent(OnChoosingWeapon, player, List<object>{player, 0})
-        LogInfo("<Button1.fcg>: Combo 1 chosen for player " + player<Player>.NickName)
+        // LogInfo("<Button1.fcg>: Combo 1 chosen for player " + player<Player>.NickName)
     }
 }

@@ -23,17 +23,17 @@ graph SpawnPoints {
         spawnPoints = List<object>{} // Initialize the list of spawn points at the start of the game
         spawnPositions = List<Vector3>{} // Initialize the list of spawn positions
         spawnDict = Map<int, List<entity<SpawnPosition>>>{} // Initialize the map of spawn points
-        spawnDict[0] = GetChildren(EResSceneNewScene.SpawnGroup1 as entity<Entity>) as List<entity<SpawnPosition>>
-        spawnDict[1] = GetChildren(EResSceneNewScene.SpawnGroup2 as entity<Entity>) as List<entity<SpawnPosition>>
-        spawnDict[2] = GetChildren(EResSceneNewScene.SpawnGroup3 as entity<Entity>) as List<entity<SpawnPosition>>
-        spawnDict[3] = GetChildren(EResSceneNewScene.SpawnGroup4 as entity<Entity>) as List<entity<SpawnPosition>>
-        spawnDict[4] = GetChildren(EResSceneNewScene.SpawnGroup5 as entity<Entity>) as List<entity<SpawnPosition>> 
-        spawnDict[5] = GetChildren(EResSceneNewScene.SpawnGroup6 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for each round
-        spawnDict[6] = GetChildren(EResSceneNewScene.SpawnGroup7 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the seventh round
-        spawnDict[7] = GetChildren(EResSceneNewScene.SpawnGroup8 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the eighth round
-        spawnDict[8] = GetChildren(EResSceneNewScene.SpawnGroup9 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the ninth round
-        spawnDict[9] = GetChildren(EResSceneNewScene.SpawnGroup10 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the tenth round
-        spawnDict[10] = GetChildren(EResSceneNewScene.SpawnGroup11 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the eleventh round
+        spawnDict[0] = GetChildren(EResSceneBERMUDA.SpawnGroup1 as entity<Entity>) as List<entity<SpawnPosition>>
+        spawnDict[1] = GetChildren(EResSceneBERMUDA.SpawnGroup2 as entity<Entity>) as List<entity<SpawnPosition>>
+        spawnDict[2] = GetChildren(EResSceneBERMUDA.SpawnGroup3 as entity<Entity>) as List<entity<SpawnPosition>>
+        spawnDict[3] = GetChildren(EResSceneBERMUDA.SpawnGroup4 as entity<Entity>) as List<entity<SpawnPosition>>
+        spawnDict[4] = GetChildren(EResSceneBERMUDA.SpawnGroup5 as entity<Entity>) as List<entity<SpawnPosition>> 
+        spawnDict[5] = GetChildren(EResSceneBERMUDA.SpawnGroup6 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for each round
+        spawnDict[6] = GetChildren(EResSceneBERMUDA.SpawnGroup7 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the seventh round
+        spawnDict[7] = GetChildren(EResSceneBERMUDA.SpawnGroup8 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the eighth round
+        spawnDict[8] = GetChildren(EResSceneBERMUDA.SpawnGroup9 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the ninth round
+        spawnDict[9] = GetChildren(EResSceneBERMUDA.SpawnGroup10 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the tenth round
+        spawnDict[10] = GetChildren(EResSceneBERMUDA.SpawnGroup11 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the eleventh round
     }
 
     /*

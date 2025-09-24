@@ -65,7 +65,11 @@ graph GlobalGameManager {
         // Set invincible when player is dead, and teleport to the start zone
         if globalEntity<Global>.CurrentRoundIndex != 0 {
             SetInvincibility(player, 30);
-            TransportToGameStartZone(player, EResSceneNewScene.GameStartSpawnPoint<Transform>.Position)
+            // if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
+            //     TransportToGameStartZone(player, EResSceneBERMUDA.GameStartSpawnPoint<Transform>.Position)
+            // } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+            //     TransportToGameStartZone(player, EResSceneELPASTELO.GameStartSpawnPoint<Transform>.Position)
+            // }
         }
 
         // Use a custom minimap to increase the scale of the map

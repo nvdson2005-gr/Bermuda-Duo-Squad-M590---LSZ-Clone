@@ -33,28 +33,28 @@ graph GlobalSafeZones {
         safeZoneDefaultData["first_border_dmg"] = GlobalConfig.FIRST_BORDER_DAMAGE
         safeZoneDefaultData["second_border_dmg"] = GlobalConfig.SECOND_BORDER_DAMAGE
         LogInfo("safeZoneDefaultData: " + safeZoneDefaultData["init_radius"] + ", " + safeZoneDefaultData["second_border_radius"] + ", " + safeZoneDefaultData["shrink_duration_first_border"] + ", " + safeZoneDefaultData["shrink_duration_final_border"] + ", " + safeZoneDefaultData["first_border_dmg"] + ", " + safeZoneDefaultData["second_border_dmg"])
-        safeZoneStartPoints[0] = (EResSceneNewScene.StartPos1 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[1] = (EResSceneNewScene.StartPos2 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[2] = (EResSceneNewScene.StartPos3 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[3] = (EResSceneNewScene.StartPos4 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[4] = (EResSceneNewScene.StartPos5 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[5] = (EResSceneNewScene.StartPos6 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[6] = (EResSceneNewScene.StartPos7 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[7] = (EResSceneNewScene.StartPos8 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[8] = (EResSceneNewScene.StartPos9 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[9] = (EResSceneNewScene.StartPos10 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[10] = (EResSceneNewScene.StartPos11 as entity<Entity>)<Transform>.Position
-        safeZoneEndPoints[0] = GetChildren(EResSceneNewScene.EndPos1List as entity<Entity>)
-        safeZoneEndPoints[1] = GetChildren(EResSceneNewScene.EndPos2List as entity<Entity>)
-        safeZoneEndPoints[2] = GetChildren(EResSceneNewScene.EndPos3List as entity<Entity>)
-        safeZoneEndPoints[3] = GetChildren(EResSceneNewScene.EndPos4List as entity<Entity>)
-        safeZoneEndPoints[4] = GetChildren(EResSceneNewScene.EndPos5List as entity<Entity>)
-        safeZoneEndPoints[5] = GetChildren(EResSceneNewScene.EndPos6List as entity<Entity>)
-        safeZoneEndPoints[6] = GetChildren(EResSceneNewScene.EndPos7List as entity<Entity>)
-        safeZoneEndPoints[7] = GetChildren(EResSceneNewScene.EndPos8List as entity<Entity>)
-        safeZoneEndPoints[8] = GetChildren(EResSceneNewScene.EndPos9List as entity<Entity>)
-        safeZoneEndPoints[9] = GetChildren(EResSceneNewScene.EndPos10List as entity<Entity>)
-        safeZoneEndPoints[10] = GetChildren(EResSceneNewScene.EndPos11List as entity<Entity>)
+        safeZoneStartPoints[0] = (EResSceneBERMUDA.StartPos1 as entity<Entity>)<Transform>.Position
+        safeZoneStartPoints[1] = (EResSceneBERMUDA.StartPos2 as entity<Entity>)<Transform>.Position
+        safeZoneStartPoints[2] = (EResSceneBERMUDA.StartPos3 as entity<Entity>)<Transform>.Position
+        safeZoneStartPoints[3] = (EResSceneBERMUDA.StartPos4 as entity<Entity>)<Transform>.Position
+        safeZoneStartPoints[4] = (EResSceneBERMUDA.StartPos5 as entity<Entity>)<Transform>.Position
+        safeZoneStartPoints[5] = (EResSceneBERMUDA.StartPos6 as entity<Entity>)<Transform>.Position
+        safeZoneStartPoints[6] = (EResSceneBERMUDA.StartPos7 as entity<Entity>)<Transform>.Position
+        safeZoneStartPoints[7] = (EResSceneBERMUDA.StartPos8 as entity<Entity>)<Transform>.Position
+        safeZoneStartPoints[8] = (EResSceneBERMUDA.StartPos9 as entity<Entity>)<Transform>.Position
+        safeZoneStartPoints[9] = (EResSceneBERMUDA.StartPos10 as entity<Entity>)<Transform>.Position
+        safeZoneStartPoints[10] = (EResSceneBERMUDA.StartPos11 as entity<Entity>)<Transform>.Position
+        safeZoneEndPoints[0] = GetChildren(EResSceneBERMUDA.EndPos1List as entity<Entity>)
+        safeZoneEndPoints[1] = GetChildren(EResSceneBERMUDA.EndPos2List as entity<Entity>)
+        safeZoneEndPoints[2] = GetChildren(EResSceneBERMUDA.EndPos3List as entity<Entity>)
+        safeZoneEndPoints[3] = GetChildren(EResSceneBERMUDA.EndPos4List as entity<Entity>)
+        safeZoneEndPoints[4] = GetChildren(EResSceneBERMUDA.EndPos5List as entity<Entity>)
+        safeZoneEndPoints[5] = GetChildren(EResSceneBERMUDA.EndPos6List as entity<Entity>)
+        safeZoneEndPoints[6] = GetChildren(EResSceneBERMUDA.EndPos7List as entity<Entity>)
+        safeZoneEndPoints[7] = GetChildren(EResSceneBERMUDA.EndPos8List as entity<Entity>)
+        safeZoneEndPoints[8] = GetChildren(EResSceneBERMUDA.EndPos9List as entity<Entity>)
+        safeZoneEndPoints[9] = GetChildren(EResSceneBERMUDA.EndPos10List as entity<Entity>)
+        safeZoneEndPoints[10] = GetChildren(EResSceneBERMUDA.EndPos11List as entity<Entity>)
         }
 
         if phase<Phase>.Index == EPhase.Border{

@@ -1,0 +1,51 @@
+{
+  "fileId": "fab_pugc_mapfab",
+  "manifest": {
+    "Name": "pugc_mapfab",
+    "UUID": "fab_pugc_mapfab",
+    "Type": "Folder",
+    "Version": 2,
+    "IsFFBuildinRes": false,
+    "Children": [
+      {
+        "Name": "Assets",
+        "UUID": "",
+        "Type": "Folder",
+        "Version": 0,
+        "IsFFBuildinRes": false,
+        "Children": [
+          {
+            "Name": "PUGC_MapFab",
+            "UUID": "",
+            "Type": "Folder",
+            "Version": 0,
+            "IsFFBuildinRes": false,
+            "Children": [
+              {
+                "Name": "PUGC_Map_ElPastelo 1.prefab",
+                "UUID": "71c505f181eb71e408d3ed2f1fe72fed",
+                "Type": "ABGameObjectRes",
+                "Version": 0,
+                "IsFFBuildinRes": false,
+                "Children": null,
+                "Sprite": null,
+                "AnimationClip": null,
+                "SubMeshCount": 0
+              }
+            ],
+            "Sprite": null,
+            "AnimationClip": null,
+            "SubMeshCount": 0
+          }
+        ],
+        "Sprite": null,
+        "AnimationClip": null,
+        "SubMeshCount": 0
+      }
+    ],
+    "Sprite": null,
+    "AnimationClip": null,
+    "SubMeshCount": 0
+  },
+  "version": "1.0.0"
+}
