@@ -21,40 +21,48 @@ graph GlobalSafeZones {
     safeZoneStartPoints Map<int, Vector3> = Map<int, Vector3>{}
     safeZoneEndPoints Map<int, List<entity<Entity>>> = Map<int, List<entity<Entity>>>{}
     chosenEndPointThisRound entity<Transform> = nil 
+
+    firstBorderChosenIndex int = -1
+    secondBorderChosenIndex int = -1
     // Init data when game starts
     event OnPhaseStart(phase entity<Phase>) {
         if phase<Phase>.Index == EPhase.Preparation{
-        safeZoneDefaultData["init_radius"] = GlobalConfig.FIRST_BORDER_INIT_RADIUS
-        // safeZoneDefaultData["start_shrink_time"] = globalEntity<GlobalGameManager>.prepPhaseDuration + 15
-        safeZoneDefaultData["second_border_radius"] = GlobalConfig.SECOND_BORDER_INIT_RADIUS
-        safeZoneDefaultData["shrink_duration_first_border"] = GlobalConfig.FIRST_BORDER_DURATION
-        safeZoneDefaultData["shrink_duration_second_border"] = GlobalConfig.SECOND_BORDER_DURATION
-        safeZoneDefaultData["shrink_duration_final_border"] = GlobalConfig.FINAL_BORDER_SHRINK_TIME
-        safeZoneDefaultData["first_border_dmg"] = GlobalConfig.FIRST_BORDER_DAMAGE
-        safeZoneDefaultData["second_border_dmg"] = GlobalConfig.SECOND_BORDER_DAMAGE
-        LogInfo("safeZoneDefaultData: " + safeZoneDefaultData["init_radius"] + ", " + safeZoneDefaultData["second_border_radius"] + ", " + safeZoneDefaultData["shrink_duration_first_border"] + ", " + safeZoneDefaultData["shrink_duration_final_border"] + ", " + safeZoneDefaultData["first_border_dmg"] + ", " + safeZoneDefaultData["second_border_dmg"])
-        safeZoneStartPoints[0] = (EResSceneBERMUDA.StartPos1 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[1] = (EResSceneBERMUDA.StartPos2 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[2] = (EResSceneBERMUDA.StartPos3 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[3] = (EResSceneBERMUDA.StartPos4 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[4] = (EResSceneBERMUDA.StartPos5 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[5] = (EResSceneBERMUDA.StartPos6 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[6] = (EResSceneBERMUDA.StartPos7 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[7] = (EResSceneBERMUDA.StartPos8 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[8] = (EResSceneBERMUDA.StartPos9 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[9] = (EResSceneBERMUDA.StartPos10 as entity<Entity>)<Transform>.Position
-        safeZoneStartPoints[10] = (EResSceneBERMUDA.StartPos11 as entity<Entity>)<Transform>.Position
-        safeZoneEndPoints[0] = GetChildren(EResSceneBERMUDA.EndPos1List as entity<Entity>)
-        safeZoneEndPoints[1] = GetChildren(EResSceneBERMUDA.EndPos2List as entity<Entity>)
-        safeZoneEndPoints[2] = GetChildren(EResSceneBERMUDA.EndPos3List as entity<Entity>)
-        safeZoneEndPoints[3] = GetChildren(EResSceneBERMUDA.EndPos4List as entity<Entity>)
-        safeZoneEndPoints[4] = GetChildren(EResSceneBERMUDA.EndPos5List as entity<Entity>)
-        safeZoneEndPoints[5] = GetChildren(EResSceneBERMUDA.EndPos6List as entity<Entity>)
-        safeZoneEndPoints[6] = GetChildren(EResSceneBERMUDA.EndPos7List as entity<Entity>)
-        safeZoneEndPoints[7] = GetChildren(EResSceneBERMUDA.EndPos8List as entity<Entity>)
-        safeZoneEndPoints[8] = GetChildren(EResSceneBERMUDA.EndPos9List as entity<Entity>)
-        safeZoneEndPoints[9] = GetChildren(EResSceneBERMUDA.EndPos10List as entity<Entity>)
-        safeZoneEndPoints[10] = GetChildren(EResSceneBERMUDA.EndPos11List as entity<Entity>)
+            safeZoneDefaultData["init_radius"] = GlobalConfig.FIRST_BORDER_INIT_RADIUS
+            // safeZoneDefaultData["start_shrink_time"] = globalEntity<GlobalGameManager>.prepPhaseDuration + 15
+            safeZoneDefaultData["second_border_radius"] = GlobalConfig.SECOND_BORDER_INIT_RADIUS
+            safeZoneDefaultData["shrink_duration_first_border"] = GlobalConfig.FIRST_BORDER_DURATION
+            safeZoneDefaultData["shrink_duration_second_border"] = GlobalConfig.SECOND_BORDER_DURATION
+            safeZoneDefaultData["shrink_duration_final_border"] = GlobalConfig.FINAL_BORDER_SHRINK_TIME
+            safeZoneDefaultData["first_border_dmg"] = GlobalConfig.FIRST_BORDER_DAMAGE
+            safeZoneDefaultData["second_border_dmg"] = GlobalConfig.SECOND_BORDER_DAMAGE
+            LogInfo("safeZoneDefaultData: " + safeZoneDefaultData["init_radius"] + ", " + safeZoneDefaultData["second_border_radius"] + ", " + safeZoneDefaultData["shrink_duration_first_border"] + ", " + safeZoneDefaultData["shrink_duration_final_border"] + ", " + safeZoneDefaultData["first_border_dmg"] + ", " + safeZoneDefaultData["second_border_dmg"])
+            if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
+                safeZoneStartPoints[0] = (EResSceneBERMUDA.StartPos1 as entity<Entity>)<Transform>.Position
+                safeZoneStartPoints[1] = (EResSceneBERMUDA.StartPos2 as entity<Entity>)<Transform>.Position
+                safeZoneStartPoints[2] = (EResSceneBERMUDA.StartPos3 as entity<Entity>)<Transform>.Position
+                safeZoneStartPoints[3] = (EResSceneBERMUDA.StartPos4 as entity<Entity>)<Transform>.Position
+                safeZoneStartPoints[4] = (EResSceneBERMUDA.StartPos5 as entity<Entity>)<Transform>.Position
+                safeZoneStartPoints[5] = (EResSceneBERMUDA.StartPos6 as entity<Entity>)<Transform>.Position
+                safeZoneStartPoints[6] = (EResSceneBERMUDA.StartPos7 as entity<Entity>)<Transform>.Position
+                safeZoneStartPoints[7] = (EResSceneBERMUDA.StartPos8 as entity<Entity>)<Transform>.Position
+                safeZoneStartPoints[8] = (EResSceneBERMUDA.StartPos9 as entity<Entity>)<Transform>.Position
+                safeZoneStartPoints[9] = (EResSceneBERMUDA.StartPos10 as entity<Entity>)<Transform>.Position
+                safeZoneStartPoints[10] = (EResSceneBERMUDA.StartPos11 as entity<Entity>)<Transform>.Position
+                safeZoneEndPoints[0] = GetChildren(EResSceneBERMUDA.EndPos1List as entity<Entity>)
+                safeZoneEndPoints[1] = GetChildren(EResSceneBERMUDA.EndPos2List as entity<Entity>)
+                safeZoneEndPoints[2] = GetChildren(EResSceneBERMUDA.EndPos3List as entity<Entity>)
+                safeZoneEndPoints[3] = GetChildren(EResSceneBERMUDA.EndPos4List as entity<Entity>)
+                safeZoneEndPoints[4] = GetChildren(EResSceneBERMUDA.EndPos5List as entity<Entity>)
+                safeZoneEndPoints[5] = GetChildren(EResSceneBERMUDA.EndPos6List as entity<Entity>)
+                safeZoneEndPoints[6] = GetChildren(EResSceneBERMUDA.EndPos7List as entity<Entity>)
+                safeZoneEndPoints[7] = GetChildren(EResSceneBERMUDA.EndPos8List as entity<Entity>)
+                safeZoneEndPoints[8] = GetChildren(EResSceneBERMUDA.EndPos9List as entity<Entity>)
+                safeZoneEndPoints[9] = GetChildren(EResSceneBERMUDA.EndPos10List as entity<Entity>)
+                safeZoneEndPoints[10] = GetChildren(EResSceneBERMUDA.EndPos11List as entity<Entity>)
+            } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+                safeZoneStartPoints[0] = (EResSceneELPASTELO.StartPos as entity<Entity>)<Transform>.Position
+                safeZoneEndPoints[0] = GetChildren(EResSceneELPASTELO.EndPosList as entity<Entity>)
+            }
         }
 
         if phase<Phase>.Index == EPhase.Border{
@@ -80,7 +88,11 @@ graph GlobalSafeZones {
     }
 
     func ActivateIllusionSafeZone(index int){
-        EnableSafeZone(safeZoneStartPoints[index], safeZoneDefaultData["init_radius"], 180, 180, safeZoneDefaultData["first_border_dmg"])
+        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA{
+            EnableSafeZone(safeZoneStartPoints[index], safeZoneDefaultData["init_radius"], 180, 180, safeZoneDefaultData["first_border_dmg"])
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+            EnableSafeZone(safeZoneStartPoints[0], safeZoneDefaultData["init_radius"], 180, 180, safeZoneDefaultData["first_border_dmg"])
+        }
     }
     /*
     Activate a specific safe zone
@@ -88,12 +100,20 @@ graph GlobalSafeZones {
     */
     func ActivateFirstSafeZone(index int){
         DisableSafeZone()
-        if ContainKey(safeZoneDefaultData, "init_radius") && ContainKey(safeZoneDefaultData, "second_border_radius") && ContainKey(safeZoneDefaultData, "shrink_duration_first_border") && ContainKey(safeZoneDefaultData, "first_border_dmg") {
-            EnableMovingSafeZone(safeZoneStartPoints[index], safeZoneStartPoints[index], safeZoneDefaultData["init_radius"], safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["shrink_duration_first_border"], safeZoneDefaultData["first_border_dmg"])
-            LogWarning("Safe zone activated: " + safeZoneStartPoints[index] + " to " + safeZoneStartPoints[index] + " with radius " + safeZoneDefaultData["init_radius"] + " in duration " + safeZoneDefaultData["shrink_duration_first_border"])
-        } else {
-            LogError("Safe zone default data not found")
-            return
+        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
+            if ContainKey(safeZoneDefaultData, "init_radius") && ContainKey(safeZoneDefaultData, "second_border_radius") && ContainKey(safeZoneDefaultData, "shrink_duration_first_border") && ContainKey(safeZoneDefaultData, "first_border_dmg") {
+                EnableMovingSafeZone(safeZoneStartPoints[index], safeZoneStartPoints[index], safeZoneDefaultData["init_radius"], safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["shrink_duration_first_border"], safeZoneDefaultData["first_border_dmg"])
+                LogWarning("<GlobalSafeZones> Safe zone activated: " + safeZoneStartPoints[index] + " to " + safeZoneStartPoints[index] + " with radius from " + safeZoneDefaultData["init_radius"] + " to " + safeZoneDefaultData["second_border_radius"] + " in duration " + safeZoneDefaultData["shrink_duration_first_border"])
+            } else {
+                LogError("Safe zone default data not found")
+                return
+            }
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+            var randomIndex = RandomInt(0, List.Length(safeZoneEndPoints[0]))
+            firstBorderChosenIndex = randomIndex
+            var endPointPosition = safeZoneEndPoints[0][randomIndex] as entity<Transform>
+            EnableMovingSafeZone(safeZoneStartPoints[0], endPointPosition<Transform>.Position, safeZoneDefaultData["init_radius"], safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["shrink_duration_first_border"], safeZoneDefaultData["first_border_dmg"])
+            LogWarning("<GlobalSafeZones> Safe zone activated: " + safeZoneStartPoints[0] + " to " + endPointPosition<Transform>.Position + " with radius from " + safeZoneDefaultData["init_radius"] + " to " + safeZoneDefaultData["second_border_radius"] + " in duration " + safeZoneDefaultData["shrink_duration_first_border"])
         }
         // var randomEndPoint = RandomInt(0, List.Length(safeZoneEndPoints[index]))
         // var endPointPosition = safeZoneEndPoints[index][randomEndPoint] as entity<Transform>
@@ -108,26 +128,44 @@ graph GlobalSafeZones {
 
     func ActivateSecondSafeZone(index int){
         DisableSafeZone()
-        var randomEndPoint = RandomInt(0, List.Length(safeZoneEndPoints[index]))
-        var endPointPosition = safeZoneEndPoints[index][randomEndPoint] as entity<Transform>
-        chosenEndPointThisRound = endPointPosition
-        if ContainKey(safeZoneDefaultData, "init_radius") && ContainKey(safeZoneDefaultData, "second_border_radius") && ContainKey(safeZoneDefaultData, "shrink_duration_second_border") && ContainKey(safeZoneDefaultData, "second_border_dmg") {
-            EnableMovingSafeZone(safeZoneStartPoints[index], endPointPosition<Transform>.Position, safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["shrink_duration_second_border"], safeZoneDefaultData["second_border_dmg"])
-            LogWarning("Safe zone activated: " + safeZoneStartPoints[index] + " to " + endPointPosition<Transform>.Position + " with radius " + safeZoneDefaultData["second_border_radius"] + " in duration " + safeZoneDefaultData["shrink_duration_second_border"])
-        } else {
-            LogError("<GlobalSafeZones> Safe zone default data not found")
-            return
+        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
+            var randomEndPoint = RandomInt(0, List.Length(safeZoneEndPoints[index]))
+            var endPointPosition = safeZoneEndPoints[index][randomEndPoint] as entity<Transform>
+            chosenEndPointThisRound = endPointPosition
+            if ContainKey(safeZoneDefaultData, "init_radius") && ContainKey(safeZoneDefaultData, "second_border_radius") && ContainKey(safeZoneDefaultData, "shrink_duration_second_border") && ContainKey(safeZoneDefaultData, "second_border_dmg") {
+                EnableMovingSafeZone(safeZoneStartPoints[index], endPointPosition<Transform>.Position, safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["shrink_duration_second_border"], safeZoneDefaultData["second_border_dmg"])
+                LogWarning("Safe zone activated: " + safeZoneStartPoints[index] + " to " + endPointPosition<Transform>.Position + " with radius " + safeZoneDefaultData["second_border_radius"] + " in duration " + safeZoneDefaultData["shrink_duration_second_border"])
+            } else {
+                LogError("<GlobalSafeZones> Safe zone default data not found")
+                return
+            }
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+            var randomSecondBorderChosenIndex = RandomInt(0, List.Length(safeZoneEndPoints[0]))
+            while randomSecondBorderChosenIndex == firstBorderChosenIndex {
+                randomSecondBorderChosenIndex = RandomInt(0, List.Length(safeZoneEndPoints[0]))
+            }
+            var firstBorderEndPointPosition = safeZoneEndPoints[0][firstBorderChosenIndex] as entity<Transform>
+            var secondBorderEndPointPosition = safeZoneEndPoints[0][randomSecondBorderChosenIndex] as entity<Transform>
+            EnableMovingSafeZone(firstBorderEndPointPosition<Transform>.Position, secondBorderEndPointPosition<Transform>.Position, safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["shrink_duration_second_border"], safeZoneDefaultData["second_border_dmg"])
+            secondBorderChosenIndex = randomSecondBorderChosenIndex
+            LogWarning("<GlobalSafeZones> Safe zone activated: " + firstBorderEndPointPosition<Transform>.Position + " to " + secondBorderEndPointPosition<Transform>.Position + " with radius " + safeZoneDefaultData["second_border_radius"] + " in duration " + safeZoneDefaultData["shrink_duration_second_border"])
         }
     }
 
     func ActivateShrinkingSafeZone(index int){
         DisableSafeZone()
-        if ContainKey(safeZoneDefaultData, "init_radius") && ContainKey(safeZoneDefaultData, "second_border_radius") && ContainKey(safeZoneDefaultData, "shrink_duration_final_border") && ContainKey(safeZoneDefaultData, "second_border_dmg") {
-            EnableMovingSafeZone(chosenEndPointThisRound<Transform>.Position, chosenEndPointThisRound<Transform>.Position, safeZoneDefaultData["second_border_radius"], 0, safeZoneDefaultData["shrink_duration_final_border"], safeZoneDefaultData["second_border_dmg"])
-            LogWarning("Safe zone activated: " + chosenEndPointThisRound<Transform>.Position + " to " + chosenEndPointThisRound<Transform>.Position + " with radius " + safeZoneDefaultData["second_border_radius"] + " in duration " + safeZoneDefaultData["shrink_duration_final_border"])
-        } else {
-            LogError("<GlobalSafeZones> Safe zone default data not found")
-            return
+        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
+            if ContainKey(safeZoneDefaultData, "init_radius") && ContainKey(safeZoneDefaultData, "second_border_radius") && ContainKey(safeZoneDefaultData, "shrink_duration_final_border") && ContainKey(safeZoneDefaultData, "second_border_dmg") {
+                EnableMovingSafeZone(chosenEndPointThisRound<Transform>.Position, chosenEndPointThisRound<Transform>.Position, safeZoneDefaultData["second_border_radius"], 0, safeZoneDefaultData["shrink_duration_final_border"], safeZoneDefaultData["second_border_dmg"])
+                LogWarning("<GlobalSafeZones> Safe zone activated: " + chosenEndPointThisRound<Transform>.Position + " to " + chosenEndPointThisRound<Transform>.Position + " with radius from " + safeZoneDefaultData["second_border_radius"] + " to " + 0 + " in duration " + safeZoneDefaultData["shrink_duration_final_border"])
+            } else {
+                LogError("<GlobalSafeZones> Safe zone default data not found")
+                return
+            }
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+            var secondBorderEndPointPosition = safeZoneEndPoints[0][secondBorderChosenIndex] as entity<Transform>
+            EnableMovingSafeZone(secondBorderEndPointPosition<Transform>.Position, secondBorderEndPointPosition<Transform>.Position, safeZoneDefaultData["second_border_radius"], 0, safeZoneDefaultData["shrink_duration_final_border"], safeZoneDefaultData["second_border_dmg"])
+            LogWarning("<GlobalSafeZones> Safe zone activated: " + secondBorderEndPointPosition<Transform>.Position + " to " + secondBorderEndPointPosition<Transform>.Position + " with radius from " + safeZoneDefaultData["second_border_radius"] + " to " + 0 + " in duration " + safeZoneDefaultData["shrink_duration_final_border"])
         }
     }
 

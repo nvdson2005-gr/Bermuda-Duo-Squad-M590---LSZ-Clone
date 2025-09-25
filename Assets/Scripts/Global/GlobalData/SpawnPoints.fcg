@@ -9,7 +9,7 @@ import "Player.fcc" as Player
 import "List.fcc" as List
 import "Scene.fcc" as Scene
 import "Map.fcc" as Map
-
+import "./GlobalConfig.fcg" as GlobalConfig
 graph SpawnPoints {
     spawnDict Map<int, List<entity<SpawnPosition>>> // Map to store spawn points with round IDs, goes with the Safe Zone ID
     spawnPoints List<object>  // List to keep track of all spawn points
@@ -23,17 +23,21 @@ graph SpawnPoints {
         spawnPoints = List<object>{} // Initialize the list of spawn points at the start of the game
         spawnPositions = List<Vector3>{} // Initialize the list of spawn positions
         spawnDict = Map<int, List<entity<SpawnPosition>>>{} // Initialize the map of spawn points
-        spawnDict[0] = GetChildren(EResSceneBERMUDA.SpawnGroup1 as entity<Entity>) as List<entity<SpawnPosition>>
-        spawnDict[1] = GetChildren(EResSceneBERMUDA.SpawnGroup2 as entity<Entity>) as List<entity<SpawnPosition>>
-        spawnDict[2] = GetChildren(EResSceneBERMUDA.SpawnGroup3 as entity<Entity>) as List<entity<SpawnPosition>>
-        spawnDict[3] = GetChildren(EResSceneBERMUDA.SpawnGroup4 as entity<Entity>) as List<entity<SpawnPosition>>
-        spawnDict[4] = GetChildren(EResSceneBERMUDA.SpawnGroup5 as entity<Entity>) as List<entity<SpawnPosition>> 
-        spawnDict[5] = GetChildren(EResSceneBERMUDA.SpawnGroup6 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for each round
-        spawnDict[6] = GetChildren(EResSceneBERMUDA.SpawnGroup7 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the seventh round
-        spawnDict[7] = GetChildren(EResSceneBERMUDA.SpawnGroup8 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the eighth round
-        spawnDict[8] = GetChildren(EResSceneBERMUDA.SpawnGroup9 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the ninth round
-        spawnDict[9] = GetChildren(EResSceneBERMUDA.SpawnGroup10 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the tenth round
-        spawnDict[10] = GetChildren(EResSceneBERMUDA.SpawnGroup11 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the eleventh round
+        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
+            spawnDict[0] = GetChildren(EResSceneBERMUDA.SpawnGroup1 as entity<Entity>) as List<entity<SpawnPosition>>
+            spawnDict[1] = GetChildren(EResSceneBERMUDA.SpawnGroup2 as entity<Entity>) as List<entity<SpawnPosition>>
+            spawnDict[2] = GetChildren(EResSceneBERMUDA.SpawnGroup3 as entity<Entity>) as List<entity<SpawnPosition>>
+            spawnDict[3] = GetChildren(EResSceneBERMUDA.SpawnGroup4 as entity<Entity>) as List<entity<SpawnPosition>>
+            spawnDict[4] = GetChildren(EResSceneBERMUDA.SpawnGroup5 as entity<Entity>) as List<entity<SpawnPosition>> 
+            spawnDict[5] = GetChildren(EResSceneBERMUDA.SpawnGroup6 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for each round
+            spawnDict[6] = GetChildren(EResSceneBERMUDA.SpawnGroup7 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the seventh round
+            spawnDict[7] = GetChildren(EResSceneBERMUDA.SpawnGroup8 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the eighth round
+            spawnDict[8] = GetChildren(EResSceneBERMUDA.SpawnGroup9 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the ninth round
+            spawnDict[9] = GetChildren(EResSceneBERMUDA.SpawnGroup10 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the tenth round
+            spawnDict[10] = GetChildren(EResSceneBERMUDA.SpawnGroup11 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the eleventh round
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+            spawnDict[0] = GetChildren(EResSceneELPASTELO.SpawnPoints as entity<Entity>) as List<entity<SpawnPosition>>
+        }
     }
 
     /*
@@ -42,14 +46,22 @@ graph SpawnPoints {
     @return: A list of Vector3 representing the spawn positions for the specified round
     */
     func GetSpawnPositionForRound(round int) List<Vector3> {
-        if !ContainKey(spawnDict, round) {
-            return List<Vector3>{}
+        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
+            if !ContainKey(spawnDict, round) {
+                return List<Vector3>{}
+            }
+            var positions = List<Vector3>{}
+            for index, spawnPoint in spawnDict[round] {
+                Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
+            }
+            return positions
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+            var positions = List<Vector3>{}
+            for index, spawnPoint in spawnDict[0] {
+                Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
+            }
+            return positions
         }
-        var positions = List<Vector3>{}
-        for index, spawnPoint in spawnDict[round] {
-            Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
-        }
-        return positions
     }
 
     /* Get the name of the stage for a specific round
@@ -57,11 +69,15 @@ graph SpawnPoints {
     @return: The name of the stage for the specified round
     */
     func GetNameForStage(round int) string {
-        if round < 0 || round >= List.Length(spawnNames) {
-            LogError("Invalid round index: " + round)
-            return ""
+        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
+            if round < 0 || round >= List.Length(spawnNames) {
+                LogError("Invalid round index: " + round)
+                return ""
+            }
+            return spawnNames[round] // Return the name of the stage for the given round
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+            return "El Pasteló"
         }
-        return spawnNames[round] // Return the name of the stage for the given round
     }
 
     /*
@@ -70,11 +86,17 @@ graph SpawnPoints {
     @return: A list of entity<SpawnPosition> representing the spawn points for the specified round
     */
     func SetSpawnPointsActiveStatusForRound (round int, status bool) {
-        if !ContainKey(spawnDict, round) {
-            return
-        }
-        for index, spawnPoint in spawnDict[round] {
-            SetActive(spawnPoint as entity<Entity>, status)
+        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
+            if !ContainKey(spawnDict, round) {
+                return
+            }
+            for index, spawnPoint in spawnDict[round] {
+                SetActive(spawnPoint as entity<Entity>, status)
+            }
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+            for index, spawnPoint in spawnDict[0] {
+                SetActive(spawnPoint as entity<Entity>, status)
+            }
         }
     }
 }

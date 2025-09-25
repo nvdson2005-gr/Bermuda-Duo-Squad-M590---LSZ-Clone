@@ -652,6 +652,38 @@
             {
               "id": "5SUTdwTT",
               "scriptName": "GameStartSpawnPoint"
+            },
+            {
+              "id": "wqUlfpsc",
+              "scriptName": "SpawnPoint1"
+            },
+            {
+              "id": "SwO3oQXq",
+              "scriptName": "SpawnPoint2"
+            },
+            {
+              "id": "2LfZfVaU",
+              "scriptName": "SpawnPoint3"
+            },
+            {
+              "id": "FNmE4OP2",
+              "scriptName": "SpawnPoint4"
+            },
+            {
+              "id": "hMYa6djf",
+              "scriptName": "SpawnPoint5"
+            },
+            {
+              "id": "YewmCZB5",
+              "scriptName": "SpawnPoints"
+            },
+            {
+              "id": "Np6mYUrs",
+              "scriptName": "StartPos"
+            },
+            {
+              "id": "kFxIsIeP",
+              "scriptName": "EndPosList"
             }
           ]
         }

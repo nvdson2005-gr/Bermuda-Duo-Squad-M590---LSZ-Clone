@@ -65,11 +65,11 @@ graph GlobalGameManager {
         // Set invincible when player is dead, and teleport to the start zone
         if globalEntity<Global>.CurrentRoundIndex != 0 {
             SetInvincibility(player, 30);
-            // if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
-            //     TransportToGameStartZone(player, EResSceneBERMUDA.GameStartSpawnPoint<Transform>.Position)
-            // } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
-            //     TransportToGameStartZone(player, EResSceneELPASTELO.GameStartSpawnPoint<Transform>.Position)
-            // }
+            if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
+                TransportToGameStartZone(player, EResSceneBERMUDA.GameStartSpawnPoint<Transform>.Position)
+            } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+                TransportToGameStartZone(player, EResSceneELPASTELO.GameStartSpawnPoint<Transform>.Position)
+            }
         }
 
         // Use a custom minimap to increase the scale of the map
@@ -195,6 +195,7 @@ graph GlobalGameManager {
     // Custom event, used to handle the case where no team wins
     event NoTeamWinException() {
         LogError("<GlobalGameManager.fcg>: No team won this round, skipping to the next round") // Debug Info
+        globalEntity<GlobalRandomEvent>.ResetChosenEvent()
         SwitchPhase(EPhase.EndCombat)
     }
 

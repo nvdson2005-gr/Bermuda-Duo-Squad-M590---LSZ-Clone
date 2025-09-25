@@ -40,6 +40,7 @@ graph PlayerUI {
                 gunCombo = gunCombosThisRound[Math.RandomInt(0, List.Length(gunCombosThisRound))]
             } else {
                 didChooseCombo = false
+                globalEntity<GlobalUIManager>.DisableAllSelectWidgets(thisEntity as entity<Player>)
                 gunCombo = gunCombosThisRound[currentComboIndex]
             }
             for index, weapon in gunCombo {

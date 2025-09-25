@@ -30,7 +30,7 @@ import "../GlobalData/PlayersTimerUI.fcg" as PlayersTimerUI
 import "../../Player/PlayerUI.fcg" as PlayerUI
 import "../GlobalData/GlobalRandomEvent.fcg" as GlobalRandomEvent
 import Res from "EditorGenLib.fcc"
-
+import "../GlobalData/GlobalConfig.fcg" as GlobalConfig
 graph GlobalUIManager {
     fullScoreBoardUIDict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their full scoreboard UIs when combat ends
     miniScoreBoardUIdict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their mini scoreboard UIs
@@ -475,17 +475,29 @@ graph GlobalUIManager {
     @param player: The player entity to create the HUD for
     */
     async func CreateRoundInfoHUD(player entity<Player>){
-        var currentCount = globalEntity<CombatRoundCounter>.GetCount() // Get the current round count
-        var currentStageName = globalEntity<SpawnPoints>.GetNameForStage(globalEntity<GlobalPreparationPhaseManager>.oldStagesList[List.Length(globalEntity<GlobalPreparationPhaseManager>.oldStagesList) - 1]) // Get the name of the current stage
-        if !Map.ContainKey(roundInfoUIDitct, player) {
-            CreateBuiltInUI(out var createdUI, player, EResInternalHud.RoundInfoHud as BuiltInUIType)
-            roundInfoUIDitct[player] = createdUI as entity<UISimpleRoundStartBanner> // Associate the player with their round info UI
+        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
+            var currentCount = globalEntity<CombatRoundCounter>.GetCount() // Get the current round count
+            var currentStageName = globalEntity<SpawnPoints>.GetNameForStage(globalEntity<GlobalPreparationPhaseManager>.oldStagesList[List.Length(globalEntity<GlobalPreparationPhaseManager>.oldStagesList) - 1]) // Get the name of the current stage
+            if !Map.ContainKey(roundInfoUIDitct, player) {
+                CreateBuiltInUI(out var createdUI, player, EResInternalHud.RoundInfoHud as BuiltInUIType)
+                roundInfoUIDitct[player] = createdUI as entity<UISimpleRoundStartBanner> // Associate the player with their round info UI
+            }
+            roundInfoUIDitct[player]<UISimpleRoundStartBanner>.RoundNumKey = LocString{"ROUND_INFO_2", List<string>{ToString(currentCount), currentStageName}}
+            globalEntity<TargetAndCombatTimer>.UpdateRoundStageInfo(player, currentCount, currentStageName)
+            roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = true // Set the round info UI to be visible
+        WaitForMillisecond(roundInfoDuration)
+            roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = false // Hide the round info UI after a short delay
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
+            if !Map.ContainKey(roundInfoUIDitct, player) {
+                CreateBuiltInUI(out var createdUI, player, EResInternalHud.RoundInfoHud as BuiltInUIType)
+                roundInfoUIDitct[player] = createdUI as entity<UISimpleRoundStartBanner> // Associate the player with their round info UI
+            }
+            globalEntity<TargetAndCombatTimer>.UpdateRoundStageInfo(player, 0, "El Pasteló")
+            roundInfoUIDitct[player]<UISimpleRoundStartBanner>.RoundNumKey = LocString{"SCBOARD_TOOLTIP", List<string>{}}
+            roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = true // Set the round info UI to be visible
+            WaitForMillisecond(roundInfoDuration)
+            roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = false // Hide the round info UI after a short delay
         }
-        roundInfoUIDitct[player]<UISimpleRoundStartBanner>.RoundNumKey = LocString{"ROUND_INFO_2", List<string>{ToString(currentCount), currentStageName}}
-        globalEntity<TargetAndCombatTimer>.UpdateRoundStageInfo(player, currentCount, currentStageName)
-        roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = true // Set the round info UI to be visible
-    WaitForMillisecond(roundInfoDuration)
-        roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = false // Hide the round info UI after a short delay
     }
 
     // ==================================== END ROUND INFO UI ====================================
@@ -764,6 +776,18 @@ graph GlobalUIManager {
         }
         // LogWarning("<GlobalUIManager.fcg>: New select widget: " + newSelectWidget<UIWidget>.Active)
         newSelectWidget<UIWidget>.Active = true
+    }
+
+    func DisableAllSelectWidgets(player entity<Player>) {
+        var selectWidget entity<UIWidget>
+        selectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_1)
+        selectWidget<UIWidget>.Active = false
+        selectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_2)
+        selectWidget<UIWidget>.Active = false
+        selectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_3)
+        selectWidget<UIWidget>.Active = false
+        selectWidget = GetWidgetFromCustomUI(player, voteUIDict[player], EResUIGunVote.SELECT_BG_4)
+        selectWidget<UIWidget>.Active = false
     }
 
     /*

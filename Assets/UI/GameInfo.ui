@@ -56,7 +56,7 @@
             "alpha": 100,
             "priority": 0,
             "text": {
-              "value": "Event",
+              "value": " ",
               "key": "",
               "font": "Default",
               "fontSize": 18,
@@ -67,7 +67,7 @@
               },
               "color": "#ffffff",
               "alignment": {
-                "h": "left",
+                "h": "center",
                 "v": "middle"
               },
               "lineSpacing": 0,
