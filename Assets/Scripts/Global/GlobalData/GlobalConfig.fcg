@@ -1,9 +1,10 @@
 import "StdLibrary.fcc" as StdLib
 import "EditorGenLib.fcc" as EditorLib
+import "Scene.fcc" as Scene
 
 static graph GlobalConfig {
     availableMaps List<EResScene> = List<EResScene>{EResScene.BERMUDA, EResScene.ELPASTELO}
-    MAP_CHOSEN EResScene = EResScene.ELPASTELO
+    MAP_CHOSEN EResScene = EResScene.ACADEMY
     WIN_POINTS int = 3
     FIRST_BORDER_DURATION float = 85 
     SECOND_BORDER_DURATION float = 80
@@ -12,4 +13,6 @@ static graph GlobalConfig {
     SECOND_BORDER_DAMAGE float = 40
     FIRST_BORDER_INIT_RADIUS float = 100
     SECOND_BORDER_INIT_RADIUS float = 30
+    DEFAULT_SKYBOX SkyboxType = SkyboxType.Dusk
+    SKYBOX_SCENE_NAME string = "Academy"
 }

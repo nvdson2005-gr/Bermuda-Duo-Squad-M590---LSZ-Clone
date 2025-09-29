@@ -69,6 +69,8 @@ graph GlobalGameManager {
                 TransportToGameStartZone(player, EResSceneBERMUDA.GameStartSpawnPoint<Transform>.Position)
             } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
                 TransportToGameStartZone(player, EResSceneELPASTELO.GameStartSpawnPoint<Transform>.Position)
+            } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
+                TransportToGameStartZone(player, EResSceneACADEMY.GameStartSpawnPoint<Transform>.Position)
             }
         }
 

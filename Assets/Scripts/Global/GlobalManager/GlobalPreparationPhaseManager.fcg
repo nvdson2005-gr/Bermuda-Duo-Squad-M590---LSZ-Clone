@@ -168,7 +168,7 @@ graph GlobalPreparationPhaseManager {
             if GetItemCount(player, EResItem.Inhaler as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.Inhaler as ItemIDType, GetItemCount(player, EResItem.Inhaler as ItemIDType)) // Destroy the item when added
             }
-            AddItem(player, EResItem.Inhaler as ItemIDType, 5, out var newInhaler) // Add the item to the player
+            AddItem(player, EResItem.Inhaler as ItemIDType, 10, out var newInhaler) // Add the item to the player
             if GetItemCount(player, EResItem.Grenade as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.Grenade as ItemIDType, GetItemCount(player, EResItem.Grenade as ItemIDType)) // Destroy the item when added
             }

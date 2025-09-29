@@ -37,6 +37,11 @@ graph SpawnPoints {
             spawnDict[10] = GetChildren(EResSceneBERMUDA.SpawnGroup11 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the eleventh round
         } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
             spawnDict[0] = GetChildren(EResSceneELPASTELO.SpawnPoints as entity<Entity>) as List<entity<SpawnPosition>>
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
+            spawnDict[0] = GetChildren(EResSceneACADEMY.SpawnPoints as entity<Entity>) as List<entity<SpawnPosition>>
+        } else {
+            LogError("<SpawnPoints.fcg<OnGameStart()>>: Invalid map chosen")
+            return
         }
     }
 
@@ -61,6 +66,15 @@ graph SpawnPoints {
                 Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
             }
             return positions
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
+            var positions = List<Vector3>{}
+            for index, spawnPoint in spawnDict[0] {
+                Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
+            }
+            return positions
+        } else {
+            LogError("<SpawnPoints.fcg<GetSpawnPositionForRound()>>: Invalid map chosen")
+            return List<Vector3>{}
         }
     }
 
@@ -77,6 +91,11 @@ graph SpawnPoints {
             return spawnNames[round] // Return the name of the stage for the given round
         } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
             return "El Pasteló"
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
+            return "Academy"
+        } else {
+            LogError("<SpawnPoints.fcg<GetNameForStage()>>: Invalid map chosen")
+            return ""
         }
     }
 
@@ -97,6 +116,13 @@ graph SpawnPoints {
             for index, spawnPoint in spawnDict[0] {
                 SetActive(spawnPoint as entity<Entity>, status)
             }
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
+            for index, spawnPoint in spawnDict[0] {
+                SetActive(spawnPoint as entity<Entity>, status)
+            }
+        } else {
+            LogError("<SpawnPoints.fcg<SetSpawnPointsActiveStatusForRound()>>: Invalid map chosen")
+            return
         }
     }
 }

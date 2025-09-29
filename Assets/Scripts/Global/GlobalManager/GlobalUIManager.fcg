@@ -497,6 +497,16 @@ graph GlobalUIManager {
             roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = true // Set the round info UI to be visible
             WaitForMillisecond(roundInfoDuration)
             roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = false // Hide the round info UI after a short delay
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
+            if !Map.ContainKey(roundInfoUIDitct, player) {
+                CreateBuiltInUI(out var createdUI, player, EResInternalHud.RoundInfoHud as BuiltInUIType)
+                roundInfoUIDitct[player] = createdUI as entity<UISimpleRoundStartBanner> // Associate the player with their round info UI
+            }
+            roundInfoUIDitct[player]<UISimpleRoundStartBanner>.RoundNumKey = LocString{"SCBOARD_TOOLTIP", List<string>{}}
+            globalEntity<TargetAndCombatTimer>.UpdateRoundStageInfo(player, 0, "Academy")
+            roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = true // Set the round info UI to be visible
+            WaitForMillisecond(roundInfoDuration)
+            roundInfoUIDitct[player]<UISimpleRoundStartBanner>.IsVisible = false // Hide the round info UI after a short delay
         }
     }
 

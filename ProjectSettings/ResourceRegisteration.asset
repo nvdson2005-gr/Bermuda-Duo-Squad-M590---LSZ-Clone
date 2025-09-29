@@ -686,6 +686,55 @@
               "scriptName": "EndPosList"
             }
           ]
+        },
+        {
+          "refer": {
+            "fileId": "bp1quocccdo-mg4l813b-auykqq7d3bs",
+            "filePath": "Assets\\Scene\\Academy.scene",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "scene"
+          },
+          "scriptName": "ACADEMY",
+          "children": [
+            {
+              "id": "mwjwqXxf",
+              "scriptName": "GameStartSpawnPoint"
+            },
+            {
+              "id": "IQHRn37y",
+              "scriptName": "SpawnPoint1"
+            },
+            {
+              "id": "99XN47QJ",
+              "scriptName": "SpawnPoint2"
+            },
+            {
+              "id": "Iz7GET75",
+              "scriptName": "SpawnPoint3"
+            },
+            {
+              "id": "MRmml9yi",
+              "scriptName": "SpawnPoint4"
+            },
+            {
+              "id": "9PV68XpG",
+              "scriptName": "SpawnPoint5"
+            },
+            {
+              "id": "8LT6HvGk",
+              "scriptName": "SpawnPoints"
+            },
+            {
+              "id": "SOQFSpwt",
+              "scriptName": "StartPos"
+            },
+            {
+              "id": "wUSPpRNy",
+              "scriptName": "EndPosList"
+            }
+          ]
         }
       ]
     },

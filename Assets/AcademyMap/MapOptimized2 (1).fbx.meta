@@ -1,0 +1,823 @@
+{
+  "fileId": "lifzeakagl9-mg4zlraq-plyozkdlg2a",
+  "globalscale": 1,
+  "properties": {
+    "Common": ""
+  },
+  "subDynamicResources": {},
+  "version": "1.5.2",
+  "manifest": {
+    "Meshes": [
+      {
+        "Name": "1.000_1.006.~@FFFUB",
+        "MeshName": "1.000_1.006",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "1.001_1.003.~@FFFUB",
+        "MeshName": "1.001_1.003",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "1.005.~@FFFUB",
+        "MeshName": "1.005",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "1.007.~@FFFUB",
+        "MeshName": "1.007",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "1.008.~@FFFUB",
+        "MeshName": "1.008",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "10.003.~@FFFUB",
+        "MeshName": "10.003",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "11.003.~@FFFUB",
+        "MeshName": "11.003",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "12.~@FFFUB",
+        "MeshName": "12",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "13.~@FFFUB",
+        "MeshName": "13",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "2.003.~@FFFUB",
+        "MeshName": "2.003",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "2.004.~@FFFUB",
+        "MeshName": "2.004",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "2.005.~@FFFUB",
+        "MeshName": "2.005",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "2.006.~@FFFUB",
+        "MeshName": "2.006",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "3.007.~@FFFUB",
+        "MeshName": "3.007",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "4.001.~@FFFUB",
+        "MeshName": "4.001",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "4.005.~@FFFUB",
+        "MeshName": "4.005",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "4.006.~@FFFUB",
+        "MeshName": "4.006",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "4.~@FFFUB",
+        "MeshName": "4",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "5.001.~@FFFUB",
+        "MeshName": "5.001",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "5.002.~@FFFUB",
+        "MeshName": "5.002",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "6.~@FFFUB",
+        "MeshName": "6",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "7.~@FFFUB",
+        "MeshName": "7",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "8.001.~@FFFUB",
+        "MeshName": "8.001",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      },
+      {
+        "Name": "9.001.~@FFFUB",
+        "MeshName": "9.001",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      }
+    ],
+    "BoneInfos": [],
+    "Anims": [],
+    "ManifestJSON": {
+      "FBXName": "MapOptimized2 (1)",
+      "ImportSucceeded": true,
+      "MaterialCount": 19,
+      "MaterialDetail": [
+        {
+          "Index": 0,
+          "MaterialName": "Tex_2540_0.dds.006"
+        },
+        {
+          "Index": 1,
+          "MaterialName": "Tex_3810_0.dds"
+        },
+        {
+          "Index": 2,
+          "MaterialName": "Tex_0910_0.dds"
+        },
+        {
+          "Index": 3,
+          "MaterialName": "Tex_2540_0.dds.010"
+        },
+        {
+          "Index": 4,
+          "MaterialName": "Tex_2560_0.dds.020"
+        },
+        {
+          "Index": 5,
+          "MaterialName": "Tex_2840_0.dds.001"
+        },
+        {
+          "Index": 6,
+          "MaterialName": "Tex_2860_0.dds.002"
+        },
+        {
+          "Index": 7,
+          "MaterialName": "Tex_2560_0.dds.010"
+        },
+        {
+          "Index": 8,
+          "MaterialName": "Tex_3790_0.dds"
+        },
+        {
+          "Index": 9,
+          "MaterialName": "Tex_0930_0.dds"
+        },
+        {
+          "Index": 10,
+          "MaterialName": "Tex_2560_0.dds.023"
+        },
+        {
+          "Index": 11,
+          "MaterialName": "Tex_2560_0.dds.001"
+        },
+        {
+          "Index": 12,
+          "MaterialName": "Tex_3770_0.dds"
+        },
+        {
+          "Index": 13,
+          "MaterialName": "Tex_2560_0.dds.006"
+        },
+        {
+          "Index": 14,
+          "MaterialName": "Tex_2560_0.dds.011"
+        },
+        {
+          "Index": 15,
+          "MaterialName": "Tex_2840_0.dds"
+        },
+        {
+          "Index": 16,
+          "MaterialName": "Tex_2860_0.dds"
+        },
+        {
+          "Index": 17,
+          "MaterialName": "Tex_2540_0.dds.002"
+        },
+        {
+          "Index": 18,
+          "MaterialName": "Tex_2860_0.dds.003"
+        }
+      ],
+      "MeshCount": 24,
+      "MeshDetail": [
+        {
+          "MeshName": "1.000_1.006",
+          "MaterialIndex": [
+            0
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "1.001_1.003",
+          "MaterialIndex": [
+            1
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "1.005",
+          "MaterialIndex": [
+            0
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "1.007",
+          "MaterialIndex": [
+            1
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "1.008",
+          "MaterialIndex": [
+            2
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "10.003",
+          "MaterialIndex": [
+            3
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "11.003",
+          "MaterialIndex": [
+            4
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "12",
+          "MaterialIndex": [
+            5
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "13",
+          "MaterialIndex": [
+            6
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "2.003",
+          "MaterialIndex": [
+            7
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "2.004",
+          "MaterialIndex": [
+            8
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "2.005",
+          "MaterialIndex": [
+            9
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "2.006",
+          "MaterialIndex": [
+            8
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "3.007",
+          "MaterialIndex": [
+            10
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "4",
+          "MaterialIndex": [
+            11
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "4.001",
+          "MaterialIndex": [
+            11
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "4.005",
+          "MaterialIndex": [
+            12
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "4.006",
+          "MaterialIndex": [
+            12
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "5.001",
+          "MaterialIndex": [
+            13
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "5.002",
+          "MaterialIndex": [
+            14
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "6",
+          "MaterialIndex": [
+            15
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "7",
+          "MaterialIndex": [
+            16
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "8.001",
+          "MaterialIndex": [
+            17
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        },
+        {
+          "MeshName": "9.001",
+          "MaterialIndex": [
+            18
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              -0.00000432571,
+              0,
+              0
+            ],
+            "Scale": [
+              100,
+              100,
+              100
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "subColliderLOD": {
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-1.000_1.006.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-1.001_1.003.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-1.005.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-1.007.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-1.008.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-10.003.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-11.003.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-12.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-13.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-2.003.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-2.004.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-2.005.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-2.006.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-3.007.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-4.001.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-4.005.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-4.006.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-4.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-5.001.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-5.002.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-6.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-7.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-8.001.~@FFFUB": 1,
+    "lifzeakagl9-mg4zlraq-plyozkdlg2a-9.001.~@FFFUB": 1
+  }
+}
