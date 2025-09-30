@@ -28,6 +28,10 @@ import "SafeZone.fcc" as SafeZone
 import "MiniMap.fcc" as MiniMap
 import "../GlobalData/GlobalRandomEvent.fcg" as GlobalRandomEvent
 import "../GlobalData/GlobalConfig.fcg" as GlobalConfig
+import "../GlobalManager/GlobalCombatManager.fcg" as GlobalCombatManager
+import "../../Team/TeamCurrentRoundData.fcg" as TeamCurrentRoundData
+import "../GlobalData/CombatRoundCounter.fcg" as CombatRoundCounter
+import "List.fcc" as List
 graph GlobalGameManager {
     // winPoints int = 3 // Number of points required to win the game
     availableStages int = 11 // Number of available stages in the game, goes together with the number of safe zones and spawn point groups in GlobalSafeZones.cfg and SpawnPoints.cfg
@@ -159,12 +163,11 @@ graph GlobalGameManager {
     - Check if that team wins or not
     */
     event CombatEnd(winningTeam entity<Team>) {
-        if(winningTeam == nil){
+        if (winningTeam == nil) {
             LogError("There is no team winning this round")
             EndCurrentPhase()
         }
         LogInfo("<GlobalGameManager.fcg>: Round ended. Winning team: " + winningTeam) // Debug Info
-        globalEntity<TeamData>.AddPointsToTeam(winningTeam, 1) // Add points to the winning team
         // globalEntity<GlobalUIManager>.CreatePlusAnimation(winningTeam)
         globalEntity<GlobalUIManager>.UpdateMiniScoreboard(); // Update the scoreboard for the winning team
         for index, teammate in winningTeam<Team>.AllTeammates {
@@ -172,16 +175,22 @@ graph GlobalGameManager {
                 SetInvincibility(teammate, 60)
             }
         }
+        var teamRanking = globalEntity<GlobalCombatManager>.teamRanking
+        globalEntity<TeamData>.AddPointsToTeam(winningTeam, winningTeam<TeamCurrentRoundData>.GetKillThisRound(), 4)
+        for index, team in teamRanking {
+            globalEntity<TeamData>.AddPointsToTeam(team, team<TeamCurrentRoundData>.GetKillThisRound(), index + 1)
+        }
         ClearResidualLevelObjects()
         globalEntity<GlobalRandomEvent>.ResetChosenEvent()
         for index, player in GetAllPlayers() {
             ClearBackpack(player)
         }
-        if CheckWinningCondition(winningTeam) {
-            LogInfo("<GlobalGameManager.fcg>: Team " + winningTeam<Entity> + " has won the game!") // Debug Info
+        if CheckWinningCondition() {
+            var allWinningTeams = GetAllWinningTeams()
+            LogInfo("<GlobalGameManager.fcg>: Team(s) " + allWinningTeams + " have won the game!") // Debug Info
             for index, player in GetAllPlayers() {
                 globalEntity<GlobalUIManager>.UnregisterAllUIs(player) // Unregister all UIs for the player
-                start globalEntity<GlobalUIManager>.CreateLastRoundHUD(winningTeam, player) // Create the last round HUD for all players
+                start globalEntity<GlobalUIManager>.CreateLastRoundHUD(allWinningTeams, player) // Create the last round HUD for all players
                 globalEntity<GlobalSoundManager>.PlayEndMatchSound(player)            
             }
             WaitForMillisecond(5000)
@@ -203,14 +212,28 @@ graph GlobalGameManager {
 
     // =========== UTILS FUNCTIONS ================
     // TEAM FUNCTIONS
+    func GetAllWinningTeams() List<entity<Team>> {
+        var winningTeams List<entity<Team>> = globalEntity<TeamData>.GetSortedTeamList()
+        var returnList List<entity<Team>> = List<entity<Team>>{}
+        if List.Length(winningTeams) <= 1 {
+            return winningTeams
+        }
+        Append(returnList, winningTeams[0])
+        for index, team in winningTeams {
+            if team == winningTeams[0] {
+                continue
+            }
+            Append(returnList, team)
+        }
+        return returnList
+    }
     /* 
     Check if a team satisfies the winning condition
     @param team: The team entity to check
     @return: Bool value indicating whether the team has won
     */
-    func CheckWinningCondition(team entity<Team>) bool {
-        // LogError("Current Points: " + globalEntity<TeamData>.GetTeamPoints())
-        if globalEntity<TeamData>.GetTeamPoint(team) >= GlobalConfig.WIN_POINTS {
+    func CheckWinningCondition() bool {
+        if globalEntity<CombatRoundCounter>.GetCount() >= GlobalConfig.MAX_ROUND {
             return true
         }
         return false

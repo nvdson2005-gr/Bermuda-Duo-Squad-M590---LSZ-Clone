@@ -156,10 +156,6 @@
               "scriptName": "ThirdRankTeamBooyah"
             },
             {
-              "id": "dG8BoGH1",
-              "scriptName": "TeamInfoLayout"
-            },
-            {
               "id": "r61sreno",
               "scriptName": "TeamName1"
             },
@@ -184,18 +180,6 @@
               "scriptName": "Rank3BG"
             },
             {
-              "id": "qwHipcx7",
-              "scriptName": "Increase1"
-            },
-            {
-              "id": "C6buQagt",
-              "scriptName": "Increase2"
-            },
-            {
-              "id": "XN5ReIkB",
-              "scriptName": "Increase3"
-            },
-            {
               "id": "ahIZVgks",
               "scriptName": "Rank1NameBg"
             },
@@ -214,10 +198,6 @@
             {
               "id": "TKAM3AI6",
               "scriptName": "Rank2BooyahBg"
-            },
-            {
-              "id": "ip8nNVl4",
-              "scriptName": "Rank3BooyahBg"
             },
             {
               "id": "pvbbH2BN",
@@ -240,12 +220,112 @@
               "scriptName": "Rank4NameBg"
             },
             {
+              "id": "a0SiGPVG",
+              "scriptName": "Rank1KillBg"
+            },
+            {
+              "id": "x6S4u2rE",
+              "scriptName": "Rank2KillBg"
+            },
+            {
+              "id": "ip8nNVl4",
+              "scriptName": "Rank3KillBg"
+            },
+            {
+              "id": "OQWzRkbe",
+              "scriptName": "Rank4KillBg"
+            },
+            {
+              "id": "ajiYjYzQ",
+              "scriptName": "Rank1TSBg"
+            },
+            {
+              "id": "Zj07sFwp",
+              "scriptName": "Rank2TSBg"
+            },
+            {
+              "id": "DST462SY",
+              "scriptName": "Rank3TSBg"
+            },
+            {
+              "id": "c2yBU3LJ",
+              "scriptName": "Rank4TSBg"
+            },
+            {
+              "id": "PeuV2S3c",
+              "scriptName": "FirstRankTeamKill"
+            },
+            {
+              "id": "pmu2XlM5",
+              "scriptName": "FirstRankTeamTS"
+            },
+            {
+              "id": "5F8SETuZ",
+              "scriptName": "SecondRankTeamKill"
+            },
+            {
+              "id": "q4ebxfR6",
+              "scriptName": "SecRankTeamTS"
+            },
+            {
+              "id": "TSVK3qe8",
+              "scriptName": "ThirdRankTeamKill"
+            },
+            {
+              "id": "WpG8tBgs",
+              "scriptName": "ThirdRankTeamTS"
+            },
+            {
+              "id": "jbYAN6aU",
+              "scriptName": "FourthRankTeamKill"
+            },
+            {
+              "id": "npiobjAh",
+              "scriptName": "FourthRankTeamTS"
+            },
+            {
+              "id": "qwHipcx7",
+              "scriptName": "KIncrease1"
+            },
+            {
+              "id": "C6buQagt",
+              "scriptName": "KIncrease2"
+            },
+            {
+              "id": "XN5ReIkB",
+              "scriptName": "KIncrease3"
+            },
+            {
+              "id": "hgzlytZi",
+              "scriptName": "KIncrease4"
+            },
+            {
+              "id": "DPufl3dP",
+              "scriptName": "BIncrease1"
+            },
+            {
+              "id": "LHTw7oPn",
+              "scriptName": "BIncrease2"
+            },
+            {
+              "id": "hVpfJmE5",
+              "scriptName": "BIncrease3"
+            },
+            {
+              "id": "DcirmEex",
+              "scriptName": "BIncrease4"
+            },
+            {
+              "id": "5oCZ1ZOR",
+              "scriptName": "Rank3BooyahBg"
+            },
+            {
               "id": "2fXPLUWN",
               "scriptName": "Rank4BooyahBg"
             },
             {
-              "id": "hgzlytZi",
-              "scriptName": "Increase4"
+              "id": "FlMcQv5U",
+              "scriptName": "TooltipText"
             }
           ]
         },

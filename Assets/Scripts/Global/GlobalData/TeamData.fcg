@@ -8,11 +8,14 @@ import "Map.fcc" as Map
 import "List.fcc" as List
 import "../GlobalData/PlayerData.fcg" as PlayerData
 graph TeamData {
-    teamPoints Map<entity<Team>, int>  // Map to keep track of points for each team
-
+    teamBooyah Map<entity<Team>, int>  // Map to keep track of booyah for each team
+    teamKills Map<entity<Team>, int>  // Map to keep track of kills for each team
+    teamTotalPoints Map<entity<Team>, int>  // Map to keep track of total points for each team
     // On the game starts, init team points
     event OnAwake() {
-        teamPoints = Map<entity<Team>, int>{} // Initialize the team points map
+        teamBooyah = Map<entity<Team>, int>{} // Initialize the team booyah map
+        teamKills = Map<entity<Team>, int>{} // Initialize the team kills map
+        teamTotalPoints = Map<entity<Team>, int>{} // Initialize the team total points map
     }
 
     /* Initialize the team points map with zero points for each team.
@@ -20,7 +23,9 @@ graph TeamData {
     */
     func InitializeTeamPoints() {
         for index, team in GetAllTeams() {
-            teamPoints[team] = 0 // Set initial points to zero
+            teamBooyah[team] = 0 // Set initial booyah to zero
+            teamKills[team] = 0 // Set initial kills to zero
+            teamTotalPoints[team] = 0 // Set initial total points to zero
             // LogInfo("<TeamData.fcg>: Initialized points for team: " + team<Entity>.Name) // Debug Info
         }
     }
@@ -32,8 +37,10 @@ graph TeamData {
        @return: Returns true if the operation was successful, false if the team was already registered
     */
     func RegisterTeamPoint(team entity<Team>) bool {
-        if (!ContainKey(teamPoints, team)) {
-            teamPoints[team] = 0 // Initialize points for the new team
+        if (!ContainKey(teamBooyah, team) && !ContainKey(teamKills, team) && !ContainKey(teamTotalPoints, team)) {
+            teamBooyah[team] = 0 // Initialize booyah for the new team
+            teamKills[team] = 0 // Initialize kills for the new team
+            teamTotalPoints[team] = 0 // Initialize total points for the new team
             // LogError("<TeamData.fcg>: Registered new team: " + team) // Debug Info
             return true
         } else {
@@ -44,12 +51,15 @@ graph TeamData {
 
     /* Add points to a specific team's score.
        @param team: The team entity to which points will be added
+       @param kills: The number of kills to add
        @param points: The number of points to add
     */
-    func AddPointsToTeam(team entity<Team>, points int) {
-        if (ContainKey(teamPoints, team)) {
-            teamPoints[team] = teamPoints[team] + points // Increment the team's score
-            // LogInfo("<TeamData.fcg>: Added " + points + " points to team: " + team<Entity>.Name) // Debug Info
+    func AddPointsToTeam(team entity<Team>, kills int, booyah int) {
+        if (ContainKey(teamBooyah, team) && ContainKey(teamKills, team) && ContainKey(teamTotalPoints, team)) {
+            teamBooyah[team] = teamBooyah[team] + booyah // Increment the team's booyah
+            teamKills[team] = teamKills[team] + kills // Increment the team's kills
+            teamTotalPoints[team] = teamTotalPoints[team] + booyah + kills // Increment the team's total points
+            LogInfo("<TeamData.fcg>: Added " + teamTotalPoints[team] + " points to team: " + team<Entity>.Name) // Debug Info
         } else {
             LogError("<TeamData.fcg>: Team not found: " + team<Entity>.Name) // Error Info
         }
@@ -59,17 +69,33 @@ graph TeamData {
        This function returns the map of team points.
        @return: A map of entity<Team> to int representing team points
     */
-    func GetTeamPoints() Map<entity<Team>, int> {
-        return teamPoints // Return the map of team points
+    func GetTeamBooyah() Map<entity<Team>, int> {
+        return teamBooyah // Return the map of team booyah
+    }
+
+    /* Get the current kills for all teams.
+       This function returns the map of team kills.
+       @return: A map of entity<Team> to int representing team kills
+    */
+    func GetTeamKills() Map<entity<Team>, int> {
+        return teamKills // Return the map of team kills
+    }
+
+    /* Get the current total points for all teams.
+       This function returns the map of team total points.
+       @return: A map of entity<Team> to int representing team total points
+    */
+    func GetTeamTotalPoints() Map<entity<Team>, int> {
+        return teamTotalPoints // Return the map of team total points
     }
 
     /* Get the current point of one team
         @param team: The team entity to get the point.
-        @return: The current points of the specified team.
+        @return: The current booyah of the specified team.
     */
-    func GetTeamPoint(team entity<Team>) int {
-        if (ContainKey(teamPoints, team)) {
-            return teamPoints[team] // Return the points for the specified team
+    func GetTeamTotalPoint(team entity<Team>) int {
+        if (ContainKey(teamTotalPoints, team)) {
+            return teamTotalPoints[team] // Return the total points for the specified team
         } else {
             LogError("<TeamData.fcg>: Team not found: " + team<Entity>.Name) // Error Info
             return 0 // Return zero if the team is not found
@@ -83,7 +109,7 @@ graph TeamData {
     func GetSortedTeamList() List<entity<Team>>{
         var sortedTeams List<entity<Team>> = List<entity<Team>>{}
         var teamCopyDict Map<entity<Team>, int> = Map<entity<Team>, int>{} 
-        for team, point in teamPoints {
+        for team, point in teamTotalPoints {
             teamCopyDict[team] = point
         }
         while Map.Length(teamCopyDict) > 0 {
@@ -93,17 +119,24 @@ graph TeamData {
                     currentMaxTeam = team
                 } else if teamCopyDict[team as entity<Team>] == teamCopyDict[currentMaxTeam as entity<Team>] {
                     // If points are equal, prefer the team with more kill points
-                    var currentMaxTeamKills int = 0
-                    var teamKills int = 0
-                    for index, player in currentMaxTeam as entity<Team><Team>.AllTeammates {
-                        currentMaxTeamKills = currentMaxTeamKills + globalEntity<PlayerData>.GetPlayerData(player)[0] // Sum kills of all teammates
-                    }
-                    for index, player in team as entity<Team><Team>.AllTeammates {
-                        teamKills = teamKills + globalEntity<PlayerData>.GetPlayerData(player)[0] // Sum kills of all teammates
-                    }
-                    if teamKills > currentMaxTeamKills {
+                    // var currentMaxTeamKills int = 0
+                    // var teamKills int = 0
+                    // for index, player in currentMaxTeam as entity<Team><Team>.AllTeammates {
+                    //     currentMaxTeamKills = currentMaxTeamKills + globalEntity<PlayerData>.GetPlayerData(player)[0] // Sum kills of all teammates
+                    // }
+                    // for index, player in team as entity<Team><Team>.AllTeammates {
+                    //     teamKills = teamKills + globalEntity<PlayerData>.GetPlayerData(player)[0] // Sum kills of all teammates
+                    // }
+                    // if teamKills > currentMaxTeamKills {
+                    //     currentMaxTeam = team
+                    // }
+                    if teamBooyah[team as entity<Team>] > teamBooyah[currentMaxTeam as entity<Team>] {
                         currentMaxTeam = team
-                    }
+                    } else if teamBooyah[team as entity<Team>] == teamBooyah[currentMaxTeam as entity<Team>] {
+                        if teamKills[team as entity<Team>] > teamKills[currentMaxTeam as entity<Team>] {
+                            currentMaxTeam = team
+                        }
+                    } 
                 }
             }
             Append(sortedTeams, currentMaxTeam)
@@ -127,7 +160,6 @@ graph TeamData {
 
     /*
     Get the sorted players in a specific team.
-    The players are sorted by their kills, then their damages in descending order.
     @param team: The team entity to get the sorted players from.
     @return: A list of players sorted by their scores.
     */
@@ -162,7 +194,7 @@ graph TeamData {
         var sortedTeams List<entity<Team>> = GetSortedTeamList()
         var sortedScores List<int> = List<int>{}
         for index, team in sortedTeams {
-            Append(sortedScores, teamPoints[team])
+            Append(sortedScores, teamTotalPoints[team])
         }
         // LogError(sortedScores)
         return sortedScores

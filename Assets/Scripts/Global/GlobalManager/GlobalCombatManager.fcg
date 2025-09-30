@@ -22,11 +22,14 @@ import "Items.fcc" as Items
 graph GlobalCombatManager {
     teamsAlive List<Team> = List<Team>{} // List of teams that are still alive in the combat phase
     allDroppedItems List<entity<ItemBase>> = List<entity<ItemBase>>{} // List of all dropped items on ground in each round
-
+    teamRanking List<entity<Team>> = List<entity<Team>>{} // List of teams in ranking order
     // When the combat phase starts, activate the timer also
     event OnPhaseStart(phase entity<Phase>) {
         if phase<Phase>.Index == EPhase.Border{
             // globalEntity<TargetAndCombatTimer>.StartTimer()
+        }
+        if phase<Phase>.Index == EPhase.Vote {
+            List.Clear(teamRanking)
         }
     }
 

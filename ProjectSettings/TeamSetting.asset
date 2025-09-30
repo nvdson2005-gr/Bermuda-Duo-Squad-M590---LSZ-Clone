@@ -26,6 +26,14 @@
         "type": "GFileRefer"
       },
       "fileType": "ugcscript"
+    },
+    {
+      "fileId": "lzn8dgbiqgh-mg6008h2-y3j3vtup5h",
+      "filePath": "Assets\\Scripts\\Team\\TeamCurrentRoundData.fcg",
+      "_tag": {
+        "type": "GFileRefer"
+      },
+      "fileType": "ugcscript"
     }
   ],
   "_entityName": "FE_0_HW_GAME_EDITOR_TEAMSETTING",

@@ -5,7 +5,8 @@ import "Scene.fcc" as Scene
 static graph GlobalConfig {
     availableMaps List<EResScene> = List<EResScene>{EResScene.BERMUDA, EResScene.ELPASTELO}
     MAP_CHOSEN EResScene = EResScene.ACADEMY
-    WIN_POINTS int = 3
+    // WIN_POINTS int = 90
+    MAX_ROUND int = 5
     FIRST_BORDER_DURATION float = 85 
     SECOND_BORDER_DURATION float = 80
     FINAL_BORDER_SHRINK_TIME float = 60

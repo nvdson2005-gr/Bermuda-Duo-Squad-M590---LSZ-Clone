@@ -12,6 +12,7 @@ import "Items.fcc" as Items
 import "Hud.fcc" as Hud
 import "../Global/GlobalData/GlobalConfig.fcg" as GlobalConfig
 import "Convert.fcc" as Convert
+import "../Global/GlobalData/CombatRoundCounter.fcg" as CombatRoundCounter
 graph PlayerUI {
     gunCombosThisRound List<List<ItemIDType>> = List<List<ItemIDType>>{}
     gunVoteCountdown int 
@@ -28,7 +29,7 @@ graph PlayerUI {
         phaseCountDownHUD = createdPhaseCountDownHUD
         CreateBuiltInUI(out var createdMatchInfoSubtitleHUD, thisEntity as entity<Player>, EResInternalHud.MatchInfoSubTitleHud as BuiltInUIType)
         matchInfoSubtitleHUD = createdMatchInfoSubtitleHUD
-        matchInfoSubtitleHUD<UIMatchSubtitle>.TextKey = LocString{"TARGET_UI_TITLE_TEXT", List<string>{ToString(GlobalConfig.WIN_POINTS)}}
+        matchInfoSubtitleHUD<UIMatchSubtitle>.TextKey = LocString{"FULL_SCBOARD_TARGET", List<string>{ToString(globalEntity<CombatRoundCounter>.GetCount()), ToString(GlobalConfig.MAX_ROUND)}}
         // matchInfoSubtitleHUD<UIMatchSubtitle>.TextKeyParams = List<int>{GlobalConfig.WIN_POINTS}
     }
 
@@ -54,6 +55,15 @@ graph PlayerUI {
             thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, EResItem.HELMET_2, 1)
         }
     }
+
+    /*
+    Update the vote info subtitle for a player.
+    @param round The round number
+    */
+    func UpdateVoteInfoSubtitle(round int) {
+        matchInfoSubtitleHUD<UIMatchSubtitle>.TextKey = LocString{"FULL_SCBOARD_TARGET", List<string>{ToString(round), ToString(GlobalConfig.MAX_ROUND)}}
+    }
+
     /*
     Start the countdown for the gun vote.
     @param countdown The countdown time

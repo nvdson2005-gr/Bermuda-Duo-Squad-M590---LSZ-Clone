@@ -25,6 +25,7 @@ import "../GlobalManager/GlobalSoundManager.fcg" as GlobalSoundManager
 import "Convert.fcc" as Convert
 import "MiniMap.fcc" as MiniMap
 import "../../Phases/VotePhaseManager.fcg" as VotePhaseManager
+import "../../Player/PlayerUI.fcg" as PlayerUI
 graph GlobalPreparationPhaseManager {
     // Script variable storing the old stage index
     oldStageIndex int
@@ -78,6 +79,7 @@ graph GlobalPreparationPhaseManager {
 
         // Initialize player states
         for index, player in GetAllPlayers() {
+            player<PlayerUI>.UpdateVoteInfoSubtitle(globalEntity<CombatRoundCounter>.GetCount())
             start SetGravityDelay(player, 500) // Set the player's gravity to zero for a short delay
             globalEntity<GlobalUIManager>.SetVisibilityFullScoreBoard(player, false); // Update the full scoreboard UI
 
