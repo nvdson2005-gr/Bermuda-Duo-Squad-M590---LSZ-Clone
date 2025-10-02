@@ -255,11 +255,11 @@
               },
               "anchoredPosition": {
                 "x": 46,
-                "y": 0
+                "y": -1
               },
               "sizeDelta": {
                 "x": -92,
-                "y": 70
+                "y": 84
               }
             },
             "alpha": 100,
@@ -267,7 +267,7 @@
               "value": "\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis sodales dolor. Aliquam ac volutpat ligula. ",
               "key": "",
               "font": "Default",
-              "fontSize": 20,
+              "fontSize": 25,
               "fontStyle": {
                 "bold": false,
                 "italic": false,
@@ -336,11 +336,11 @@
           },
           "anchoredPosition": {
             "x": 0,
-            "y": 224.99998474121094
+            "y": 225
           },
           "sizeDelta": {
-            "x": 600,
-            "y": 70
+            "x": 700,
+            "y": 100
           }
         },
         "alpha": 100,

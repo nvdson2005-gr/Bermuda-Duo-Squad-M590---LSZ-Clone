@@ -8,12 +8,14 @@ import "Map.fcc" as Map
 import "List.fcc" as List
 import "../GlobalData/PlayerData.fcg" as PlayerData
 graph TeamData {
-    teamBooyah Map<entity<Team>, int>  // Map to keep track of booyah for each team
+    teamWinningTimes Map<entity<Team>, int>  // Map to keep track of winning times for each team
+    teamBooyah Map<entity<Team>, int>  // Map to keep track of booyah points for each team
     teamKills Map<entity<Team>, int>  // Map to keep track of kills for each team
     teamTotalPoints Map<entity<Team>, int>  // Map to keep track of total points for each team
     // On the game starts, init team points
     event OnAwake() {
-        teamBooyah = Map<entity<Team>, int>{} // Initialize the team booyah map
+        teamWinningTimes = Map<entity<Team>, int>{} // Initialize the team winning times map
+        teamBooyah = Map<entity<Team>, int>{} // Initialize the team booyah points map
         teamKills = Map<entity<Team>, int>{} // Initialize the team kills map
         teamTotalPoints = Map<entity<Team>, int>{} // Initialize the team total points map
     }
@@ -23,7 +25,8 @@ graph TeamData {
     */
     func InitializeTeamPoints() {
         for index, team in GetAllTeams() {
-            teamBooyah[team] = 0 // Set initial booyah to zero
+            teamWinningTimes[team] = 0 // Set initial winning times to zero
+            teamBooyah[team] = 0 // Set initial booyah points to zero
             teamKills[team] = 0 // Set initial kills to zero
             teamTotalPoints[team] = 0 // Set initial total points to zero
             // LogInfo("<TeamData.fcg>: Initialized points for team: " + team<Entity>.Name) // Debug Info
@@ -38,7 +41,8 @@ graph TeamData {
     */
     func RegisterTeamPoint(team entity<Team>) bool {
         if (!ContainKey(teamBooyah, team) && !ContainKey(teamKills, team) && !ContainKey(teamTotalPoints, team)) {
-            teamBooyah[team] = 0 // Initialize booyah for the new team
+            teamWinningTimes[team] = 0 // Initialize winning times for the new team
+            teamBooyah[team] = 0 // Initialize booyah points for the new team
             teamKills[team] = 0 // Initialize kills for the new team
             teamTotalPoints[team] = 0 // Initialize total points for the new team
             // LogError("<TeamData.fcg>: Registered new team: " + team) // Debug Info
@@ -56,7 +60,7 @@ graph TeamData {
     */
     func AddPointsToTeam(team entity<Team>, kills int, booyah int) {
         if (ContainKey(teamBooyah, team) && ContainKey(teamKills, team) && ContainKey(teamTotalPoints, team)) {
-            teamBooyah[team] = teamBooyah[team] + booyah // Increment the team's booyah
+            teamBooyah[team] = teamBooyah[team] + booyah // Increment the team's booyah points
             teamKills[team] = teamKills[team] + kills // Increment the team's kills
             teamTotalPoints[team] = teamTotalPoints[team] + booyah + kills // Increment the team's total points
             LogInfo("<TeamData.fcg>: Added " + teamTotalPoints[team] + " points to team: " + team<Entity>.Name) // Debug Info
@@ -65,12 +69,49 @@ graph TeamData {
         }
     }
 
+    /* Add winning times to a specific team.
+       @param team: The team entity to which winning times will be added
+    */
+    func AddWinningTimesToTeam(team entity<Team>) {
+        if (ContainKey(teamWinningTimes, team)) {
+            teamWinningTimes[team] = teamWinningTimes[team] + 1 // Increment the team's winning times
+        } else {
+            LogError("<TeamData.fcg>: Team not found: " + team<Entity>.Name) // Error Info
+        }
+    }
+
+    /* Get the current winning times for a specific team.
+       @param team: The team entity to get the winning times from.
+       @return: The current winning times for the specified team.
+    */
+    func GetTeamWinningTimes(team entity<Team>) int {
+        if (ContainKey(teamWinningTimes, team)) {
+            return teamWinningTimes[team] // Return the team's winning times
+        } else {
+            LogError("<TeamData.fcg>: Team not found: " + team<Entity>.Name) // Error Info
+            return 0 // Return zero if the team is not found
+        }
+    }
+
     /* Get the current points for all teams.
        This function returns the map of team points.
        @return: A map of entity<Team> to int representing team points
     */
-    func GetTeamBooyah() Map<entity<Team>, int> {
+    func GetTeamBooyahs() Map<entity<Team>, int> {
         return teamBooyah // Return the map of team booyah
+    }
+
+    /* Get the current booyah for a specific team.
+       @param team: The team entity to get the booyah from.
+       @return: The current booyah for the specified team.
+    */
+    func GetTeamBooyah(team entity<Team>) int {
+        if (ContainKey(teamBooyah, team)) {
+            return teamBooyah[team] // Return the booyah points for the specified team
+        } else {
+            LogError("<TeamData.fcg>: Team not found: " + team<Entity>.Name) // Error Info
+            return -1 // Return -1 if the team is not found
+        }
     }
 
     /* Get the current kills for all teams.
@@ -91,7 +132,7 @@ graph TeamData {
 
     /* Get the current point of one team
         @param team: The team entity to get the point.
-        @return: The current booyah of the specified team.
+        @return: The current booyah points of the specified team.
     */
     func GetTeamTotalPoint(team entity<Team>) int {
         if (ContainKey(teamTotalPoints, team)) {

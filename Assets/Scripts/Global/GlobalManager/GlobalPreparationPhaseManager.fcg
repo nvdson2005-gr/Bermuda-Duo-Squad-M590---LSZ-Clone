@@ -88,6 +88,7 @@ graph GlobalPreparationPhaseManager {
 
             SetInvincibilityStatus(player, true); // Set the invincibility status for the player
             // start globalEntity<GlobalUIManager>.CreateDelay5sCountDownHUD(player, duration - 5000) // Create delay countdown HUD
+            player<PlayerUI>.SetTimer(0) // Set the player's timer to 0
         }
 
         // Update mini score board to init current alives, and team points

@@ -20,6 +20,7 @@ import "../Global/GlobalManager/GlobalPreparationPhaseManager.fcg" as GlobalPrep
 import "../Global/GlobalManager/GlobalCombatManager.fcg" as GlobalCombatManager
 import "../Global/GlobalManager/GlobalUIManager.fcg" as GlobalUIManager
 import "Workflow.fcc" as Workflow
+import "Convert.fcc" as Convert
 graph PlayerController {
     playerShopHUD entity<BuiltInUI>; // Variable to hold the player's shop HUD
 
@@ -173,7 +174,13 @@ graph PlayerController {
             DestroyEquipment(player, EquipmentType.Vest, 1, out var destroyedVest) // Destroy the existing vest if it is level 3
         }
         AddItem(player, item as ItemIDType, amount, out var newItem) // Adds the specified amount of items to the player
-        // LogInfo("Added item to player: " + player<Entity>.Name) //Debug Info
+        if item == EResItem.HELMET_2 {
+            newItem[0]<Helmet>.CanDamaged = false
+        }
+        if item == EResItem.VEST_2 {
+            newItem[0]<Vest>.CanDamaged = false
+        }
+        LogInfo("<PlayerController.fcg>: Added item with id" + ToString(item) + " to player: " + player<Entity>.Name) //Debug Info
     }
 
     // MOVED TO GlobalPreparationPhaseManager.fcg in InitPlayerWeapons() also

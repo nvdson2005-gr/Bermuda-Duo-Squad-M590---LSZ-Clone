@@ -95,16 +95,20 @@ graph GlobalGameManager {
             start PreparationPhaseUIHandler(phase<Phase>.Duration) // Start the preparation phase UI handler
         }
         if phase<Phase>.Index == EPhase.End {
+            var winningTeams = GetAllWinningTeams()
             var teamSortedList = globalEntity<TeamData>.GetSortedTeamList()
             for index, player in GetAllPlayers(){
                 var team entity<Team> = player<Player>.HostTeam
-                if player<Player>.HostTeam == teamSortedList[0] {
+                if List.Contain(winningTeams, team) { 
                     globalEntity<GlobalUIManager>.CreateEndGameHUD(player, team, 1, teamSortedList)
                 } else {
                     globalEntity<GlobalUIManager>.CreateEndGameHUD(player, team, 2, teamSortedList)
                 }
             }
         }
+        // if phase<Phase>.Index == EPhase.Vote{
+        //     // LogError("winningTeams: " + GetAllWinningTeams())
+        // }
         if phase<Phase>.Index == EPhase.EndCombat {
             start SetAllPlayerFullScoreBoard()
         }
@@ -176,7 +180,8 @@ graph GlobalGameManager {
             }
         }
         var teamRanking = globalEntity<GlobalCombatManager>.teamRanking
-        globalEntity<TeamData>.AddPointsToTeam(winningTeam, winningTeam<TeamCurrentRoundData>.GetKillThisRound(), 4)
+        globalEntity<TeamData>.AddPointsToTeam(winningTeam, winningTeam<TeamCurrentRoundData>.GetKillThisRound(), List.Length(teamRanking) + 1)
+        globalEntity<TeamData>.AddWinningTimesToTeam(winningTeam)
         for index, team in teamRanking {
             globalEntity<TeamData>.AddPointsToTeam(team, team<TeamCurrentRoundData>.GetKillThisRound(), index + 1)
         }
@@ -220,7 +225,7 @@ graph GlobalGameManager {
         }
         Append(returnList, winningTeams[0])
         for index, team in winningTeams {
-            if team == winningTeams[0] {
+            if globalEntity<TeamData>.GetTeamTotalPoint(team) < globalEntity<TeamData>.GetTeamTotalPoint(winningTeams[0]) || team == winningTeams[0] {
                 continue
             }
             Append(returnList, team)
@@ -246,5 +251,20 @@ graph GlobalGameManager {
     */
     func TransportToGameStartZone(player entity<Player>, startZonePosition Vector3) {
         Teleport(player, startZonePosition, Vector3{0, 0, 0})
+    }
+
+    /*
+    Get the number of active teams (this is used as an alternative to GetAllTeams(), since GetAllTeams() returns all Team entities (including quitted teams), not just the active ones)
+    @return: The number of active teams
+    */
+    func GetCurrentActiveTeams() List<entity<Team>> {
+        var teamList = List<entity<Team>>{}
+        for key, player in GetAllPlayers() {
+            var team = player<Player>.HostTeam
+            if !List.Contain(teamList, team) {
+                Append(teamList, team)
+            }
+        }
+        return teamList
     }
 }

@@ -4459,7 +4459,7 @@
             "alpha": 100,
             "priority": 0,
             "text": {
-              "value": "Round 0/5 (placeholder)",
+              "value": "Round 1/5",
               "key": "",
               "font": "Default",
               "fontSize": 24,
@@ -5658,7 +5658,7 @@
                 "alpha": 100,
                 "priority": 0,
                 "text": {
-                  "value": " Team 1",
+                  "value": " ",
                   "key": "",
                   "font": "Default",
                   "fontSize": 33,
@@ -6843,7 +6843,7 @@
                 "alpha": 100,
                 "priority": 0,
                 "text": {
-                  "value": " Team 2",
+                  "value": " ",
                   "key": "",
                   "font": "Default",
                   "fontSize": 33,
@@ -7357,7 +7357,7 @@
                 "alpha": 100,
                 "priority": 0,
                 "text": {
-                  "value": " Team 3",
+                  "value": " ",
                   "key": "",
                   "font": "Default",
                   "fontSize": 33,
@@ -7871,7 +7871,7 @@
                 "alpha": 100,
                 "priority": 0,
                 "text": {
-                  "value": " Team 4",
+                  "value": " ",
                   "key": "",
                   "font": "Default",
                   "fontSize": 33,

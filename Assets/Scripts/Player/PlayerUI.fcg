@@ -138,4 +138,13 @@ graph PlayerUI {
     event OnChoosingWeapon(player entity<Player>, comboIndex int) {
         wait HandleChosenCombo(comboIndex)
     }
+
+    // ==================================== UTILS FUNCTIONS ====================================
+    /* Set the timer for the player's phase countdown HUD.
+       @param timer: The timer to set for the player's phase countdown HUD, in seconds.
+    */
+    func SetTimer(timer int){
+        phaseCountDownHUD<UIPhaseTimer>.BaseTime = globalEntity<Global>.GameTimeCount / 1000
+        phaseCountDownHUD<UIPhaseTimer>.Duration = timer 
+    }
 }

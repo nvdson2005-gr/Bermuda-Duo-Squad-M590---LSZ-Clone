@@ -16,6 +16,7 @@ import "../GlobalManager/GlobalGameManager.fcg" as GlobalGameManager
 import "Workflow.fcc" as Workflow
 import "../GlobalManager/GlobalPreparationPhaseManager.fcg" as GlobalPreparationPhaseManager
 import "../GlobalData/GlobalConfig.fcg" as GlobalConfig
+import "../../Player/PlayerUI.fcg" as PlayerUI
 graph GlobalSafeZones {
     safeZoneDefaultData Map<string, float> = Map<string, float>{}
     safeZoneStartPoints Map<int, Vector3> = Map<int, Vector3>{}

@@ -355,7 +355,7 @@ graph GlobalUIManager {
         var sortedTeamList List<entity<Team>> = globalEntity<TeamData>.GetSortedTeamList()
         var rankCount int = 1
         for index, team in sortedTeamList {
-            var booyah = globalEntity<TeamData>.GetTeamBooyah()[team]
+            var booyah = globalEntity<TeamData>.GetTeamBooyah(team)
             var kills = globalEntity<TeamData>.GetTeamKills()[team]
             var totalPoints = globalEntity<TeamData>.GetTeamTotalPoints()[team]
             for index, player in GetAllPlayers() {
@@ -441,7 +441,7 @@ graph GlobalUIManager {
                     // Update tooltip
                     var tooltipWidget entity<UIWidget>
                     tooltipWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TooltipText)
-                    tooltipWidget<UIWidgetLabel>.Content = LocString{"FULL_SCOREBOARD_TOOLTIP", List<string>{ToString(globalEntity<CombatRoundCounter>.GetCount()), ToString(globalEntity<GlobalConfig>.MAX_ROUND)}}
+                    tooltipWidget<UIWidgetLabel>.Content = LocString{"FULL_SCBOARD_TARGET", List<string>{ToString(globalEntity<CombatRoundCounter>.GetCount()), ToString(globalEntity<GlobalConfig>.MAX_ROUND)}}
                 }
             }
             rankCount = rankCount + 1;
@@ -621,22 +621,26 @@ graph GlobalUIManager {
             Append(teamRankList, team as entity<Entity>) // Get the team's rank
         }
         createdUI2<UIMultiTeamResultPanel>.TeamRank = teamRankList // Set the player's team rank
-        var titleList = List<LocString>{LocString{"MULTI_SCBOARD_KILL", List<string>{}}, LocString{"MULTI_SCBOARD_DEATH", List<string>{}}, LocString{"MULTI_SCBOARD_DMG", List<string>{}}}
+        var titleList = List<LocString>{LocString{"MULTI_SCBOARD_BOOYAH", List<string>{}}, LocString{"MULTI_SCBOARD_KILL", List<string>{}}, LocString{"MULTI_SCBOARD_DEATH", List<string>{}}, LocString{"MULTI_SCBOARD_DMG", List<string>{}}}
         createdUI2<UIMultiTeamResultPanel>.TitleList = titleList
+        var booyahList = List<int>{}
         var killList = List<int>{}
         var deathList = List<int>{}
         var dmgList = List<int>{}
 
         // Update to check
         for index, player in createdUI2<UIMultiTeamResultPanel>.PlayerRank {
+            var playerTeam entity<Team> = player<Player>.HostTeam
+            Append(booyahList, globalEntity<TeamData>.GetTeamWinningTimes(playerTeam))
             var playerData = globalEntity<PlayerData>.GetPlayerData(player)
             Append(killList, playerData[0]) // Kills
             Append(deathList, playerData[1]) // Deaths
             Append(dmgList, playerData[2]) // Damage
         }
-        createdUI2<UIMultiTeamResultPanel>.Scores1 = killList
-        createdUI2<UIMultiTeamResultPanel>.Scores2 = deathList
-        createdUI2<UIMultiTeamResultPanel>.Scores3 = dmgList
+        createdUI2<UIMultiTeamResultPanel>.Scores1 = booyahList
+        createdUI2<UIMultiTeamResultPanel>.Scores2 = killList
+        createdUI2<UIMultiTeamResultPanel>.Scores3 = deathList
+        createdUI2<UIMultiTeamResultPanel>.Scores4 = dmgList
     }
 
     // ==================================== TOOLTIP UI ====================================

@@ -18,18 +18,35 @@ import "Hostility.fcc" as Hostility
 import "../GlobalManager/GlobalUIManager.fcg" as GlobalUIManager
 import "../GlobalData/TargetAndCombatTimer.fcg" as TargetAndCombatTimer
 import "Math.fcc" as Math
+import "../GlobalData/GlobalConfig.fcg" as GlobalConfig
 import "Items.fcc" as Items
+import "../../Player/PlayerUI.fcg" as PlayerUI
 graph GlobalCombatManager {
     teamsAlive List<Team> = List<Team>{} // List of teams that are still alive in the combat phase
     allDroppedItems List<entity<ItemBase>> = List<entity<ItemBase>>{} // List of all dropped items on ground in each round
     teamRanking List<entity<Team>> = List<entity<Team>>{} // List of teams in ranking order
     // When the combat phase starts, activate the timer also
     event OnPhaseStart(phase entity<Phase>) {
-        if phase<Phase>.Index == EPhase.Border{
-            // globalEntity<TargetAndCombatTimer>.StartTimer()
-        }
         if phase<Phase>.Index == EPhase.Vote {
             List.Clear(teamRanking)
+        }
+        if phase<Phase>.Index == EPhase.RandomEventInit {
+            var totalTimer int = phase<Phase>.Duration / 1000 + GlobalConfig.FIRST_BORDER_DURATION + GlobalConfig.FIRST_BORDER_DELAY
+            for index, player in GetAllPlayers() {
+                player<PlayerUI>.SetTimer(totalTimer)
+            }
+        }
+        if phase<Phase>.Index == EPhase.SecondBorderDelay {
+            var totalTimer int = phase<Phase>.Duration / 1000 + GlobalConfig.SECOND_BORDER_DURATION 
+            for index, player in GetAllPlayers() {
+                player<PlayerUI>.SetTimer(totalTimer)
+            }
+        }
+        if phase<Phase>.Index == EPhase.ShrinkingDelay {
+            var totalTimer int = phase<Phase>.Duration / 1000 + GlobalConfig.FINAL_BORDER_SHRINK_TIME
+            for index, player in GetAllPlayers() {
+                player<PlayerUI>.SetTimer(totalTimer)
+            }
         }
     }
 
