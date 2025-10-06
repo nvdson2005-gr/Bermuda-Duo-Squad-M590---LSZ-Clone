@@ -78,8 +78,8 @@ graph GlobalRandomEvent {
     func ApplyRandomEvent() {
         // LogWarning("<GlobalRandomEvent.fcg>: Applying random event")
         // Debug only
-        // chosenEvent = 10 
-        // SetDecreaseDamageEvent(true)
+        // chosenEvent = 2
+        // SetLotsOfGlooWallsEvent(true)
         // return
         // End of debug only
         if List.Length(oldEvents) >= currentEventsCount {
@@ -170,12 +170,8 @@ graph GlobalRandomEvent {
     // Event handler for Lots of Gloo Walls Event
     func SetLotsOfGlooWallsEvent(activate bool){
         for index, player in GetAllPlayers() {
-            if GetItemCount(player, EResItem.GlooWall as ItemIDType) != 0 {
-                DestroyItem(player, EResItem.GlooWall as ItemIDType, GetItemCount(player, EResItem.GlooWall as ItemIDType))
-            }
-            if activate == true {
-                AddItem(player, EResItem.GlooWall as ItemIDType, 20, out var createdGloos)
-            }
+            DestroyItem(player, EResItem.GlooWall as ItemIDType, GetItemCount(player, EResItem.GlooWall as ItemIDType))
+            AddItem(player, EResItem.GlooWall as ItemIDType, 20, out var createdGloos)
         }
     }
 

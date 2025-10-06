@@ -32,12 +32,13 @@ import "../GlobalManager/GlobalCombatManager.fcg" as GlobalCombatManager
 import "../../Team/TeamCurrentRoundData.fcg" as TeamCurrentRoundData
 import "../GlobalData/CombatRoundCounter.fcg" as CombatRoundCounter
 import "List.fcc" as List
+import "LevelObject.fcc" as LevelObject
 graph GlobalGameManager {
     // winPoints int = 3 // Number of points required to win the game
     availableStages int = 11 // Number of available stages in the game, goes together with the number of safe zones and spawn point groups in GlobalSafeZones.cfg and SpawnPoints.cfg
     prepPhaseDuration int = 15 // Use this to customize the buying phase duration
     phaseDuration Map<EPhase, float> = Map<EPhase, float>{}
-
+    isMatchEnded bool = false
     /* 
     When the game starts:
     - If a player goes into the game to soon, a gravity delay is added to wait until the terrain is loaded.
@@ -62,7 +63,6 @@ graph GlobalGameManager {
         globalEntity<TargetAndCombatTimer>.RegisterGameInfo(player) // Register the player's combat timer
         globalEntity<GlobalUIManager>.RegisterVoteUI(player) // Register the player's vote UI
         globalEntity<GlobalUIManager>.RegisterEventUI(player) // Register the player's event UI
-
         // Init necessary data
         SetDropStatus(player, false) // Keep the player's weapons when dead
 
@@ -75,18 +75,22 @@ graph GlobalGameManager {
                 TransportToGameStartZone(player, EResSceneELPASTELO.GameStartSpawnPoint<Transform>.Position)
             } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
                 TransportToGameStartZone(player, EResSceneACADEMY.GameStartSpawnPoint<Transform>.Position)
+            } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
+                TransportToGameStartZone(player, EResSceneOLD_PEAK.GameStartSpawnPoint<Transform>.Position)
             }
         }
+        SetUpMiniMap(player)
+
 
         // Use a custom minimap to increase the scale of the map
-        var fullMap = EResSprite.FullMap as IconType
-        CreateMiniMapIcon(out var miniMapIcon, player, fullMap)
-        miniMapIcon<MiniMapIcon>.Depth = 0
-        miniMapIcon<MiniMapIcon>.Offset = Vector3{523, 50, 110}
+        // var fullMap = EResSprite.FullMap as IconType
+        // CreateMiniMapIcon(out var miniMapIcon, player, fullMap)
+        // miniMapIcon<MiniMapIcon>.Depth = 0
+        // miniMapIcon<MiniMapIcon>.Offset = Vector3{523, 50, 110}
 
-        var miniMap entity<MiniMap> = GetMiniMap(player)
-        miniMap<MiniMap>.Center = Vector3{523, 50, 110}
-        miniMap<MiniMap>.MapSize = 942 
+        // var miniMap entity<MiniMap> = GetMiniMap(player)
+        // miniMap<MiniMap>.Center = Vector3{523, 50, 110}
+        // miniMap<MiniMap>.MapSize = 942 
     }
 
     // When a new phase starts, update the UI and game state accordingly
@@ -131,6 +135,14 @@ graph GlobalGameManager {
         globalEntity<PlayerData>.UnregisterPlayer(player) // Unregister the player from player data tracking
         EliminateAtNextFrame(player)
         globalEntity<GlobalUIManager>.UpdateMiniScoreboard() // Update the mini scoreboard UI after a player is eliminated to update current alives
+        var activeTeams = GetCurrentActiveTeams()
+        if isMatchEnded == false {
+            if List.Length(activeTeams) <= 1 {
+                MatchEndHandler(activeTeams[0])
+            } else {
+                globalEntity<GlobalCombatManager>.CheckEndCombatCondition()
+            }
+        }
     }
 
     /*
@@ -180,6 +192,7 @@ graph GlobalGameManager {
             }
         }
         var teamRanking = globalEntity<GlobalCombatManager>.teamRanking
+        globalEntity<TeamCurrentRoundData>.IncreaseBooyah()
         globalEntity<TeamData>.AddPointsToTeam(winningTeam, winningTeam<TeamCurrentRoundData>.GetKillThisRound(), List.Length(teamRanking) + 1)
         globalEntity<TeamData>.AddWinningTimesToTeam(winningTeam)
         for index, team in teamRanking {
@@ -266,5 +279,38 @@ graph GlobalGameManager {
             }
         }
         return teamList
+    }
+
+    func SetUpMiniMap(player entity<Player>) {
+        var fullMap = EResSprite.MINIMAP as IconType
+        CreateMiniMapIcon(out var miniMap, player, fullMap)
+        miniMap<MiniMapIcon>.Depth = 0
+        miniMap<MiniMapIcon>.Offset = Vector3{0, 0, 0}
+        miniMap<MiniMapIcon>.Scale = 1.0 
+        // for key, value in FilterLevelObjects(LevelObjectType.SpawnPos) {
+        //     CreateMiniMapPixel(out var miniMapPixel, player, value)
+        // }
+        CreateMiniMapPixel(out var house1, player, EResSceneACADEMY.HOUSE1 as entity<Entity>)
+        CreateMiniMapPixel(out var house2, player, EResSceneACADEMY.HOUSE2 as entity<Entity>)
+        CreateMiniMapPixel(out var bridge, player, EResSceneACADEMY.BRIDGE as entity<Entity>)
+        for index, value in GetChildren(EResSceneACADEMY.OTHER_LEVEL_OBJECTS as entity<Entity>) {
+            CreateMiniMapPixel(out var otherLevelObject, player, value)
+        }
+    }
+
+        /*
+    This function is called when a match ends.
+    @param winningTeam: The winning team entity
+    */
+    async func MatchEndHandler(winningTeam entity<Team>){
+        isMatchEnded = true
+        LogInfo("<GlobalGameManager.fcg>: Team " + winningTeam<Entity> + " has won the game!") // Debug Info
+        for index, player in GetAllPlayers() {
+            globalEntity<GlobalUIManager>.UnregisterAllUIs(player) // Unregister all UIs for the player
+            start globalEntity<GlobalUIManager>.CreateLastRoundHUD(List<entity<Team>>{winningTeam}, player) // Create the last round HUD for all players
+            globalEntity<GlobalSoundManager>.PlayEndMatchSound(player)            
+        }
+        WaitForMillisecond(5000)
+        SwitchPhase(EPhase.End)
     }
 }

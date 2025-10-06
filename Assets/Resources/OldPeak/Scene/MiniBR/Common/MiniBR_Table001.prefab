@@ -1,0 +1,158 @@
+{
+  "_tag": {
+    "type": "Prefab"
+  },
+  "_entityId": "he71R5Jw",
+  "children": [
+    {
+      "_tag": {
+        "type": "UGCSceneEntity",
+        "resourceId": ""
+      },
+      "_entityId": "vw51lIZC",
+      "children": [],
+      "activeValue": {
+        "selfValue": true,
+        "valueTag": "activeValue"
+      },
+      "unlockedValue": {
+        "selfValue": true,
+        "valueTag": "unlockedValue"
+      },
+      "editorLockValue": false,
+      "editorVisibleValue": true,
+      "position": {
+        "x": -41.90299987792969,
+        "y": -12.214215278625488,
+        "z": -44.16699981689453
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 67.23799896240234,
+        "z": 0
+      },
+      "BTPath": [
+        null
+      ],
+      "visible": true,
+      "VisibilityLayer": 0,
+      "modelOptimization": 0,
+      "streamingLayer": "",
+      "attributes": [
+        2,
+        4
+      ],
+      "isTrigger": false,
+      "collidable": true,
+      "physicalLayer": 0,
+      "physicalMaterial": null,
+      "initialTypes": {},
+      "componentList": [
+        "MeshRender",
+        "ColliderShape",
+        "Collider",
+        "AnimationControllerAble"
+      ],
+      "materials": [
+        {
+          "fileId": "2e13iluj319-lutm07is-uf81ph9wol",
+          "filePath": "Assets\\Scene\\MiniBR\\Common\\Material\\MiniBR_Common001.mat",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "material"
+        }
+      ],
+      "colliders": [
+        {
+          "enable": true,
+          "colliderType": "MeshCollider",
+          "meshUUID": {
+            "fileId": "c9lbucoqf2l-lui4xj9y-8l4e262222p-MiniBR_Table001.~@FFFUB",
+            "filePath": "fab://Assets\\Scene\\MiniBR\\Common\\FBX\\MiniBR_Table001.fbx\\MiniBR_Table001.mesh",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "mesh"
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "isTrigger": false,
+          "radius": 0.5,
+          "height": 1,
+          "physicalMaterialUUID": null,
+          "isConvexIfMesh": false
+        }
+      ],
+      "Rigidbody": {
+        "Type": 1,
+        "Mass": 1,
+        "CenterOfMass": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "UseGravity": false,
+        "Drag": 0.05,
+        "AngularDrag": 0.05
+      },
+      "isCreateAsEmpty": false,
+      "ecaScripts": [],
+      "ecaProps": {
+        "CustomLevelObject": {},
+        "LevelObject": {},
+        "Transform": {},
+        "Entity": {},
+        "Visibility": {},
+        "Collider": {},
+        "MeshRender": {},
+        "ColliderShape": {},
+        "AnimationControllerAble": {}
+      },
+      "entityVersion": 3,
+      "mesh": {
+        "fileId": "c9lbucoqf2l-lui4xj9y-8l4e262222p-MiniBR_Table001.~@FFFUB",
+        "filePath": "fab://Assets\\Scene\\MiniBR\\Common\\FBX\\MiniBR_Table001.fbx\\MiniBR_Table001.mesh",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "mesh"
+      },
+      "_entityName": "MiniBR_Table001",
+      "prefabVariant": null,
+      "_filters": []
+    }
+  ],
+  "prefabVariant": null,
+  "activeValue": {
+    "selfValue": true,
+    "valueTag": "activeValue"
+  },
+  "unlockedValue": {
+    "selfValue": true,
+    "valueTag": "unlockedValue"
+  },
+  "editorLockValue": false,
+  "editorVisibleValue": true,
+  "discriminator": "ISceneLike",
+  "_entityName": "MiniBR_Table001"
+}
+//"{FE:{"v":"1.0.2921955","c":{"FF":4404},"s":100}

@@ -8,6 +8,23 @@
       "Global": {
         "label": "",
         "props": {}
+      },
+      "Player": {
+        "label": "",
+        "props": {
+          "PROP_56571022": {
+            "label": "killNum"
+          },
+          "PROP_38395538": {
+            "label": "damNum"
+          },
+          "PROP_44895229": {
+            "label": "liveTime"
+          },
+          "PROP_15132408": {
+            "label": "relive"
+          }
+        }
       }
     },
     "Events": {
@@ -35,4 +52,4 @@
   },
   "children": []
 }
-//"{FE:{"v":"1.14.3873624","c":{"FF":5001},"s":100}
+//"{FE:{"v":"1.14.3883376","c":{"FF":5001},"s":100}

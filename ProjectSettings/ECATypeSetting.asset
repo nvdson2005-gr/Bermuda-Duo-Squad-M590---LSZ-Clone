@@ -44,7 +44,95 @@
       "typeID": 14,
       "PropDefines": [],
       "IsPartial": true
+    },
+    "CustomComponent91261409": {
+      "label": "玩家实体",
+      "name": "CustomComponent91261409",
+      "bases": [
+        "FightingEntity",
+        "ScoreableEntity",
+        "RankableEntity",
+        "Visibility",
+        "BuffableEntity",
+        "FormulableEntity"
+      ],
+      "ecaScripts": [],
+      "typeID": 14,
+      "PropDefines": [
+        {
+          "propID": 100000,
+          "name": "PROP_56571022",
+          "label": "killNum",
+          "type": "Int",
+          "value": 0,
+          "disabledType": true,
+          "param": {
+            "precision": 0,
+            "min": -2147483648,
+            "max": 2147483647
+          }
+        },
+        {
+          "propID": 100001,
+          "name": "PROP_38395538",
+          "label": "damNum",
+          "type": "Int",
+          "value": 0,
+          "disabledType": true,
+          "param": {
+            "precision": 0,
+            "min": -2147483648,
+            "max": 2147483647
+          }
+        },
+        {
+          "propID": 100002,
+          "name": "PROP_44895229",
+          "label": "liveTime",
+          "type": "Int",
+          "value": 0,
+          "disabledType": true,
+          "param": {
+            "precision": 0,
+            "min": -2147483648,
+            "max": 2147483647
+          }
+        },
+        {
+          "propID": 100003,
+          "name": "PROP_15132408",
+          "label": "relive",
+          "type": "Int",
+          "value": 1,
+          "disabledType": true,
+          "param": {
+            "precision": 0,
+            "min": -2147483648,
+            "max": 2147483647
+          }
+        }
+      ],
+      "IsPartial": true
+    },
+    "CustomComponent85737658": {
+      "label": "游戏实体",
+      "name": "CustomComponent85737658",
+      "bases": [
+        "Entity"
+      ],
+      "ecaScripts": [],
+      "typeID": 11,
+      "PropDefines": [
+        {
+          "propID": 100004,
+          "name": "PROP_91327840",
+          "label": "liveCount",
+          "type": "Int",
+          "value": 0
+        }
+      ],
+      "IsPartial": true
     }
   }
 }
-//"{FE:{"v":"1.14.3847898","c":{"FF":5001},"s":100}
+//"{FE:{"v":"1.14.3883376","c":{"FF":5001},"s":100}

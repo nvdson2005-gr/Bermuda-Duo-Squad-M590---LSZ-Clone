@@ -1,0 +1,67 @@
+{
+  "fileId": "0vi2djhcwcnq-lui4xd4e-799b4miz7c5",
+  "properties": {
+    "Common": ""
+  },
+  "subDynamicResources": {},
+  "version": "1.5.2",
+  "manifest": {
+    "Meshes": [
+      {
+        "Name": "MiniBR_Floor002.~@FFFUB",
+        "MeshName": "MiniBR_Floor002",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      }
+    ],
+    "BoneInfos": [],
+    "Anims": [],
+    "ManifestJSON": {
+      "FBXName": "MiniBR_Floor002",
+      "ImportSucceeded": true,
+      "MaterialCount": 2,
+      "MaterialDetail": [
+        {
+          "Index": 0,
+          "MaterialName": "Material #185"
+        },
+        {
+          "Index": 1,
+          "MaterialName": "Material #186"
+        }
+      ],
+      "MeshCount": 1,
+      "MeshDetail": [
+        {
+          "MeshName": "MiniBR_Floor002",
+          "MaterialIndex": [
+            0,
+            1
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              0.00000250448,
+              0,
+              0
+            ],
+            "Scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "subCustomIcons": {
+    "0vi2djhcwcnq-lui4xd4e-799b4miz7c5": "0vi2djhcwcnq-lui4xd4e-799b4miz7c5_preview.png"
+  },
+  "subLOD": {},
+  "globalscale": 1
+}

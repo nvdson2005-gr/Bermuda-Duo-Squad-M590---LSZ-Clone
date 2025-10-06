@@ -198,6 +198,54 @@
         "type": "GFileRefer"
       },
       "fileType": "eca"
+    },
+    {
+      "fileId": "hxgnm0htpes-lutiw7mn-r1mj1csev7",
+      "filePath": "Assets\\Resources\\OldPeak\\ECA\\Global.eca",
+      "_tag": {
+        "type": "GFileRefer"
+      },
+      "fileType": "eca"
+    },
+    {
+      "fileId": "4fif4pzs7mr-lut5rc2o-8v6pwhgucqo",
+      "filePath": "Assets\\Resources\\OldPeak\\ECA\\managerUI.eca",
+      "_tag": {
+        "type": "GFileRefer"
+      },
+      "fileType": "eca"
+    },
+    {
+      "fileId": "ph9y003y6ih-luthorp9-9p9axla5b2a",
+      "filePath": "Assets\\Resources\\OldPeak\\ECA\\RankMoudle.eca",
+      "_tag": {
+        "type": "GFileRefer"
+      },
+      "fileType": "eca"
+    },
+    {
+      "fileId": "lk4hkt6nh4-lvgddwdq-bw7w3hswott",
+      "filePath": "Assets\\Resources\\OldPeak\\ECA\\duQuan.eca",
+      "_tag": {
+        "type": "GFileRefer"
+      },
+      "fileType": "eca"
+    },
+    {
+      "fileId": "kuslo5es3x-lxsb6bk5-rrway9fjt3",
+      "filePath": "Assets\\Resources\\OldPeak\\ECA\\countLive.eca",
+      "_tag": {
+        "type": "GFileRefer"
+      },
+      "fileType": "eca"
+    },
+    {
+      "fileId": "iay84gnxf7-lxx5pi1z-t7rlazcaacq",
+      "filePath": "Assets\\Resources\\OldPeak\\ECA\\Global_Rematch.eca",
+      "_tag": {
+        "type": "GFileRefer"
+      },
+      "fileType": "eca"
     }
   ],
   "_entityName": "T_43_YU_WS_MODULE_GLOBAL",

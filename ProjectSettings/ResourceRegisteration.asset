@@ -813,6 +813,71 @@
             {
               "id": "wUSPpRNy",
               "scriptName": "EndPosList"
+            },
+            {
+              "id": "ZCqGRxEb",
+              "scriptName": "HOUSE1"
+            },
+            {
+              "id": "bQnm7USl",
+              "scriptName": "HOUSE2"
+            },
+            {
+              "id": "Q4AMLA0i",
+              "scriptName": "BRIDGE"
+            },
+            {
+              "id": "JLpc8Ung",
+              "scriptName": "OTHER_LEVEL_OBJECTS"
+            }
+          ]
+        },
+        {
+          "refer": {
+            "fileId": "svpoj08ajdb-luj8087c-7ge0udo7gqu",
+            "filePath": "Assets\\Resources\\OldPeak\\Scene\\OldPeak.scene",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "scene"
+          },
+          "scriptName": "OLD_PEAK",
+          "children": [
+            {
+              "id": "TZ3JfIZp",
+              "scriptName": "GameStartSpawnPoint"
+            },
+            {
+              "id": "DvSe257V",
+              "scriptName": "SpawnPoint1"
+            },
+            {
+              "id": "IH2RCeG7",
+              "scriptName": "SpawnPoint2"
+            },
+            {
+              "id": "Y1xbNVFQ",
+              "scriptName": "SpawnPoint3"
+            },
+            {
+              "id": "FZL0HFMm",
+              "scriptName": "SpawnPoint4"
+            },
+            {
+              "id": "ARctu6n0",
+              "scriptName": "SpawnPoint5"
+            },
+            {
+              "id": "NAUmF9G7",
+              "scriptName": "SpawnPoints"
+            },
+            {
+              "id": "o4JBt7Ix",
+              "scriptName": "StartPos"
+            },
+            {
+              "id": "tPbW8yDV",
+              "scriptName": "EndPosList"
             }
           ]
         }
@@ -1432,6 +1497,30 @@
             "fileType": "texture"
           },
           "scriptName": "DECREASE_DMG_ICON",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "b063b0439839b3d97a8fd2aa6a57ef8b",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_SQUARE.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "scriptName": "T_34_M_WS_ICON_SQUARE",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "w7cl2g8h61-mgesyrie-fcexojivvrn",
+            "filePath": "Assets\\Resources\\minimap-icon (1).png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "scriptName": "MINIMAP",
           "children": []
         }
       ]

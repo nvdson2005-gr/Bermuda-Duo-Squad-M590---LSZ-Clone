@@ -1,0 +1,59 @@
+{
+  "fileId": "r0uh3k3wtxn-luuph1yc-vabcf1fjqa",
+  "properties": {
+    "Common": ""
+  },
+  "subDynamicResources": {},
+  "subLOD": {},
+  "version": "1.5.2",
+  "manifest": {
+    "Meshes": [
+      {
+        "Name": "MiniBR_Wall002.~@FFFUB",
+        "MeshName": "MiniBR_Wall002",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      }
+    ],
+    "BoneInfos": [],
+    "Anims": [],
+    "ManifestJSON": {
+      "FBXName": "MiniBR_Wall002",
+      "ImportSucceeded": true,
+      "MaterialCount": 1,
+      "MaterialDetail": [
+        {
+          "Index": 0,
+          "MaterialName": "24 - Default"
+        }
+      ],
+      "MeshCount": 1,
+      "MeshDetail": [
+        {
+          "MeshName": "MiniBR_Wall002",
+          "MaterialIndex": [
+            0
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              0.00000250448,
+              0,
+              0
+            ],
+            "Scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "globalscale": 1
+}

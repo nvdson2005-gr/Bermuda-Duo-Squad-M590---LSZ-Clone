@@ -3,8 +3,8 @@ import "EditorGenLib.fcc" as EditorLib
 import "Scene.fcc" as Scene
 
 static graph GlobalConfig {
-    availableMaps List<EResScene> = List<EResScene>{EResScene.BERMUDA, EResScene.ELPASTELO}
-    MAP_CHOSEN EResScene = EResScene.ACADEMY
+    availableMaps List<EResScene> = List<EResScene>{EResScene.BERMUDA, EResScene.ELPASTELO, EResScene.ACADEMY, EResScene.OLD_PEAK}
+    MAP_CHOSEN EResScene = EResScene.OLD_PEAK
     // WIN_POINTS int = 90
     MAX_ROUND int = 5
     FIRST_BORDER_DELAY int = 10

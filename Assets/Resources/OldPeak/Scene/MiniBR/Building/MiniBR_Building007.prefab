@@ -1,0 +1,166 @@
+{
+  "_tag": {
+    "type": "Prefab"
+  },
+  "_entityId": "ZzoJvG0L",
+  "children": [
+    {
+      "_tag": {
+        "type": "UGCSceneEntity",
+        "resourceId": ""
+      },
+      "_entityId": "09hvLa7I",
+      "children": [],
+      "activeValue": {
+        "selfValue": true,
+        "valueTag": "activeValue"
+      },
+      "unlockedValue": {
+        "selfValue": true,
+        "valueTag": "unlockedValue"
+      },
+      "editorLockValue": false,
+      "editorVisibleValue": true,
+      "position": {
+        "x": -66.66999816894531,
+        "y": -12.216215133666992,
+        "z": 58.44499969482422
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "BTPath": [
+        null
+      ],
+      "visible": true,
+      "VisibilityLayer": 0,
+      "modelOptimization": 0,
+      "streamingLayer": "",
+      "attributes": [
+        2,
+        4
+      ],
+      "isTrigger": false,
+      "collidable": true,
+      "physicalLayer": 0,
+      "physicalMaterial": null,
+      "initialTypes": {},
+      "componentList": [
+        "MeshRender",
+        "ColliderShape",
+        "Collider",
+        "AnimationControllerAble"
+      ],
+      "materials": [
+        {
+          "fileId": "1u6yosy35nw-lui504cf-0g17rjskdlg",
+          "filePath": "Assets\\Scene\\MiniBR\\Building\\Material\\MiniBR_Building001.mat",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "material"
+        },
+        {
+          "fileId": "fb1rt4i9oi-lui50gow-99f0crxyop5",
+          "filePath": "Assets\\Scene\\MiniBR\\Building\\Material\\MiniBR_Building002.mat",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "material"
+        }
+      ],
+      "colliders": [
+        {
+          "enable": true,
+          "colliderType": "MeshCollider",
+          "meshUUID": {
+            "fileId": "soya1dtnjp-lui4xciw-rwz8ri47zgc-MiniBR_Building007.~@FFFUB",
+            "filePath": "fab://Assets\\Scene\\MiniBR\\Building\\FBX\\MiniBR_Building007.fbx\\MiniBR_Building007.mesh",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "mesh"
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "isTrigger": false,
+          "radius": 0.5,
+          "height": 1,
+          "physicalMaterialUUID": null,
+          "isConvexIfMesh": false
+        }
+      ],
+      "Rigidbody": {
+        "Type": 1,
+        "Mass": 1,
+        "CenterOfMass": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "UseGravity": false,
+        "Drag": 0.05,
+        "AngularDrag": 0.05
+      },
+      "isCreateAsEmpty": false,
+      "ecaScripts": [],
+      "ecaProps": {
+        "CustomLevelObject": {},
+        "LevelObject": {},
+        "Transform": {},
+        "Entity": {},
+        "Visibility": {},
+        "Collider": {},
+        "MeshRender": {},
+        "ColliderShape": {},
+        "AnimationControllerAble": {}
+      },
+      "entityVersion": 3,
+      "mesh": {
+        "fileId": "soya1dtnjp-lui4xciw-rwz8ri47zgc-MiniBR_Building007.~@FFFUB",
+        "filePath": "fab://Assets\\Scene\\MiniBR\\Building\\FBX\\MiniBR_Building007.fbx\\MiniBR_Building007.mesh",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "mesh"
+      },
+      "_entityName": "MiniBR_Building007",
+      "prefabVariant": null,
+      "_filters": []
+    }
+  ],
+  "prefabVariant": null,
+  "activeValue": {
+    "selfValue": true,
+    "valueTag": "activeValue"
+  },
+  "unlockedValue": {
+    "selfValue": true,
+    "valueTag": "unlockedValue"
+  },
+  "editorLockValue": false,
+  "editorVisibleValue": true,
+  "discriminator": "ISceneLike",
+  "_entityName": "MiniBR_Building007"
+}
+//"{FE:{"v":"1.0.2921955","c":{"FF":4404},"s":100}

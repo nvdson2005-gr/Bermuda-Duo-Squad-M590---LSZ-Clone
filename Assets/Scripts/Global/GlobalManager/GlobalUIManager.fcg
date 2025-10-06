@@ -31,6 +31,7 @@ import "../../Player/PlayerUI.fcg" as PlayerUI
 import "../GlobalData/GlobalRandomEvent.fcg" as GlobalRandomEvent
 import Res from "EditorGenLib.fcc"
 import "../GlobalData/GlobalConfig.fcg" as GlobalConfig
+import "../../Team/TeamCurrentRoundData.fcg" as TeamCurrentRoundData
 graph GlobalUIManager {
     fullScoreBoardUIDict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their full scoreboard UIs when combat ends
     miniScoreBoardUIdict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their mini scoreboard UIs
@@ -370,6 +371,8 @@ graph GlobalUIManager {
                     var totalPointBgWidget entity<UIWidget>
                     var killWidget entity<UIWidget>
                     var totalPointWidget entity<UIWidget>
+                    var increaseKillWidget entity<UIWidget>
+                    var increaseBooyahWidget entity<UIWidget>
                     if(rankCount == 1) {
                         rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank1BG)
                         nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName1)
@@ -380,6 +383,8 @@ graph GlobalUIManager {
                         totalPointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank1TSBg)
                         killWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FirstRankTeamKill)
                         totalPointWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FirstRankTeamTS)
+                        increaseKillWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.KIncrease1)
+                        increaseBooyahWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.BIncrease1)
                     } else if(rankCount == 2) {
                         rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank2BG)
                         nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName2)
@@ -390,10 +395,14 @@ graph GlobalUIManager {
                         totalPointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank2TSBg)
                         killWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.SecondRankTeamKill)
                         totalPointWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.SecRankTeamTS)
+                        increaseKillWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.KIncrease2)
+                        increaseBooyahWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.BIncrease2)
                     } else if(rankCount == 3) {
                         rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3BG)
                         nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName3)
                         booyahWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.ThirdRankTeamBooyah)
+                        increaseKillWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.KIncrease3)
+                        increaseBooyahWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.BIncrease3)
                         nameBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3NameBg)
                         booyahBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3BooyahBg)
                         killBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3KillBg)
@@ -404,6 +413,8 @@ graph GlobalUIManager {
                         rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4BG)
                         nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName4)
                         booyahWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FourthRankTeamBooyah)
+                        increaseKillWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.KIncrease4)
+                        increaseBooyahWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.BIncrease4)
                         nameBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4NameBg)
                         booyahBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4BooyahBg)
                         killBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4KillBg)
@@ -435,8 +446,10 @@ graph GlobalUIManager {
                         totalPointBgWidget<UIWidgetImage>.Color = #363636
                     }
                     nameWidget<UIWidgetLabel>.Content = LocString{"TEAM", List<string>{ToString(team<Team>.TeamSeq)}} // Use localization for team names
-                    booyahWidget<UIWidgetLabel>.Content = ToString(booyah)
-                    killWidget<UIWidgetLabel>.Content = ToString(kills)
+                    start globalEntity<GlobalAnimationManager>.DOChangeIncreaseAlpha(increaseKillWidget, team<TeamCurrentRoundData>.GetKillThisRound(), 2000, killWidget, kills)
+                    start globalEntity<GlobalAnimationManager>.DOChangeIncreaseAlpha(increaseBooyahWidget, team<TeamCurrentRoundData>.GetBooyahThisRound(), 2000, booyahWidget, booyah)
+                    // booyahWidget<UIWidgetLabel>.Content = ToString(booyah)
+                    // killWidget<UIWidgetLabel>.Content = ToString(kills)
                     totalPointWidget<UIWidgetLabel>.Content = ToString(totalPoints)
                     // Update tooltip
                     var tooltipWidget entity<UIWidget>
@@ -630,12 +643,13 @@ graph GlobalUIManager {
 
         // Update to check
         for index, player in createdUI2<UIMultiTeamResultPanel>.PlayerRank {
-            var playerTeam entity<Team> = player<Player>.HostTeam
-            Append(booyahList, globalEntity<TeamData>.GetTeamWinningTimes(playerTeam))
+            var team entity<Team> = player<Player>.HostTeam
+            var winTimes = globalEntity<TeamData>.GetTeamWinningTimes(team)
             var playerData = globalEntity<PlayerData>.GetPlayerData(player)
             Append(killList, playerData[0]) // Kills
             Append(deathList, playerData[1]) // Deaths
             Append(dmgList, playerData[2]) // Damage
+            Append(booyahList, winTimes)
         }
         createdUI2<UIMultiTeamResultPanel>.Scores1 = booyahList
         createdUI2<UIMultiTeamResultPanel>.Scores2 = killList

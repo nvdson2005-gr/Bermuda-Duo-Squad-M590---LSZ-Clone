@@ -1,0 +1,55 @@
+{
+  "_tag": {
+    "type": "Material"
+  },
+  "_entityId": "xxo6XivV",
+  "children": [],
+  "prefabVariant": null,
+  "activeValue": {
+    "selfValue": true,
+    "valueTag": "activeValue"
+  },
+  "unlockedValue": {
+    "selfValue": true,
+    "valueTag": "unlockedValue"
+  },
+  "editorLockValue": false,
+  "editorVisibleValue": true,
+  "shader": {
+    "fileId": "s-ea4a068a-065d-4b63-89b5-0ebcf49e2b14",
+    "filePath": "lib://ffshaders/BRMobile/UGC/AlphaBlendColor",
+    "_tag": {
+      "type": "GFileRefer"
+    },
+    "fileType": "shader"
+  },
+  "paramValue": {
+    "_Color": {
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 1
+    },
+    "_Brightness": 0.5,
+    "_MainTex": {
+      "Texture": {
+        "fileId": "d1dd7ce0d51780846795c1e56406ea66",
+        "filePath": "lib://fftextures/WorkshopItemTexture/SCENEEDIT_CUBE_TEXTURE_COLORFULCUBE001_D.png",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "texture"
+      },
+      "Tiling": {
+        "x": 1,
+        "y": 1
+      },
+      "Offset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "_CullMode": 2
+  }
+}
+//"{FE:{"v":"0.2.3054927","c":{"FF":4501},"s":100}

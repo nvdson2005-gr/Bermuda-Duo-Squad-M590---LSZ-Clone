@@ -7,6 +7,7 @@ import "EditorGenLib.fcc" as EditorLib
 import "Map.fcc" as Map
 import "List.fcc" as List
 import "../GlobalData/PlayerData.fcg" as PlayerData
+import "../GlobalManager/GlobalGameManager.fcg" as GlobalGameManager
 graph TeamData {
     teamWinningTimes Map<entity<Team>, int>  // Map to keep track of winning times for each team
     teamBooyah Map<entity<Team>, int>  // Map to keep track of booyah points for each team
@@ -150,8 +151,11 @@ graph TeamData {
     func GetSortedTeamList() List<entity<Team>>{
         var sortedTeams List<entity<Team>> = List<entity<Team>>{}
         var teamCopyDict Map<entity<Team>, int> = Map<entity<Team>, int>{} 
+        var currentAliveTeams List<entity<Team>> = globalEntity<GlobalGameManager>.GetCurrentActiveTeams()
         for team, point in teamTotalPoints {
-            teamCopyDict[team] = point
+            if List.Contain(currentAliveTeams, team) {
+                teamCopyDict[team] = point
+            }
         }
         while Map.Length(teamCopyDict) > 0 {
             var currentMaxTeam = GetAllKeys(teamCopyDict)[0]

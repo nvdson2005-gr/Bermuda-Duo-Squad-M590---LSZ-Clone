@@ -94,7 +94,6 @@ graph GlobalPreparationPhaseManager {
         // Update mini score board to init current alives, and team points
         globalEntity<GlobalUIManager>.UpdateMiniScoreboard();
 
-        InitPlayerWeapons(); // Initialize player weapons
         var spawnPositions = globalEntity<SpawnPoints>.GetSpawnPositionForRound(randomStageIndex) // Get all spawn positions from the scene
         globalEntity<SpawnPoints>.SetSpawnPointsActiveStatusForRound(randomStageIndex, true); // Activate spawn points of the current stage
 
@@ -117,6 +116,7 @@ graph GlobalPreparationPhaseManager {
         SwitchPhase(EPhase.RandomEventInit)
         // EndCurrentPhase()
         //////////////////////////
+        InitPlayerWeapons(); // Initialize player weapons
 
         // When the round starts, reset player states
         for index, player in GetAllPlayers() {
@@ -158,8 +158,11 @@ graph GlobalPreparationPhaseManager {
             if GetItemCount(player, EResItem.GlooWall as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.GlooWall as ItemIDType, GetItemCount(player, EResItem.GlooWall as ItemIDType)) // Destroy the item when added
             }
-            // player<PlayerController>.AddItemToPlayer(player, EResItem.GlooWall, 10)
-            AddItem(player, EResItem.GlooWall as ItemIDType, 10, out var newGlooWall) // Add the item to the player
+            if GetItemCount(player, ItemIDType.GlooWall) != 0 {
+                DestroyItem(player, ItemIDType.GlooWall, GetItemCount(player, ItemIDType.GlooWall)) // Destroy the item when added
+            }
+            player<PlayerController>.AddItemToPlayer(player, EResItem.GlooWall, 10)
+            // AddItem(player, ItemIDType.GlooWall, 10, out var newGlooWall) // Add the item to the player
             if GetItemCount(player, EResItem.MedKit as ItemIDType) != 0 {
                 DestroyItem(player, EResItem.MedKit as ItemIDType, GetItemCount(player, EResItem.MedKit as ItemIDType)) // Destroy the item when added
             }

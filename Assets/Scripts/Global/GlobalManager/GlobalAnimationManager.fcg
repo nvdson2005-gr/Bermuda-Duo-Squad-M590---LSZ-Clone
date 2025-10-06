@@ -39,4 +39,19 @@ graph GlobalAnimationManager {
         WaitForMillisecond(duration)
         Destroy(colorTween)
     }
+
+    async func DOChangeIncreaseAlpha(widget entity<UIWidget>, increaseValue int, duration int, contentWidget entity<UIWidget>, increaseTo int){
+        var defaultPos = widget<UIWidget>.AnchorPosition
+        widget<UIWidgetLabel>.Alpha = 1.0
+        widget<UIWidgetLabel>.Content = ToString(increaseValue)
+        WaitForMillisecond(1000)
+        CreateTween(widget, UIWidgetLabel.Alpha, 1.0, 0.0, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), duration, out var alphaTween, true)
+        CreateTween(widget, UIWidget.AnchorPosition, Vector2{defaultPos.X, defaultPos.Y}, Vector2{defaultPos.X - 50, defaultPos.Y}, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), duration, out var positionTween, true)
+        WaitForMillisecond(duration)
+        contentWidget<UIWidgetLabel>.Content = ToString(increaseTo)
+        Destroy(alphaTween)
+        Destroy(positionTween)
+        widget<Transform>.LocalPosition = defaultPos
+        widget<UIWidgetLabel>.Content = 0 // Reset the content to 0
+    }
 }

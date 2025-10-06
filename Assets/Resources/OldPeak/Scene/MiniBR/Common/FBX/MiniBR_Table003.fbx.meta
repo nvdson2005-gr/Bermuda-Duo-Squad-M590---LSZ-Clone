@@ -1,0 +1,59 @@
+{
+  "fileId": "cao5gastlej-luuph12s-3mkr0mxnpg5",
+  "properties": {
+    "Common": ""
+  },
+  "subDynamicResources": {},
+  "subLOD": {},
+  "version": "1.5.2",
+  "manifest": {
+    "Meshes": [
+      {
+        "Name": "MiniBR_Table003.~@FFFUB",
+        "MeshName": "MiniBR_Table003",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      }
+    ],
+    "BoneInfos": [],
+    "Anims": [],
+    "ManifestJSON": {
+      "FBXName": "MiniBR_Table003",
+      "ImportSucceeded": true,
+      "MaterialCount": 1,
+      "MaterialDetail": [
+        {
+          "Index": 0,
+          "MaterialName": "24 - Default"
+        }
+      ],
+      "MeshCount": 1,
+      "MeshDetail": [
+        {
+          "MeshName": "MiniBR_Table003",
+          "MaterialIndex": [
+            0
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              0.00000250448,
+              0,
+              0
+            ],
+            "Scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "globalscale": 1
+}

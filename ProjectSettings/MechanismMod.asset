@@ -19,7 +19,7 @@
   "modId": 42,
   "EnableDeathObserve": true,
   "HideObserverDropButton": false,
-  "ObserverMode": 5,
+  "ObserverMode": 2,
   "UGCObserverCameraMode": 1,
   "sceneData": {
     "enableDepthMap": false,

@@ -1,0 +1,160 @@
+{
+  "_tag": {
+    "type": "Prefab"
+  },
+  "_entityId": "o22CLV2g",
+  "children": [
+    {
+      "_tag": {
+        "type": "UGCSceneEntity",
+        "resourceId": ""
+      },
+      "_entityId": "TMRG6Qkp",
+      "children": [],
+      "activeValue": {
+        "selfValue": true,
+        "valueTag": "activeValue"
+      },
+      "unlockedValue": {
+        "selfValue": true,
+        "valueTag": "unlockedValue"
+      },
+      "editorLockValue": false,
+      "editorVisibleValue": true,
+      "position": {
+        "x": -8.9399995803833,
+        "y": -12.23321533203125,
+        "z": 27.934999465942383
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 270,
+        "z": 0
+      },
+      "BTPath": [
+        null
+      ],
+      "visible": true,
+      "VisibilityLayer": 0,
+      "modelOptimization": 0,
+      "streamingLayer": "",
+      "attributes": [
+        2,
+        4,
+        4
+      ],
+      "isTrigger": false,
+      "collidable": true,
+      "physicalLayer": 0,
+      "physicalMaterial": null,
+      "initialTypes": {},
+      "componentList": [
+        "MeshRender",
+        "ColliderShape",
+        "AnimationControllerAble",
+        "ColliderShape",
+        "Collider"
+      ],
+      "materials": [
+        {
+          "fileId": "2e13iluj319-lutm07is-uf81ph9wol",
+          "filePath": "Assets\\Scene\\MiniBR\\Common\\Material\\MiniBR_Common001.mat",
+          "_tag": {
+            "type": "GFileRefer"
+          },
+          "fileType": "material"
+        }
+      ],
+      "colliders": [
+        {
+          "enable": true,
+          "colliderType": "MeshCollider",
+          "meshUUID": {
+            "fileId": "akwgw6f0v8-lui4xksc-yqg0vbw0zom-MiniBR_Trash001.~@FFFUB",
+            "filePath": "fab://Assets\\Scene\\MiniBR\\Common\\FBX\\MiniBR_Trash001.fbx\\MiniBR_Trash001.mesh",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "mesh"
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "isTrigger": false,
+          "radius": 0.5,
+          "height": 1,
+          "physicalMaterialUUID": null,
+          "isConvexIfMesh": false
+        }
+      ],
+      "Rigidbody": {
+        "Type": 1,
+        "Mass": 1,
+        "CenterOfMass": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "UseGravity": false,
+        "Drag": 0.05,
+        "AngularDrag": 0.05
+      },
+      "isCreateAsEmpty": false,
+      "ecaScripts": [],
+      "ecaProps": {
+        "CustomLevelObject": {},
+        "LevelObject": {},
+        "Transform": {},
+        "Entity": {},
+        "Visibility": {},
+        "Collider": {},
+        "MeshRender": {},
+        "ColliderShape": {},
+        "AnimationControllerAble": {}
+      },
+      "entityVersion": 3,
+      "mesh": {
+        "fileId": "akwgw6f0v8-lui4xksc-yqg0vbw0zom-MiniBR_Trash001.~@FFFUB",
+        "filePath": "fab://Assets\\Scene\\MiniBR\\Common\\FBX\\MiniBR_Trash001.fbx\\MiniBR_Trash001.mesh",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "mesh"
+      },
+      "_entityName": "MiniBR_Trash001",
+      "prefabVariant": null,
+      "_filters": []
+    }
+  ],
+  "prefabVariant": null,
+  "activeValue": {
+    "selfValue": true,
+    "valueTag": "activeValue"
+  },
+  "unlockedValue": {
+    "selfValue": true,
+    "valueTag": "unlockedValue"
+  },
+  "editorLockValue": false,
+  "editorVisibleValue": true,
+  "discriminator": "ISceneLike",
+  "_entityName": "MiniBR_Trash001"
+}
+//"{FE:{"v":"1.0.2921955","c":{"FF":4404},"s":100}

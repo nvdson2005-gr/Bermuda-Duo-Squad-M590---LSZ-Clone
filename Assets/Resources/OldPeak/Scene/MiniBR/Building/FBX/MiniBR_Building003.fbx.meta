@@ -1,0 +1,67 @@
+{
+  "fileId": "jclnb14yko-lui4xbce-fyna4jwbd1v",
+  "properties": {
+    "Common": ""
+  },
+  "subDynamicResources": {},
+  "version": "1.5.2",
+  "manifest": {
+    "Meshes": [
+      {
+        "Name": "MiniBR_Building003.~@FFFUB",
+        "MeshName": "MiniBR_Building003",
+        "Type": "common",
+        "OrgExtName": ".~@FFFUB"
+      }
+    ],
+    "BoneInfos": [],
+    "Anims": [],
+    "ManifestJSON": {
+      "FBXName": "MiniBR_Building003",
+      "ImportSucceeded": true,
+      "MaterialCount": 2,
+      "MaterialDetail": [
+        {
+          "Index": 0,
+          "MaterialName": "Material #186"
+        },
+        {
+          "Index": 1,
+          "MaterialName": "Material #185"
+        }
+      ],
+      "MeshCount": 1,
+      "MeshDetail": [
+        {
+          "MeshName": "MiniBR_Building003",
+          "MaterialIndex": [
+            0,
+            1
+          ],
+          "Transform": {
+            "Position": [
+              0,
+              0,
+              0
+            ],
+            "Rotation": [
+              0.00000250448,
+              0,
+              0
+            ],
+            "Scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "subCustomIcons": {
+    "jclnb14yko-lui4xbce-fyna4jwbd1v": "jclnb14yko-lui4xbce-fyna4jwbd1v_preview.png"
+  },
+  "subLOD": {},
+  "globalscale": 1
+}

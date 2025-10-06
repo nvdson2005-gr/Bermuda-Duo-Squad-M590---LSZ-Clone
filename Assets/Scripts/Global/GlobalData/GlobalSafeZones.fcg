@@ -66,6 +66,9 @@ graph GlobalSafeZones {
             } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
                 safeZoneStartPoints[0] = (EResSceneACADEMY.StartPos as entity<Entity>)<Transform>.Position
                 safeZoneEndPoints[0] = GetChildren(EResSceneACADEMY.EndPosList as entity<Entity>)
+            } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
+                safeZoneStartPoints[0] = (EResSceneOLD_PEAK.StartPos as entity<Entity>)<Transform>.Position
+                safeZoneEndPoints[0] = GetChildren(EResSceneOLD_PEAK.EndPosList as entity<Entity>)
             } else {
                 LogError("<GlobalSafeZones.fcg<OnPhaseStart()>>: Invalid map chosen")
                 return
@@ -101,6 +104,8 @@ graph GlobalSafeZones {
             EnableSafeZone(safeZoneStartPoints[0], safeZoneDefaultData["init_radius"], 180, 180, safeZoneDefaultData["first_border_dmg"])
         } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
             EnableSafeZone(safeZoneStartPoints[0], safeZoneDefaultData["init_radius"], 180, 180, safeZoneDefaultData["first_border_dmg"])
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
+            EnableSafeZone(safeZoneStartPoints[0], safeZoneDefaultData["init_radius"], 180, 180, safeZoneDefaultData["first_border_dmg"])
         } else {
             LogError("<GlobalSafeZones.fcg<ActivateIllusionSafeZone()>>: Invalid map chosen")
             return
@@ -127,6 +132,12 @@ graph GlobalSafeZones {
             EnableMovingSafeZone(safeZoneStartPoints[0], endPointPosition<Transform>.Position, safeZoneDefaultData["init_radius"], safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["shrink_duration_first_border"], safeZoneDefaultData["first_border_dmg"])
             LogWarning("<GlobalSafeZones> Safe zone activated: " + safeZoneStartPoints[0] + " to " + endPointPosition<Transform>.Position + " with radius from " + safeZoneDefaultData["init_radius"] + " to " + safeZoneDefaultData["second_border_radius"] + " in duration " + safeZoneDefaultData["shrink_duration_first_border"])
         } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
+            var randomIndex = RandomInt(0, List.Length(safeZoneEndPoints[0]))
+            firstBorderChosenIndex = randomIndex
+            var endPointPosition = safeZoneEndPoints[0][randomIndex] as entity<Transform>
+            EnableMovingSafeZone(safeZoneStartPoints[0], endPointPosition<Transform>.Position, safeZoneDefaultData["init_radius"], safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["shrink_duration_first_border"], safeZoneDefaultData["first_border_dmg"])
+            LogWarning("<GlobalSafeZones> Safe zone activated: " + safeZoneStartPoints[0] + " to " + endPointPosition<Transform>.Position + " with radius from " + safeZoneDefaultData["init_radius"] + " to " + safeZoneDefaultData["second_border_radius"] + " in duration " + safeZoneDefaultData["shrink_duration_first_border"])
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
             var randomIndex = RandomInt(0, List.Length(safeZoneEndPoints[0]))
             firstBorderChosenIndex = randomIndex
             var endPointPosition = safeZoneEndPoints[0][randomIndex] as entity<Transform>
@@ -180,6 +191,16 @@ graph GlobalSafeZones {
             EnableMovingSafeZone(firstBorderEndPointPosition<Transform>.Position, secondBorderEndPointPosition<Transform>.Position, safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["shrink_duration_second_border"], safeZoneDefaultData["second_border_dmg"])
             secondBorderChosenIndex = randomSecondBorderChosenIndex
             LogWarning("<GlobalSafeZones> Safe zone activated: " + firstBorderEndPointPosition<Transform>.Position + " to " + secondBorderEndPointPosition<Transform>.Position + " with radius " + safeZoneDefaultData["second_border_radius"] + " in duration " + safeZoneDefaultData["shrink_duration_second_border"])
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
+            var randomSecondBorderChosenIndex = RandomInt(0, List.Length(safeZoneEndPoints[0]))
+            while randomSecondBorderChosenIndex == firstBorderChosenIndex {
+                randomSecondBorderChosenIndex = RandomInt(0, List.Length(safeZoneEndPoints[0]))
+            }
+            var firstBorderEndPointPosition = safeZoneEndPoints[0][firstBorderChosenIndex] as entity<Transform>
+            var secondBorderEndPointPosition = safeZoneEndPoints[0][randomSecondBorderChosenIndex] as entity<Transform>
+            EnableMovingSafeZone(firstBorderEndPointPosition<Transform>.Position, secondBorderEndPointPosition<Transform>.Position, safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["second_border_radius"], safeZoneDefaultData["shrink_duration_second_border"], safeZoneDefaultData["second_border_dmg"])
+            secondBorderChosenIndex = randomSecondBorderChosenIndex
+            LogWarning("<GlobalSafeZones> Safe zone activated: " + firstBorderEndPointPosition<Transform>.Position + " to " + secondBorderEndPointPosition<Transform>.Position + " with radius " + safeZoneDefaultData["second_border_radius"] + " in duration " + safeZoneDefaultData["shrink_duration_second_border"])
         } else {
             LogError("<GlobalSafeZones.fcg<ActivateSecondSafeZone()>>: Invalid map chosen")
             return
@@ -201,6 +222,10 @@ graph GlobalSafeZones {
             EnableMovingSafeZone(secondBorderEndPointPosition<Transform>.Position, secondBorderEndPointPosition<Transform>.Position, safeZoneDefaultData["second_border_radius"], 0, safeZoneDefaultData["shrink_duration_final_border"], safeZoneDefaultData["second_border_dmg"])
             LogWarning("<GlobalSafeZones> Safe zone activated: " + secondBorderEndPointPosition<Transform>.Position + " to " + secondBorderEndPointPosition<Transform>.Position + " with radius from " + safeZoneDefaultData["second_border_radius"] + " to " + 0 + " in duration " + safeZoneDefaultData["shrink_duration_final_border"])
         } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
+            var secondBorderEndPointPosition = safeZoneEndPoints[0][secondBorderChosenIndex] as entity<Transform>
+            EnableMovingSafeZone(secondBorderEndPointPosition<Transform>.Position, secondBorderEndPointPosition<Transform>.Position, safeZoneDefaultData["second_border_radius"], 0, safeZoneDefaultData["shrink_duration_final_border"], safeZoneDefaultData["second_border_dmg"])
+            LogWarning("<GlobalSafeZones> Safe zone activated: " + secondBorderEndPointPosition<Transform>.Position + " to " + secondBorderEndPointPosition<Transform>.Position + " with radius from " + safeZoneDefaultData["second_border_radius"] + " to " + 0 + " in duration " + safeZoneDefaultData["shrink_duration_final_border"])
+        } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
             var secondBorderEndPointPosition = safeZoneEndPoints[0][secondBorderChosenIndex] as entity<Transform>
             EnableMovingSafeZone(secondBorderEndPointPosition<Transform>.Position, secondBorderEndPointPosition<Transform>.Position, safeZoneDefaultData["second_border_radius"], 0, safeZoneDefaultData["shrink_duration_final_border"], safeZoneDefaultData["second_border_dmg"])
             LogWarning("<GlobalSafeZones> Safe zone activated: " + secondBorderEndPointPosition<Transform>.Position + " to " + secondBorderEndPointPosition<Transform>.Position + " with radius from " + safeZoneDefaultData["second_border_radius"] + " to " + 0 + " in duration " + safeZoneDefaultData["shrink_duration_final_border"])
