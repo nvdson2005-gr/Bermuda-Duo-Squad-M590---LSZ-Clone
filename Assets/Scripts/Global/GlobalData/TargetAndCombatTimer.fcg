@@ -53,12 +53,19 @@ graph TargetAndCombatTimer {
     @param player The player entity to register the UI for
     */
     func UpdateRoundStageInfo(player entity<Player>, stage int, stageName string) {
-        if ContainKey(mainCustomUIDict, player) {
+        if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
             var stageTextWidget entity<UIWidget>
             stageTextWidget = GetWidgetFromCustomUI(player, mainCustomUIDict[player], EResUIGameInfo.RoundStageText as CustomUIWidgetID)
-            stageTextWidget<UIWidgetLabel>.Content = LocString{"ROUND_INFO", List<string>{stageName}}
+            stageTextWidget<UIWidgetLabel>.Content = LocString{"FULL_SCBOARD_TARGET", List<string>{ToString(globalEntity<CombatRoundCounter>.GetCount()), ToString(GlobalConfig.MAX_ROUND)}}
+            return
         } else {
-            LogError("Player does not have a combat stage UI registered.")
+            if ContainKey(mainCustomUIDict, player) {
+                var stageTextWidget entity<UIWidget>
+                stageTextWidget = GetWidgetFromCustomUI(player, mainCustomUIDict[player], EResUIGameInfo.RoundStageText as CustomUIWidgetID)
+                stageTextWidget<UIWidgetLabel>.Content = LocString{"ROUND_INFO", List<string>{stageName}}
+            } else {
+                LogError("Player does not have a combat stage UI registered.")
+            }
         }
     }
 

@@ -34,7 +34,8 @@
         "type": "GFileRefer"
       },
       "fileType": "ugcscript"
-    }
+    },
+    null
   ],
   "_entityName": "FE_0_HW_GAME_EDITOR_TEAMSETTING",
   "MaxTeamPlayerNumber": 12,

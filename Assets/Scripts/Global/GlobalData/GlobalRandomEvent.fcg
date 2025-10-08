@@ -10,6 +10,7 @@ import "../../Player/PlayerRandomEventHandler.fcg" as PlayerRandomEventHandler
 import "Workflow.fcc" as Workflow
 import "Combat.fcc" as Combat
 import "./GlobalConfig.fcg" as GlobalConfig
+import "../GlobalData/TargetAndCombatTimer.fcg" as TargetAndCombatTimer
 graph GlobalRandomEvent {
     // Chosen event this round
     chosenEvent int = -1
@@ -78,8 +79,8 @@ graph GlobalRandomEvent {
     func ApplyRandomEvent() {
         // LogWarning("<GlobalRandomEvent.fcg>: Applying random event")
         // Debug only
-        // chosenEvent = 2
-        // SetLotsOfGlooWallsEvent(true)
+        // chosenEvent = 8 
+        // SetDarkModeEvent(true)
         // return
         // End of debug only
         if List.Length(oldEvents) >= currentEventsCount {
@@ -264,7 +265,7 @@ graph GlobalRandomEvent {
             // skybox<SkyBox>.ShadowStrength = 0.8
         } else {
             SetSkybox(GlobalConfig.DEFAULT_SKYBOX)
-            var skybox entity<SkyBox> = GetSceneSkybox(GlobalConfig.SKYBOX_SCENE_NAME)
+            // var skybox entity<SkyBox> = GetSceneSkybox(GlobalConfig.SKYBOX_SCENE_NAME)
             // skybox<SkyBox>.LightIntensity = 1.06
             // skybox<SkyBox>.Darkness = 0.03
             // skybox<SkyBox>.ShadowStrength = 0.6
@@ -320,6 +321,9 @@ graph GlobalRandomEvent {
             SetDecreaseDamageEvent(false)
         }
         chosenEvent = -1
+        for index, player in GetAllPlayers() {
+            globalEntity<TargetAndCombatTimer>.UpdateEventShortDescription(player, "")
+        }
     }
 
     func GetCurrentEventDesc() string {
@@ -340,7 +344,7 @@ graph GlobalRandomEvent {
 
     func GetCurrentEventShortDesc() string {
         if chosenEvent == -1 {
-            LogError("No event was chosen. This should not happen.")
+            // LogError("No event was chosen. This should not happen.")
             return ""
         }
         return eventShortDescriptions[chosenEvent]

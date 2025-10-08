@@ -63,5 +63,8 @@
     "jclnb14yko-lui4xbce-fyna4jwbd1v": "jclnb14yko-lui4xbce-fyna4jwbd1v_preview.png"
   },
   "subLOD": {},
-  "globalscale": 1
+  "globalscale": 1,
+  "subColliderLOD": {
+    "jclnb14yko-lui4xbce-fyna4jwbd1v-MiniBR_Building003.~@FFFUB": 1
+  }
 }

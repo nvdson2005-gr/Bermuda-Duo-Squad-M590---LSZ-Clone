@@ -26,6 +26,8 @@ import "Convert.fcc" as Convert
 import "MiniMap.fcc" as MiniMap
 import "../../Phases/VotePhaseManager.fcg" as VotePhaseManager
 import "../../Player/PlayerUI.fcg" as PlayerUI
+import "../GlobalData/GlobalRandomEvent.fcg" as GlobalRandomEvent
+import "../GlobalData/TargetAndCombatTimer.fcg" as TargetAndCombatTimer
 graph GlobalPreparationPhaseManager {
     // Script variable storing the old stage index
     oldStageIndex int
@@ -51,6 +53,9 @@ graph GlobalPreparationPhaseManager {
             //     globalEntity<GlobalSafeZones>.SetStartShrinkTime(globalEntity<GlobalGameManager>.prepPhaseDuration)
             // }
             // Initialize data before combat
+            if globalEntity<GlobalRandomEvent>.chosenEvent != -1 {
+                globalEntity<GlobalRandomEvent>.ResetChosenEvent()
+            }
             wait InitDataBeforeCombat(globalEntity<GlobalGameManager>.prepPhaseDuration * 1000, oldStagesList[List.Length(oldStagesList) - 1]);
         }
     }
@@ -79,10 +84,10 @@ graph GlobalPreparationPhaseManager {
 
         // Initialize player states
         for index, player in GetAllPlayers() {
-            player<PlayerUI>.UpdateVoteInfoSubtitle(globalEntity<CombatRoundCounter>.GetCount())
+            // player<PlayerUI>.UpdateVoteInfoSubtitle(globalEntity<CombatRoundCounter>.GetCount())
             start SetGravityDelay(player, 500) // Set the player's gravity to zero for a short delay
             globalEntity<GlobalUIManager>.SetVisibilityFullScoreBoard(player, false); // Update the full scoreboard UI
-
+            globalEntity<TargetAndCombatTimer>.UpdateRoundStageInfo(player, globalEntity<CombatRoundCounter>.GetCount(), globalEntity<SpawnPoints>.GetNameForStage(randomStageIndex))
             ResetAmmo(player) // Reset the player's ammo
             ResetSkill(player); // Reset the player's skills
 
@@ -123,7 +128,6 @@ graph GlobalPreparationPhaseManager {
             player<Player>.EP = 200; // Set player's initial EP to 200 every round
             // start globalEntity<GlobalUIManager>.EnableTooltipForPlayer(player)
             SetInvincibilityStatus(player, false); // Disable invincibility for all players
-            SetInvincibility(player, 5); // 5 secs of invincibility
             start globalEntity<GlobalUIManager>.CreateRoundInfoHUD(player) // Create round info HUD
         }
 

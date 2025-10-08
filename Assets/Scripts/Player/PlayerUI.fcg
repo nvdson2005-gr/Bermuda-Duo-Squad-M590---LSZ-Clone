@@ -13,13 +13,14 @@ import "Hud.fcc" as Hud
 import "../Global/GlobalData/GlobalConfig.fcg" as GlobalConfig
 import "Convert.fcc" as Convert
 import "../Global/GlobalData/CombatRoundCounter.fcg" as CombatRoundCounter
+import "Player.fcc" as Player
 graph PlayerUI {
     gunCombosThisRound List<List<ItemIDType>> = List<List<ItemIDType>>{}
     gunVoteCountdown int 
     didChooseCombo bool = false
     currentComboIndex int = -1
     phaseCountDownHUD entity<BuiltInUI>
-    matchInfoSubtitleHUD entity<BuiltInUI>
+    // matchInfoSubtitleHUD entity<BuiltInUI>
     chosenMutexLock bool = false
     //Executed when entity is created
     event OnAwake() {
@@ -27,9 +28,9 @@ graph PlayerUI {
         gunVoteCountdown = globalEntity<GlobalGameManager>.prepPhaseDuration
         CreateBuiltInUI(out var createdPhaseCountDownHUD, thisEntity as entity<Player>, EResInternalHud.PhaseCountDownHud as BuiltInUIType)
         phaseCountDownHUD = createdPhaseCountDownHUD
-        CreateBuiltInUI(out var createdMatchInfoSubtitleHUD, thisEntity as entity<Player>, EResInternalHud.MatchInfoSubTitleHud as BuiltInUIType)
-        matchInfoSubtitleHUD = createdMatchInfoSubtitleHUD
-        matchInfoSubtitleHUD<UIMatchSubtitle>.TextKey = LocString{"FULL_SCBOARD_TARGET", List<string>{ToString(globalEntity<CombatRoundCounter>.GetCount()), ToString(GlobalConfig.MAX_ROUND)}}
+        // CreateBuiltInUI(out var createdMatchInfoSubtitleHUD, thisEntity as entity<Player>, EResInternalHud.MatchInfoSubTitleHud as BuiltInUIType)
+        // matchInfoSubtitleHUD = createdMatchInfoSubtitleHUD
+        // matchInfoSubtitleHUD<UIMatchSubtitle>.TextKey = LocString{"FULL_SCBOARD_TARGET", List<string>{ToString(globalEntity<CombatRoundCounter>.GetCount()), ToString(GlobalConfig.MAX_ROUND)}}
         // matchInfoSubtitleHUD<UIMatchSubtitle>.TextKeyParams = List<int>{GlobalConfig.WIN_POINTS}
     }
 
@@ -45,7 +46,10 @@ graph PlayerUI {
                 gunCombo = gunCombosThisRound[currentComboIndex]
             }
             for index, weapon in gunCombo {
-                thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, weapon as EResItem, 1)
+                // thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, weapon as EResItem, 1)
+                AddItem(thisEntity as entity<Player>, weapon as ItemIDType, 1, out var newItem)
+                var newGun = newItem[0] as entity<Weapon>
+                newGun<Weapon>.CurrentAmmo = 100
             }
             if GetItemCount(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType) != 0 {
                 DestroyItem(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType, GetItemCount(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType)) // Destroy the item when added
@@ -56,12 +60,18 @@ graph PlayerUI {
         }
     }
 
+    event OnPlayerRevived(player entity<Player>, revivalSource PlayerReviveSourceType) {
+        if revivalSource == PlayerReviveSourceType.KnockDown {
+            globalEntity<GlobalUIManager>.UpdateMiniScoreboard()
+        }
+    }
+
     /*
     Update the vote info subtitle for a player.
     @param round The round number
     */
     func UpdateVoteInfoSubtitle(round int) {
-        matchInfoSubtitleHUD<UIMatchSubtitle>.TextKey = LocString{"FULL_SCBOARD_TARGET", List<string>{ToString(round), ToString(GlobalConfig.MAX_ROUND)}}
+        // matchInfoSubtitleHUD<UIMatchSubtitle>.TextKey = LocString{"FULL_SCBOARD_TARGET", List<string>{ToString(round), ToString(GlobalConfig.MAX_ROUND)}}
     }
 
     /*

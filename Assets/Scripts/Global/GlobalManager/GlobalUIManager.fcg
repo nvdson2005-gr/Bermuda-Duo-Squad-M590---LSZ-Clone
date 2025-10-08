@@ -32,6 +32,8 @@ import "../GlobalData/GlobalRandomEvent.fcg" as GlobalRandomEvent
 import Res from "EditorGenLib.fcc"
 import "../GlobalData/GlobalConfig.fcg" as GlobalConfig
 import "../../Team/TeamCurrentRoundData.fcg" as TeamCurrentRoundData
+import "../../Team/Team.fcg" as TeamFCG
+import "../GlobalManager/GlobalCombatManager.fcg" as GlobalCombatManager
 graph GlobalUIManager {
     fullScoreBoardUIDict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their full scoreboard UIs when combat ends
     miniScoreBoardUIdict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their mini scoreboard UIs
@@ -78,7 +80,7 @@ graph GlobalUIManager {
             CreateBuiltInUI(out var createdHUD, player, EResInternalHud.OpeningBannerHud as BuiltInUIType)
             createdHUD<UIOpeningBanner>.Title = LocString{"GAME_NAME", List<string>{}}
             createdHUD<UIOpeningBanner>.Description = LocString{"GAME_DESCRIPTION", List<string>{}}
-            // createdHUD<UIOpeningBanner>.Icon = EResSprite.logo
+            createdHUD<UIOpeningBanner>.Icon = EResSprite.logo
             WaitForMillisecond(8000)
             DestroyBuiltInUI(createdHUD)
         }
@@ -321,12 +323,12 @@ graph GlobalUIManager {
                 killBgWidget = GetWidgetFromCustomUI(player, fullScoreBoard, EResUIFullScoreBoard.Rank4KillBg)
                 totalPointBgWidget = GetWidgetFromCustomUI(player, fullScoreBoard, EResUIFullScoreBoard.Rank4TSBg)
             }
-            teamWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the team widget to a specific color
-            teamNameBgWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the team name background widget
-            pointBgWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the point background widget
-            booyahBgWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the booyah background widget
-            killBgWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the kill background widget
-            totalPointBgWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the total point background widget
+            // teamWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the team widget to a specific color
+            // teamNameBgWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the team name background widget
+            // pointBgWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the point background widget
+            // booyahBgWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the booyah background widget
+            // killBgWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the kill background widget
+            // totalPointBgWidget<UIWidgetImage>.Color = #FFB400 // Set the color of the total point background widget
             fullScoreBoard<CustomUI>.IsVisible = false // Initially set the full scoreboard to not visible
             return true // Return true to indicate the operation was successful
         } else {
@@ -373,6 +375,9 @@ graph GlobalUIManager {
                     var totalPointWidget entity<UIWidget>
                     var increaseKillWidget entity<UIWidget>
                     var increaseBooyahWidget entity<UIWidget>
+                    var increasePlacementWidget entity<UIWidget>
+                    var placementWidget entity<UIWidget>
+                    var placementBgWidget entity<UIWidget>
                     if(rankCount == 1) {
                         rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank1BG)
                         nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName1)
@@ -385,6 +390,9 @@ graph GlobalUIManager {
                         totalPointWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FirstRankTeamTS)
                         increaseKillWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.KIncrease1)
                         increaseBooyahWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.BIncrease1)
+                        increasePlacementWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.PI1)
+                        placementWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FIrstRankTeamPlPts)
+                        placementBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank1PlacementBg)
                     } else if(rankCount == 2) {
                         rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank2BG)
                         nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName2)
@@ -397,6 +405,9 @@ graph GlobalUIManager {
                         totalPointWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.SecRankTeamTS)
                         increaseKillWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.KIncrease2)
                         increaseBooyahWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.BIncrease2)
+                        increasePlacementWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.PI2)
+                        placementWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.SecRankTeamPlPts)
+                        placementBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank2PlacementBg)
                     } else if(rankCount == 3) {
                         rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3BG)
                         nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName3)
@@ -409,6 +420,9 @@ graph GlobalUIManager {
                         totalPointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3TSBg)
                         killWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.ThirdRankTeamKill)
                         totalPointWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.ThirdRankTeamTS)
+                        increasePlacementWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.PI3)
+                        placementWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.ThirdRankTeamPlPts)
+                        placementBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3PlacementBg)
                     } else if (rankCount == 4) {
                         rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4BG)
                         nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName4)
@@ -421,6 +435,9 @@ graph GlobalUIManager {
                         totalPointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4TSBg)
                         killWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FourthRankTeamKill)
                         totalPointWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FourthRankTeamTS)
+                        increasePlacementWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.PI4)
+                        placementWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FourthRankTeamPlPts)
+                        placementBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4PlacementBg)
                     }
                     if team == player<Player>.HostTeam {
                         if rankBgWidget<UIWidgetImage>.Color != #D68E00 {
@@ -438,19 +455,42 @@ graph GlobalUIManager {
                         if totalPointBgWidget<UIWidgetImage>.Color != #D68E00 {
                             start globalEntity<GlobalAnimationManager>.DOChangeColor(totalPointBgWidget, #9C9C9C, #D68E00, 500)
                         }
+                        if placementBgWidget<UIWidgetImage>.Color != #D68E00 {
+                            start globalEntity<GlobalAnimationManager>.DOChangeColor(placementBgWidget, #9C9C9C, #D68E00, 500)
+                        }
                     } else {
                         rankBgWidget<UIWidgetImage>.Color = #9C9C9C// Set other teams to white
                         nameBgWidget<UIWidgetImage>.Color = #363636
                         booyahBgWidget<UIWidgetImage>.Color = #9C9C9C
                         killBgWidget<UIWidgetImage>.Color = #9C9C9C
                         totalPointBgWidget<UIWidgetImage>.Color = #363636
+                        placementBgWidget<UIWidgetImage>.Color = #9C9C9C
                     }
                     nameWidget<UIWidgetLabel>.Content = LocString{"TEAM", List<string>{ToString(team<Team>.TeamSeq)}} // Use localization for team names
-                    start globalEntity<GlobalAnimationManager>.DOChangeIncreaseAlpha(increaseKillWidget, team<TeamCurrentRoundData>.GetKillThisRound(), 2000, killWidget, kills)
-                    start globalEntity<GlobalAnimationManager>.DOChangeIncreaseAlpha(increaseBooyahWidget, team<TeamCurrentRoundData>.GetBooyahThisRound(), 2000, booyahWidget, booyah)
-                    // booyahWidget<UIWidgetLabel>.Content = ToString(booyah)
-                    // killWidget<UIWidgetLabel>.Content = ToString(kills)
-                    totalPointWidget<UIWidgetLabel>.Content = ToString(totalPoints)
+                    if team == player<Player>.HostTeam {
+                        start globalEntity<GlobalAnimationManager>.DOChangeIncreaseAlpha(increaseKillWidget, team<TeamCurrentRoundData>.GetKillThisRound(), 2000, killWidget, kills)
+                        // start globalEntity<GlobalAnimationManager>.DOChangeIncreaseAlpha(increaseBooyahWidget, team<TeamCurrentRoundData>.GetBooyahThisRound(), 2000, booyahWidget, globalEntity<TeamData>.GetTeamWinningTimes(team))
+                        if team == wonTeam {
+                            start globalEntity<GlobalAnimationManager>.DOChangeIncreaseAlpha(increaseBooyahWidget, 1, 2000, booyahWidget, globalEntity<TeamData>.GetTeamWinningTimes(team))
+                        } else {
+                            start globalEntity<GlobalAnimationManager>.DOChangeIncreaseAlpha(increaseBooyahWidget, 0, 2000, booyahWidget, globalEntity<TeamData>.GetTeamWinningTimes(team))
+                        }
+
+                        if IndexOf(globalEntity<GlobalCombatManager>.teamRanking, team) == -1 {
+                            start globalEntity<GlobalAnimationManager>.DOChangeIncreaseAlpha(increasePlacementWidget, List.Length(globalEntity<GlobalCombatManager>.teamRanking) + 1, 2000, placementWidget, globalEntity<TeamData>.GetTeamBooyah(team))
+                        } else {
+                            start globalEntity<GlobalAnimationManager>.DOChangeIncreaseAlpha(increasePlacementWidget, IndexOf(globalEntity<GlobalCombatManager>.teamRanking, team) + 1, 2000, placementWidget, globalEntity<TeamData>.GetTeamBooyah(team))
+                        }
+                        // start globalEntity<GlobalAnimationManager>.DOChangeIncreaseAlpha(increaseBooyahWidget, team<TeamCurrentRoundData>.GetBooyahThisRound(), 2000, booyahWidget, globalEntity<TeamData>.GetTeamWinningTimes(team))
+                        start globalEntity<GlobalAnimationManager>.DOIncrease(totalPointWidget, team<TeamFCG>.GetLastRoundPoint(), totalPoints, 3000, 1000)
+                    } else {
+                        // booyahWidget<UIWidgetLabel>.Content = ToString(booyah)
+                        // killWidget<UIWidgetLabel>.Content = ToString(kills)
+                        booyahWidget<UIWidgetLabel>.Content = ToString(globalEntity<TeamData>.GetTeamWinningTimes(team))
+                        killWidget<UIWidgetLabel>.Content = ToString(kills)
+                        placementWidget<UIWidgetLabel>.Content = ToString(globalEntity<TeamData>.GetTeamBooyah(team))
+                        totalPointWidget<UIWidgetLabel>.Content = ToString(totalPoints)
+                    }
                     // Update tooltip
                     var tooltipWidget entity<UIWidget>
                     tooltipWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TooltipText)
@@ -463,61 +503,62 @@ graph GlobalUIManager {
     
     /*
     Updates the full scoreboard UI for all players.
+    (Deprecated, plase use UpdateFullScoreBoradWinTeam instead)
     */
-    func UpdateFullScoreBoard(){
-        var sortedTeamList List<entity<Team>> = globalEntity<TeamData>.GetSortedTeamList()
-        var rankCount int = 1
-        for index, team in sortedTeamList {
-            var scores = globalEntity<TeamData>.GetTeamTotalPoint(team)
-            for index, player in GetAllPlayers() {
-                if(Map.ContainKey(fullScoreBoardUIDict, player)) {
-                    var ui = fullScoreBoardUIDict[player]
-                    var rankBgWidget  entity<UIWidget>
-                    var nameWidget entity<UIWidget>
-                    var scoreWidget entity<UIWidget>
-                    var nameBgWidget entity<UIWidget>
-                    var pointBgWidget entity<UIWidget>
-                    if(rankCount == 1) {
-                        rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank1BG)
-                        nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName1)
-                        scoreWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FirstRankTeamBooyah)
-                        nameBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank1NameBg) 
-                        pointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank1BooyahBg)
-                    } else if(rankCount == 2) {
-                        rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank2BG)
-                        nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName2)
-                        scoreWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.SecondRankTeamBooyah)
-                        nameBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank2NameBg)
-                        pointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank2BooyahBg)
-                    } else if(rankCount == 3) {
-                        rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3BG)
-                        nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName3)
-                        scoreWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.ThirdRankTeamBooyah)
-                        nameBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3NameBg)
-                        pointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3BooyahBg)
-                    } else if (rankCount == 4) {
-                        rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4BG)
-                        nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName4)
-                        scoreWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FourthRankTeamBooyah)
-                        nameBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4NameBg)
-                        pointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4BooyahBg)
-                    } else {
-                        LogError("Rank count exceeds expected range") // Error Info
-                    }
-                    if team == player<Player>.HostTeam {
-                        rankBgWidget<UIWidgetImage>.Color = #D68E00// Highlight the player's team in the scoreboard
-                        nameBgWidget<UIWidgetImage>.Color = #D68E00
-                        pointBgWidget<UIWidgetImage>.Color = #D68E00
-                    } else {
-                        rankBgWidget<UIWidgetImage>.Color = #9C9C9C// Set other teams to white
-                    }
-                    nameWidget<UIWidgetLabel>.Content = LocString{"TEAM", List<string>{ToString(team<Team>.TeamSeq)}} // Use localization for team names
-                    scoreWidget<UIWidgetLabel>.Content = ToString(scores)
-                }
-            }
-            rankCount = rankCount + 1;
-        }
-    }
+    // func UpdateFullScoreBoard(){
+    //     var sortedTeamList List<entity<Team>> = globalEntity<TeamData>.GetSortedTeamList()
+    //     var rankCount int = 1
+    //     for index, team in sortedTeamList {
+    //         var scores = globalEntity<TeamData>.GetTeamTotalPoint(team)
+    //         for index, player in GetAllPlayers() {
+    //             if(Map.ContainKey(fullScoreBoardUIDict, player)) {
+    //                 var ui = fullScoreBoardUIDict[player]
+    //                 var rankBgWidget  entity<UIWidget>
+    //                 var nameWidget entity<UIWidget>
+    //                 var scoreWidget entity<UIWidget>
+    //                 var nameBgWidget entity<UIWidget>
+    //                 var pointBgWidget entity<UIWidget>
+    //                 if(rankCount == 1) {
+    //                     rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank1BG)
+    //                     nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName1)
+    //                     scoreWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FirstRankTeamBooyah)
+    //                     nameBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank1NameBg) 
+    //                     pointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank1BooyahBg)
+    //                 } else if(rankCount == 2) {
+    //                     rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank2BG)
+    //                     nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName2)
+    //                     scoreWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.SecondRankTeamBooyah)
+    //                     nameBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank2NameBg)
+    //                     pointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank2BooyahBg)
+    //                 } else if(rankCount == 3) {
+    //                     rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3BG)
+    //                     nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName3)
+    //                     scoreWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.ThirdRankTeamBooyah)
+    //                     nameBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3NameBg)
+    //                     pointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank3BooyahBg)
+    //                 } else if (rankCount == 4) {
+    //                     rankBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4BG)
+    //                     nameWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.TeamName4)
+    //                     scoreWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.FourthRankTeamBooyah)
+    //                     nameBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4NameBg)
+    //                     pointBgWidget = GetWidgetFromCustomUI(player, ui, EResUIFullScoreBoard.Rank4BooyahBg)
+    //                 } else {
+    //                     LogError("Rank count exceeds expected range") // Error Info
+    //                 }
+    //                 // if team == player<Player>.HostTeam {
+    //                 //     rankBgWidget<UIWidgetImage>.Color = #D68E00// Highlight the player's team in the scoreboard
+    //                 //     nameBgWidget<UIWidgetImage>.Color = #D68E00
+    //                 //     pointBgWidget<UIWidgetImage>.Color = #D68E00
+    //                 // } else {
+    //                 //     rankBgWidget<UIWidgetImage>.Color = #9C9C9C// Set other teams to white
+    //                 // }
+    //                 nameWidget<UIWidgetLabel>.Content = LocString{"TEAM", List<string>{ToString(team<Team>.TeamSeq)}} // Use localization for team names
+    //                 scoreWidget<UIWidgetLabel>.Content = ToString(scores)
+    //             }
+    //         }
+    //         rankCount = rankCount + 1;
+    //     }
+    // }
 
     // ==================================== ROUND INFO UI ====================================
     /*

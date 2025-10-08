@@ -7,7 +7,18 @@ import "Combat.fcc" as Combat
 import "../Global/GlobalManager/GlobalCombatManager.fcg" as GlobalCombatManager
 import "../Global/GlobalData/TeamData.fcg" as TeamData
 import "List.fcc" as List
+
 graph Team {
+    lastroundPoint int = 0
+
+    func SetLastRoundPoint(point int) {
+        lastroundPoint = point
+    }
+
+    func GetLastRoundPoint() int {
+        return lastroundPoint
+    }
+
     event OnACE() {
         List.Append(globalEntity<GlobalCombatManager>.teamRanking, thisEntity) // Add the team to the ranking list
         // LogError(globalEntity<GlobalCombatManager>.teamRanking)

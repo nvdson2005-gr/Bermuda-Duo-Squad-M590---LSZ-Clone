@@ -41,17 +41,47 @@ graph GlobalAnimationManager {
     }
 
     async func DOChangeIncreaseAlpha(widget entity<UIWidget>, increaseValue int, duration int, contentWidget entity<UIWidget>, increaseTo int){
-        var defaultPos = widget<UIWidget>.AnchorPosition
+        // LogError("DOChangeIncreaseAlpha: " + ToString(increaseValue) + " - " + ToString(increaseTo))
+        if increaseValue == 0 {
+            contentWidget<UIWidgetLabel>.Content = ToString(increaseTo)
+            return
+        }
         widget<UIWidgetLabel>.Alpha = 1.0
-        widget<UIWidgetLabel>.Content = ToString(increaseValue)
-        WaitForMillisecond(1000)
-        CreateTween(widget, UIWidgetLabel.Alpha, 1.0, 0.0, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), duration, out var alphaTween, true)
-        CreateTween(widget, UIWidget.AnchorPosition, Vector2{defaultPos.X, defaultPos.Y}, Vector2{defaultPos.X - 50, defaultPos.Y}, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), duration, out var positionTween, true)
+        widget<UIWidgetLabel>.Content = "+" + ToString(increaseValue)
+
+        var defaultPos = widget<UIWidget>.AnchorPosition
+        var curve = CreateCurve(List<float>{0, 0, 1, 1})
+
+        WaitForMillisecond(500)
+        CreateTween(widget, UIWidget.AnchorPosition, defaultPos, defaultPos + Vector3{-25, 0, 0}, TweenStyle.Once, curve, duration, out var positionTween, true)
+        CreateTween(widget, UIWidgetLabel.Alpha, 1.0, 0.0, TweenStyle.Once, curve, duration, out var alphaTween, true)
+
         WaitForMillisecond(duration)
-        contentWidget<UIWidgetLabel>.Content = ToString(increaseTo)
         Destroy(alphaTween)
         Destroy(positionTween)
-        widget<Transform>.LocalPosition = defaultPos
+
+        widget<UIWidget>.AnchorPosition = defaultPos
+        widget<UIWidgetLabel>.Alpha = 0.0
+        contentWidget<UIWidgetLabel>.Content = ToString(increaseTo)
         widget<UIWidgetLabel>.Content = 0 // Reset the content to 0
+    }
+
+    async func DOIncrease(widget entity<UIWidget>, increaseFrom int, increaseTo int, delay int, duration int){
+        if increaseFrom == increaseTo {
+            widget<UIWidgetLabel>.Content = ToString(increaseTo)
+            return
+        }
+        WaitForMillisecond(delay)
+        var iter int = increaseFrom
+        widget<UIWidgetLabel>.Content = ToString(iter)
+        var tweenDuration int = duration / (increaseTo - increaseFrom)
+        while iter < increaseTo {
+            iter = iter + 1
+            widget<UIWidgetLabel>.Content = ToString(iter)
+            WaitForMillisecond(tweenDuration)
+        }
+        // CreateTween(widget, UIWidgetLabel.Content, increaseFrom, increaseTo, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 8000, out var contentTween, true)
+        // Destroy(contentTween)
+        widget<UIWidgetLabel>.Content = ToString(increaseTo)
     }
 }

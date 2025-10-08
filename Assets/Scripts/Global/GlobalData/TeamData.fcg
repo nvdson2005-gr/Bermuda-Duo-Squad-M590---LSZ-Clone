@@ -151,11 +151,11 @@ graph TeamData {
     func GetSortedTeamList() List<entity<Team>>{
         var sortedTeams List<entity<Team>> = List<entity<Team>>{}
         var teamCopyDict Map<entity<Team>, int> = Map<entity<Team>, int>{} 
-        var currentAliveTeams List<entity<Team>> = globalEntity<GlobalGameManager>.GetCurrentActiveTeams()
+        // var currentAliveTeams List<entity<Team>> = globalEntity<GlobalGameManager>.GetCurrentActiveTeams()
         for team, point in teamTotalPoints {
-            if List.Contain(currentAliveTeams, team) {
+            // if List.Contain(currentAliveTeams, team) {
                 teamCopyDict[team] = point
-            }
+            // }
         }
         while Map.Length(teamCopyDict) > 0 {
             var currentMaxTeam = GetAllKeys(teamCopyDict)[0]

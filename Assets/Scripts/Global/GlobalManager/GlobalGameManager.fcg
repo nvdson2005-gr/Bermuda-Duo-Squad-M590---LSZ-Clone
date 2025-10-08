@@ -33,12 +33,15 @@ import "../../Team/TeamCurrentRoundData.fcg" as TeamCurrentRoundData
 import "../GlobalData/CombatRoundCounter.fcg" as CombatRoundCounter
 import "List.fcc" as List
 import "LevelObject.fcc" as LevelObject
+import "../../Team/Team.fcg" as TeamFCG
+import "Convert.fcc" as Convert
 graph GlobalGameManager {
     // winPoints int = 3 // Number of points required to win the game
     availableStages int = 11 // Number of available stages in the game, goes together with the number of safe zones and spawn point groups in GlobalSafeZones.cfg and SpawnPoints.cfg
     prepPhaseDuration int = 15 // Use this to customize the buying phase duration
     phaseDuration Map<EPhase, float> = Map<EPhase, float>{}
     isMatchEnded bool = false
+    isRoundEnded bool = false
     /* 
     When the game starts:
     - If a player goes into the game to soon, a gravity delay is added to wait until the terrain is loaded.
@@ -118,6 +121,15 @@ graph GlobalGameManager {
         }
     }
 
+    event OnPhaseEnd(phase entity<Phase>) {
+        if phase<Phase>.Index == EPhase.End {
+            isRoundEnded = false
+        }
+        if phase<Phase>.Index == EPhase.EndCombat {
+            isRoundEnded = false
+        }
+    }
+
     async func SetAllPlayerFullScoreBoard(){
         WaitForMillisecond(1000)
         for index, player in GetAllPlayers() {
@@ -140,7 +152,9 @@ graph GlobalGameManager {
             if List.Length(activeTeams) <= 1 {
                 MatchEndHandler(activeTeams[0])
             } else {
-                globalEntity<GlobalCombatManager>.CheckEndCombatCondition()
+                if isRoundEnded == false {
+                    globalEntity<GlobalCombatManager>.CheckEndCombatCondition()
+                }
             }
         }
     }
@@ -179,6 +193,7 @@ graph GlobalGameManager {
     - Check if that team wins or not
     */
     event CombatEnd(winningTeam entity<Team>) {
+        isRoundEnded = true
         if (winningTeam == nil) {
             LogError("There is no team winning this round")
             EndCurrentPhase()
@@ -193,9 +208,11 @@ graph GlobalGameManager {
         }
         var teamRanking = globalEntity<GlobalCombatManager>.teamRanking
         globalEntity<TeamCurrentRoundData>.IncreaseBooyah()
+        WaitForNextFrame()
         globalEntity<TeamData>.AddPointsToTeam(winningTeam, winningTeam<TeamCurrentRoundData>.GetKillThisRound(), List.Length(teamRanking) + 1)
         globalEntity<TeamData>.AddWinningTimesToTeam(winningTeam)
         for index, team in teamRanking {
+            team<TeamFCG>.SetLastRoundPoint(globalEntity<TeamData>.GetTeamTotalPoint(team))
             globalEntity<TeamData>.AddPointsToTeam(team, team<TeamCurrentRoundData>.GetKillThisRound(), index + 1)
         }
         ClearResidualLevelObjects()
@@ -281,19 +298,30 @@ graph GlobalGameManager {
         return teamList
     }
 
-    func SetUpMiniMap(player entity<Player>) {
+    async func SetUpMiniMap(player entity<Player>) {
         var fullMap = EResSprite.MINIMAP as IconType
         CreateMiniMapIcon(out var miniMap, player, fullMap)
-        miniMap<MiniMapIcon>.Depth = 0
+        // miniMap<MiniMapIcon>.Depth = 0
         miniMap<MiniMapIcon>.Offset = Vector3{0, 0, 0}
-        miniMap<MiniMapIcon>.Scale = 1.0 
+        miniMap<MiniMapIcon>.Scale = 1.65 
+        var minimap = GetMiniMap(player)
+        minimap<MiniMap>.MapSize = 150
+        minimap<MiniMap>.EnableDepthMap = false
         // for key, value in FilterLevelObjects(LevelObjectType.SpawnPos) {
         //     CreateMiniMapPixel(out var miniMapPixel, player, value)
         // }
-        CreateMiniMapPixel(out var house1, player, EResSceneACADEMY.HOUSE1 as entity<Entity>)
-        CreateMiniMapPixel(out var house2, player, EResSceneACADEMY.HOUSE2 as entity<Entity>)
-        CreateMiniMapPixel(out var bridge, player, EResSceneACADEMY.BRIDGE as entity<Entity>)
-        for index, value in GetChildren(EResSceneACADEMY.OTHER_LEVEL_OBJECTS as entity<Entity>) {
+        // CreateMiniMapPixel(out var house1, player, EResSceneACADEMY.HOUSE1 as entity<Entity>)
+        // CreateMiniMapPixel(out var house2, player, EResSceneACADEMY.HOUSE2 as entity<Entity>)
+        // CreateMiniMapPixel(out var bridge, player, EResSceneACADEMY.BRIDGE as entity<Entity>)
+        // for index, value in GetChildren(EResSceneACADEMY.OTHER_LEVEL_OBJECTS as entity<Entity>) {
+        //     CreateMiniMapPixel(out var otherLevelObject, player, value)
+        // }
+            // for index, value in GetChildren(EResSceneOLD_PEAK.Building as entity<Entity>) {
+            //     CreateMiniMapPixel(out var building, player, value)
+            // }
+        CreateMiniMapPixel(out var builtInPixel, player, EResSceneOLD_PEAK.Building as entity<Entity>)
+        CreateMiniMapPixel(out var ground, player, EResSceneOLD_PEAK.Ground as entity<Entity>)
+        for index, value in GetChildren(EResSceneOLD_PEAK.OTHER_LEVEL_OBJECTS as entity<Entity>) {
             CreateMiniMapPixel(out var otherLevelObject, player, value)
         }
     }

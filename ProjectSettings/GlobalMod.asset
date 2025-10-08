@@ -64,14 +64,6 @@
       "fileType": "ugcscript"
     },
     {
-      "fileId": "nsusd6o2c5-me2aw50x-2ig8hx43rkg",
-      "filePath": "Assets\\Scripts\\Global\\GlobalData\\TeamPoints.fcg",
-      "_tag": {
-        "type": "GFileRefer"
-      },
-      "fileType": "ugcscript"
-    },
-    {
       "fileId": "x3acsvan9b-me2akzg0-y6yqrdplgxk",
       "filePath": "Assets\\Scripts\\Global\\GlobalData\\TeamsAlive.fcg",
       "_tag": {
@@ -194,54 +186,6 @@
     {
       "fileId": "ax4ncghxal7-mfqcn86z-3f4ew4lbfpx",
       "filePath": "Assets\\ECA\\Test.eca",
-      "_tag": {
-        "type": "GFileRefer"
-      },
-      "fileType": "eca"
-    },
-    {
-      "fileId": "hxgnm0htpes-lutiw7mn-r1mj1csev7",
-      "filePath": "Assets\\Resources\\OldPeak\\ECA\\Global.eca",
-      "_tag": {
-        "type": "GFileRefer"
-      },
-      "fileType": "eca"
-    },
-    {
-      "fileId": "4fif4pzs7mr-lut5rc2o-8v6pwhgucqo",
-      "filePath": "Assets\\Resources\\OldPeak\\ECA\\managerUI.eca",
-      "_tag": {
-        "type": "GFileRefer"
-      },
-      "fileType": "eca"
-    },
-    {
-      "fileId": "ph9y003y6ih-luthorp9-9p9axla5b2a",
-      "filePath": "Assets\\Resources\\OldPeak\\ECA\\RankMoudle.eca",
-      "_tag": {
-        "type": "GFileRefer"
-      },
-      "fileType": "eca"
-    },
-    {
-      "fileId": "lk4hkt6nh4-lvgddwdq-bw7w3hswott",
-      "filePath": "Assets\\Resources\\OldPeak\\ECA\\duQuan.eca",
-      "_tag": {
-        "type": "GFileRefer"
-      },
-      "fileType": "eca"
-    },
-    {
-      "fileId": "kuslo5es3x-lxsb6bk5-rrway9fjt3",
-      "filePath": "Assets\\Resources\\OldPeak\\ECA\\countLive.eca",
-      "_tag": {
-        "type": "GFileRefer"
-      },
-      "fileType": "eca"
-    },
-    {
-      "fileId": "iay84gnxf7-lxx5pi1z-t7rlazcaacq",
-      "filePath": "Assets\\Resources\\OldPeak\\ECA\\Global_Rematch.eca",
       "_tag": {
         "type": "GFileRefer"
       },

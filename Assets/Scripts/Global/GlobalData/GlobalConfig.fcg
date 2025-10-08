@@ -6,6 +6,7 @@ static graph GlobalConfig {
     availableMaps List<EResScene> = List<EResScene>{EResScene.BERMUDA, EResScene.ELPASTELO, EResScene.ACADEMY, EResScene.OLD_PEAK}
     MAP_CHOSEN EResScene = EResScene.OLD_PEAK
     // WIN_POINTS int = 90
+    TEAM_COUNT int = 4
     MAX_ROUND int = 5
     FIRST_BORDER_DELAY int = 10
     SECOND_BORDER_DELAY int = 10
@@ -17,6 +18,6 @@ static graph GlobalConfig {
     SECOND_BORDER_DAMAGE float = 40
     FIRST_BORDER_INIT_RADIUS float = 100
     SECOND_BORDER_INIT_RADIUS float = 30
-    DEFAULT_SKYBOX SkyboxType = SkyboxType.Dusk
+    DEFAULT_SKYBOX SkyboxType = SkyboxType.Day
     SKYBOX_SCENE_NAME string = "Academy"
 }

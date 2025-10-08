@@ -1,0 +1,13 @@
+import "StdLibrary.fcc" as StdLib
+import "EditorGenLib.fcc" as EditorLib
+import "Physics.fcc" as Physics
+import "Combat.fcc" as Combat
+
+graph Water {
+    event OnCollisionEnter(collidedEntity entity<Entity>) {
+        // if HasComponent(collidedEntity, typeof(Player)) {
+        //     EliminateAtNextFrame(collidedEntity as entity<Player>)
+        // }
+        // LogError("Water: " + collidedEntity<Entity>.Name)
+    }
+}

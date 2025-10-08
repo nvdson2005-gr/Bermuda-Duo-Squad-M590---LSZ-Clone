@@ -120,7 +120,13 @@
         },
         "UseGravity": false,
         "Drag": 0.05,
-        "AngularDrag": 0.05
+        "AngularDrag": 0.05,
+        "FreezePosX": false,
+        "FreezePosY": false,
+        "FreezePosZ": false,
+        "FreezeRotX": false,
+        "FreezeRotY": false,
+        "FreezeRotZ": false
       },
       "isCreateAsEmpty": false,
       "ecaScripts": [],
@@ -145,7 +151,12 @@
       },
       "_entityName": "MiniBR_Building003",
       "prefabVariant": null,
-      "_filters": []
+      "_filters": [],
+      "propsData": {},
+      "aoiSetting": 0,
+      "entityTagData": {
+        "tagPointers": []
+      }
     }
   ],
   "prefabVariant": null,
@@ -162,4 +173,4 @@
   "discriminator": "ISceneLike",
   "_entityName": "MiniBR_Building003"
 }
-//"{FE:{"v":"1.0.2921955","c":{"FF":4404},"s":100}
+//"{FE:{"v":"1.14.3883376","c":{"FF":5001},"s":100}

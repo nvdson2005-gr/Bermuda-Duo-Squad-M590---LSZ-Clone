@@ -2,7 +2,7 @@
   "mainScene": "svpoj08ajdb-luj8087c-7ge0udo7gqu",
   "name": "Bermuda Duo Squad M590 Rework",
   "nsId": "YoxLztjQ",
-  "isDirty": false,
+  "isDirty": true,
   "cachePort": 59014,
   "version": "1.14.3883376",
   "internalProject": true,

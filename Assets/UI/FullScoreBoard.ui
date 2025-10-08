@@ -159,11 +159,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -410,
+                    "x": -450,
                     "y": 118
                   },
                   "sizeDelta": {
-                    "x": 204,
+                    "x": 120,
                     "y": 73
                   }
                 },
@@ -262,11 +262,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -190,
+                    "x": -295,
                     "y": 118
                   },
                   "sizeDelta": {
-                    "x": 300,
+                    "x": 250,
                     "y": 73
                   }
                 },
@@ -367,11 +367,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 35,
+                    "x": -5,
                     "y": 118
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 150,
                     "y": 73
                   }
                 },
@@ -472,11 +472,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 215,
+                    "x": -125,
                     "y": 118
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 150,
                     "y": 73
                   }
                 },
@@ -549,6 +549,111 @@
                 "type": "UIImageEntity",
                 "resourceId": ""
               },
+              "_entityId": "pSJ18B8S",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 115,
+                    "y": 118
+                  },
+                  "sizeDelta": {
+                    "x": 150,
+                    "y": 73
+                  }
+                },
+                "alpha": 100,
+                "priority": 1,
+                "image": {
+                  "source": {
+                    "fileId": "76c5b17336aebe3fe4e5028e3e79617c",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_QUADRI.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#9C9C9C",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "Rank1PlacementBg",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
               "_entityId": "ajiYjYzQ",
               "children": [],
               "prefabVariant": null,
@@ -577,11 +682,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 395,
+                    "x": 285,
                     "y": 118
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 250,
                     "y": 73
                   }
                 },
@@ -742,11 +847,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -410,
+                    "x": -450,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 204,
+                    "x": 120,
                     "y": 73
                   }
                 },
@@ -847,11 +952,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -190,
+                    "x": -295,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 300,
+                    "x": 250,
                     "y": 73
                   }
                 },
@@ -952,11 +1057,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 35,
+                    "x": -5,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 150,
                     "y": 73
                   }
                 },
@@ -1057,11 +1162,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 215,
+                    "x": -125,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 150,
                     "y": 73
                   }
                 },
@@ -1134,6 +1239,111 @@
                 "type": "UIImageEntity",
                 "resourceId": ""
               },
+              "_entityId": "ApFIuzUd",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 115,
+                    "y": 84
+                  },
+                  "sizeDelta": {
+                    "x": 150,
+                    "y": 73
+                  }
+                },
+                "alpha": 100,
+                "priority": 1,
+                "image": {
+                  "source": {
+                    "fileId": "76c5b17336aebe3fe4e5028e3e79617c",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_QUADRI.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#9C9C9C",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "Rank2PlacementBg",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
               "_entityId": "Zj07sFwp",
               "children": [],
               "prefabVariant": null,
@@ -1162,11 +1372,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 395,
+                    "x": 285,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 250,
                     "y": 73
                   }
                 },
@@ -1327,11 +1537,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -410,
+                    "x": -450,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 204,
+                    "x": 120,
                     "y": 73
                   }
                 },
@@ -1432,11 +1642,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -190,
+                    "x": -295,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 300,
+                    "x": 250,
                     "y": 73
                   }
                 },
@@ -1537,11 +1747,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 35,
+                    "x": -5,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 150,
                     "y": 73
                   }
                 },
@@ -1642,11 +1852,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 215,
+                    "x": -125,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 150,
                     "y": 73
                   }
                 },
@@ -1719,6 +1929,111 @@
                 "type": "UIImageEntity",
                 "resourceId": ""
               },
+              "_entityId": "Thv5xQKu",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 115,
+                    "y": 84
+                  },
+                  "sizeDelta": {
+                    "x": 150,
+                    "y": 73
+                  }
+                },
+                "alpha": 100,
+                "priority": 1,
+                "image": {
+                  "source": {
+                    "fileId": "76c5b17336aebe3fe4e5028e3e79617c",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_QUADRI.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#9C9C9C",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "Rank3PlacementBg",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
               "_entityId": "DST462SY",
               "children": [],
               "prefabVariant": null,
@@ -1747,11 +2062,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 395,
+                    "x": 285,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 250,
                     "y": 73
                   }
                 },
@@ -1912,11 +2227,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -410,
+                    "x": -450,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 204,
+                    "x": 120,
                     "y": 73
                   }
                 },
@@ -2017,11 +2332,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -190,
+                    "x": -295,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 300,
+                    "x": 250,
                     "y": 73
                   }
                 },
@@ -2122,11 +2437,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 35,
+                    "x": -5,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 150,
                     "y": 73
                   }
                 },
@@ -2227,11 +2542,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 215,
+                    "x": -125,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 150,
                     "y": 73
                   }
                 },
@@ -2304,6 +2619,111 @@
                 "type": "UIImageEntity",
                 "resourceId": ""
               },
+              "_entityId": "RlP1mwZi",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 115,
+                    "y": 84
+                  },
+                  "sizeDelta": {
+                    "x": 150,
+                    "y": 73
+                  }
+                },
+                "alpha": 100,
+                "priority": 1,
+                "image": {
+                  "source": {
+                    "fileId": "76c5b17336aebe3fe4e5028e3e79617c",
+                    "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_QUADRI.png",
+                    "_tag": {
+                      "type": "GFileRefer"
+                    },
+                    "fileType": "texture"
+                  },
+                  "color": "#9C9C9C",
+                  "reverse": {
+                    "x": false,
+                    "y": false
+                  },
+                  "fillType": 1,
+                  "slicedBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "tiledBorder": {
+                    "left": 0,
+                    "right": 0,
+                    "top": 0,
+                    "bottom": 0
+                  },
+                  "centerInvisible": false,
+                  "fillDir": 0,
+                  "fillAmount": 0,
+                  "invertFill": false,
+                  "flip": 0,
+                  "gradient": 1,
+                  "gradientTop": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  },
+                  "gradientBottom": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255,
+                    "a": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudImageWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "Rank4PlacementBg",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "UIImageEntity",
+                "resourceId": ""
+              },
               "_entityId": "c2yBU3LJ",
               "children": [],
               "prefabVariant": null,
@@ -2332,11 +2752,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 395,
+                    "x": 285,
                     "y": 84
                   },
                   "sizeDelta": {
-                    "x": 210,
+                    "x": 250,
                     "y": 73
                   }
                 },
@@ -2755,24 +3175,24 @@
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0,
+                    "y": 0
                   },
                   "anchorMax": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 1,
+                    "y": 1
                   },
                   "pivot": {
                     "x": 0.5,
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -36,
+                    "x": -2,
                     "y": 0
                   },
                   "sizeDelta": {
-                    "x": 120,
-                    "y": 50
+                    "x": -62,
+                    "y": 0
                   }
                 },
                 "alpha": 100,
@@ -2789,7 +3209,7 @@
                   },
                   "color": "#FFFFFF",
                   "alignment": {
-                    "h": "center",
+                    "h": "left",
                     "v": "middle"
                   },
                   "lineSpacing": 0,
@@ -2852,11 +3272,11 @@
                 "y": 0.5
               },
               "anchoredPosition": {
-                "x": -100,
+                "x": -195,
                 "y": 0
               },
               "sizeDelta": {
-                "x": 300,
+                "x": 250,
                 "y": 50
               }
             },
@@ -2954,12 +3374,12 @@
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0,
+                    "y": 0
                   },
                   "anchorMax": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 1,
+                    "y": 1
                   },
                   "pivot": {
                     "x": 0.5,
@@ -2970,8 +3390,8 @@
                     "y": 0
                   },
                   "sizeDelta": {
-                    "x": 120,
-                    "y": 50
+                    "x": -64,
+                    "y": 0
                   }
                 },
                 "alpha": 100,
@@ -3048,11 +3468,11 @@
                 "y": 0.5
               },
               "anchoredPosition": {
-                "x": 125,
+                "x": 95,
                 "y": 0
               },
               "sizeDelta": {
-                "x": 210,
+                "x": 150,
                 "y": 50
               }
             },
@@ -3114,6 +3534,202 @@
           "componentList": [],
           "_filters": [],
           "_entityName": "Bg (3)",
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        },
+        {
+          "_tag": {
+            "type": "UIImageEntity",
+            "resourceId": ""
+          },
+          "_entityId": "9EsJyDZi",
+          "children": [
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "qYb6r1tt",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "anchorMax": {
+                    "x": 1,
+                    "y": 1
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": -0.5,
+                    "y": 0
+                  },
+                  "sizeDelta": {
+                    "x": -57,
+                    "y": 0
+                  }
+                },
+                "alpha": 100,
+                "priority": 0,
+                "text": {
+                  "value": "Placement\nPts",
+                  "key": "SCBOARD_TITLE_PLACEMENTPTS",
+                  "font": "Default",
+                  "fontSize": 30,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#ffffff",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_entityName": "PlacementTitle",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "propsData": {
+            "activeSelf": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 215,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 150,
+                "y": 50
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "image": {
+              "source": {
+                "fileId": "76c5b17336aebe3fe4e5028e3e79617c",
+                "filePath": "lib://fftextures/WorkshopIconLibrary/T_34_M_WS_ICON_QUADRI.png",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "texture"
+              },
+              "color": "#ffffff",
+              "reverse": {
+                "x": false,
+                "y": false
+              },
+              "fillType": 1,
+              "slicedBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "tiledBorder": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+              },
+              "centerInvisible": false,
+              "fillDir": 0,
+              "fillAmount": 0,
+              "invertFill": false,
+              "flip": 0,
+              "gradient": 2,
+              "gradientTop": {
+                "r": 250,
+                "g": 95,
+                "b": 0,
+                "a": 1
+              },
+              "gradientBottom": {
+                "r": 252,
+                "g": 93,
+                "b": 0,
+                "a": 1
+              }
+            }
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudImageWidget": {},
+            "HudWidget": {},
+            "Entity": {}
+          },
+          "componentList": [],
+          "_filters": [],
+          "_entityName": "Bg (5)",
           "entityTagData": {
             "tagPointers": []
           },
@@ -3259,11 +3875,11 @@
                 "y": 0.5
               },
               "anchoredPosition": {
-                "x": 305,
+                "x": -25,
                 "y": 0
               },
               "sizeDelta": {
-                "x": 210,
+                "x": 150,
                 "y": 50
               }
             },
@@ -3361,24 +3977,24 @@
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0,
+                    "y": 0
                   },
                   "anchorMax": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 1,
+                    "y": 1
                   },
                   "pivot": {
                     "x": 0.5,
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 14,
+                    "x": 0,
                     "y": 0
                   },
                   "sizeDelta": {
-                    "x": 120,
-                    "y": 50
+                    "x": -60,
+                    "y": 0
                   }
                 },
                 "alpha": 100,
@@ -3458,11 +4074,11 @@
                 "y": 0.5
               },
               "anchoredPosition": {
-                "x": -321,
+                "x": -350,
                 "y": 0
               },
               "sizeDelta": {
-                "x": 204,
+                "x": 120,
                 "y": 50
               }
             },
@@ -3556,24 +4172,24 @@
                 "transform": {
                   "rotate": 0,
                   "anchorMin": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 0,
+                    "y": 0
                   },
                   "anchorMax": {
-                    "x": 0.5,
-                    "y": 0.5
+                    "x": 1,
+                    "y": 1
                   },
                   "pivot": {
                     "x": 0.5,
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 2,
+                    "x": -3,
                     "y": 0
                   },
                   "sizeDelta": {
-                    "x": 140,
-                    "y": 50
+                    "x": -70,
+                    "y": 0
                   }
                 },
                 "alpha": 100,
@@ -3590,7 +4206,7 @@
                   },
                   "color": "#FFFFFF",
                   "alignment": {
-                    "h": "left",
+                    "h": "center",
                     "v": "middle"
                   },
                   "lineSpacing": 0,
@@ -3653,11 +4269,11 @@
                 "y": 0.5
               },
               "anchoredPosition": {
-                "x": 480,
+                "x": 385,
                 "y": 0
               },
               "sizeDelta": {
-                "x": 204,
+                "x": 250,
                 "y": 50
               }
             },
@@ -4652,11 +5268,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
+                    "x": -70,
                     "y": 83
                   },
                   "sizeDelta": {
-                    "x": 120,
+                    "x": 48,
                     "y": 50
                   }
                 },
@@ -4666,7 +5282,7 @@
                   "value": "+1",
                   "key": "",
                   "font": "Default",
-                  "fontSize": 40,
+                  "fontSize": 30,
                   "fontStyle": {
                     "bold": false,
                     "italic": false,
@@ -4741,11 +5357,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
+                    "x": -70,
                     "y": -8
                   },
                   "sizeDelta": {
-                    "x": 120,
+                    "x": 48,
                     "y": 50
                   }
                 },
@@ -4755,7 +5371,7 @@
                   "value": "+1",
                   "key": "",
                   "font": "Default",
-                  "fontSize": 40,
+                  "fontSize": 30,
                   "fontStyle": {
                     "bold": false,
                     "italic": false,
@@ -4832,11 +5448,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
+                    "x": -70,
                     "y": -89
                   },
                   "sizeDelta": {
-                    "x": 120,
+                    "x": 48,
                     "y": 50
                   }
                 },
@@ -4846,7 +5462,7 @@
                   "value": "+1",
                   "key": "",
                   "font": "Default",
-                  "fontSize": 40,
+                  "fontSize": 30,
                   "fontStyle": {
                     "bold": false,
                     "italic": false,
@@ -4923,11 +5539,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
+                    "x": -70,
                     "y": -175
                   },
                   "sizeDelta": {
-                    "x": 120,
+                    "x": 48,
                     "y": 50
                   }
                 },
@@ -4937,7 +5553,7 @@
                   "value": "+1",
                   "key": "",
                   "font": "Default",
-                  "fontSize": 40,
+                  "fontSize": 30,
                   "fontStyle": {
                     "bold": false,
                     "italic": false,
@@ -5073,11 +5689,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
-                    "y": 83
+                    "x": -381,
+                    "y": 80
                   },
                   "sizeDelta": {
-                    "x": 120,
+                    "x": 50,
                     "y": 50
                   }
                 },
@@ -5087,7 +5703,7 @@
                   "value": "+1",
                   "key": "",
                   "font": "Default",
-                  "fontSize": 40,
+                  "fontSize": 30,
                   "fontStyle": {
                     "bold": false,
                     "italic": false,
@@ -5164,11 +5780,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
-                    "y": -8
+                    "x": -381,
+                    "y": -10
                   },
                   "sizeDelta": {
-                    "x": 120,
+                    "x": 50,
                     "y": 50
                   }
                 },
@@ -5178,7 +5794,7 @@
                   "value": "+1",
                   "key": "",
                   "font": "Default",
-                  "fontSize": 40,
+                  "fontSize": 30,
                   "fontStyle": {
                     "bold": false,
                     "italic": false,
@@ -5255,11 +5871,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
-                    "y": -89
+                    "x": -381,
+                    "y": -90
                   },
                   "sizeDelta": {
-                    "x": 120,
+                    "x": 50,
                     "y": 50
                   }
                 },
@@ -5269,7 +5885,7 @@
                   "value": "+1",
                   "key": "",
                   "font": "Default",
-                  "fontSize": 40,
+                  "fontSize": 30,
                   "fontStyle": {
                     "bold": false,
                     "italic": false,
@@ -5346,11 +5962,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
+                    "x": -381,
                     "y": -175
                   },
                   "sizeDelta": {
-                    "x": 120,
+                    "x": 50,
                     "y": 50
                   }
                 },
@@ -5360,7 +5976,7 @@
                   "value": "+1",
                   "key": "",
                   "font": "Default",
-                  "fontSize": 40,
+                  "fontSize": 30,
                   "fontStyle": {
                     "bold": false,
                     "italic": false,
@@ -5455,6 +6071,426 @@
           },
           "editorLockValue": false,
           "editorVisibleValue": true
+        },
+        {
+          "_tag": {
+            "type": "UIEmptyEntity",
+            "resourceId": ""
+          },
+          "_entityId": "0OmGuJhB",
+          "children": [
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "6PwC49U8",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 150,
+                    "y": 80
+                  },
+                  "sizeDelta": {
+                    "x": 57,
+                    "y": 50
+                  }
+                },
+                "alpha": 0,
+                "priority": 0,
+                "text": {
+                  "value": "+1",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 30,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#ffffff",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "PI1",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "FbNCe7xT",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 150,
+                    "y": -10
+                  },
+                  "sizeDelta": {
+                    "x": 57,
+                    "y": 50
+                  }
+                },
+                "alpha": 0,
+                "priority": 0,
+                "text": {
+                  "value": "+1",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 30,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#ffffff",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "PI2",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "OFzMzW0l",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 150,
+                    "y": -90
+                  },
+                  "sizeDelta": {
+                    "x": 57,
+                    "y": 50
+                  }
+                },
+                "alpha": 0,
+                "priority": 0,
+                "text": {
+                  "value": "+1",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 30,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#ffffff",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "PI3",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
+              "_entityId": "idKoZgXo",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 150,
+                    "y": -175
+                  },
+                  "sizeDelta": {
+                    "x": 57,
+                    "y": 50
+                  }
+                },
+                "alpha": 0,
+                "priority": 0,
+                "text": {
+                  "value": "+1",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 30,
+                  "fontStyle": {
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#ffffff",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "PI4",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            }
+          ],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "propsData": {
+            "activeSelf": true,
+            "transform": {
+              "rotate": 0,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 100,
+                "y": 100
+              }
+            },
+            "alpha": 100,
+            "priority": 0
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "HudEmptyWidget": {},
+            "HudWidget": {},
+            "Entity": {}
+          },
+          "componentList": [],
+          "_entityName": "PlacementPts",
+          "entityTagData": {
+            "tagPointers": []
+          }
         }
       ],
       "prefabVariant": null,
@@ -5557,7 +6593,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -410,
+                    "x": -450,
                     "y": -79
                   },
                   "sizeDelta": {
@@ -5647,11 +6683,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -180,
+                    "x": -290,
                     "y": -76
                   },
                   "sizeDelta": {
-                    "x": 250,
+                    "x": 200,
                     "y": 44
                   }
                 },
@@ -5735,11 +6771,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 210,
+                    "x": -125,
                     "y": -80
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 100,
                     "y": 44
                   }
                 },
@@ -5825,11 +6861,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 30,
+                    "x": 0,
                     "y": -80
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 100,
                     "y": 44
                   }
                 },
@@ -5888,6 +6924,96 @@
                 "type": "UITextEntity",
                 "resourceId": ""
               },
+              "_entityId": "udoTf8F6",
+              "children": [],
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 120,
+                    "y": -80
+                  },
+                  "sizeDelta": {
+                    "x": 100,
+                    "y": 44
+                  }
+                },
+                "alpha": 100,
+                "priority": 0,
+                "text": {
+                  "value": "0",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 40,
+                  "fontStyle": {
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "FIrstRankTeamPlPts",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
               "_entityId": "pmu2XlM5",
               "children": [],
               "activeValue": {
@@ -5915,11 +7041,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 390,
+                    "x": 280,
                     "y": -80
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 200,
                     "y": 44
                   }
                 },
@@ -6469,7 +7595,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -410,
+                    "x": -450,
                     "y": -10
                   },
                   "sizeDelta": {
@@ -6560,11 +7686,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 210,
+                    "x": -125,
                     "y": -10
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 100,
                     "y": 44
                   }
                 },
@@ -6651,11 +7777,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 30,
+                    "x": 0,
                     "y": -10
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 100,
                     "y": 44
                   }
                 },
@@ -6714,6 +7840,97 @@
                 "type": "UITextEntity",
                 "resourceId": ""
               },
+              "_entityId": "o7kjvN2t",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 120,
+                    "y": -10
+                  },
+                  "sizeDelta": {
+                    "x": 100,
+                    "y": 44
+                  }
+                },
+                "alpha": 100,
+                "priority": 0,
+                "text": {
+                  "value": "0",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 40,
+                  "fontStyle": {
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "SecRankTeamPlPts",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
               "_entityId": "q4ebxfR6",
               "children": [],
               "prefabVariant": null,
@@ -6742,11 +7959,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 390,
+                    "x": 280,
                     "y": -10
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 200,
                     "y": 44
                   }
                 },
@@ -6832,11 +8049,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -180,
+                    "x": -290,
                     "y": -9
                   },
                   "sizeDelta": {
-                    "x": 250,
+                    "x": 200,
                     "y": 44
                   }
                 },
@@ -6983,7 +8200,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -410,
+                    "x": -450,
                     "y": 60
                   },
                   "sizeDelta": {
@@ -7074,11 +8291,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 210,
+                    "x": -125,
                     "y": 65
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 100,
                     "y": 44
                   }
                 },
@@ -7165,11 +8382,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 30,
+                    "x": 0,
                     "y": 65
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 100,
                     "y": 44
                   }
                 },
@@ -7228,6 +8445,97 @@
                 "type": "UITextEntity",
                 "resourceId": ""
               },
+              "_entityId": "x8AolPbq",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 120,
+                    "y": 65
+                  },
+                  "sizeDelta": {
+                    "x": 100,
+                    "y": 44
+                  }
+                },
+                "alpha": 100,
+                "priority": 0,
+                "text": {
+                  "value": "0",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 40,
+                  "fontStyle": {
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "ThirdRankTeamPlPts",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
               "_entityId": "WpG8tBgs",
               "children": [],
               "prefabVariant": null,
@@ -7256,11 +8564,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 390,
+                    "x": 280,
                     "y": 65
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 200,
                     "y": 44
                   }
                 },
@@ -7346,11 +8654,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -180,
+                    "x": -290,
                     "y": 65
                   },
                   "sizeDelta": {
-                    "x": 250,
+                    "x": 200,
                     "y": 44
                   }
                 },
@@ -7497,7 +8805,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -410,
+                    "x": -450,
                     "y": 60
                   },
                   "sizeDelta": {
@@ -7588,11 +8896,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 210,
+                    "x": -125,
                     "y": 65
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 100,
                     "y": 44
                   }
                 },
@@ -7679,11 +8987,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 30,
+                    "x": 0,
                     "y": 65
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 100,
                     "y": 44
                   }
                 },
@@ -7742,6 +9050,97 @@
                 "type": "UITextEntity",
                 "resourceId": ""
               },
+              "_entityId": "VvnG1j2L",
+              "children": [],
+              "prefabVariant": null,
+              "activeValue": {
+                "selfValue": true,
+                "valueTag": "activeValue"
+              },
+              "unlockedValue": {
+                "selfValue": true,
+                "valueTag": "unlockedValue"
+              },
+              "propsData": {
+                "activeSelf": true,
+                "transform": {
+                  "rotate": 0,
+                  "anchorMin": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchorMax": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "anchoredPosition": {
+                    "x": 120,
+                    "y": 65
+                  },
+                  "sizeDelta": {
+                    "x": 100,
+                    "y": 44
+                  }
+                },
+                "alpha": 100,
+                "priority": 0,
+                "text": {
+                  "value": "0",
+                  "key": "",
+                  "font": "Default",
+                  "fontSize": 40,
+                  "fontStyle": {
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  },
+                  "color": "#FFFFFF",
+                  "alignment": {
+                    "h": "center",
+                    "v": "middle"
+                  },
+                  "lineSpacing": 0,
+                  "background": false,
+                  "backgroundColor": "#e7b200",
+                  "overflow": 0,
+                  "backgroundRGBA": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "shadow": false,
+                  "shadowColor": "#000000",
+                  "shadowOffset": {
+                    "x": 1,
+                    "y": 1
+                  }
+                }
+              },
+              "ecaScripts": [],
+              "ecaProps": {
+                "HudLabelWidget": {},
+                "HudWidget": {},
+                "Entity": {}
+              },
+              "componentList": [],
+              "_filters": [],
+              "_entityName": "FourthRankTeamPlPts",
+              "entityTagData": {
+                "tagPointers": []
+              },
+              "editorLockValue": false,
+              "editorVisibleValue": true
+            },
+            {
+              "_tag": {
+                "type": "UITextEntity",
+                "resourceId": ""
+              },
               "_entityId": "npiobjAh",
               "children": [],
               "prefabVariant": null,
@@ -7770,11 +9169,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 390,
+                    "x": 280,
                     "y": 65
                   },
                   "sizeDelta": {
-                    "x": 133,
+                    "x": 200,
                     "y": 44
                   }
                 },
@@ -7860,11 +9259,11 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -180,
+                    "x": -290,
                     "y": 65
                   },
                   "sizeDelta": {
-                    "x": 250,
+                    "x": 200,
                     "y": 44
                   }
                 },

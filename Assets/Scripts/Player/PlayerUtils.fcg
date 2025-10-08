@@ -26,6 +26,9 @@ graph PlayerUtils {
             // DestroyEquipment(thisEntity as entity<Player>, EquipmentType.PrimaryWeaponA, 1, out var isPrimaryWeaponASuccess)
             // DestroyEquipment(thisEntity as entity<Player>, EquipmentType.PrimaryWeaponB, 1, out var isPrimaryWeaponBSuccess)
             DestroyEquipment(thisEntity as entity<Player>, EquipmentType.SecondaryWeapon, 1, out var isSecondaryWeaponSuccess)
+            DestroyItem(thisEntity as entity<Player>, ItemIDType.Grenade, GetItemCount(thisEntity as entity<Player>, ItemIDType.GlooWall))
+            DestroyItem(thisEntity as entity<Player>, EResItem.GlooMelter as ItemIDType, GetItemCount(thisEntity as entity<Player>, EResItem.GlooMelter as ItemIDType))
+            DestroyItem(thisEntity as entity<Player>, EResItem.FlashFreeze as ItemIDType, GetItemCount(thisEntity as entity<Player>, EResItem.FlashFreeze as ItemIDType))
         }
     }
 }

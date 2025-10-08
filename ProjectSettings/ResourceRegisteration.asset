@@ -326,6 +326,86 @@
             {
               "id": "FlMcQv5U",
               "scriptName": "TooltipText"
+            },
+            {
+              "id": "xJV0iu4o",
+              "scriptName": "Rank1"
+            },
+            {
+              "id": "0vdqMxyS",
+              "scriptName": "Rank2"
+            },
+            {
+              "id": "whxjTdLQ",
+              "scriptName": "Rank3"
+            },
+            {
+              "id": "edjpWi9d",
+              "scriptName": "Rank4"
+            },
+            {
+              "id": "nbGzjark",
+              "scriptName": "FirstTeamInfoContainer"
+            },
+            {
+              "id": "8FZogDVD",
+              "scriptName": "SecondTeamInfoContainer"
+            },
+            {
+              "id": "LEGNI57E",
+              "scriptName": "ThirdTeamInfoContainer"
+            },
+            {
+              "id": "aTgzI43K",
+              "scriptName": "FourthTeamInfoContainer"
+            },
+            {
+              "id": "udoTf8F6",
+              "scriptName": "FIrstRankTeamPlPts"
+            },
+            {
+              "id": "o7kjvN2t",
+              "scriptName": "SecRankTeamPlPts"
+            },
+            {
+              "id": "x8AolPbq",
+              "scriptName": "ThirdRankTeamPlPts"
+            },
+            {
+              "id": "VvnG1j2L",
+              "scriptName": "FourthRankTeamPlPts"
+            },
+            {
+              "id": "6PwC49U8",
+              "scriptName": "PI1"
+            },
+            {
+              "id": "FbNCe7xT",
+              "scriptName": "PI2"
+            },
+            {
+              "id": "OFzMzW0l",
+              "scriptName": "PI3"
+            },
+            {
+              "id": "idKoZgXo",
+              "scriptName": "PI4"
+            },
+            {
+              "id": "pSJ18B8S",
+              "scriptName": "Rank1PlacementBg"
+            },
+            {
+              "id": "ApFIuzUd",
+              "scriptName": "Rank2PlacementBg"
+            },
+            {
+              "id": "Thv5xQKu",
+              "scriptName": "Rank3PlacementBg"
+            },
+            {
+              "id": "RlP1mwZi",
+              "scriptName": "Rank4PlacementBg"
             }
           ]
         },
@@ -878,6 +958,22 @@
             {
               "id": "tPbW8yDV",
               "scriptName": "EndPosList"
+            },
+            {
+              "id": "cMnkyHCX",
+              "scriptName": "Building"
+            },
+            {
+              "id": "JYHN0D1C",
+              "scriptName": "OTHER_LEVEL_OBJECTS"
+            },
+            {
+              "id": "CvR1dthi",
+              "scriptName": "HouseB"
+            },
+            {
+              "id": "5DTQgHcN",
+              "scriptName": "Ground"
             }
           ]
         }
@@ -1053,18 +1149,6 @@
             "fileType": "texture"
           },
           "scriptName": "openingIcon_1",
-          "children": []
-        },
-        {
-          "refer": {
-            "fileId": "ypk1h7yo0p-me6u4vxx-11vad93mh81p",
-            "filePath": "Assets\\Resources\\Logo.png",
-            "_tag": {
-              "type": "GFileRefer"
-            },
-            "fileType": "texture"
-          },
-          "scriptName": "logo",
           "children": []
         },
         {
@@ -1513,14 +1597,26 @@
         },
         {
           "refer": {
-            "fileId": "w7cl2g8h61-mgesyrie-fcexojivvrn",
-            "filePath": "Assets\\Resources\\minimap-icon (1).png",
+            "fileId": "q7juosypaw-lvz0iyp3-kegrxxhhavn",
+            "filePath": "Assets\\Resources\\OldPeak\\Textures\\map2.png",
             "_tag": {
               "type": "GFileRefer"
             },
             "fileType": "texture"
           },
           "scriptName": "MINIMAP",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "0welg2kwoc8m-mghqnchd-dgzakahekxa",
+            "filePath": "Assets\\Resources\\logo.png",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "texture"
+          },
+          "scriptName": "logo",
           "children": []
         }
       ]
@@ -1635,8 +1731,8 @@
         },
         {
           "refer": {
-            "fileId": "40e09243ca39167877ac302d27d2a3cc",
-            "filePath": "lib://ffitem/item_70",
+            "fileId": "e35ffb24f7f7c4b5db8628b641a27dc5",
+            "filePath": "lib://ffitem/item_14",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -1815,8 +1911,8 @@
         },
         {
           "refer": {
-            "fileId": "6bffee8aa3c11c0815990849a9680c40",
-            "filePath": "lib://ffitem/item_82",
+            "fileId": "6a745486d3d720c88f2a65a290427ad6",
+            "filePath": "lib://ffitem/item_2",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -1827,8 +1923,8 @@
         },
         {
           "refer": {
-            "fileId": "a58eaded28f06011b59b44de642cf15c",
-            "filePath": "lib://ffitem/item_195",
+            "fileId": "f04914ac1c81bde3a2cc013ac5ba03c8",
+            "filePath": "lib://ffitem/item_46",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -1839,8 +1935,8 @@
         },
         {
           "refer": {
-            "fileId": "0ba13b1b42fcc1a588adff3ab6596a6e",
-            "filePath": "lib://ffitem/item_131",
+            "fileId": "3d073546fd3b532be374501d62c12700",
+            "filePath": "lib://ffitem/item_24",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -1851,8 +1947,8 @@
         },
         {
           "refer": {
-            "fileId": "e74e0ef33e391734a8ff7ca46894e444",
-            "filePath": "lib://ffitem/item_180",
+            "fileId": "d9de1f1d6f42ad38141f4bf88ee5980d",
+            "filePath": "lib://ffitem/item_12",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -1863,8 +1959,8 @@
         },
         {
           "refer": {
-            "fileId": "b37ebe60d443c8081a59af7d33611b79",
-            "filePath": "lib://ffitem/item_186",
+            "fileId": "fffff2080fb3c3572e8889b0feb4fd13",
+            "filePath": "lib://ffitem/item_5",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -1875,8 +1971,8 @@
         },
         {
           "refer": {
-            "fileId": "3098135fb9db87308e016db46557b97d",
-            "filePath": "lib://ffitem/item_119",
+            "fileId": "ffc3f4b513fbe51ef58d175d5539a0e9",
+            "filePath": "lib://ffitem/item_41",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -1899,8 +1995,8 @@
         },
         {
           "refer": {
-            "fileId": "e74e0ef33e391734a8ff7ca46894e444",
-            "filePath": "lib://ffitem/item_180",
+            "fileId": "d9de1f1d6f42ad38141f4bf88ee5980d",
+            "filePath": "lib://ffitem/item_12",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -1911,8 +2007,8 @@
         },
         {
           "refer": {
-            "fileId": "5cec5ad4e5195a9ef60d9a79c7821cf8",
-            "filePath": "lib://ffitem/item_121",
+            "fileId": "d88ea9fab061296d55b79a0b518bb799",
+            "filePath": "lib://ffitem/item_8",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -1923,8 +2019,8 @@
         },
         {
           "refer": {
-            "fileId": "583fa6be162564f22de08aaa469dcc2a",
-            "filePath": "lib://ffitem/item_72",
+            "fileId": "3b4c857d7276e3db27236f5080c4d2a4",
+            "filePath": "lib://ffitem/item_26",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -1935,8 +2031,8 @@
         },
         {
           "refer": {
-            "fileId": "263b452a64563ea62ac3ef515b919291",
-            "filePath": "lib://ffitem/item_123",
+            "fileId": "63ff6d2f8d2f25bbb6f1da15dca72cde",
+            "filePath": "lib://ffitem/item_30",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -1983,8 +2079,8 @@
         },
         {
           "refer": {
-            "fileId": "695e92e53690bca510839a0a21e138d4",
-            "filePath": "lib://ffitem/item_230",
+            "fileId": "531b87244ddb80ae183047669ea5abbb",
+            "filePath": "lib://ffitem/item_88",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -2031,8 +2127,8 @@
         },
         {
           "refer": {
-            "fileId": "02475282e9932326ed165668ce0dd7c9",
-            "filePath": "lib://ffitem/item_65",
+            "fileId": "306b1fc5c17d65b50fea18a6d7af1ef7",
+            "filePath": "lib://ffitem/item_4",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -2043,8 +2139,8 @@
         },
         {
           "refer": {
-            "fileId": "881cd2d119127732f59b536fe3746847",
-            "filePath": "lib://ffitem/item_129",
+            "fileId": "e5b521d9f2816003227fcf8941c1e49d",
+            "filePath": "lib://ffitem/item_21",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -2067,8 +2163,8 @@
         },
         {
           "refer": {
-            "fileId": "75ba623d22de4c038eba4d7d50baf0fb",
-            "filePath": "lib://ffitem/item_71",
+            "fileId": "d7b61db9ae596a07c09244f98d1f87d1",
+            "filePath": "lib://ffitem/item_19",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -2079,8 +2175,8 @@
         },
         {
           "refer": {
-            "fileId": "0ba13b1b42fcc1a588adff3ab6596a6e",
-            "filePath": "lib://ffitem/item_131",
+            "fileId": "3d073546fd3b532be374501d62c12700",
+            "filePath": "lib://ffitem/item_24",
             "_tag": {
               "type": "GFileRefer"
             },

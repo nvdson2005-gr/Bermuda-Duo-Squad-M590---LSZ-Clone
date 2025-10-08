@@ -52,7 +52,18 @@
   },
   "editorLockValue": false,
   "editorVisibleValue": true,
-  "ecaProps": {},
+  "ecaProps": {
+    "Player": {},
+    "FightingEntity": {},
+    "AimableEntity": {},
+    "Entity": {},
+    "ScoreableEntity": {},
+    "RankableEntity": {},
+    "Visibility": {},
+    "BuffableEntity": {},
+    "FormulableEntity": {},
+    "AnimationControllerAble": {}
+  },
   "ecaScript": null,
   "ecaScripts": [
     {
@@ -86,30 +97,6 @@
         "type": "GFileRefer"
       },
       "fileType": "ugcscript"
-    },
-    {
-      "fileId": "ewstjnz5v4l-luqpdoay-vyd3scgtud",
-      "filePath": "Assets\\Resources\\OldPeak\\ECA\\Player.eca",
-      "_tag": {
-        "type": "GFileRefer"
-      },
-      "fileType": "eca"
-    },
-    {
-      "fileId": "huxfscay7qe-lut6tyxn-emqe094xrmq",
-      "filePath": "Assets\\Resources\\OldPeak\\ECA\\matchDetail.eca",
-      "_tag": {
-        "type": "GFileRefer"
-      },
-      "fileType": "eca"
-    },
-    {
-      "fileId": "3c0tf7vqfuv-luvzvbs5-3jpi7r6rxrr",
-      "filePath": "Assets\\Resources\\OldPeak\\ECA\\map.eca",
-      "_tag": {
-        "type": "GFileRefer"
-      },
-      "fileType": "eca"
     }
   ],
   "avatarInfo": null,
