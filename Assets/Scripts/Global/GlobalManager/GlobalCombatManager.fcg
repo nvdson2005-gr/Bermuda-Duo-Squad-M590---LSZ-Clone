@@ -85,7 +85,7 @@ graph GlobalCombatManager {
 
     func ClearAllItemsOnGround(){
         for index, item in allDroppedItems {
-            LogError("Destroyed item: " + item)
+            // LogError("Destroyed item: " + item)
             Destroy(item)
         }
     }
@@ -107,7 +107,7 @@ graph GlobalCombatManager {
             for index, team in isTeamAliveList {
                 if team == true {
                     // globalEntity<TargetAndCombatTimer>.ResetTimer()
-                    LogInfo("<GlobalCombatManager.fcg>: Team " + index + " is the last team standing.")
+                    // LogInfo("<GlobalCombatManager.fcg>: Team " + index + " is the last team standing.")
                     ClearAllItemsOnGround()
                     DispatchEvent(CombatEnd, thisEntity, List<object>{GetAllTeams()[index]})
                     return

@@ -97,6 +97,14 @@
         "type": "GFileRefer"
       },
       "fileType": "ugcscript"
+    },
+    {
+      "fileId": "3s1fx7or24-mgivb3wy-hnr6je3oc99",
+      "filePath": "Assets\\Scripts\\Player\\PlayerSoundManager.fcg",
+      "_tag": {
+        "type": "GFileRefer"
+      },
+      "fileType": "ugcscript"
     }
   ],
   "avatarInfo": null,

@@ -1,3 +1,8 @@
+/*
+This script is used to manage the sound effects in the game.
+It contains functions to play different sound effects for different events.
+(ALL OTHER SOUNDS ARE CURRENTLY MOVED INTO PlayerSoundManager.fcg)
+*/
 import "StdLibrary.fcc" as StdLib
 import "EditorGenLib.fcc" as EditorLib
 import "Playable.fcc" as Playable

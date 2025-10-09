@@ -6,6 +6,7 @@ import "Items.fcc" as Items
 import "Strings.fcc" as Strings
 import "List.fcc" as List
 import "EditorGenLib.fcc" as EditorLib
+import "Math.fcc" as Math
 
 graph PlayerUtils {
     /*
@@ -30,5 +31,10 @@ graph PlayerUtils {
             DestroyItem(thisEntity as entity<Player>, EResItem.GlooMelter as ItemIDType, GetItemCount(thisEntity as entity<Player>, EResItem.GlooMelter as ItemIDType))
             DestroyItem(thisEntity as entity<Player>, EResItem.FlashFreeze as ItemIDType, GetItemCount(thisEntity as entity<Player>, EResItem.FlashFreeze as ItemIDType))
         }
+    }
+
+    func GetRotationToDestination(destination Vector3, center Vector3) Vector3 {
+        var direction = destination - center
+        return Normalize(direction)
     }
 }

@@ -35,6 +35,8 @@ import "List.fcc" as List
 import "LevelObject.fcc" as LevelObject
 import "../../Team/Team.fcg" as TeamFCG
 import "Convert.fcc" as Convert
+import "../../Player/PlayerSoundManager.fcg" as PlayerSoundManager
+import "../../Player/PlayerUI.fcg" as PlayerUI
 graph GlobalGameManager {
     // winPoints int = 3 // Number of points required to win the game
     availableStages int = 11 // Number of available stages in the game, goes together with the number of safe zones and spawn point groups in GlobalSafeZones.cfg and SpawnPoints.cfg
@@ -47,7 +49,7 @@ graph GlobalGameManager {
     - If a player goes into the game to soon, a gravity delay is added to wait until the terrain is loaded.
     */
     event OnGameStart() {
-        LogInfo("<GlobalGameManager.fcg>: Game has started") // Debug Info
+        // LogInfo("<GlobalGameManager.fcg>: Game has started") // Debug Info
     }
 
     /*
@@ -142,9 +144,10 @@ graph GlobalGameManager {
     - Unregister from all UI elements to avoid unwanted bugs
     */
     event OnPlayerQuit(player entity<Player>) {
-        LogError("<GlobalGameManager.fcg>: Player " + player<Player>.NickName + " has quit the game") // Debug Info
+        // LogError("<GlobalGameManager.fcg>: Player " + player<Player>.NickName + " has quit the game") // Debug Info
         globalEntity<GlobalUIManager>.UnregisterAllUIs(player)
         globalEntity<PlayerData>.UnregisterPlayer(player) // Unregister the player from player data tracking
+        player<PlayerUI>.UnregisterAllUIs()
         EliminateAtNextFrame(player)
         globalEntity<GlobalUIManager>.UpdateMiniScoreboard() // Update the mini scoreboard UI after a player is eliminated to update current alives
         var activeTeams = GetCurrentActiveTeams()
@@ -195,10 +198,10 @@ graph GlobalGameManager {
     event CombatEnd(winningTeam entity<Team>) {
         isRoundEnded = true
         if (winningTeam == nil) {
-            LogError("There is no team winning this round")
+            // LogError("There is no team winning this round")
             EndCurrentPhase()
         }
-        LogInfo("<GlobalGameManager.fcg>: Round ended. Winning team: " + winningTeam) // Debug Info
+        // LogInfo("<GlobalGameManager.fcg>: Round ended. Winning team: " + winningTeam) // Debug Info
         // globalEntity<GlobalUIManager>.CreatePlusAnimation(winningTeam)
         globalEntity<GlobalUIManager>.UpdateMiniScoreboard(); // Update the scoreboard for the winning team
         for index, teammate in winningTeam<Team>.AllTeammates {
@@ -219,16 +222,18 @@ graph GlobalGameManager {
         globalEntity<GlobalRandomEvent>.ResetChosenEvent()
         for index, player in GetAllPlayers() {
             ClearBackpack(player)
+            player<PlayerSoundManager>.StopAllLoopingSounds()
         }
         if CheckWinningCondition() {
             var allWinningTeams = GetAllWinningTeams()
-            LogInfo("<GlobalGameManager.fcg>: Team(s) " + allWinningTeams + " have won the game!") // Debug Info
+            // LogInfo("<GlobalGameManager.fcg>: Team(s) " + allWinningTeams + " have won the game!") // Debug Info
             for index, player in GetAllPlayers() {
+                player<PlayerSoundManager>.StopAllLoopingSounds()
                 globalEntity<GlobalUIManager>.UnregisterAllUIs(player) // Unregister all UIs for the player
                 start globalEntity<GlobalUIManager>.CreateLastRoundHUD(allWinningTeams, player) // Create the last round HUD for all players
                 globalEntity<GlobalSoundManager>.PlayEndMatchSound(player)            
             }
-            WaitForMillisecond(5000)
+            WaitForMillisecond(2000)
             SwitchPhase(EPhase.End)
         } else {
             wait globalEntity<GlobalUIManager>.CreateEndRoundHUD(winningTeam); // Create the end round HUD for all players
@@ -240,9 +245,28 @@ graph GlobalGameManager {
 
     // Custom event, used to handle the case where no team wins
     event NoTeamWinException() {
-        LogError("<GlobalGameManager.fcg>: No team won this round, skipping to the next round") // Debug Info
+        // LogError("<GlobalGameManager.fcg>: No team won this round, skipping to the next round") // Debug Info
         globalEntity<GlobalRandomEvent>.ResetChosenEvent()
-        SwitchPhase(EPhase.EndCombat)
+        if CheckWinningCondition() {
+            for index, player in GetAllPlayers() {
+                player<PlayerSoundManager>.StopAllLoopingSounds()
+                globalEntity<GlobalUIManager>.UnregisterAllUIs(player) // Unregister all UIs for the player
+                start globalEntity<GlobalUIManager>.CreateLastRoundHUD(GetAllTeams(), player) // Create the last round HUD for all players
+                globalEntity<GlobalSoundManager>.PlayEndMatchSound(player)            
+            }
+            WaitForMillisecond(2000)
+            SwitchPhase(EPhase.End)
+        } else {
+            var teamRanking = globalEntity<GlobalCombatManager>.teamRanking
+            globalEntity<TeamCurrentRoundData>.IncreaseBooyah()
+            WaitForNextFrame()
+            for index, team in teamRanking {
+                team<TeamFCG>.SetLastRoundPoint(globalEntity<TeamData>.GetTeamTotalPoint(team))
+                globalEntity<TeamData>.AddPointsToTeam(team, team<TeamCurrentRoundData>.GetKillThisRound(), index + 1)
+            }
+            start globalEntity<GlobalUIManager>.UpdateFullScoreBoardWinTeam(nil);
+            SwitchPhase(EPhase.EndCombat)
+        }
     }
 
     // =========== UTILS FUNCTIONS ================
@@ -332,7 +356,7 @@ graph GlobalGameManager {
     */
     async func MatchEndHandler(winningTeam entity<Team>){
         isMatchEnded = true
-        LogInfo("<GlobalGameManager.fcg>: Team " + winningTeam<Entity> + " has won the game!") // Debug Info
+        // LogInfo("<GlobalGameManager.fcg>: Team " + winningTeam<Entity> + " has won the game!") // Debug Info
         for index, player in GetAllPlayers() {
             globalEntity<GlobalUIManager>.UnregisterAllUIs(player) // Unregister all UIs for the player
             start globalEntity<GlobalUIManager>.CreateLastRoundHUD(List<entity<Team>>{winningTeam}, player) // Create the last round HUD for all players

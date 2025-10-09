@@ -17,7 +17,7 @@ graph GlobalCurrencyManager {
     event OnPlayerJoin(player entity<Player>) {
         globalEntity<PlayersWallets>.RegisterWallet(player) // Register a wallet for the player when they join
         if (globalEntity<PlayersWallets>.GetWallet(player) != nil) {
-            LogInfo("<GlobalCurrencyManager>: Player wallet registered successfully.")
+            // LogInfo("<GlobalCurrencyManager>: Player wallet registered successfully.")
         }
         globalEntity<PlayersWallets>.ChangeWalletMoney(player, 2000) // Give the player an initial amount of currency
     }
@@ -28,7 +28,7 @@ graph GlobalCurrencyManager {
     - For losing team, reward each teammate with 1500
     */
     event CombatEnd(winningTeam entity<Team>) {
-        LogInfo("<GlobalCurrencyManager.fcg>: Combat ended, rewarding players") // Debug Info
+        // LogInfo("<GlobalCurrencyManager.fcg>: Combat ended, rewarding players") // Debug Info
         for index, player in winningTeam<Team>.AllTeammates {
             if (globalEntity<PlayersWallets>.GetWallet(player) != nil) {
                 globalEntity<PlayersWallets>.ChangeWalletMoney(player, 2000) // Reward each teammate with 2000 at the end of the round

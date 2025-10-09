@@ -44,7 +44,7 @@ graph TargetAndCombatTimer {
             DestroyCustomUI(mainCustomUIDict[player]) // Destroy the player's timer UI
             Remove(mainCustomUIDict, player) // Remove the player's main custom UI from the map
         }
-        LogError("Unregistered game info for player: " + player<Player>.NickName)
+        // LogError("Unregistered game info for player: " + player<Player>.NickName)
     }
     /*
     Register the player's round stage UI.
@@ -64,7 +64,7 @@ graph TargetAndCombatTimer {
                 stageTextWidget = GetWidgetFromCustomUI(player, mainCustomUIDict[player], EResUIGameInfo.RoundStageText as CustomUIWidgetID)
                 stageTextWidget<UIWidgetLabel>.Content = LocString{"ROUND_INFO", List<string>{stageName}}
             } else {
-                LogError("Player does not have a combat stage UI registered.")
+                // LogError("Player does not have a combat stage UI registered.")
             }
         }
     }

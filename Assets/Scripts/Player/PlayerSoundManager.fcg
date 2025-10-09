@@ -1,0 +1,45 @@
+import "StdLibrary.fcc" as StdLib
+import "EditorGenLib.fcc" as EditorLib
+import "Playable.fcc" as Playable
+import "Animation.fcc" as Animation
+
+graph PlayerSoundManager {
+    isPlayingHeartBeatSound bool = false
+    hearbeatSound entity<SoundEffect>
+    func PlayLastRoundSound() {
+        NotifyPlaySoundV2(thisEntity as entity<Player>, EResSound.LAST_ROUND_SFX as AudioID, 1.0) // Play the last round sound effect
+    }
+
+    func PlayRoundStartSound() {
+        NotifyPlaySoundV2(thisEntity as entity<Player>, EResSound.ROUND_START_SFX as AudioID, 1.0) // Play the round start sound effect
+    }
+
+    func PlayHeartBeatSound() {
+        CreateSound(out var sound, thisEntity as entity<Player>, EResSound.HEART_BEAT_SFX as SoundEffectType, LoopType.Loop, true)
+        hearbeatSound = sound          
+    }
+
+    func PlayEventSound() {
+        NotifyPlaySoundV2(thisEntity as entity<Player>, EResSound.EVENT_SFX as AudioID, 1.0) // Play the event sound effect
+    }
+
+    func StopHeartBeatSound() {
+        Destroy(hearbeatSound)
+        hearbeatSound = nil
+    }
+
+    func StopAllLoopingSounds() {
+        if hearbeatSound != nil {
+            Destroy(hearbeatSound)
+            hearbeatSound = nil
+        }
+    }
+
+    func PlayWinRoundSound() {
+        NotifyPlaySoundV2(thisEntity as entity<Player>, EResSound.WIN_ROUND_SFX as AudioID, 1.0) // Play the win round sound effect
+    }
+
+    func PlayLoseRoundSound() {
+        NotifyPlaySoundV2(thisEntity as entity<Player>, EResSound.LOSE_ROUND_SFX as AudioID, 1.0) // Play the lose round sound effect
+    }
+}

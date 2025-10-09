@@ -57,7 +57,7 @@ graph PlayerData {
         if (Map.ContainKey(playerDataDict, player)) {
             return playerDataDict[player]
         }
-        LogError("<PlayerData.fcg>: Player not found " + player<Player>.NickName)
+        // LogError("<PlayerData.fcg>: Player not found " + player<Player>.NickName)
         return List<int>{0, 0, 0} // Return default values if player not found
     }
 

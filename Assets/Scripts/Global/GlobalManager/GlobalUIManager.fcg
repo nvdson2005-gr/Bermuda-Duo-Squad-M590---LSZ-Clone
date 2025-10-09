@@ -34,10 +34,11 @@ import "../GlobalData/GlobalConfig.fcg" as GlobalConfig
 import "../../Team/TeamCurrentRoundData.fcg" as TeamCurrentRoundData
 import "../../Team/Team.fcg" as TeamFCG
 import "../GlobalManager/GlobalCombatManager.fcg" as GlobalCombatManager
+import "../../Player/PlayerSoundManager.fcg" as PlayerSoundManager
 graph GlobalUIManager {
     fullScoreBoardUIDict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their full scoreboard UIs when combat ends
     miniScoreBoardUIdict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their mini scoreboard UIs
-    tooltipUIDict Map<entity<Player>, entity<BuiltInUI>> // Map to associate players with their tooltip UIs
+    // tooltipUIDict Map<entity<Player>, entity<BuiltInUI>> // Map to associate players with their tooltip UIs
     roundInfoUIDitct Map<entity<Player>, entity<UISimpleRoundStartBanner>> // Map to associate players with their round info UIs
     voteUIDict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their vote UIs
     eventUIDict Map<entity<Player>, entity<CustomUI>> // Map to associate players with their event UIs
@@ -48,7 +49,7 @@ graph GlobalUIManager {
         voteUIDict = Map<entity<Player>, entity<CustomUI>>{} // Initialize the map of players' vote UIs at the start of the game
         miniScoreBoardUIdict = Map<entity<Player>, entity<CustomUI>>{} // Initialize the map of players' mini scoreboards at the start of the game
         fullScoreBoardUIDict = Map<entity<Player>, entity<CustomUI>>{} // Initialize the map of players' full scoreboards at the start of the game
-        tooltipUIDict = Map<entity<Player>, entity<UISimpleRoundStartBanner>>{} // Initialize the map of players' tooltip UIs at the start of the game
+        // tooltipUIDict = Map<entity<Player>, entity<UISimpleRoundStartBanner>>{} // Initialize the map of players' tooltip UIs at the start of the game
         roundInfoUIDitct = Map<entity<Player>, entity<UISimpleRoundStartBanner>>{} // Initialize the map of players' round info UIs at the start of the game
     }
 
@@ -102,10 +103,10 @@ graph GlobalUIManager {
             eventUIDict[player]<CustomUI>.IsVisible = false // Set the event UI to be invisible initially
             return true
         } else {
-            LogWarning("<GlobalUIManager.fcg>: Event UI already registered for player: " + player<Entity>.Name) // Warning Info
+            // LogWarning("<GlobalUIManager.fcg>: Event UI already registered for player: " + player<Entity>.Name) // Warning Info
             return false // Return false to indicate the operation was unsuccessful
         }
-        LogError("<GlobalUIManager.fcg>: Event UI not registered for player: " + player<Entity>.Name) // Error Info
+        // LogError("<GlobalUIManager.fcg>: Event UI not registered for player: " + player<Entity>.Name) // Error Info
         return false
     }
 
@@ -120,7 +121,7 @@ graph GlobalUIManager {
             Map.Remove(eventUIDict, player) // Remove the event UI from the map
             return true
         }
-        LogError("<GlobalUIManager.fcg>: Event UI not unregistered for player: " + player<Entity>.Name) // Error Info
+        // LogError("<GlobalUIManager.fcg>: Event UI not unregistered for player: " + player<Entity>.Name) // Error Info
         return false
     }
 
@@ -183,7 +184,7 @@ graph GlobalUIManager {
                 aliveWidget = GetWidgetFromCustomUI(player, miniScoreBoard, EResUIMiniScoreBoardUI.Team4AlivesLayout as CustomUIWidgetID)
             }
             if(w== nil) {
-                LogError("<GlobalUIManager.fcg>: Failed to get widget for player: " + player<Entity>.Name) // Error Info
+                // LogError("<GlobalUIManager.fcg>: Failed to get widget for player: " + player<Entity>.Name) // Error Info
                 return false;
             }
             var aliveWidgetList = GetChildren(aliveWidget)
@@ -197,7 +198,7 @@ graph GlobalUIManager {
             // LogInfo("<GlobalUIManager.fcg>: Registered mini scoreboard for player: " + player<Entity>.Name) // Debug Info
             return true // Return true to indicate the operation was successful
         } else {
-            LogWarning("<GlobalUIManager.fcg>: Mini scoreboard already registered for player: " + player<Entity>.Name) // Warning Info
+            // LogWarning("<GlobalUIManager.fcg>: Mini scoreboard already registered for player: " + player<Entity>.Name) // Warning Info
             return false // Return false to indicate the operation was unsuccessful
         }
     }
@@ -222,6 +223,9 @@ graph GlobalUIManager {
 
     // Update mini scoreboard, including team points and current alives in each team
     func UpdateMiniScoreboard(){
+        if globalEntity<Global>.CurrentPhaseIndex == EPhase.Preparation {
+            return
+        }
         for index, team in GetAllTeams() {
             var point = globalEntity<TeamData>.GetTeamTotalPoint(team)
             // var aliveCount = 0
@@ -332,7 +336,7 @@ graph GlobalUIManager {
             fullScoreBoard<CustomUI>.IsVisible = false // Initially set the full scoreboard to not visible
             return true // Return true to indicate the operation was successful
         } else {
-            LogWarning("<GlobalUIManager.fcg>: Full scoreboard already registered for player: " + player<Entity>.Name) // Warning Info
+            // LogWarning("<GlobalUIManager.fcg>: Full scoreboard already registered for player: " + player<Entity>.Name) // Warning Info
             return false // Return false to indicate the operation was unsuccessful
         }
     }
@@ -609,6 +613,11 @@ graph GlobalUIManager {
     async func CreateEndRoundHUD(winningTeam entity<Team>){
         var endRoundUIList = List<entity<UIRoundInfoBanner>>{}
         for index, player in GetAllPlayers(){
+            if List.Contain(winningTeam<Team>.AllTeammates, player){
+                player<PlayerSoundManager>.PlayWinRoundSound()
+            } else {
+                player<PlayerSoundManager>.PlayLoseRoundSound()
+            }
             CreateBuiltInUI(out var createdUI, player, EResInternalHud.EndRoundInfoHud as BuiltInUIType)
             createdUI<UIRoundInfoBanner>.Title = LocString{"ROUND_END_SUBTITLE", List<string>{ToString(winningTeam<Team>.TeamSeq)}}
             Append(endRoundUIList, createdUI as entity<UIRoundInfoBanner>) // Add the created UI to the list
@@ -657,7 +666,7 @@ graph GlobalUIManager {
             } else if team<Team>.TeamSeq == 4 {
                 Append(teamNameList, LocString{"TEAM_4", List<string>{}})
             } else {
-                LogError("Team sequence exceeds expected range") // Error Info
+                // LogError("Team sequence exceeds expected range") // Error Info
             }
         }
         createdUI2<UIMultiTeamResultPanel>.MainScoreList = pointList
@@ -698,65 +707,65 @@ graph GlobalUIManager {
         createdUI2<UIMultiTeamResultPanel>.Scores4 = dmgList
     }
 
-    // ==================================== TOOLTIP UI ====================================
+    // ==================================== TOOLTIP UI (MOVED TO PlayerUI.fcg) ====================================
     /*
     Registers a tooltip UI for a player.
     @param player: The player entity to register the tooltip UI for
     @return: True if the registration was successful, false otherwise
     */
-    func RegisterTooltipUI(player entity<Player>) bool {
-        if (tooltipUIDict == nil) {
-            tooltipUIDict = Map<entity<Player>, entity<BuiltInUI>>{} // Initialize the map if it is null
-        }
-        if (!Map.ContainKey(tooltipUIDict, player)) {
-            CreateBuiltInUI(out var tooltipUI, player, EResInternalHud.TipHud as BuiltInUIType) // Create a new tooltip UI for the player
-            tooltipUI<UITweenTip>.IsVisible = false // Set the tooltip UI to be invisible initially
-            tooltipUI<UITweenTip>.TipsType = 1 // Set the type of the tooltip
-            tooltipUI<UITweenTip>.Description = LocString{"SCBOARD_TOOLTIP", List<string>{}} // Use localization for the tooltip description
-            tooltipUIDict[player] = tooltipUI // Associate the player with their tooltip UI
-            return true // Return true to indicate the operation was successful
-        } else {
-            LogWarning("<GlobalUIManager.fcg>: Tooltip UI already registered for player: " + player<Entity>.Name) // Warning Info
-            return false // Return false to indicate the operation was unsuccessful
-        }
-    }
+    // func RegisterTooltipUI(player entity<Player>) bool {
+    //     if (tooltipUIDict == nil) {
+    //         tooltipUIDict = Map<entity<Player>, entity<BuiltInUI>>{} // Initialize the map if it is null
+    //     }
+    //     if (!Map.ContainKey(tooltipUIDict, player)) {
+    //         CreateBuiltInUI(out var tooltipUI, player, EResInternalHud.TipHud as BuiltInUIType) // Create a new tooltip UI for the player
+    //         tooltipUI<UITweenTip>.IsVisible = false // Set the tooltip UI to be invisible initially
+    //         tooltipUI<UITweenTip>.TipsType = 1 // Set the type of the tooltip
+    //         tooltipUI<UITweenTip>.Description = LocString{"SCBOARD_TOOLTIP", List<string>{}} // Use localization for the tooltip description
+    //         tooltipUIDict[player] = tooltipUI // Associate the player with their tooltip UI
+    //         return true // Return true to indicate the operation was successful
+    //     } else {
+    //         // LogWarning("<GlobalUIManager.fcg>: Tooltip UI already registered for player: " + player<Entity>.Name) // Warning Info
+    //         return false // Return false to indicate the operation was unsuccessful
+    //     }
+    // }
 
     /*
     Enables tooltips for all players.
     */
-    async func EnableTooltips(){
-        for index, player in GetAllPlayers() {
-            if (Map.ContainKey(tooltipUIDict, player)) {
-                var tooltipUI = tooltipUIDict[player]
-                tooltipUI<UITweenTip>.IsVisible = true // Set the tooltip UI to be visible
-                // globalEntity<GlobalSoundManager>.PlayTooltipSfx(player)
-            } else {
-                RegisterTooltipUI(player);
-            }
-        }
-        WaitForMillisecond(5000)
-        for player, tooltip in tooltipUIDict {
-            if (tooltip<UITweenTip>.IsVisible == true) {
-                tooltip<UITweenTip>.IsVisible = false// Set the tooltip UI to be visible
-            }
-        }
-    }
+    // async func EnableTooltips(){
+    //     for index, player in GetAllPlayers() {
+    //         if (Map.ContainKey(tooltipUIDict, player)) {
+    //             var tooltipUI = tooltipUIDict[player]
+    //             tooltipUI<UITweenTip>.IsVisible = true // Set the tooltip UI to be visible
+    //             // globalEntity<GlobalSoundManager>.PlayTooltipSfx(player)
+    //         } else {
+    //             RegisterTooltipUI(player);
+    //         }
+    //     }
+    //     WaitForMillisecond(5000)
+    //     for player, tooltip in tooltipUIDict {
+    //         if (tooltip<UITweenTip>.IsVisible == true) {
+    //             tooltip<UITweenTip>.IsVisible = false// Set the tooltip UI to be visible
+    //         }
+    //     }
+    // }
 
     /*
     Enables tooltip for specific player.
     */
-    async func EnableTooltipForPlayer(player entity<Player>){
-        if(Map.ContainKey(tooltipUIDict, player)){
-            var tooltipUI = tooltipUIDict[player]
-            tooltipUI<UITweenTip>.IsVisible = true
-        } else {
-            RegisterTooltipUI(player);
-        }
-        WaitForMillisecond(5000)
-        if(tooltipUIDict[player]<UITweenTip>.IsVisible == true) {
-            tooltipUIDict[player]<UITweenTip>.IsVisible = false
-        }
-    }
+    // async func EnableTooltipForPlayer(player entity<Player>){
+    //     if(Map.ContainKey(tooltipUIDict, player)){
+    //         var tooltipUI = tooltipUIDict[player]
+    //         tooltipUI<UITweenTip>.IsVisible = true
+    //     } else {
+    //         RegisterTooltipUI(player);
+    //     }
+    //     WaitForMillisecond(5000)
+    //     if(tooltipUIDict[player]<UITweenTip>.IsVisible == true) {
+    //         tooltipUIDict[player]<UITweenTip>.IsVisible = false
+    //     }
+    // }
 
     // ==================================== UNREGISTER ALL UIS ====================================
     /* Unregister player from all registered UIs
@@ -766,10 +775,11 @@ graph GlobalUIManager {
     func UnregisterAllUIs(player entity<Player>){
         globalEntity<TargetAndCombatTimer>.UnregisterGameInfo(player)
         globalEntity<TargetAndCombatTimer>.UnregisterGameInfo(player)
-        if (Map.ContainKey(tooltipUIDict, player)) {
-            DestroyBuiltInUI(tooltipUIDict[player]) // Destroy the tooltip UI
-            Map.Remove(tooltipUIDict, player) // Remove the tooltip UI from the dictionary after destroying it
-        }
+        // Moved to PlayerUI.fcg so commented out
+        // if (Map.ContainKey(tooltipUIDict, player)) {
+        //     DestroyBuiltInUI(tooltipUIDict[player]) // Destroy the tooltip UI
+        //     Map.Remove(tooltipUIDict, player) // Remove the tooltip UI from the dictionary after destroying it
+        // }
         if (Map.ContainKey(fullScoreBoardUIDict, player)) {
             DestroyCustomUI(fullScoreBoardUIDict[player]) // Destroy the full scoreboard UI
             Map.Remove(fullScoreBoardUIDict, player) // Remove the full scoreboard UI from the dictionary after destroying it
@@ -789,7 +799,7 @@ graph GlobalUIManager {
     }
 
     // ==================================== 5 SECONDS COUNT DOWN HUD ====================================
-    /* Create a 5 seconds countdown HUD for the player
+    /* Create a 5 seconds COUNTDOWN HUD for the player
     This function creates a countdown HUD that is displayed for 5 seconds before the game starts.
     @param player The player entity to create the HUD for
     @param beginPhaseDuration The duration of the beginning phase
@@ -834,10 +844,10 @@ graph GlobalUIManager {
             voteUIDict[player]<CustomUI>.IsVisible = false // Set the vote UI to be invisible initially
             return true // Return true to indicate the operation was successful
         } else {
-            LogWarning("<GlobalUIManager.fcg>: Vote UI already registered for player: " + player<Entity>.Name) // Warning Info
+            // LogWarning("<GlobalUIManager.fcg>: Vote UI already registered for player: " + player<Entity>.Name) // Warning Info
             return false // Return false to indicate the operation was unsuccessful
         }
-        LogError("<GlobalUIManager.fcg>: Vote UI not registered for player: " + player<Entity>.Name) // Error Info
+        // LogError("<GlobalUIManager.fcg>: Vote UI not registered for player: " + player<Entity>.Name) // Error Info
         return false
     }
 
@@ -907,7 +917,7 @@ graph GlobalUIManager {
             Map.Remove(voteUIDict, player) // Remove the vote UI from the dictionary after destroying it
             return true // Return true to indicate the operation was successful
         } else {
-            LogWarning("<GlobalUIManager.fcg>: Vote UI not registered for player: " + player<Entity>.Name) // Warning Info
+            // LogWarning("<GlobalUIManager.fcg>: Vote UI not registered for player: " + player<Entity>.Name) // Warning Info
             return false // Return false to indicate the operation was unsuccessful
         }
     }
@@ -921,7 +931,7 @@ graph GlobalUIManager {
         if (Map.ContainKey(voteUIDict, player)) {
             voteUIDict[player]<CustomUI>.IsVisible = isVisible // Set the visibility of the vote UI
         } else {
-            LogWarning("<GlobalUIManager.fcg>: Vote UI not registered for player: " + player<Entity>.Name) // Warning Info
+            // LogWarning("<GlobalUIManager.fcg>: Vote UI not registered for player: " + player<Entity>.Name) // Warning Info
         }
     }
 

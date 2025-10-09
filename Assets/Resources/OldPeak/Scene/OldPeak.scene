@@ -150,8 +150,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -298,8 +296,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -448,8 +444,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -594,8 +588,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -742,8 +734,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -890,8 +880,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -1040,8 +1028,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -1186,8 +1172,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -1334,8 +1318,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -1482,8 +1464,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -1630,8 +1610,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -1778,8 +1756,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -1926,8 +1902,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -2074,8 +2048,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -2222,8 +2194,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -2370,8 +2340,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -2518,8 +2486,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -2666,8 +2632,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -2814,8 +2778,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -2962,8 +2924,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -3110,8 +3070,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -3258,8 +3216,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -3408,8 +3364,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
-                4,
                 4
               ],
               "isTrigger": false,
@@ -3650,11 +3604,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -3796,11 +3746,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -3944,11 +3890,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -4092,11 +4034,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -4240,11 +4178,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -4388,11 +4322,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -4536,11 +4466,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -4684,11 +4610,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -4832,11 +4754,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -4980,11 +4898,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -5128,11 +5042,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -5276,11 +5186,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -5424,11 +5330,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -5572,11 +5474,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -5720,11 +5618,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -5868,11 +5762,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -6016,11 +5906,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -6164,11 +6050,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -6312,11 +6194,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -6460,11 +6338,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -6608,11 +6482,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -6756,11 +6626,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -6904,11 +6770,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -7052,11 +6914,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -7200,11 +7058,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -7348,11 +7202,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -7496,11 +7346,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -7644,11 +7490,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -7794,11 +7636,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -7942,11 +7780,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -8090,10 +7924,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -8234,10 +8065,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -8380,10 +8208,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -8526,10 +8351,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -8672,10 +8494,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -8818,10 +8637,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -8964,10 +8780,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -9110,10 +8923,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -9256,10 +9066,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -9402,11 +9209,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -9647,11 +9450,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -9795,11 +9594,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -9943,11 +9738,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -10091,11 +9882,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -10239,11 +10026,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -10385,11 +10168,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -10535,11 +10314,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -10683,11 +10458,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -10831,11 +10602,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -10979,11 +10746,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -11127,11 +10890,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -11275,11 +11034,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -11423,11 +11178,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -11569,11 +11320,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -11717,11 +11464,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -11865,11 +11608,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -12013,11 +11752,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -12161,11 +11896,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -12309,11 +12040,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -12457,11 +12184,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -12607,11 +12330,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -12753,11 +12472,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -12901,11 +12616,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -13049,11 +12760,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -13197,11 +12904,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -13345,11 +13048,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -13493,11 +13192,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -13641,11 +13336,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -13791,11 +13482,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -13939,10 +13626,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -14085,11 +13769,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -14232,11 +13912,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -14377,11 +14053,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -14520,7 +14192,6 @@
           "modelOptimization": 0,
           "streamingLayer": "",
           "attributes": [
-            2,
             4
           ],
           "isTrigger": false,
@@ -14621,10 +14292,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -14769,10 +14437,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -14913,10 +14578,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -15059,10 +14721,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -15205,10 +14864,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -15351,10 +15007,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -15497,10 +15150,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -15643,10 +15293,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -15789,10 +15436,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -15935,10 +15579,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -16081,10 +15722,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -16227,10 +15865,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -16375,11 +16010,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -16522,10 +16153,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -16666,10 +16294,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -16907,10 +16532,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -17053,10 +16675,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -17199,10 +16818,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -17347,10 +16963,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -17491,11 +17104,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -17639,11 +17248,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -17787,10 +17392,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -17933,10 +17535,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -18079,10 +17678,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -18225,10 +17821,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -18371,10 +17964,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -18517,10 +18107,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -18663,10 +18250,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -18809,10 +18393,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -18955,10 +18536,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -19101,10 +18679,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -19247,10 +18822,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -19393,10 +18965,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -19539,10 +19108,7 @@
               "VisibilityLayer": 0,
               "modelOptimization": 0,
               "streamingLayer": "",
-              "attributes": [
-                2,
-                4
-              ],
+              "attributes": [],
               "isTrigger": false,
               "collidable": true,
               "physicalLayer": 0,
@@ -19781,7 +19347,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
                 4
               ],
               "isTrigger": false,
@@ -19927,7 +19492,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
                 4
               ],
               "isTrigger": false,
@@ -20081,7 +19645,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
                 4
               ],
               "isTrigger": false,
@@ -20235,7 +19798,6 @@
               "modelOptimization": 0,
               "streamingLayer": "",
               "attributes": [
-                2,
                 4
               ],
               "isTrigger": false,
@@ -43326,9 +42888,9 @@
             "valueTag": "unlockedValue"
           },
           "position": {
-            "x": -3.11555552482605,
+            "x": -3.115999937057495,
             "y": -12.125,
-            "z": -42.79015350341797
+            "z": -40.80266571044922
           },
           "scale": {
             "x": 8,
@@ -43472,9 +43034,9 @@
             "valueTag": "unlockedValue"
           },
           "position": {
-            "x": -39.22297286987305,
+            "x": -39.222999572753906,
             "y": -12.12600040435791,
-            "z": 56.409271240234375
+            "z": 51.45518493652344
           },
           "scale": {
             "x": 5,
@@ -45009,402 +44571,6 @@
             "type": "SceneEditEntity",
             "resourceId": "Primitive/Empty"
           },
-          "_entityId": "GVwT08Qg",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "position": {
-            "x": 53.65599822998047,
-            "y": 0.0989999771118164,
-            "z": 10.859999656677246
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "aoiSetting": 0,
-          "initialTypes": {},
-          "componentList": [],
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "tempIndex": 23,
-          "itemID": 129,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "CarVehicle": {},
-            "Car": {},
-            "Vehicle": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "ResetableEntity": {},
-            "BuffableEntity": {},
-            "Collider": {},
-            "FightingEntity": {},
-            "AimableEntity": {}
-          },
-          "_entityName": "Sports Car",
-          "propsData": {
-            "resetEveryRound": true,
-            "GearShiftingDelay": 0.05,
-            "EngineTorque": 2000,
-            "BrakeTorque": 2000,
-            "HighSpeedSteerAngle": 20,
-            "HighSpeedSteerAngleAtspeed": 40,
-            "MaxSpeed": 50,
-            "IdleBrakeInput": 0.375,
-            "CrashMessFactor": 1,
-            "CrashMaxSpeed": 60,
-            "CrashMinDamage": 20,
-            "CrashMaxDamage": 150,
-            "ExplodeDelay": 5,
-            "ExplodeRange": 2.5,
-            "ExplodeDamage": 100,
-            "BurnTime": 5,
-            "BurnDamage": 10,
-            "BurnInterval": 5,
-            "MaxHP": 800,
-            "SkinID": null,
-            "vehicleSkinResPath": "",
-            "OverloadByPlayerSkin": false
-          }
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "uYlAdQT3",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "position": {
-            "x": -34.279998779296875,
-            "y": 0.3940000534057617,
-            "z": -50.36199951171875
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "aoiSetting": 0,
-          "initialTypes": {},
-          "componentList": [],
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "tempIndex": 24,
-          "itemID": 34,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "CarVehicle": {},
-            "Car": {},
-            "Vehicle": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "ResetableEntity": {},
-            "BuffableEntity": {},
-            "Collider": {},
-            "FightingEntity": {},
-            "AimableEntity": {}
-          },
-          "_entityName": "Jeep",
-          "propsData": {
-            "resetEveryRound": true,
-            "GearShiftingDelay": 0.05,
-            "EngineTorque": 2000,
-            "BrakeTorque": 2000,
-            "HighSpeedSteerAngle": 20,
-            "HighSpeedSteerAngleAtspeed": 40,
-            "MaxSpeed": 50,
-            "IdleBrakeInput": 0.375,
-            "CrashMessFactor": 1,
-            "CrashMaxSpeed": 60,
-            "CrashMinDamage": 20,
-            "CrashMaxDamage": 150,
-            "ExplodeDelay": 5,
-            "ExplodeRange": 2.5,
-            "ExplodeDamage": 100,
-            "BurnTime": 5,
-            "BurnDamage": 10,
-            "BurnInterval": 5,
-            "MaxHP": 800,
-            "SkinID": null,
-            "vehicleSkinResPath": "",
-            "OverloadByPlayerSkin": false
-          }
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "5B5U2jUY",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "position": {
-            "x": -38.99700164794922,
-            "y": 0,
-            "z": 51.125999450683594
-          },
-          "scale": {
-            "x": 1.0000004768371582,
-            "y": 1,
-            "z": 1.0000004768371582
-          },
-          "rotation": {
-            "x": 0,
-            "y": 204,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "aoiSetting": 0,
-          "initialTypes": {},
-          "componentList": [],
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "tempIndex": 25,
-          "itemID": 129,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "CarVehicle": {},
-            "Car": {},
-            "Vehicle": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "ResetableEntity": {},
-            "BuffableEntity": {},
-            "Collider": {},
-            "FightingEntity": {},
-            "AimableEntity": {}
-          },
-          "_entityName": "Sports Car (1)",
-          "propsData": {
-            "resetEveryRound": true,
-            "GearShiftingDelay": 0.05,
-            "EngineTorque": 2000,
-            "BrakeTorque": 2000,
-            "HighSpeedSteerAngle": 20,
-            "HighSpeedSteerAngleAtspeed": 40,
-            "MaxSpeed": 50,
-            "IdleBrakeInput": 0.375,
-            "CrashMessFactor": 1,
-            "CrashMaxSpeed": 60,
-            "CrashMinDamage": 20,
-            "CrashMaxDamage": 150,
-            "ExplodeDelay": 5,
-            "ExplodeRange": 2.5,
-            "ExplodeDamage": 100,
-            "BurnTime": 5,
-            "BurnDamage": 10,
-            "BurnInterval": 5,
-            "MaxHP": 800,
-            "SkinID": null,
-            "vehicleSkinResPath": "",
-            "OverloadByPlayerSkin": false
-          }
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "wWcDzSJL",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "position": {
-            "x": -12.265799522399902,
-            "y": 0,
-            "z": 14.474394798278809
-          },
-          "scale": {
-            "x": 1.0000004768371582,
-            "y": 1,
-            "z": 1.0000004768371582
-          },
-          "rotation": {
-            "x": 0,
-            "y": 195,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "aoiSetting": 0,
-          "initialTypes": {},
-          "componentList": [],
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "tempIndex": 26,
-          "itemID": 132,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "CarVehicle": {},
-            "Car": {},
-            "Vehicle": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "ResetableEntity": {},
-            "BuffableEntity": {},
-            "Collider": {},
-            "FightingEntity": {},
-            "AimableEntity": {}
-          },
-          "_entityName": "Pickup Truck",
-          "propsData": {
-            "resetEveryRound": true,
-            "GearShiftingDelay": 0.05,
-            "EngineTorque": 2000,
-            "BrakeTorque": 2000,
-            "HighSpeedSteerAngle": 20,
-            "HighSpeedSteerAngleAtspeed": 40,
-            "MaxSpeed": 50,
-            "IdleBrakeInput": 0.375,
-            "CrashMessFactor": 1,
-            "CrashMaxSpeed": 60,
-            "CrashMinDamage": 20,
-            "CrashMaxDamage": 150,
-            "ExplodeDelay": 5,
-            "ExplodeRange": 2.5,
-            "ExplodeDamage": 100,
-            "BurnTime": 5,
-            "BurnDamage": 10,
-            "BurnInterval": 5,
-            "MaxHP": 800,
-            "SkinID": null,
-            "vehicleSkinResPath": "",
-            "OverloadByPlayerSkin": false
-          }
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
           "_entityId": "qsgzNSrh",
           "children": [],
           "prefabVariant": null,
@@ -45519,7 +44685,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 29,
+          "tempIndex": 28,
           "itemID": 278,
           "seParent": null,
           "ecaScripts": [
@@ -45584,7 +44750,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 30,
+          "tempIndex": 29,
           "itemID": 278,
           "seParent": null,
           "ecaScripts": [
@@ -45653,7 +44819,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 31,
+          "tempIndex": 30,
           "itemID": 4,
           "seParent": null,
           "ecaScripts": [
@@ -45720,7 +44886,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 32,
+          "tempIndex": 31,
           "itemID": 8,
           "seParent": null,
           "ecaScripts": [
@@ -45787,7 +44953,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 33,
+          "tempIndex": 32,
           "itemID": 193,
           "seParent": null,
           "ecaScripts": [
@@ -45854,7 +45020,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 34,
+          "tempIndex": 33,
           "itemID": 43,
           "seParent": null,
           "ecaScripts": [
@@ -45921,7 +45087,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 35,
+          "tempIndex": 34,
           "itemID": 6,
           "seParent": null,
           "ecaScripts": [
@@ -45988,7 +45154,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 36,
+          "tempIndex": 35,
           "itemID": 24,
           "seParent": null,
           "ecaScripts": [
@@ -46055,7 +45221,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 37,
+          "tempIndex": 36,
           "itemID": 95,
           "seParent": null,
           "ecaScripts": [
@@ -46111,9 +45277,7 @@
           "VisibilityLayer": 0,
           "modelOptimization": 0,
           "streamingLayer": "",
-          "attributes": [
-            4
-          ],
+          "attributes": [],
           "isTrigger": false,
           "collidable": true,
           "physicalLayer": 0,
@@ -46124,7 +45288,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 38,
+          "tempIndex": 37,
           "itemID": 275,
           "seParent": null,
           "ecaScripts": [
@@ -46180,9 +45344,7 @@
           "VisibilityLayer": 0,
           "modelOptimization": 0,
           "streamingLayer": "",
-          "attributes": [
-            4
-          ],
+          "attributes": [],
           "isTrigger": false,
           "collidable": true,
           "physicalLayer": 0,
@@ -46193,7 +45355,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 39,
+          "tempIndex": 38,
           "itemID": 6,
           "seParent": null,
           "ecaScripts": [
@@ -46249,9 +45411,7 @@
           "VisibilityLayer": 0,
           "modelOptimization": 0,
           "streamingLayer": "",
-          "attributes": [
-            4
-          ],
+          "attributes": [],
           "isTrigger": false,
           "collidable": true,
           "physicalLayer": 0,
@@ -46262,7 +45422,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 40,
+          "tempIndex": 39,
           "itemID": 24,
           "seParent": null,
           "ecaScripts": [
@@ -46277,6 +45437,144 @@
             "Collider": {}
           },
           "_entityName": "Rugged Container"
+        },
+        {
+          "_tag": {
+            "type": "SceneEditEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "ve6QDmAl",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "position": {
+            "x": -69.40299987792969,
+            "y": 0,
+            "z": -21.045000076293945
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 34,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "tempIndex": 129,
+          "itemID": 9,
+          "seParent": null,
+          "ecaScripts": [
+            null
+          ],
+          "ecaProps": {
+            "DummyLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {},
+            "Collider": {}
+          },
+          "_entityName": "Container C"
+        },
+        {
+          "_tag": {
+            "type": "SceneEditEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "0ahJFZ6u",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "position": {
+            "x": -64.31500244140625,
+            "y": 0,
+            "z": -27.889999389648438
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 295,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "tempIndex": 130,
+          "itemID": 193,
+          "seParent": null,
+          "ecaScripts": [
+            null
+          ],
+          "ecaProps": {
+            "DummyLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {},
+            "Collider": {}
+          },
+          "_entityName": "Damaged Truck"
         }
       ],
       "prefabVariant": null,
@@ -46454,7 +45752,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 41,
+          "tempIndex": 40,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46524,7 +45822,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 42,
+          "tempIndex": 41,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46598,7 +45896,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 43,
+          "tempIndex": 42,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46668,7 +45966,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 44,
+          "tempIndex": 43,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46742,7 +46040,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 45,
+          "tempIndex": 44,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46814,7 +46112,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 46,
+          "tempIndex": 45,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46886,7 +46184,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 47,
+          "tempIndex": 46,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46958,7 +46256,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 48,
+          "tempIndex": 47,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47030,7 +46328,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 49,
+          "tempIndex": 48,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47102,7 +46400,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 50,
+          "tempIndex": 49,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47174,7 +46472,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 51,
+          "tempIndex": 50,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47246,7 +46544,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 52,
+          "tempIndex": 51,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47318,7 +46616,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 53,
+          "tempIndex": 52,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47390,7 +46688,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 54,
+          "tempIndex": 53,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47462,7 +46760,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 55,
+          "tempIndex": 54,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47534,7 +46832,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 56,
+          "tempIndex": 55,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47606,7 +46904,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 57,
+          "tempIndex": 56,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47678,7 +46976,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 58,
+          "tempIndex": 57,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47750,7 +47048,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 59,
+          "tempIndex": 58,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47822,7 +47120,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 60,
+          "tempIndex": 59,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47894,7 +47192,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 61,
+          "tempIndex": 60,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47966,7 +47264,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 62,
+          "tempIndex": 61,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48038,7 +47336,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 63,
+          "tempIndex": 62,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48110,7 +47408,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 64,
+          "tempIndex": 63,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48180,7 +47478,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 65,
+          "tempIndex": 64,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48252,7 +47550,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 66,
+          "tempIndex": 65,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48326,7 +47624,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 67,
+          "tempIndex": 66,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48396,7 +47694,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 68,
+          "tempIndex": 67,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48468,7 +47766,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 69,
+          "tempIndex": 68,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48542,7 +47840,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 70,
+          "tempIndex": 69,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48612,7 +47910,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 71,
+          "tempIndex": 70,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48686,7 +47984,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 72,
+          "tempIndex": 71,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48756,7 +48054,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 73,
+          "tempIndex": 72,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48830,7 +48128,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 74,
+          "tempIndex": 73,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48900,7 +48198,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 75,
+          "tempIndex": 74,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48974,7 +48272,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 76,
+          "tempIndex": 75,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49044,7 +48342,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 77,
+          "tempIndex": 76,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49118,7 +48416,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 78,
+          "tempIndex": 77,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49188,7 +48486,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 79,
+          "tempIndex": 78,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49262,7 +48560,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 80,
+          "tempIndex": 79,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49332,7 +48630,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 81,
+          "tempIndex": 80,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49406,7 +48704,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 82,
+          "tempIndex": 81,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49476,7 +48774,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 83,
+          "tempIndex": 82,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49550,7 +48848,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 84,
+          "tempIndex": 83,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49620,7 +48918,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 85,
+          "tempIndex": 84,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49694,7 +48992,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 86,
+          "tempIndex": 85,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49764,7 +49062,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 87,
+          "tempIndex": 86,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49838,7 +49136,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 88,
+          "tempIndex": 87,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49908,7 +49206,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 89,
+          "tempIndex": 88,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49982,7 +49280,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 90,
+          "tempIndex": 89,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50054,7 +49352,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 91,
+          "tempIndex": 90,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50126,7 +49424,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 92,
+          "tempIndex": 91,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50196,7 +49494,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 93,
+          "tempIndex": 92,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50270,7 +49568,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 94,
+          "tempIndex": 93,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50342,7 +49640,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 95,
+          "tempIndex": 94,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50414,7 +49712,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 96,
+          "tempIndex": 95,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50484,7 +49782,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 97,
+          "tempIndex": 96,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50558,7 +49856,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 98,
+          "tempIndex": 97,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50630,7 +49928,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 99,
+          "tempIndex": 98,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50702,7 +50000,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 100,
+          "tempIndex": 99,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50772,7 +50070,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 101,
+          "tempIndex": 100,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50846,7 +50144,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 102,
+          "tempIndex": 101,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50918,7 +50216,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 103,
+          "tempIndex": 102,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50990,7 +50288,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 104,
+          "tempIndex": 103,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51062,7 +50360,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 105,
+          "tempIndex": 104,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51107,7 +50405,7 @@
             "z": -40.77799987792969
           },
           "scale": {
-            "x": 1,
+            "x": 2,
             "y": 1,
             "z": 1
           },
@@ -51134,7 +50432,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 106,
+          "tempIndex": 105,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51177,7 +50475,7 @@
             "z": -40.77799987792969
           },
           "scale": {
-            "x": 1,
+            "x": 2,
             "y": 1,
             "z": 1
           },
@@ -51204,7 +50502,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 107,
+          "tempIndex": 106,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51251,7 +50549,7 @@
             "z": -38.749000549316406
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 2,
             "y": 1,
             "z": 1.0000004768371582
           },
@@ -51278,7 +50576,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 108,
+          "tempIndex": 107,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51321,7 +50619,7 @@
             "z": -38.749000549316406
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 2,
             "y": 1,
             "z": 1.0000004768371582
           },
@@ -51348,7 +50646,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 109,
+          "tempIndex": 108,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51395,7 +50693,7 @@
             "z": -38.983001708984375
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 2,
             "y": 1,
             "z": 1.0000004768371582
           },
@@ -51422,7 +50720,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 110,
+          "tempIndex": 109,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51465,7 +50763,7 @@
             "z": -38.983001708984375
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 2,
             "y": 1,
             "z": 1.0000004768371582
           },
@@ -51492,7 +50790,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 111,
+          "tempIndex": 110,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51566,7 +50864,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 124,
+          "tempIndex": 111,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51638,7 +50936,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 125,
+          "tempIndex": 112,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51710,7 +51008,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 126,
+          "tempIndex": 113,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51780,7 +51078,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 127,
+          "tempIndex": 114,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51854,7 +51152,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 128,
+          "tempIndex": 115,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51924,7 +51222,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 129,
+          "tempIndex": 116,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51998,7 +51296,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 130,
+          "tempIndex": 117,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52068,7 +51366,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 131,
+          "tempIndex": 118,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52142,7 +51440,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 132,
+          "tempIndex": 119,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52212,7 +51510,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 133,
+          "tempIndex": 120,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52286,7 +51584,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 134,
+          "tempIndex": 121,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52356,7 +51654,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 135,
+          "tempIndex": 122,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52430,7 +51728,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 136,
+          "tempIndex": 123,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52502,7 +51800,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 137,
+          "tempIndex": 124,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52574,7 +51872,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 138,
+          "tempIndex": 125,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52646,7 +51944,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 139,
+          "tempIndex": 126,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52750,314 +52048,6 @@
       "propsData": {},
       "entityVersion": 3,
       "_entityName": "VaultTriggers"
-    },
-    {
-      "_tag": {
-        "type": "SceneEditEntity",
-        "resourceId": "Primitive/Empty"
-      },
-      "_entityId": "OMVFEI2V",
-      "children": [],
-      "prefabVariant": null,
-      "activeValue": {
-        "selfValue": true,
-        "valueTag": "activeValue"
-      },
-      "unlockedValue": null,
-      "editorLockValue": false,
-      "editorVisibleValue": true,
-      "position": {
-        "x": -17.41808319091797,
-        "y": 0,
-        "z": -7.242706298828125
-      },
-      "scale": {
-        "x": 1,
-        "y": 1,
-        "z": 1
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "BTPath": [
-        null
-      ],
-      "visible": true,
-      "VisibilityLayer": 0,
-      "modelOptimization": 0,
-      "streamingLayer": "",
-      "attributes": [
-        2,
-        4
-      ],
-      "isTrigger": false,
-      "collidable": true,
-      "physicalLayer": 0,
-      "physicalMaterial": null,
-      "aoiSetting": 0,
-      "initialTypes": {},
-      "componentList": [],
-      "entityTagData": {
-        "tagPointers": []
-      },
-      "tempIndex": 140,
-      "itemID": 364,
-      "seParent": null,
-      "ecaScripts": [
-        null
-      ],
-      "ecaProps": {
-        "EradicateZone": {},
-        "LevelObject": {},
-        "Transform": {},
-        "Entity": {},
-        "Visibility": {},
-        "ResetableEntity": {}
-      },
-      "_entityName": "Custom Safe Zone",
-      "propsData": {
-        "StartRadius": 80,
-        "EndRadius": 10,
-        "StartTime": 0,
-        "StartShrinkTime": 5000,
-        "ShrinkTime": 30000,
-        "DamageTimeInterval": 2000,
-        "DamageValue": 10,
-        "CloseTime": 120000,
-        "resetEveryRound": true,
-        "pairEntityID": "IJ4J0tm6",
-        "EffectColor": {
-          "r": 0,
-          "g": 118,
-          "b": 255,
-          "a": 0.49
-        },
-        "groupID": 1,
-        "isEnd": false
-      }
-    },
-    {
-      "_tag": {
-        "type": "SceneEditEntity",
-        "resourceId": "Primitive/Empty"
-      },
-      "_entityId": "IJ4J0tm6",
-      "children": [],
-      "prefabVariant": null,
-      "activeValue": {
-        "selfValue": true,
-        "valueTag": "activeValue"
-      },
-      "unlockedValue": null,
-      "editorLockValue": false,
-      "editorVisibleValue": true,
-      "position": {
-        "x": -17.41808319091797,
-        "y": 0,
-        "z": -7.242706298828125
-      },
-      "scale": {
-        "x": 1,
-        "y": 1,
-        "z": 1
-      },
-      "rotation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "BTPath": [
-        null
-      ],
-      "visible": true,
-      "VisibilityLayer": 0,
-      "modelOptimization": 0,
-      "streamingLayer": "",
-      "attributes": [
-        2,
-        4
-      ],
-      "isTrigger": false,
-      "collidable": true,
-      "physicalLayer": 0,
-      "physicalMaterial": null,
-      "aoiSetting": 0,
-      "initialTypes": {},
-      "componentList": [],
-      "entityTagData": {
-        "tagPointers": []
-      },
-      "tempIndex": 141,
-      "itemID": 365,
-      "seParent": null,
-      "ecaScripts": [
-        null
-      ],
-      "ecaProps": {
-        "EradicateZone": {},
-        "LevelObject": {},
-        "Transform": {},
-        "Entity": {},
-        "Visibility": {},
-        "ResetableEntity": {}
-      },
-      "_entityName": "Safe Zone End Point",
-      "propsData": {
-        "StartRadius": 80,
-        "EndRadius": 10,
-        "StartTime": 0,
-        "StartShrinkTime": 5000,
-        "ShrinkTime": 30000,
-        "DamageTimeInterval": 2000,
-        "DamageValue": 10,
-        "CloseTime": 120000,
-        "resetEveryRound": true,
-        "pairEntityID": "OMVFEI2V",
-        "EffectColor": {
-          "r": 0,
-          "g": 118,
-          "b": 255,
-          "a": 0.49
-        },
-        "groupID": 1,
-        "isEnd": true
-      }
-    },
-    {
-      "_tag": {
-        "type": "SceneEditEntity",
-        "resourceId": "Primitive/Empty"
-      },
-      "_entityId": "ve6QDmAl",
-      "children": [],
-      "prefabVariant": null,
-      "activeValue": {
-        "selfValue": true,
-        "valueTag": "activeValue"
-      },
-      "unlockedValue": null,
-      "editorLockValue": false,
-      "editorVisibleValue": true,
-      "position": {
-        "x": -69.40262603759766,
-        "y": -3,
-        "z": -21.0447998046875
-      },
-      "scale": {
-        "x": 1,
-        "y": 1,
-        "z": 1
-      },
-      "rotation": {
-        "x": 0,
-        "y": 34,
-        "z": 0
-      },
-      "BTPath": [
-        null
-      ],
-      "visible": true,
-      "VisibilityLayer": 0,
-      "modelOptimization": 0,
-      "streamingLayer": "",
-      "attributes": [
-        2,
-        4
-      ],
-      "isTrigger": false,
-      "collidable": true,
-      "physicalLayer": 0,
-      "physicalMaterial": null,
-      "aoiSetting": 0,
-      "initialTypes": {},
-      "componentList": [],
-      "entityTagData": {
-        "tagPointers": []
-      },
-      "tempIndex": 142,
-      "itemID": 9,
-      "seParent": null,
-      "ecaScripts": [
-        null
-      ],
-      "ecaProps": {
-        "DummyLevelObject": {},
-        "LevelObject": {},
-        "Transform": {},
-        "Entity": {},
-        "Visibility": {},
-        "Collider": {}
-      },
-      "_entityName": "Container C"
-    },
-    {
-      "_tag": {
-        "type": "SceneEditEntity",
-        "resourceId": "Primitive/Empty"
-      },
-      "_entityId": "0ahJFZ6u",
-      "children": [],
-      "prefabVariant": null,
-      "activeValue": {
-        "selfValue": true,
-        "valueTag": "activeValue"
-      },
-      "unlockedValue": null,
-      "editorLockValue": false,
-      "editorVisibleValue": true,
-      "position": {
-        "x": -64.31538391113281,
-        "y": -3,
-        "z": -27.889999389648438
-      },
-      "scale": {
-        "x": 1,
-        "y": 1,
-        "z": 1
-      },
-      "rotation": {
-        "x": 0,
-        "y": 295,
-        "z": 0
-      },
-      "BTPath": [
-        null
-      ],
-      "visible": true,
-      "VisibilityLayer": 0,
-      "modelOptimization": 0,
-      "streamingLayer": "",
-      "attributes": [
-        2,
-        4
-      ],
-      "isTrigger": false,
-      "collidable": true,
-      "physicalLayer": 0,
-      "physicalMaterial": null,
-      "aoiSetting": 0,
-      "initialTypes": {},
-      "componentList": [],
-      "entityTagData": {
-        "tagPointers": []
-      },
-      "tempIndex": 144,
-      "itemID": 193,
-      "seParent": null,
-      "ecaScripts": [
-        null
-      ],
-      "ecaProps": {
-        "DummyLevelObject": {},
-        "LevelObject": {},
-        "Transform": {},
-        "Entity": {},
-        "Visibility": {},
-        "Collider": {}
-      },
-      "_entityName": "Damaged Truck"
     }
   ],
   "prefabVariant": null,

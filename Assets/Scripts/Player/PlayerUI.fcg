@@ -15,6 +15,8 @@ import "Convert.fcc" as Convert
 import "../Global/GlobalData/CombatRoundCounter.fcg" as CombatRoundCounter
 import "Player.fcc" as Player
 graph PlayerUI {
+    borderNotiUI entity<BuiltInUI>
+    lastRoundNotiUI entity<UICountdownReminder>
     gunCombosThisRound List<List<ItemIDType>> = List<List<ItemIDType>>{}
     gunVoteCountdown int 
     didChooseCombo bool = false
@@ -32,6 +34,9 @@ graph PlayerUI {
         // matchInfoSubtitleHUD = createdMatchInfoSubtitleHUD
         // matchInfoSubtitleHUD<UIMatchSubtitle>.TextKey = LocString{"FULL_SCBOARD_TARGET", List<string>{ToString(globalEntity<CombatRoundCounter>.GetCount()), ToString(GlobalConfig.MAX_ROUND)}}
         // matchInfoSubtitleHUD<UIMatchSubtitle>.TextKeyParams = List<int>{GlobalConfig.WIN_POINTS}
+        CreateBuiltInUI(out var createdBorderNotiUI, thisEntity as entity<Player>, EResInternalHud.BorderNotiHud as BuiltInUIType)
+        borderNotiUI = createdBorderNotiUI
+        borderNotiUI<UITweenTip>.IsVisible = false
     }
 
     event OnPhaseEnd(phase entity<Phase>) {
@@ -156,5 +161,59 @@ graph PlayerUI {
     func SetTimer(timer int){
         phaseCountDownHUD<UIPhaseTimer>.BaseTime = globalEntity<Global>.GameTimeCount / 1000
         phaseCountDownHUD<UIPhaseTimer>.Duration = timer 
+    }
+
+    /* Register the player's last round notification UI.
+       This function associates a player with their timer UI in the map.
+       @param player: The player entity whose timer UI will be registered
+       @return: Returns true if the operation was successful
+    */
+    func RegisterLastRoundNotificationUI() {
+        // LogError("Start countdown time: " + (startCountdown) + " seconds")
+        if (lastRoundNotiUI == nil) {
+            CreateBuiltInUI(out var timerUI, thisEntity as entity<Player>, EResInternalHud.CountdownReminderHud as BuiltInUIType) // Create a new timer UI for the player
+            lastRoundNotiUI = timerUI as entity<UICountdownReminder>
+        }
+        lastRoundNotiUI<UICountdownReminder>.IsVisible = true
+        lastRoundNotiUI<UICountdownReminder>.Description = LocString{"LAST_ROUND_NOTI", List<string>{}}
+        lastRoundNotiUI<BuiltInUI>.Depth = 5
+    }
+
+    /*
+    Unregister a player from timer UI
+    @param player: The player unregisters.
+    @return bool: True if success, otherwise false
+    */
+    func UnRegisterLastRoundNotificationUI() {
+        if lastRoundNotiUI != nil {
+            lastRoundNotiUI<UICountdownReminder>.IsVisible = false
+            DestroyBuiltInUI(lastRoundNotiUI)
+            lastRoundNotiUI = nil
+        }
+    }
+
+    func ShowBorderNotiUI(content string) {
+        borderNotiUI<UITweenTip>.IsVisible = true
+        borderNotiUI<UITweenTip>.Description = content
+    }
+
+    func HideBorderNotiUI() {
+        borderNotiUI<UITweenTip>.IsVisible = false
+        borderNotiUI<UITweenTip>.Description = ""
+    }
+
+    func UnregisterAllUIs() {
+        if borderNotiUI != nil {
+            DestroyBuiltInUI(borderNotiUI)
+            borderNotiUI = nil
+        }
+        if lastRoundNotiUI != nil {
+            DestroyBuiltInUI(lastRoundNotiUI)
+            lastRoundNotiUI = nil
+        }
+        if phaseCountDownHUD != nil {
+            DestroyBuiltInUI(phaseCountDownHUD)
+            phaseCountDownHUD = nil
+        }
     }
 }

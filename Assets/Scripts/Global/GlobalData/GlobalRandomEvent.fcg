@@ -108,10 +108,10 @@ graph GlobalRandomEvent {
         }
         chosenEvent = chosenIndex
         if chosenIndex == -1 {
-            LogError("No event was chosen. This should not happen.")
+            //LogError("No event was chosen. This should not happen.")
             return
         }
-        LogWarning("<GlobalRandomEvent.fcg>: Chosen event: " + chosenIndex)
+        //LogWarning("<GlobalRandomEvent.fcg>: Chosen event: " + chosenIndex)
         if chosenIndex == 0 {
             SetBigHeadEvent(true)
         } else if chosenIndex == 1 {
@@ -135,7 +135,7 @@ graph GlobalRandomEvent {
         } else if chosenIndex == 10 {
             SetDecreaseDamageEvent(true)
         } else {
-            LogError("Chosen index out of range: " + chosenIndex)
+            //LogError("Chosen index out of range: " + chosenIndex)
         }
     }
     // ========================== LIST OF EVENTS HANDLERS ==========================A
@@ -145,7 +145,7 @@ graph GlobalRandomEvent {
             var skeleton entity<Skeleton> = player<Player>.Skeleton
             var headScale = skeleton<Skeleton>.Head<SkeletonPart>
             if headScale == nil {
-                LogError("Head SkeletonPart is nil for player: " + player<Player>.NickName)
+                //LogError("Head SkeletonPart is nil for player: " + player<Player>.NickName)
             }
             if activate == true {
                 headScale<SkeletonPart>.BoneScale = Vector3{2.0, 2.0, 2.0}
@@ -178,7 +178,7 @@ graph GlobalRandomEvent {
 
     // Event handler for Lots of Grenades Event
     func SetLotsOfGrenadesEvent(activate bool){
-        LogWarning("<GlobalRandomEvent.fcg>: SetLotsOfGrenadesEvent called")
+        //LogWarning("<GlobalRandomEvent.fcg>: SetLotsOfGrenadesEvent called")
         for index, player in GetAllPlayers() {
             // if GetItemCount(player, EResItem.Grenade as ItemIDType) != 0 {
             //     DestroyItem(player, EResItem.Grenade as ItemIDType, GetItemCount(player, EResItem.Grenade as ItemIDType))
@@ -296,7 +296,7 @@ graph GlobalRandomEvent {
 
     func ResetChosenEvent(){
         // For event 2, 3, 7 only need to remove all gloo walls and grenades
-        LogWarning("<GlobalRandomEvent.fcg>: Resetting chosen event: " + chosenEvent)
+        //LogWarning("<GlobalRandomEvent.fcg>: Resetting chosen event: " + chosenEvent)
         if chosenEvent == 0 {
             SetBigHeadEvent(false)
         } else if chosenEvent == 1 {
@@ -328,7 +328,7 @@ graph GlobalRandomEvent {
 
     func GetCurrentEventDesc() string {
         if chosenEvent == -1 {
-            LogError("No event was chosen. This should not happen.")
+            //LogError("No event was chosen. This should not happen.")
             return ""
         }
         return eventDescriptions[chosenEvent]
@@ -336,7 +336,7 @@ graph GlobalRandomEvent {
 
     func GetCurrentEventLogo() SpriteID {
         if chosenEvent == -1 {
-            LogError("No event was chosen. This should not happen.")
+            // LogError("No event was chosen. This should not happen.")
             return nil as SpriteID
         }
         return eventLogos[chosenEvent]

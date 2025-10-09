@@ -7,6 +7,7 @@ import "../Global/GlobalData/SpawnPoints.fcg" as SpawnPoints
 import "../Global/GlobalManager/GlobalPreparationPhaseManager.fcg" as GlobalPreparationPhaseManager
 import "../Global/GlobalData/TargetAndCombatTimer.fcg" as TargetAndCombatTimer
 import "List.fcc" as List
+import "../Player/PlayerSoundManager.fcg" as PlayerSoundManager
 graph RandomEventPhaseManager {
     event OnAwake() {
         // for index, player in GetAllPlayers() {
@@ -33,6 +34,7 @@ graph RandomEventPhaseManager {
         globalEntity<GlobalRandomEvent>.ApplyRandomEvent()
         WaitForMillisecond(500)
         for index, player in GetAllPlayers() {
+            player<PlayerSoundManager>.PlayEventSound()
             globalEntity<GlobalUIManager>.SetVisibilityEventUI(player, true)
             globalEntity<GlobalUIManager>.UpdateEventUI(player, globalEntity<GlobalRandomEvent>.GetCurrentEventDesc(), globalEntity<GlobalRandomEvent>.GetCurrentEventLogo())
             globalEntity<TargetAndCombatTimer>.UpdateEventShortDescription(player, globalEntity<GlobalRandomEvent>.GetCurrentEventShortDesc())

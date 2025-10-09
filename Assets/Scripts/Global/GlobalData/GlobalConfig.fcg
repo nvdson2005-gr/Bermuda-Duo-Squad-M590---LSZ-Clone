@@ -16,7 +16,7 @@ static graph GlobalConfig {
     FINAL_BORDER_SHRINK_TIME int = 60
     FIRST_BORDER_DAMAGE float = 20
     SECOND_BORDER_DAMAGE float = 40
-    FIRST_BORDER_INIT_RADIUS float = 100
+    FIRST_BORDER_INIT_RADIUS float = 70
     SECOND_BORDER_INIT_RADIUS float = 30
     DEFAULT_SKYBOX SkyboxType = SkyboxType.Day
     SKYBOX_SCENE_NAME string = "Academy"

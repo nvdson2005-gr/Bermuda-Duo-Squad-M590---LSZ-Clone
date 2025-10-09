@@ -783,7 +783,7 @@
                 "y": 0.5
               },
               "anchoredPosition": {
-                "x": 0,
+                "x": 60,
                 "y": -5
               },
               "sizeDelta": {
@@ -1471,7 +1471,7 @@
                 "y": 0.5
               },
               "anchoredPosition": {
-                "x": 0,
+                "x": 60,
                 "y": -55
               },
               "sizeDelta": {
@@ -2161,7 +2161,7 @@
                 "y": 0.5
               },
               "anchoredPosition": {
-                "x": 0,
+                "x": 60,
                 "y": -141
               },
               "sizeDelta": {
@@ -2851,7 +2851,7 @@
                 "y": 0.5
               },
               "anchoredPosition": {
-                "x": 0,
+                "x": 60,
                 "y": -225
               },
               "sizeDelta": {
@@ -3925,8 +3925,8 @@
                 "a": 1
               },
               "gradientBottom": {
-                "r": 252,
-                "g": 93,
+                "r": 255,
+                "g": 169,
                 "b": 0,
                 "a": 1
               }
@@ -4785,7 +4785,7 @@
             "y": 0.5
           },
           "anchoredPosition": {
-            "x": -90,
+            "x": -40,
             "y": 163
           },
           "sizeDelta": {
@@ -4839,12 +4839,12 @@
             "transform": {
               "rotate": 0,
               "anchorMin": {
-                "x": 0.5,
-                "y": 0.5
+                "x": 0,
+                "y": 0
               },
               "anchorMax": {
-                "x": 0.5,
-                "y": 0.5
+                "x": 1,
+                "y": 1
               },
               "pivot": {
                 "x": 0.5,
@@ -4855,8 +4855,8 @@
                 "y": 0
               },
               "sizeDelta": {
-                "x": 36,
-                "y": 32
+                "x": 0,
+                "y": 0
               }
             },
             "alpha": 100,
@@ -4865,7 +4865,7 @@
               "value": "X",
               "key": "",
               "font": "Default",
-              "fontSize": 60,
+              "fontSize": 35,
               "fontStyle": {
                 "bold": true,
                 "italic": false,
@@ -4936,7 +4936,7 @@
             "y": 0.5
           },
           "anchoredPosition": {
-            "x": 460,
+            "x": 440,
             "y": 219
           },
           "sizeDelta": {
@@ -5052,24 +5052,24 @@
             "transform": {
               "rotate": 0,
               "anchorMin": {
-                "x": 0.5,
-                "y": 0.5
+                "x": 0,
+                "y": 0
               },
               "anchorMax": {
-                "x": 0.5,
-                "y": 0.5
+                "x": 1,
+                "y": 1
               },
               "pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "anchoredPosition": {
-                "x": 4,
+                "x": 0,
                 "y": 0
               },
               "sizeDelta": {
-                "x": 400,
-                "y": 50
+                "x": 0,
+                "y": 0
               }
             },
             "alpha": 100,
@@ -5078,15 +5078,15 @@
               "value": "Round 1/5",
               "key": "",
               "font": "Default",
-              "fontSize": 24,
+              "fontSize": 32,
               "fontStyle": {
                 "bold": false,
                 "italic": false,
                 "underline": false
               },
-              "color": "#FFFFFF",
+              "color": "#F4F4F4",
               "alignment": {
-                "h": "left",
+                "h": "center",
                 "v": "middle"
               },
               "lineSpacing": 0,
@@ -5138,11 +5138,11 @@
           "rotate": 0,
           "anchorMin": {
             "x": 0.5,
-            "y": 0.5
+            "y": 1
           },
           "anchorMax": {
             "x": 0.5,
-            "y": 0.5
+            "y": 1
           },
           "pivot": {
             "x": 0.5,
@@ -5150,19 +5150,19 @@
           },
           "anchoredPosition": {
             "x": 0,
-            "y": -266
+            "y": -150
           },
           "sizeDelta": {
-            "x": 400,
-            "y": 45
+            "x": 367,
+            "y": 46
           }
         },
         "alpha": 100,
         "priority": 0,
         "image": {
           "source": {
-            "fileId": "e31282400abd62fea05e679e2edfcb31",
-            "filePath": "lib://fftextures/WorkshopIconLibrary/FF_UI_Chat_Horn_FG_02.png",
+            "fileId": "0tlu9x4jpe6-lxl9phzz-oy5znlycrtf",
+            "filePath": "Assets\\Resources\\OldPeak\\Textures\\SeaTalk_IMG_20240619_112004.png",
             "_tag": {
               "type": "GFileRefer"
             },
@@ -5191,17 +5191,17 @@
           "fillAmount": 0,
           "invertFill": false,
           "flip": 0,
-          "gradient": 1,
+          "gradient": 2,
           "gradientTop": {
-            "r": 255,
-            "g": 255,
-            "b": 255,
+            "r": 250,
+            "g": 95,
+            "b": 0,
             "a": 1
           },
           "gradientBottom": {
             "r": 255,
-            "g": 255,
-            "b": 255,
+            "g": 169,
+            "b": 0,
             "a": 1
           }
         }
@@ -5268,8 +5268,8 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -70,
-                    "y": 83
+                    "x": -5,
+                    "y": 80
                   },
                   "sizeDelta": {
                     "x": 48,
@@ -5357,8 +5357,8 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -70,
-                    "y": -8
+                    "x": -5,
+                    "y": -5
                   },
                   "sizeDelta": {
                     "x": 48,
@@ -5448,8 +5448,8 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -70,
-                    "y": -89
+                    "x": -5,
+                    "y": -92
                   },
                   "sizeDelta": {
                     "x": 48,
@@ -5539,7 +5539,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -70,
+                    "x": -5,
                     "y": -175
                   },
                   "sizeDelta": {
@@ -5689,7 +5689,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -381,
+                    "x": -320,
                     "y": 80
                   },
                   "sizeDelta": {
@@ -5780,8 +5780,8 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -381,
-                    "y": -10
+                    "x": -320,
+                    "y": -5
                   },
                   "sizeDelta": {
                     "x": 50,
@@ -5871,7 +5871,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -381,
+                    "x": -320,
                     "y": -90
                   },
                   "sizeDelta": {
@@ -5962,7 +5962,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -381,
+                    "x": -320,
                     "y": -175
                   },
                   "sizeDelta": {
@@ -6112,7 +6112,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 150,
+                    "x": 210,
                     "y": 80
                   },
                   "sizeDelta": {
@@ -6203,8 +6203,8 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 150,
-                    "y": -10
+                    "x": 210,
+                    "y": -5
                   },
                   "sizeDelta": {
                     "x": 57,
@@ -6294,7 +6294,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 150,
+                    "x": 210,
                     "y": -90
                   },
                   "sizeDelta": {
@@ -6385,7 +6385,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 150,
+                    "x": 210,
                     "y": -175
                   },
                   "sizeDelta": {
@@ -6449,7 +6449,10 @@
             "selfValue": true,
             "valueTag": "activeValue"
           },
-          "unlockedValue": null,
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
           "propsData": {
@@ -6593,7 +6596,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -450,
+                    "x": -390,
                     "y": -79
                   },
                   "sizeDelta": {
@@ -6683,7 +6686,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -290,
+                    "x": -230,
                     "y": -76
                   },
                   "sizeDelta": {
@@ -6771,7 +6774,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -125,
+                    "x": -65,
                     "y": -80
                   },
                   "sizeDelta": {
@@ -6861,7 +6864,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
+                    "x": 55,
                     "y": -80
                   },
                   "sizeDelta": {
@@ -6951,7 +6954,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 120,
+                    "x": 175,
                     "y": -80
                   },
                   "sizeDelta": {
@@ -7041,7 +7044,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 280,
+                    "x": 340,
                     "y": -80
                   },
                   "sizeDelta": {
@@ -7595,7 +7598,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -450,
+                    "x": -390,
                     "y": -10
                   },
                   "sizeDelta": {
@@ -7686,7 +7689,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -125,
+                    "x": -65,
                     "y": -10
                   },
                   "sizeDelta": {
@@ -7777,7 +7780,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
+                    "x": 55,
                     "y": -10
                   },
                   "sizeDelta": {
@@ -7868,7 +7871,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 120,
+                    "x": 175,
                     "y": -10
                   },
                   "sizeDelta": {
@@ -7959,7 +7962,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 280,
+                    "x": 340,
                     "y": -10
                   },
                   "sizeDelta": {
@@ -8049,7 +8052,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -290,
+                    "x": -230,
                     "y": -9
                   },
                   "sizeDelta": {
@@ -8200,7 +8203,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -450,
+                    "x": -390,
                     "y": 60
                   },
                   "sizeDelta": {
@@ -8291,7 +8294,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -125,
+                    "x": -65,
                     "y": 65
                   },
                   "sizeDelta": {
@@ -8382,7 +8385,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
+                    "x": 55,
                     "y": 65
                   },
                   "sizeDelta": {
@@ -8473,7 +8476,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 120,
+                    "x": 175,
                     "y": 65
                   },
                   "sizeDelta": {
@@ -8564,7 +8567,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 280,
+                    "x": 340,
                     "y": 65
                   },
                   "sizeDelta": {
@@ -8654,7 +8657,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -290,
+                    "x": -230,
                     "y": 65
                   },
                   "sizeDelta": {
@@ -8805,7 +8808,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -450,
+                    "x": -390,
                     "y": 60
                   },
                   "sizeDelta": {
@@ -8896,7 +8899,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -125,
+                    "x": -65,
                     "y": 65
                   },
                   "sizeDelta": {
@@ -8987,7 +8990,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 0,
+                    "x": 55,
                     "y": 65
                   },
                   "sizeDelta": {
@@ -9078,7 +9081,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 120,
+                    "x": 175,
                     "y": 65
                   },
                   "sizeDelta": {
@@ -9169,7 +9172,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": 280,
+                    "x": 340,
                     "y": 65
                   },
                   "sizeDelta": {
@@ -9259,7 +9262,7 @@
                     "y": 0.5
                   },
                   "anchoredPosition": {
-                    "x": -290,
+                    "x": -230,
                     "y": 65
                   },
                   "sizeDelta": {

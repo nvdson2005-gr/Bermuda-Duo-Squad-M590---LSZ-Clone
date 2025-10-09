@@ -24,7 +24,7 @@ graph TeamsAlive {
             // LogInfo("<TeamsAlive.fcg>: Team registered: " + team<Entity>.Name) // Debug Info
             return true
         }
-        LogWarning("<TeamsAlive.fcg>: Team already registered: " + team<Entity>.Name) // Debug Info
+        // LogWarning("<TeamsAlive.fcg>: Team already registered: " + team<Entity>.Name) // Debug Info
         return false
     }
 

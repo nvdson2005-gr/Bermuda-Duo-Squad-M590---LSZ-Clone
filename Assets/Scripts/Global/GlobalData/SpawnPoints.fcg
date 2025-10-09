@@ -42,7 +42,7 @@ graph SpawnPoints {
         } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
             spawnDict[0] = GetChildren(EResSceneOLD_PEAK.SpawnPoints as entity<Entity>) as List<entity<SpawnPosition>>
         } else {
-            LogError("<SpawnPoints.fcg<OnGameStart()>>: Invalid map chosen")
+            // LogError("<SpawnPoints.fcg<OnGameStart()>>: Invalid map chosen")
             return
         }
     }
@@ -81,7 +81,7 @@ graph SpawnPoints {
             }
             return positions
         } else {
-            LogError("<SpawnPoints.fcg<GetSpawnPositionForRound()>>: Invalid map chosen")
+            // LogError("<SpawnPoints.fcg<GetSpawnPositionForRound()>>: Invalid map chosen")
             return List<Vector3>{}
         }
     }
@@ -93,7 +93,7 @@ graph SpawnPoints {
     func GetNameForStage(round int) string {
         if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
             if round < 0 || round >= List.Length(spawnNames) {
-                LogError("Invalid round index: " + round)
+                // LogError("Invalid round index: " + round)
                 return ""
             }
             return spawnNames[round] // Return the name of the stage for the given round
@@ -104,7 +104,7 @@ graph SpawnPoints {
         } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
             return "Old Peak"
         } else {
-            LogError("<SpawnPoints.fcg<GetNameForStage()>>: Invalid map chosen")
+            // LogError("<SpawnPoints.fcg<GetNameForStage()>>: Invalid map chosen")
             return ""
         }
     }
@@ -135,7 +135,7 @@ graph SpawnPoints {
                 SetActive(spawnPoint as entity<Entity>, status)
             }
         } else {
-            LogError("<SpawnPoints.fcg<SetSpawnPointsActiveStatusForRound()>>: Invalid map chosen")
+            // LogError("<SpawnPoints.fcg<SetSpawnPointsActiveStatusForRound()>>: Invalid map chosen")
             return
         }
     }

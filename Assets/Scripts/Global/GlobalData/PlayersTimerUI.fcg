@@ -18,38 +18,6 @@ graph PlayersTimerUI {
         playersTimerUI = Map<entity<Player>, entity<UICountdownReminder>>{} // Initialize the map of players' timer UIs at the start of the game
     }
 
-    /* Register the player's last round notification UI.
-       This function associates a player with their timer UI in the map.
-       @param player: The player entity whose timer UI will be registered
-       @return: Returns true if the operation was successful
-    */
-    async func RegisterLastRoundNotificationUI(player entity<Player>) {
-        // LogError("Start countdown time: " + (startCountdown) + " seconds")
-        if (playersTimerUI == nil) {
-            playersTimerUI = Map<entity<Player>, entity<UICountdownReminder>>{} // Initialize the map if it is null
-        }
-        if (!ContainKey(playersTimerUI, player)) {
-            CreateBuiltInUI(out var timerUI, player, EResInternalHud.CountdownReminderHud as BuiltInUIType) // Create a new timer UI for the player
-            playersTimerUI[player] = timerUI as entity<UICountdownReminder> // Associate the player with their timer UI
-            playersTimerUI[player]<UICountdownReminder>.IsVisible = false// Set the timer UI to be invisible initially
-        } else {
-            LogWarning("<PlayersTimerUI.fcg>: Timer UI already registered for player: " + player<Entity>.Name) // Warning Info
-        }
-    }
-
-    /*
-    Unregister a player from timer UI
-    @param player: The player unregisters.
-    @return bool: True if success, otherwise false
-    */
-    func UnRegisterTimerUI(player entity<Player>) bool {
-        if ContainKey(playersTimerUI, player) {
-            DestroyCustomUI(playersTimerUI[player] as entity<CustomUI>) // Destroy the player's timer UI
-            Remove(playersTimerUI, player) // Remove the player's timer UI from the map
-            return true
-        }
-        return false // Return false to indicate the operation was unsuccessful
-    }
 
     /* Set the player's timer UI.
        This function sets the base time and duration for the player's timer UI.
@@ -80,7 +48,7 @@ graph PlayersTimerUI {
             if(ContainKey(playersTimerUI, player)) {
                 playersTimerUI[player]<UICountdownReminder>.IsVisible = status // Set the visibility of the player's timer UI
             } else {
-                LogWarning("<PlayersTimerUI.fcg>: No timer UI found for player: " + player<Entity>.Name) // Warning Info
+                // LogWarning("<PlayersTimerUI.fcg>: No timer UI found for player: " + player<Entity>.Name) // Warning Info
             }
         }
     }

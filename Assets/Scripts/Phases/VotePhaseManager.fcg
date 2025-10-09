@@ -24,9 +24,9 @@ graph VotePhaseManager {
     Executed when entity is created
     */
     event OnAwake() {
-        LogWarning("<VotePhaseManager.fcg>: Vote phase manager awake")
+        // LogWarning("<VotePhaseManager.fcg>: Vote phase manager awake")
         countdown = globalEntity<GlobalGameManager>.prepPhaseDuration 
-        LogWarning("<VotePhaseManager.fcg>: Current players: " + List.Length(GetAllPlayers()))
+        // LogWarning("<VotePhaseManager.fcg>: Current players: " + List.Length(GetAllPlayers()))
         for index, player in GetAllPlayers() {
             start player<PlayerUI>.SetUpVoteUI(player)
             start player<PlayerUI>.StartCountdown(countdown)
@@ -37,7 +37,7 @@ graph VotePhaseManager {
     Executed when entity is destroyed
     */
     event OnDestroy() {
-        LogWarning("<VotePhaseManager.fcg>: Vote phase manager destroyed")
+        // LogWarning("<VotePhaseManager.fcg>: Vote phase manager destroyed")
         // for index, player in GetAllPlayers() {
         //     globalEntity<GlobalUIManager>.SetVisibilityVoteUI(player, false)
         //     if playerCheckChosen[player] == false {

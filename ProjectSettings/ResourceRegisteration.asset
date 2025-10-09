@@ -1649,7 +1649,7 @@
             },
             "fileType": "sound"
           },
-          "scriptName": "TIP",
+          "scriptName": "EVENT_SFX",
           "children": []
         },
         {
@@ -1662,6 +1662,66 @@
             "fileType": "sound"
           },
           "scriptName": "MATCH_END",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "56a863128e53efe1b3a39667696f9c0c",
+            "filePath": "lib://ffsounds/WorkshopAudio/T_39_HJ_WS_SOUND14.wav",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "sound"
+          },
+          "scriptName": "LAST_ROUND_SFX",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "c693f120de18f4c43f5d891f0eb4ec20",
+            "filePath": "lib://ffsounds/WorkshopAudio/T_38_WZY_WS_SOUND10.wav",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "sound"
+          },
+          "scriptName": "ROUND_START_SFX",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "b74eb67e98f9007b63178fd9dae1e70f",
+            "filePath": "lib://ffsounds/WorkshopAudio/T_38_WZY_WS_SOUND15.wav",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "sound"
+          },
+          "scriptName": "HEART_BEAT_SFX",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "e089d9ecfe6dd999769d8625debacc67",
+            "filePath": "lib://ffsounds/WorkshopAudio/T_40_HJ_WS_SOUND77.wav",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "sound"
+          },
+          "scriptName": "WIN_ROUND_SFX",
+          "children": []
+        },
+        {
+          "refer": {
+            "fileId": "411b58ba527746e375c6ec5a8ed3e82d",
+            "filePath": "lib://ffsounds/WorkshopAudio/T_40_HJ_WS_SOUND75.wav",
+            "_tag": {
+              "type": "GFileRefer"
+            },
+            "fileType": "sound"
+          },
+          "scriptName": "LOSE_ROUND_SFX",
           "children": []
         }
       ]
@@ -2391,7 +2451,7 @@
             },
             "fileType": "internalhudtype"
           },
-          "scriptName": "TipHud",
+          "scriptName": "BorderNotiHud",
           "children": []
         },
         {

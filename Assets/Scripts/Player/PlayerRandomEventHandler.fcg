@@ -21,7 +21,7 @@ graph PlayerRandomEventHandler {
             return
         }
         if isSmallerWhenHit == true && isBiggerWhenHit == true {
-            LogWarning("<PlayerRandomEventHandler.fcg>: Player is both smaller and bigger when hit. This should not happen.")
+            // LogWarning("<PlayerRandomEventHandler.fcg>: Player is both smaller and bigger when hit. This should not happen.")
             ResetBodyScale()
             return
         }
@@ -41,7 +41,7 @@ graph PlayerRandomEventHandler {
             currentBodyScale = currentBodyScale - 0.02
             var skeleton entity<Skeleton> = thisEntity<Player>.Skeleton
             if skeleton == nil {
-                LogError("Skeleton is nil for player: " + thisEntity<Player>.NickName)
+                // LogError("Skeleton is nil for player: " + thisEntity<Player>.NickName)
                 mutexLock = false
                 return
             }
@@ -69,7 +69,7 @@ graph PlayerRandomEventHandler {
             currentBodyScale = currentBodyScale + 0.03
             var skeleton entity<Skeleton> = thisEntity<Player>.Skeleton
             if skeleton == nil {
-                LogError("Skeleton is nil for player: " + thisEntity<Player>.NickName)
+                // LogError("Skeleton is nil for player: " + thisEntity<Player>.NickName)
                 mutexLock = false
                 return
             }
@@ -96,7 +96,7 @@ graph PlayerRandomEventHandler {
         currentBodyScale = 1.0
         var skeleton entity<Skeleton> = thisEntity<Player>.Skeleton
         if skeleton == nil {
-            LogError("Skeleton is nil for player: " + thisEntity<Player>.NickName)
+            // LogError("Skeleton is nil for player: " + thisEntity<Player>.NickName)
         }
         skeleton<Skeleton>.Head<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
         skeleton<Skeleton>.LeftArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
