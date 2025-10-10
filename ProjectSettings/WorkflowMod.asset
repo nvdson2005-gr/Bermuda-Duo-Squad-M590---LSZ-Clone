@@ -188,7 +188,7 @@
           },
           "editorLockValue": false,
           "editorVisibleValue": true,
-          "gameDuration": 85,
+          "gameDuration": 60,
           "ecaScripts": [],
           "ecaProps": {
             "Phase": {},
@@ -350,7 +350,7 @@
       },
       "editorLockValue": false,
       "editorVisibleValue": true,
-      "roundCount": 5,
+      "roundCount": 4,
       "modId": 18,
       "ecaScripts": [],
       "ecaProps": {
@@ -531,7 +531,7 @@
         },
         "editorLockValue": false,
         "editorVisibleValue": true,
-        "gameDuration": 85,
+        "gameDuration": 60,
         "ecaScripts": [],
         "ecaProps": {
           "Phase": {},
@@ -693,7 +693,7 @@
     },
     "editorLockValue": false,
     "editorVisibleValue": true,
-    "roundCount": 5,
+    "roundCount": 4,
     "modId": 18,
     "ecaScripts": [],
     "ecaProps": {

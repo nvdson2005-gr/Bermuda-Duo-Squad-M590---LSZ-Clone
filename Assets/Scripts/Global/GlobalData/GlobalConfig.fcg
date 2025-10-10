@@ -7,7 +7,7 @@ static graph GlobalConfig {
     MAP_CHOSEN EResScene = EResScene.OLD_PEAK
     // WIN_POINTS int = 90
     TEAM_COUNT int = 4
-    MAX_ROUND int = 5
+    MAX_ROUND int = 4 
     FIRST_BORDER_DELAY int = 10
     SECOND_BORDER_DELAY int = 10
     FINAL_BORDER_DELAY int = 5
