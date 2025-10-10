@@ -79,8 +79,8 @@ graph GlobalRandomEvent {
     func ApplyRandomEvent() {
         // LogWarning("<GlobalRandomEvent.fcg>: Applying random event")
         // Debug only
-        // chosenEvent = 8 
-        // SetDarkModeEvent(true)
+        // chosenEvent = 5 
+        // SetSmallBodyWhenShotEvent(true)
         // return
         // End of debug only
         if List.Length(oldEvents) >= currentEventsCount {
@@ -276,7 +276,7 @@ graph GlobalRandomEvent {
     func SetIncreaseDamageEvent(activate bool){
         for index, player in GetAllPlayers() {
             if activate == true {
-                player<Player>.WeaponDamageRate = 1.5
+                player<Player>.WeaponDamageRate = 1.1
             } else {
                 player<Player>.WeaponDamageRate = 1.0
             }
@@ -287,7 +287,7 @@ graph GlobalRandomEvent {
     func SetDecreaseDamageEvent(activate bool){
         for index, player in GetAllPlayers() {
             if activate == true {
-                player<Player>.WeaponDamageRate = 0.5
+                player<Player>.WeaponDamageRate = 0.9
             } else {
                 player<Player>.WeaponDamageRate = 1.0
             }

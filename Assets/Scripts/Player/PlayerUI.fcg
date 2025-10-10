@@ -53,8 +53,12 @@ graph PlayerUI {
             for index, weapon in gunCombo {
                 // thisEntity<PlayerController>.AddItemToPlayer(thisEntity as entity<Player>, weapon as EResItem, 1)
                 AddItem(thisEntity as entity<Player>, weapon as ItemIDType, 1, out var newItem)
-                var newGun = newItem[0] as entity<Weapon>
-                newGun<Weapon>.CurrentAmmo = 100
+                for i, gun in newItem {
+                    if HasComponent(gun, typeof(Weapon)) {
+                        var newGun = gun as entity<Weapon>
+                        newGun<Weapon>.CurrentAmmo = 100
+                    }
+                }
             }
             if GetItemCount(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType) != 0 {
                 DestroyItem(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType, GetItemCount(thisEntity as entity<Player>, EResItem.HORIZALINE as ItemIDType)) // Destroy the item when added

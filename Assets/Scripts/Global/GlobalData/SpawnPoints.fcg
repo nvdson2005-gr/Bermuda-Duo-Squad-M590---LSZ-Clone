@@ -23,23 +23,7 @@ graph SpawnPoints {
         spawnPoints = List<object>{} // Initialize the list of spawn points at the start of the game
         spawnPositions = List<Vector3>{} // Initialize the list of spawn positions
         spawnDict = Map<int, List<entity<SpawnPosition>>>{} // Initialize the map of spawn points
-        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
-            spawnDict[0] = GetChildren(EResSceneBERMUDA.SpawnGroup1 as entity<Entity>) as List<entity<SpawnPosition>>
-            spawnDict[1] = GetChildren(EResSceneBERMUDA.SpawnGroup2 as entity<Entity>) as List<entity<SpawnPosition>>
-            spawnDict[2] = GetChildren(EResSceneBERMUDA.SpawnGroup3 as entity<Entity>) as List<entity<SpawnPosition>>
-            spawnDict[3] = GetChildren(EResSceneBERMUDA.SpawnGroup4 as entity<Entity>) as List<entity<SpawnPosition>>
-            spawnDict[4] = GetChildren(EResSceneBERMUDA.SpawnGroup5 as entity<Entity>) as List<entity<SpawnPosition>> 
-            spawnDict[5] = GetChildren(EResSceneBERMUDA.SpawnGroup6 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for each round
-            spawnDict[6] = GetChildren(EResSceneBERMUDA.SpawnGroup7 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the seventh round
-            spawnDict[7] = GetChildren(EResSceneBERMUDA.SpawnGroup8 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the eighth round
-            spawnDict[8] = GetChildren(EResSceneBERMUDA.SpawnGroup9 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the ninth round
-            spawnDict[9] = GetChildren(EResSceneBERMUDA.SpawnGroup10 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the tenth round
-            spawnDict[10] = GetChildren(EResSceneBERMUDA.SpawnGroup11 as entity<Entity>) as List<entity<SpawnPosition>> // Register the spawn points for the eleventh round
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
-            spawnDict[0] = GetChildren(EResSceneELPASTELO.SpawnPoints as entity<Entity>) as List<entity<SpawnPosition>>
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
-            spawnDict[0] = GetChildren(EResSceneACADEMY.SpawnPoints as entity<Entity>) as List<entity<SpawnPosition>>
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
+        if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
             spawnDict[0] = GetChildren(EResSceneOLD_PEAK.SpawnPoints as entity<Entity>) as List<entity<SpawnPosition>>
         } else {
             // LogError("<SpawnPoints.fcg<OnGameStart()>>: Invalid map chosen")
@@ -53,28 +37,7 @@ graph SpawnPoints {
     @return: A list of Vector3 representing the spawn positions for the specified round
     */
     func GetSpawnPositionForRound(round int) List<Vector3> {
-        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
-            if !ContainKey(spawnDict, round) {
-                return List<Vector3>{}
-            }
-            var positions = List<Vector3>{}
-            for index, spawnPoint in spawnDict[round] {
-                Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
-            }
-            return positions
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
-            var positions = List<Vector3>{}
-            for index, spawnPoint in spawnDict[0] {
-                Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
-            }
-            return positions
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
-            var positions = List<Vector3>{}
-            for index, spawnPoint in spawnDict[0] {
-                Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
-            }
-            return positions
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
+        if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
             var positions = List<Vector3>{}
             for index, spawnPoint in spawnDict[0] {
                 Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
@@ -91,17 +54,7 @@ graph SpawnPoints {
     @return: The name of the stage for the specified round
     */
     func GetNameForStage(round int) string {
-        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
-            if round < 0 || round >= List.Length(spawnNames) {
-                // LogError("Invalid round index: " + round)
-                return ""
-            }
-            return spawnNames[round] // Return the name of the stage for the given round
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
-            return "El Pasteló"
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
-            return "Academy"
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
+        if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
             return "Old Peak"
         } else {
             // LogError("<SpawnPoints.fcg<GetNameForStage()>>: Invalid map chosen")
@@ -115,22 +68,7 @@ graph SpawnPoints {
     @return: A list of entity<SpawnPosition> representing the spawn points for the specified round
     */
     func SetSpawnPointsActiveStatusForRound (round int, status bool) {
-        if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
-            if !ContainKey(spawnDict, round) {
-                return
-            }
-            for index, spawnPoint in spawnDict[round] {
-                SetActive(spawnPoint as entity<Entity>, status)
-            }
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
-            for index, spawnPoint in spawnDict[0] {
-                SetActive(spawnPoint as entity<Entity>, status)
-            }
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
-            for index, spawnPoint in spawnDict[0] {
-                SetActive(spawnPoint as entity<Entity>, status)
-            }
-        } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
+        if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
             for index, spawnPoint in spawnDict[0] {
                 SetActive(spawnPoint as entity<Entity>, status)
             }

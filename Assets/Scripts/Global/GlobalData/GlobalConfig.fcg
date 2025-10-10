@@ -3,21 +3,36 @@ import "EditorGenLib.fcc" as EditorLib
 import "Scene.fcc" as Scene
 
 static graph GlobalConfig {
-    availableMaps List<EResScene> = List<EResScene>{EResScene.BERMUDA, EResScene.ELPASTELO, EResScene.ACADEMY, EResScene.OLD_PEAK}
+    // availableMaps List<EResScene> = List<EResScene>{EResScene.OLD_PEAK}
+    // The current map chosen
     MAP_CHOSEN EResScene = EResScene.OLD_PEAK
     // WIN_POINTS int = 90
+    // The number of teams
     TEAM_COUNT int = 4
+    // The maximum number of rounds
     MAX_ROUND int = 4 
-    FIRST_BORDER_DELAY int = 10
+    // The delay before the first border shrinks
+    FIRST_BORDER_DELAY int = 15
+    // The delay before the second border shrinks
     SECOND_BORDER_DELAY int = 10
+    // The delay before the final border shrinks
     FINAL_BORDER_DELAY int = 5
-    FIRST_BORDER_DURATION int = 85 
+    // The duration of the first border
+    FIRST_BORDER_DURATION int = 60 
+    // The duration of the second border
     SECOND_BORDER_DURATION int = 80
+    // The duration of the final border
     FINAL_BORDER_SHRINK_TIME int = 60
+    // The damage of the first border
     FIRST_BORDER_DAMAGE float = 20
+    // The damage of the second border
     SECOND_BORDER_DAMAGE float = 40
+    // The initial radius of the first border
     FIRST_BORDER_INIT_RADIUS float = 70
+    // The initial radius of the second border
     SECOND_BORDER_INIT_RADIUS float = 30
+    // The default skybox
     DEFAULT_SKYBOX SkyboxType = SkyboxType.Day
-    SKYBOX_SCENE_NAME string = "Academy"
+    // The name of the skybox scene
+    SKYBOX_SCENE_NAME string = "Old Peak"
 }

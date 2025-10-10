@@ -74,13 +74,7 @@ graph GlobalGameManager {
         // Set invincible when player is dead, and teleport to the start zone
         if globalEntity<Global>.CurrentRoundIndex != 0 {
             SetInvincibility(player, 30);
-            if GlobalConfig.MAP_CHOSEN == EResScene.BERMUDA {
-                TransportToGameStartZone(player, EResSceneBERMUDA.GameStartSpawnPoint<Transform>.Position)
-            } else if GlobalConfig.MAP_CHOSEN == EResScene.ELPASTELO {
-                TransportToGameStartZone(player, EResSceneELPASTELO.GameStartSpawnPoint<Transform>.Position)
-            } else if GlobalConfig.MAP_CHOSEN == EResScene.ACADEMY {
-                TransportToGameStartZone(player, EResSceneACADEMY.GameStartSpawnPoint<Transform>.Position)
-            } else if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
+            if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
                 TransportToGameStartZone(player, EResSceneOLD_PEAK.GameStartSpawnPoint<Transform>.Position)
             }
         }
@@ -225,6 +219,11 @@ graph GlobalGameManager {
             player<PlayerSoundManager>.StopAllLoopingSounds()
         }
         if CheckWinningCondition() {
+            isMatchEnded = true
+            wait globalEntity<GlobalUIManager>.CreateEndRoundHUD(winningTeam); // Create the end round HUD for all players
+            start globalEntity<GlobalUIManager>.UpdateFullScoreBoardWinTeam(winningTeam);
+            SwitchPhase(EPhase.EndCombat) // Switch to the end combat phase to allow players to see the full scoreboard
+            WaitForMillisecond(7000)
             var allWinningTeams = GetAllWinningTeams()
             // LogInfo("<GlobalGameManager.fcg>: Team(s) " + allWinningTeams + " have won the game!") // Debug Info
             for index, player in GetAllPlayers() {
@@ -233,7 +232,7 @@ graph GlobalGameManager {
                 start globalEntity<GlobalUIManager>.CreateLastRoundHUD(allWinningTeams, player) // Create the last round HUD for all players
                 globalEntity<GlobalSoundManager>.PlayEndMatchSound(player)            
             }
-            WaitForMillisecond(2000)
+            WaitForMillisecond(3000)
             SwitchPhase(EPhase.End)
         } else {
             wait globalEntity<GlobalUIManager>.CreateEndRoundHUD(winningTeam); // Create the end round HUD for all players

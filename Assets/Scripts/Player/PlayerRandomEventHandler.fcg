@@ -111,4 +111,12 @@ graph PlayerRandomEventHandler {
         WaitForMillisecond(50)
         mutexLock = false
     }
+
+    func GetIsBiggerWhenHit() bool {
+        return isBiggerWhenHit
+    }
+
+    func GetIsSmallerWhenHit() bool {
+        return isSmallerWhenHit
+    }
 }

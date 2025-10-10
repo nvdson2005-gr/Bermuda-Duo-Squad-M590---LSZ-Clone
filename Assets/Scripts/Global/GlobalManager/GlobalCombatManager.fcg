@@ -21,6 +21,7 @@ import "Math.fcc" as Math
 import "../GlobalData/GlobalConfig.fcg" as GlobalConfig
 import "Items.fcc" as Items
 import "../../Player/PlayerUI.fcg" as PlayerUI
+import "../../Player/PlayerRandomEventHandler.fcg" as PlayerRandomEventHandler
 graph GlobalCombatManager {
     teamsAlive List<Team> = List<Team>{} // List of teams that are still alive in the combat phase
     allDroppedItems List<entity<ItemBase>> = List<entity<ItemBase>>{} // List of all dropped items on ground in each round
@@ -61,6 +62,9 @@ graph GlobalCombatManager {
     // On Player Be Eliminated, update mini scoreboard
     event OnPlayerBeEliminated(player entity<Player>) {
         globalEntity<GlobalUIManager>.UpdateMiniScoreboard() // Update the mini scoreboard UI after a player is eliminated to update current alives
+        if player<PlayerRandomEventHandler>.GetIsBiggerWhenHit() == true || player<PlayerRandomEventHandler>.GetIsSmallerWhenHit() == true {
+            start player<PlayerRandomEventHandler>.ResetBodyScale()
+        }
     }
 
 
