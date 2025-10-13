@@ -118,6 +118,81 @@
       "children": [
         {
           "_tag": {
+            "type": "UI3DContainerEntity",
+            "resourceId": ""
+          },
+          "_entityId": "xssgRqil",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "propsData": {
+            "activeSelf": true,
+            "transform": {
+              "rotate": 90,
+              "anchorMin": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchorMax": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchoredPosition": {
+                "x": 0,
+                "y": 0
+              },
+              "sizeDelta": {
+                "x": 100,
+                "y": 700
+              }
+            },
+            "alpha": 100,
+            "priority": 0,
+            "container": {
+              "resource": {
+                "fileId": "demzqyt0rzi-mgox24v9-aqomvt4ure5",
+                "filePath": "Assets\\Prefabs\\EventBgEffect.prefab",
+                "_tag": {
+                  "type": "GFileRefer"
+                },
+                "fileType": "prefab"
+              },
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 0.2,
+                "y": 1,
+                "z": 6
+              }
+            }
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "Hud3DContainer": {},
+            "HudWidget": {},
+            "Entity": {}
+          },
+          "componentList": [],
+          "_entityName": "3D Container",
+          "entityTagData": {
+            "tagPointers": []
+          }
+        },
+        {
+          "_tag": {
             "type": "UIImageEntity",
             "resourceId": ""
           },
@@ -138,23 +213,23 @@
               "rotate": 0,
               "anchorMin": {
                 "x": 0,
-                "y": 0.5
+                "y": 0
               },
               "anchorMax": {
-                "x": 0,
-                "y": 0.5
+                "x": 1,
+                "y": 1
               },
               "pivot": {
                 "x": 0.5,
                 "y": 0.5
               },
               "anchoredPosition": {
-                "x": 49,
+                "x": -301,
                 "y": 0
               },
               "sizeDelta": {
-                "x": 60,
-                "y": 60
+                "x": -640,
+                "y": -40
               }
             },
             "alpha": 100,
@@ -243,11 +318,11 @@
               "rotate": 0,
               "anchorMin": {
                 "x": 0,
-                "y": 0.5
+                "y": 0
               },
               "anchorMax": {
                 "x": 1,
-                "y": 0.5
+                "y": 1
               },
               "pivot": {
                 "x": 0.5,
@@ -259,7 +334,7 @@
               },
               "sizeDelta": {
                 "x": -92,
-                "y": 84
+                "y": -16
               }
             },
             "alpha": 100,
@@ -336,7 +411,7 @@
           },
           "anchoredPosition": {
             "x": 0,
-            "y": 225
+            "y": 224.99998474121094
           },
           "sizeDelta": {
             "x": 700,
@@ -346,8 +421,8 @@
         "alpha": 100,
         "image": {
           "source": {
-            "fileId": "d4315cbfc63f0a798bd4f91e0ea38371",
-            "filePath": "lib://fftextures/WorkshopIconLibrary/FF_ingame_hud_HuntingGround02_Bg_tips.png",
+            "fileId": "0cf2c8562516d1556b822a2e3e10d5ec",
+            "filePath": "lib://fftextures/WorkshopIconLibrary/HuntingGroun d_Frame_Common_Tips.png",
             "_tag": {
               "type": "GFileRefer"
             },

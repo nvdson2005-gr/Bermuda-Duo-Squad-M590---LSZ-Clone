@@ -61,6 +61,8 @@ graph GlobalSafeZones {
             for index, player in GetAllPlayers() {
                 player<PlayerUI>.ShowBorderNotiUI(LocString{"BORDER_SHRINK_NOTI", List<string>{}})
             }
+        } else if phase<Phase>.Index == EPhase.DeathMatch {
+            ActivateDeathMatchSafeZone()
         }
     }
 
@@ -144,6 +146,11 @@ graph GlobalSafeZones {
             // LogError("<GlobalSafeZones.fcg<ActivateShrinkingSafeZone()>>: Invalid map chosen")
             return
         }
+    }
+
+    func ActivateDeathMatchSafeZone(){
+        DisableSafeZone()
+        EnableMovingSafeZone(Vector3{0, 0, 0}, Vector3{0, 0, 0}, 0, 0, 0, GlobalConfig.DEATH_MATCH_DAMAGE)
     }
 
     /* Open a specific safe zone (DEPRECATED)

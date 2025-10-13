@@ -31,8 +31,10 @@ static graph GlobalConfig {
     FIRST_BORDER_INIT_RADIUS float = 70
     // The initial radius of the second border
     SECOND_BORDER_INIT_RADIUS float = 30
+    // The damage of the death match
+    DEATH_MATCH_DAMAGE float = 80 
     // The default skybox
-    DEFAULT_SKYBOX SkyboxType = SkyboxType.Day
+    DEFAULT_SKYBOX SkyboxType = SkyboxType.Colorful
     // The name of the skybox scene
     SKYBOX_SCENE_NAME string = "Old Peak"
 }

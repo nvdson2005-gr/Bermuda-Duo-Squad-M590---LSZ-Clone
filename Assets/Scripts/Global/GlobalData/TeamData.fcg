@@ -151,7 +151,7 @@ graph TeamData {
     func GetSortedTeamList() List<entity<Team>>{
         var sortedTeams List<entity<Team>> = List<entity<Team>>{}
         var teamCopyDict Map<entity<Team>, int> = Map<entity<Team>, int>{} 
-        // var currentAliveTeams List<entity<Team>> = globalEntity<GlobalGameManager>.GetCurrentActiveTeams()
+        var currentActiveTeams List<entity<Team>> = globalEntity<GlobalGameManager>.GetCurrentActiveTeams()
         for team, point in teamTotalPoints {
             // if List.Contain(currentAliveTeams, team) {
                 teamCopyDict[team] = point
@@ -175,6 +175,11 @@ graph TeamData {
                     // if teamKills > currentMaxTeamKills {
                     //     currentMaxTeam = team
                     // }
+                    if !List.Contain(currentActiveTeams, currentMaxTeam) && !List.Contain(currentActiveTeams, team) {
+                        continue
+                    } else if !List.Contain(currentActiveTeams, currentMaxTeam) {
+                        currentMaxTeam = team
+                    } 
                     if teamBooyah[team as entity<Team>] > teamBooyah[currentMaxTeam as entity<Team>] {
                         currentMaxTeam = team
                     } else if teamBooyah[team as entity<Team>] == teamBooyah[currentMaxTeam as entity<Team>] {

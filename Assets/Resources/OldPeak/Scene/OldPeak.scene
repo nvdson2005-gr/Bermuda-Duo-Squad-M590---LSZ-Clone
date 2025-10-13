@@ -56,34 +56,34 @@
       "initialTypes": {},
       "componentList": [],
       "_filters": [],
-      "curWeatherPresetID": 1,
+      "curWeatherPresetID": 5,
       "_entityName": "FE_0_ZZ_SKYENV_SKY",
       "currentWeather": {
         "lightColor": {
-          "r": 248,
-          "g": 248,
-          "b": 248,
+          "r": 255,
+          "g": 244,
+          "b": 249,
           "a": 1
         },
-        "lightIntensity": 1.06,
+        "lightIntensity": 1.08,
         "darkness": 0.03,
         "shadowStrength": 0.6,
         "terrainWetness": 0,
         "lensFlare": 0.65,
         "fogColor": {
-          "r": 123,
-          "g": 158,
-          "b": 192,
+          "r": 88,
+          "g": 138,
+          "b": 188,
           "a": 1
         },
         "ambientColor": {
-          "r": 149,
-          "g": 149,
-          "b": 149,
+          "r": 166,
+          "g": 166,
+          "b": 166,
           "a": 1
         },
         "nightMode": false,
-        "resId": "UGC_SKYENV_DAY",
+        "resId": "UGC_SKYENV_COLORFULSKY",
         "enableFog": true,
         "fogType": 1,
         "startDistance": 50,
@@ -41307,7 +41307,7 @@
       "physicalMaterial": null,
       "initialTypes": {},
       "componentList": [],
-      "tempIndex": 171,
+      "tempIndex": 445,
       "itemID": 215,
       "seParent": null,
       "ecaScripts": [
@@ -41574,1058 +41574,7 @@
         "resourceId": "Primitive/Empty"
       },
       "_entityId": "Ir1jjqQG",
-      "children": [
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "18SDwuVU",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "position": {
-            "x": 95.03900146484375,
-            "y": -13.534000396728516,
-            "z": -63.79100036621094
-          },
-          "scale": {
-            "x": 0.5669999718666077,
-            "y": 0.5669999718666077,
-            "z": 0.5669999718666077
-          },
-          "rotation": {
-            "x": 0,
-            "y": 294.69500732421875,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 172,
-          "itemID": 344,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头A (1)",
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "EWI8N8dY",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "position": {
-            "x": 104.1449966430664,
-            "y": -13.378000259399414,
-            "z": 37.78099822998047
-          },
-          "scale": {
-            "x": 0.5670000910758972,
-            "y": 0.5669999718666077,
-            "z": 0.5670000910758972
-          },
-          "rotation": {
-            "x": 0,
-            "y": 63.55099868774414,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 173,
-          "itemID": 344,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头A (2)",
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "ogiLOVW0",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "position": {
-            "x": -65.18599700927734,
-            "y": -13.378000259399414,
-            "z": 77.25299835205078
-          },
-          "scale": {
-            "x": 0.5669999718666077,
-            "y": 0.5669999718666077,
-            "z": 0.5669999718666077
-          },
-          "rotation": {
-            "x": 0,
-            "y": 340.5570068359375,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 174,
-          "itemID": 344,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头A (3)",
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "3MZPfHYP",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "position": {
-            "x": -83.59300231933594,
-            "y": -13.859000205993652,
-            "z": 85.43599700927734
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 175,
-          "itemID": 345,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头B",
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "l1NtQ9kT",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "position": {
-            "x": -100.98300170898438,
-            "y": -13.859000205993652,
-            "z": 22.270000457763672
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 176,
-          "itemID": 345,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头B (1)",
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "lN7oZCyU",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "position": {
-            "x": -106.02999877929688,
-            "y": -12.774999618530273,
-            "z": -66.61599731445312
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 177,
-          "itemID": 350,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头G",
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "zarrS2zq",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "position": {
-            "x": -106.73899841308594,
-            "y": -17.017000198364258,
-            "z": -10.847000122070312
-          },
-          "scale": {
-            "x": 0.9999998807907104,
-            "y": 1,
-            "z": 1
-          },
-          "rotation": {
-            "x": 16.647998809814453,
-            "y": 277.99700927734375,
-            "z": 2.304999828338623
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 178,
-          "itemID": 345,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头B (2)",
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "jdaTG5sr",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "position": {
-            "x": -102.81400299072266,
-            "y": -15.23799991607666,
-            "z": 8.984000205993652
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 179,
-          "itemID": 347,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头D",
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "Q6BRd73y",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "position": {
-            "x": -109.12100219726562,
-            "y": -15.23799991607666,
-            "z": -53.85200119018555
-          },
-          "scale": {
-            "x": 1.000000238418579,
-            "y": 1,
-            "z": 1.0000003576278687
-          },
-          "rotation": {
-            "x": 337.3759765625,
-            "y": 91.04199981689453,
-            "z": 359.5989990234375
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 180,
-          "itemID": 347,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头D (1)",
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "GzHgfKzb",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "position": {
-            "x": -53.395999908447266,
-            "y": -15.784000396728516,
-            "z": -102.89399719238281
-          },
-          "scale": {
-            "x": 0.8109999895095825,
-            "y": 0.8109999895095825,
-            "z": 0.8109999895095825
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 181,
-          "itemID": 344,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头A",
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "oZ67V8fK",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "position": {
-            "x": -6.8979997634887695,
-            "y": -13.519000053405762,
-            "z": -110.26300048828125
-          },
-          "scale": {
-            "x": 0.7929999828338623,
-            "y": 0.7929999828338623,
-            "z": 0.7929999828338623
-          },
-          "rotation": {
-            "x": 0,
-            "y": 308.1719970703125,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 182,
-          "itemID": 344,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头A (4)",
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "L1F22eD5",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "position": {
-            "x": 21.724000930786133,
-            "y": -13.220000267028809,
-            "z": -83.21399688720703
-          },
-          "scale": {
-            "x": 0.5789999961853027,
-            "y": 0.5789999961853027,
-            "z": 0.5789999961853027
-          },
-          "rotation": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 183,
-          "itemID": 345,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头B (3)",
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "rkw0Wbrl",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "position": {
-            "x": 77.5510025024414,
-            "y": -14.020999908447266,
-            "z": -99.11699676513672
-          },
-          "scale": {
-            "x": 1.0520005226135254,
-            "y": 1.0520000457763672,
-            "z": 1.0520007610321045
-          },
-          "rotation": {
-            "x": 346.3500061035156,
-            "y": 177.4499969482422,
-            "z": 0.6019999980926514
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 184,
-          "itemID": 345,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头B (4)",
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "FeyShdBt",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "position": {
-            "x": 103.99099731445312,
-            "y": -16.26099967956543,
-            "z": -43.250999450683594
-          },
-          "scale": {
-            "x": 1.0520005226135254,
-            "y": 1.0520000457763672,
-            "z": 1.0520007610321045
-          },
-          "rotation": {
-            "x": 346.3500061035156,
-            "y": 177.4499969482422,
-            "z": 0.6019999980926514
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 185,
-          "itemID": 345,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头B (5)",
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "aoiSetting": 0
-        },
-        {
-          "_tag": {
-            "type": "SceneEditEntity",
-            "resourceId": "Primitive/Empty"
-          },
-          "_entityId": "6tcoX78r",
-          "children": [],
-          "prefabVariant": null,
-          "activeValue": {
-            "selfValue": true,
-            "valueTag": "activeValue"
-          },
-          "unlockedValue": {
-            "selfValue": true,
-            "valueTag": "unlockedValue"
-          },
-          "position": {
-            "x": 41.770999908447266,
-            "y": -16.26099967956543,
-            "z": 102.20999908447266
-          },
-          "scale": {
-            "x": 1.0520007610321045,
-            "y": 1.0520000457763672,
-            "z": 1.0520009994506836
-          },
-          "rotation": {
-            "x": 346.3500061035156,
-            "y": 144.0590057373047,
-            "z": 0.6019999384880066
-          },
-          "BTPath": [
-            null
-          ],
-          "visible": true,
-          "VisibilityLayer": 0,
-          "modelOptimization": 0,
-          "streamingLayer": "",
-          "attributes": [
-            4
-          ],
-          "isTrigger": false,
-          "collidable": true,
-          "physicalLayer": 0,
-          "physicalMaterial": null,
-          "initialTypes": {},
-          "componentList": [],
-          "_filters": [],
-          "tempIndex": 186,
-          "itemID": 345,
-          "seParent": null,
-          "ecaScripts": [
-            null
-          ],
-          "ecaProps": {
-            "DummyLevelObject": {},
-            "LevelObject": {},
-            "Transform": {},
-            "Entity": {},
-            "Visibility": {},
-            "Collider": {}
-          },
-          "entityTagData": {
-            "tagPointers": []
-          },
-          "_entityName": "石头B (6)",
-          "editorLockValue": false,
-          "editorVisibleValue": true,
-          "aoiSetting": 0
-        }
-      ],
+      "children": [],
       "prefabVariant": null,
       "activeValue": {
         "selfValue": true,
@@ -42760,7 +41709,7 @@
       "entityTagData": {
         "tagPointers": []
       },
-      "tempIndex": 187,
+      "tempIndex": 446,
       "itemID": 143,
       "seParent": null,
       "ecaScripts": [
@@ -42849,7 +41798,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 188,
+          "tempIndex": 447,
           "itemID": 143,
           "seParent": null,
           "ecaScripts": [],
@@ -42922,7 +41871,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 189,
+          "tempIndex": 448,
           "itemID": 143,
           "seParent": null,
           "ecaScripts": [],
@@ -42995,7 +41944,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 190,
+          "tempIndex": 449,
           "itemID": 143,
           "seParent": null,
           "ecaScripts": [],
@@ -43068,7 +42017,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 191,
+          "tempIndex": 450,
           "itemID": 143,
           "seParent": null,
           "ecaScripts": [],
@@ -43141,7 +42090,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 192,
+          "tempIndex": 451,
           "itemID": 143,
           "seParent": null,
           "ecaScripts": [],
@@ -43369,9 +42318,9 @@
                 "valueTag": "unlockedValue"
               },
               "position": {
-                "x": -8.28441,
-                "y": 2.45805,
-                "z": -35.6226
+                "x": -46.064613342285156,
+                "y": 2.4579999446868896,
+                "z": -53.451148986816406
               },
               "scale": {
                 "x": 1,
@@ -43596,9 +42545,9 @@
                 "valueTag": "unlockedValue"
               },
               "position": {
-                "x": 37.4705,
-                "y": 1.0632,
-                "z": -19.6726
+                "x": 48.810550689697266,
+                "y": 1.062999963760376,
+                "z": -7.90189790725708
               },
               "scale": {
                 "x": 1,
@@ -43731,9 +42680,9 @@
                 "valueTag": "unlockedValue"
               },
               "position": {
-                "x": 15.3403,
-                "y": 2.7874,
-                "z": 32.4168
+                "x": -28.067752838134766,
+                "y": 2.7869999408721924,
+                "z": 49.29720687866211
               },
               "scale": {
                 "x": 1,
@@ -43866,9 +42815,9 @@
                 "valueTag": "unlockedValue"
               },
               "position": {
-                "x": -39.6899,
-                "y": 4.99512,
-                "z": 28.4128
+                "x": -44.3109245300293,
+                "y": 4.994999885559082,
+                "z": 23.229827880859375
               },
               "scale": {
                 "x": 1,
@@ -44001,9 +42950,9 @@
                 "valueTag": "unlockedValue"
               },
               "position": {
-                "x": -32.2978,
-                "y": 4.18882,
-                "z": 12.0163
+                "x": -15.754413604736328,
+                "y": 4.189000129699707,
+                "z": 1.7097949981689453
               },
               "scale": {
                 "x": 1,
@@ -44136,9 +43085,9 @@
                 "valueTag": "unlockedValue"
               },
               "position": {
-                "x": -31.1593,
-                "y": 2.85024,
-                "z": -14.3233
+                "x": 6.355515480041504,
+                "y": 2.8499999046325684,
+                "z": 17.17074203491211
               },
               "scale": {
                 "x": 1,
@@ -44271,9 +43220,9 @@
                 "valueTag": "unlockedValue"
               },
               "position": {
-                "x": 20.7432,
-                "y": 1.0632,
-                "z": -7.99427
+                "x": 39.628238677978516,
+                "y": 1.062999963760376,
+                "z": 33.86992645263672
               },
               "scale": {
                 "x": 1,
@@ -44617,7 +43566,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 193,
+          "tempIndex": 452,
           "itemID": 192,
           "seParent": null,
           "ecaScripts": [
@@ -44685,7 +43634,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 194,
+          "tempIndex": 453,
           "itemID": 278,
           "seParent": null,
           "ecaScripts": [
@@ -44750,7 +43699,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 195,
+          "tempIndex": 454,
           "itemID": 278,
           "seParent": null,
           "ecaScripts": [
@@ -44819,7 +43768,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 196,
+          "tempIndex": 455,
           "itemID": 4,
           "seParent": null,
           "ecaScripts": [
@@ -44886,7 +43835,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 197,
+          "tempIndex": 456,
           "itemID": 8,
           "seParent": null,
           "ecaScripts": [
@@ -44953,7 +43902,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 198,
+          "tempIndex": 457,
           "itemID": 193,
           "seParent": null,
           "ecaScripts": [
@@ -45020,7 +43969,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 199,
+          "tempIndex": 458,
           "itemID": 43,
           "seParent": null,
           "ecaScripts": [
@@ -45087,7 +44036,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 200,
+          "tempIndex": 459,
           "itemID": 6,
           "seParent": null,
           "ecaScripts": [
@@ -45154,7 +44103,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 201,
+          "tempIndex": 460,
           "itemID": 24,
           "seParent": null,
           "ecaScripts": [
@@ -45221,7 +44170,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 202,
+          "tempIndex": 461,
           "itemID": 95,
           "seParent": null,
           "ecaScripts": [
@@ -45288,7 +44237,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 203,
+          "tempIndex": 462,
           "itemID": 275,
           "seParent": null,
           "ecaScripts": [
@@ -45355,7 +44304,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 204,
+          "tempIndex": 463,
           "itemID": 6,
           "seParent": null,
           "ecaScripts": [
@@ -45422,7 +44371,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 205,
+          "tempIndex": 464,
           "itemID": 24,
           "seParent": null,
           "ecaScripts": [
@@ -45491,7 +44440,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 206,
+          "tempIndex": 465,
           "itemID": 9,
           "seParent": null,
           "ecaScripts": [
@@ -45560,7 +44509,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 207,
+          "tempIndex": 466,
           "itemID": 193,
           "seParent": null,
           "ecaScripts": [
@@ -45588,7 +44537,10 @@
             "selfValue": true,
             "valueTag": "activeValue"
           },
-          "unlockedValue": null,
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
           "position": {
@@ -45626,7 +44578,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 297,
+          "tempIndex": 467,
           "itemID": 2,
           "seParent": null,
           "ecaScripts": [
@@ -45654,7 +44606,10 @@
             "selfValue": true,
             "valueTag": "activeValue"
           },
-          "unlockedValue": null,
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "position": {
             "x": 42.72200012207031,
             "y": 0,
@@ -45690,7 +44645,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 303,
+          "tempIndex": 468,
           "itemID": 2,
           "seParent": null,
           "ecaScripts": [
@@ -45720,7 +44675,10 @@
             "selfValue": true,
             "valueTag": "activeValue"
           },
-          "unlockedValue": null,
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "position": {
             "x": 48.489585876464844,
             "y": 0,
@@ -45756,7 +44714,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 304,
+          "tempIndex": 469,
           "itemID": 2,
           "seParent": null,
           "ecaScripts": [
@@ -45786,7 +44744,10 @@
             "selfValue": true,
             "valueTag": "activeValue"
           },
-          "unlockedValue": null,
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
           "position": {
@@ -45824,7 +44785,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 298,
+          "tempIndex": 470,
           "itemID": 1,
           "seParent": null,
           "ecaScripts": [
@@ -46016,7 +44977,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 208,
+          "tempIndex": 471,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46034,7 +44995,7 @@
           "_entityName": "Vault Trigger",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -46086,7 +45047,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 209,
+          "tempIndex": 472,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46104,7 +45065,7 @@
           "_entityName": "Vault Trigger (1)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.85
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -46160,7 +45121,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 210,
+          "tempIndex": 473,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46178,7 +45139,7 @@
           "_entityName": "Vault Trigger (2)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -46230,7 +45191,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 211,
+          "tempIndex": 474,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46248,7 +45209,7 @@
           "_entityName": "Vault Trigger (3)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.85
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -46304,7 +45265,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 212,
+          "tempIndex": 475,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46322,7 +45283,7 @@
           "_entityName": "Vault Trigger (4)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -46376,7 +45337,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 213,
+          "tempIndex": 476,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46394,7 +45355,7 @@
           "_entityName": "Vault Trigger (5)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.85
           }
         },
         {
@@ -46448,7 +45409,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 214,
+          "tempIndex": 477,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46466,7 +45427,7 @@
           "_entityName": "Vault Trigger (6)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.85
           }
         },
         {
@@ -46520,7 +45481,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 215,
+          "tempIndex": 478,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46538,7 +45499,7 @@
           "_entityName": "Vault Trigger (7)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -46561,7 +45522,7 @@
           "editorVisibleValue": true,
           "position": {
             "x": -1.3650000095367432,
-            "y": -1.7730000019073486,
+            "y": -1.8580188751220703,
             "z": 10.02400016784668
           },
           "scale": {
@@ -46592,7 +45553,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 216,
+          "tempIndex": 479,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46610,7 +45571,7 @@
           "_entityName": "Vault Trigger (8)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.85
           }
         },
         {
@@ -46664,7 +45625,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 217,
+          "tempIndex": 480,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46682,7 +45643,7 @@
           "_entityName": "Vault Trigger (9)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -46705,7 +45666,7 @@
           "editorVisibleValue": true,
           "position": {
             "x": 2.6070001125335693,
-            "y": -1.7209999561309814,
+            "y": -1.854333519935608,
             "z": 9.727999687194824
           },
           "scale": {
@@ -46736,7 +45697,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 218,
+          "tempIndex": 481,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46754,7 +45715,7 @@
           "_entityName": "Vault Trigger (10)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.85
           }
         },
         {
@@ -46808,7 +45769,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 219,
+          "tempIndex": 482,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46826,7 +45787,7 @@
           "_entityName": "Vault Trigger (11)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -46880,7 +45841,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 220,
+          "tempIndex": 483,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46898,7 +45859,7 @@
           "_entityName": "Vault Trigger (12)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -46952,7 +45913,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 221,
+          "tempIndex": 484,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47024,7 +45985,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 222,
+          "tempIndex": 485,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47042,7 +46003,7 @@
           "_entityName": "Vault Trigger (14)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -47096,7 +46057,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 223,
+          "tempIndex": 486,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47168,7 +46129,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 224,
+          "tempIndex": 487,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47186,7 +46147,7 @@
           "_entityName": "Vault Trigger (16)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -47240,7 +46201,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 225,
+          "tempIndex": 488,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47258,7 +46219,7 @@
           "_entityName": "Vault Trigger (17)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.85
           }
         },
         {
@@ -47312,7 +46273,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 226,
+          "tempIndex": 489,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47330,7 +46291,7 @@
           "_entityName": "Vault Trigger (18)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -47384,7 +46345,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 227,
+          "tempIndex": 490,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47402,7 +46363,7 @@
           "_entityName": "Vault Trigger (19)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.85
           }
         },
         {
@@ -47456,7 +46417,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 228,
+          "tempIndex": 491,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47474,7 +46435,7 @@
           "_entityName": "Vault Trigger (20)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -47528,7 +46489,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 229,
+          "tempIndex": 492,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47546,7 +46507,7 @@
           "_entityName": "Vault Trigger (21)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.85
           }
         },
         {
@@ -47600,7 +46561,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 230,
+          "tempIndex": 493,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47618,7 +46579,7 @@
           "_entityName": "Vault Trigger (22)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -47672,7 +46633,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 231,
+          "tempIndex": 494,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47690,7 +46651,7 @@
           "_entityName": "Vault Trigger (23)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -47742,7 +46703,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 232,
+          "tempIndex": 495,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47760,7 +46721,7 @@
           "_entityName": "Vault Trigger (24)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -47814,7 +46775,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 233,
+          "tempIndex": 496,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47832,7 +46793,7 @@
           "_entityName": "Vault Trigger (25)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -47888,7 +46849,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 234,
+          "tempIndex": 497,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47906,7 +46867,7 @@
           "_entityName": "Vault Trigger (26)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -47958,7 +46919,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 235,
+          "tempIndex": 498,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47976,7 +46937,7 @@
           "_entityName": "Vault Trigger (27)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -48030,7 +46991,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 236,
+          "tempIndex": 499,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48048,7 +47009,7 @@
           "_entityName": "Vault Trigger (28)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -48104,7 +47065,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 237,
+          "tempIndex": 500,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48122,7 +47083,7 @@
           "_entityName": "Vault Trigger (29)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -48174,7 +47135,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 238,
+          "tempIndex": 501,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48192,7 +47153,7 @@
           "_entityName": "Vault Trigger (30)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -48221,7 +47182,7 @@
             "z": -5.011000156402588
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 2,
             "y": 1,
             "z": 1.0000004768371582
           },
@@ -48248,7 +47209,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 239,
+          "tempIndex": 502,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48291,7 +47252,7 @@
             "z": -5.011000156402588
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 2,
             "y": 1,
             "z": 1.0000004768371582
           },
@@ -48318,7 +47279,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 240,
+          "tempIndex": 503,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48371,7 +47332,7 @@
           },
           "rotation": {
             "x": 0,
-            "y": 0,
+            "y": 4,
             "z": 0
           },
           "BTPath": [
@@ -48392,7 +47353,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 241,
+          "tempIndex": 504,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48462,7 +47423,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 242,
+          "tempIndex": 505,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48536,7 +47497,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 243,
+          "tempIndex": 506,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48606,7 +47567,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 244,
+          "tempIndex": 507,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48680,7 +47641,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 245,
+          "tempIndex": 508,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48718,14 +47679,14 @@
             "valueTag": "unlockedValue"
           },
           "position": {
-            "x": 41.1510009765625,
-            "y": -2.0339999198913574,
+            "x": 41.481170654296875,
+            "y": -2.4304418563842773,
             "z": -0.11400000005960464
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 1,
             "y": 1,
-            "z": 1.0000004768371582
+            "z": 1
           },
           "rotation": {
             "x": 0,
@@ -48750,7 +47711,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 246,
+          "tempIndex": 509,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48792,14 +47753,14 @@
           "editorLockValue": false,
           "editorVisibleValue": true,
           "position": {
-            "x": 40.40999984741211,
-            "y": -1.9620000123977661,
+            "x": 40.67393112182617,
+            "y": -2.0072853565216064,
             "z": -11.883000373840332
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 2,
             "y": 1,
-            "z": 1.0000004768371582
+            "z": 1
           },
           "rotation": {
             "x": 0,
@@ -48824,7 +47785,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 247,
+          "tempIndex": 510,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48862,14 +47823,14 @@
             "valueTag": "unlockedValue"
           },
           "position": {
-            "x": 40.40999984741211,
-            "y": -1.9620000123977661,
-            "z": -11.883000373840332
+            "x": 40.838401794433594,
+            "y": -2.1496269702911377,
+            "z": -11.907663345336914
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 2,
             "y": 1,
-            "z": 1.0000004768371582
+            "z": 1
           },
           "rotation": {
             "x": 0,
@@ -48894,7 +47855,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 248,
+          "tempIndex": 511,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48941,7 +47902,7 @@
             "z": -13.612000465393066
           },
           "scale": {
-            "x": 1,
+            "x": 2,
             "y": 1,
             "z": 1
           },
@@ -48968,7 +47929,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 249,
+          "tempIndex": 512,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48986,7 +47947,7 @@
           "_entityName": "Vault Trigger (41)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -49011,7 +47972,7 @@
             "z": -13.612000465393066
           },
           "scale": {
-            "x": 1,
+            "x": 2,
             "y": 1,
             "z": 1
           },
@@ -49038,7 +47999,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 250,
+          "tempIndex": 513,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49056,7 +48017,7 @@
           "_entityName": "Vault Trigger (42)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -49081,11 +48042,11 @@
           "editorVisibleValue": true,
           "position": {
             "x": 47.768001556396484,
-            "y": -2.017265796661377,
+            "y": -1.9807026386260986,
             "z": -13.968000411987305
           },
           "scale": {
-            "x": 1,
+            "x": 2,
             "y": 1,
             "z": 1
           },
@@ -49112,7 +48073,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 251,
+          "tempIndex": 514,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49130,7 +48091,7 @@
           "_entityName": "Vault Trigger (43)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -49151,11 +48112,11 @@
           },
           "position": {
             "x": 47.768001556396484,
-            "y": -1.9996676445007324,
-            "z": -13.968000411987305
+            "y": -1.8656761646270752,
+            "z": -13.622781753540039
           },
           "scale": {
-            "x": 1,
+            "x": 2,
             "y": 1,
             "z": 1
           },
@@ -49182,7 +48143,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 252,
+          "tempIndex": 515,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49200,7 +48161,7 @@
           "_entityName": "Vault Trigger (44)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -49229,7 +48190,7 @@
             "z": -12.663000106811523
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 2,
             "y": 1,
             "z": 1.0000004768371582
           },
@@ -49256,7 +48217,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 253,
+          "tempIndex": 516,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49274,7 +48235,7 @@
           "_entityName": "Vault Trigger (45)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -49299,7 +48260,7 @@
             "z": -12.663000106811523
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 2,
             "y": 1,
             "z": 1.0000004768371582
           },
@@ -49326,7 +48287,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 254,
+          "tempIndex": 517,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49344,7 +48305,7 @@
           "_entityName": "Vault Trigger (46)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -49373,7 +48334,7 @@
             "z": -11.95199966430664
           },
           "scale": {
-            "x": 1,
+            "x": 2,
             "y": 1,
             "z": 1
           },
@@ -49400,7 +48361,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 255,
+          "tempIndex": 518,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49443,7 +48404,7 @@
             "z": -11.95199966430664
           },
           "scale": {
-            "x": 1,
+            "x": 2,
             "y": 1,
             "z": 1
           },
@@ -49470,7 +48431,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 256,
+          "tempIndex": 519,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49512,14 +48473,14 @@
           "editorLockValue": false,
           "editorVisibleValue": true,
           "position": {
-            "x": 49.91899871826172,
-            "y": 0.8569999933242798,
+            "x": 50.07023239135742,
+            "y": 1.4245784282684326,
             "z": -12.46500015258789
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 1,
             "y": 1,
-            "z": 1.0000004768371582
+            "z": 1
           },
           "rotation": {
             "x": 0,
@@ -49544,7 +48505,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 257,
+          "tempIndex": 520,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49562,7 +48523,7 @@
           "_entityName": "Vault Trigger (49)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -49584,14 +48545,14 @@
           "editorLockValue": false,
           "editorVisibleValue": true,
           "position": {
-            "x": 49.91699981689453,
-            "y": 0.8360000252723694,
+            "x": 50.39217758178711,
+            "y": 1.403578519821167,
             "z": -12.494999885559082
           },
           "scale": {
-            "x": 1.0000004768371582,
+            "x": 1,
             "y": 1,
-            "z": 1.0000004768371582
+            "z": 1
           },
           "rotation": {
             "x": 0,
@@ -49616,7 +48577,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 258,
+          "tempIndex": 521,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49634,7 +48595,7 @@
           "_entityName": "Vault Trigger (50)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -49657,7 +48618,7 @@
           "editorVisibleValue": true,
           "position": {
             "x": 47.402000427246094,
-            "y": 0.8510000109672546,
+            "y": 1.3831104040145874,
             "z": -14.137999534606934
           },
           "scale": {
@@ -49688,7 +48649,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 259,
+          "tempIndex": 522,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49727,7 +48688,7 @@
           },
           "position": {
             "x": 47.402000427246094,
-            "y": 0.8510000109672546,
+            "y": 1.3831104040145874,
             "z": -14.137999534606934
           },
           "scale": {
@@ -49758,7 +48719,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 260,
+          "tempIndex": 523,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49776,7 +48737,7 @@
           "_entityName": "Vault Trigger (52)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -49801,7 +48762,7 @@
           "editorVisibleValue": true,
           "position": {
             "x": 42.6619987487793,
-            "y": 0.8510000109672546,
+            "y": 1.4826209545135498,
             "z": -13.805999755859375
           },
           "scale": {
@@ -49832,7 +48793,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 261,
+          "tempIndex": 524,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49873,7 +48834,7 @@
           "editorVisibleValue": true,
           "position": {
             "x": 42.65399932861328,
-            "y": 0.8529999852180481,
+            "y": 1.4846209287643433,
             "z": -13.805999755859375
           },
           "scale": {
@@ -49904,7 +48865,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 262,
+          "tempIndex": 525,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49922,7 +48883,7 @@
           "_entityName": "Vault Trigger (54)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -49976,7 +48937,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 263,
+          "tempIndex": 526,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49994,7 +48955,7 @@
           "_entityName": "Vault Trigger (55)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -50046,7 +49007,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 264,
+          "tempIndex": 527,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50120,7 +49081,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 265,
+          "tempIndex": 528,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50192,7 +49153,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 266,
+          "tempIndex": 529,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50210,7 +49171,7 @@
           "_entityName": "Vault Trigger (58)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -50264,7 +49225,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 267,
+          "tempIndex": 530,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50334,7 +49295,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 268,
+          "tempIndex": 531,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50352,7 +49313,7 @@
           "_entityName": "Vault Trigger (60)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -50408,7 +49369,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 269,
+          "tempIndex": 532,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50478,7 +49439,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 300,
+          "tempIndex": 533,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50550,7 +49511,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 299,
+          "tempIndex": 534,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50568,7 +49529,7 @@
           "_entityName": "Vault Trigger (71)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -50624,7 +49585,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 270,
+          "tempIndex": 535,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50642,7 +49603,7 @@
           "_entityName": "Vault Trigger (62)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -50696,7 +49657,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 271,
+          "tempIndex": 536,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50714,7 +49675,7 @@
           "_entityName": "Vault Trigger (63)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -50768,7 +49729,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 272,
+          "tempIndex": 537,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50840,7 +49801,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 273,
+          "tempIndex": 538,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50910,7 +49871,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 274,
+          "tempIndex": 539,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50928,7 +49889,7 @@
           "_entityName": "Vault Trigger (66)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -50984,7 +49945,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 275,
+          "tempIndex": 540,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51002,7 +49963,7 @@
           "_entityName": "Vault Trigger (67)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           }
         },
         {
@@ -51054,7 +50015,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 276,
+          "tempIndex": 541,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51128,7 +50089,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 277,
+          "tempIndex": 542,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51198,7 +50159,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 278,
+          "tempIndex": 543,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51216,7 +50177,7 @@
           "_entityName": "Vault Trigger (70)",
           "propsData": {
             "VaultDistance": 0.5,
-            "VaultHeight": 0.7
+            "VaultHeight": 0.5
           },
           "editorLockValue": false,
           "editorVisibleValue": true
@@ -51272,7 +50233,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 279,
+          "tempIndex": 544,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51344,7 +50305,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 280,
+          "tempIndex": 545,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51416,7 +50377,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 281,
+          "tempIndex": 546,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51486,7 +50447,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 282,
+          "tempIndex": 547,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51560,7 +50521,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 283,
+          "tempIndex": 548,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51630,7 +50591,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 301,
+          "tempIndex": 549,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51702,7 +50663,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 284,
+          "tempIndex": 550,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51776,7 +50737,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 285,
+          "tempIndex": 551,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51846,7 +50807,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 286,
+          "tempIndex": 552,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51920,7 +50881,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 287,
+          "tempIndex": 553,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51990,7 +50951,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 288,
+          "tempIndex": 554,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52062,7 +51023,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 302,
+          "tempIndex": 555,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52136,7 +51097,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 289,
+          "tempIndex": 556,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52206,7 +51167,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 290,
+          "tempIndex": 557,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52280,7 +51241,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 291,
+          "tempIndex": 558,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52352,7 +51313,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 292,
+          "tempIndex": 559,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52424,7 +51385,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 293,
+          "tempIndex": 560,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52496,7 +51457,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 294,
+          "tempIndex": 561,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52600,6 +51561,574 @@
       "propsData": {},
       "entityVersion": 3,
       "_entityName": "VaultTriggers"
+    },
+    {
+      "_tag": {
+        "type": "UGCSceneEntity",
+        "resourceId": "Primitive/Empty"
+      },
+      "_entityId": "mTU31L87",
+      "children": [
+        {
+          "_tag": {
+            "type": "UGCSceneEntity",
+            "resourceId": ""
+          },
+          "_entityId": "adSroTzN",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -125.76873016357422
+          },
+          "scale": {
+            "x": 300,
+            "y": 70,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [
+            "MeshRender",
+            "ColliderShape",
+            "Collider"
+          ],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "materials": [
+            null
+          ],
+          "colliders": [
+            {
+              "enable": true,
+              "colliderType": "Box",
+              "meshUUID": null,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "size": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "isTrigger": false,
+              "radius": 0.5,
+              "height": 1,
+              "physicalMaterialUUID": null,
+              "isConvexIfMesh": false
+            }
+          ],
+          "IsNPC": false,
+          "isCreateAsEmpty": false,
+          "Rigidbody": {
+            "Type": 1,
+            "Mass": 1,
+            "CenterOfMass": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "UseGravity": true,
+            "Drag": 0.05,
+            "AngularDrag": 0.05,
+            "FreezePosX": false,
+            "FreezeRotX": false,
+            "FreezePosY": false,
+            "FreezeRotY": false,
+            "FreezePosZ": false,
+            "FreezeRotZ": false
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "CustomLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {},
+            "MeshRender": {},
+            "ColliderShape": {},
+            "Collider": {}
+          },
+          "propsData": {},
+          "entityVersion": 3,
+          "mesh": null,
+          "_entityName": "Box001"
+        },
+        {
+          "_tag": {
+            "type": "UGCSceneEntity",
+            "resourceId": ""
+          },
+          "_entityId": "cGPt0WYo",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 123.42828369140625
+          },
+          "scale": {
+            "x": 300,
+            "y": 70,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [
+            "MeshRender",
+            "ColliderShape",
+            "Collider"
+          ],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "materials": [
+            null
+          ],
+          "colliders": [
+            {
+              "enable": true,
+              "colliderType": "Box",
+              "meshUUID": null,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "size": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "isTrigger": false,
+              "radius": 0.5,
+              "height": 1,
+              "physicalMaterialUUID": null,
+              "isConvexIfMesh": false
+            }
+          ],
+          "IsNPC": false,
+          "isCreateAsEmpty": false,
+          "Rigidbody": {
+            "Type": 1,
+            "Mass": 1,
+            "CenterOfMass": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "UseGravity": true,
+            "Drag": 0.05,
+            "AngularDrag": 0.05,
+            "FreezePosX": false,
+            "FreezeRotX": false,
+            "FreezePosY": false,
+            "FreezeRotY": false,
+            "FreezePosZ": false,
+            "FreezeRotZ": false
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "CustomLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {},
+            "MeshRender": {},
+            "ColliderShape": {},
+            "Collider": {}
+          },
+          "propsData": {},
+          "entityVersion": 3,
+          "mesh": null,
+          "_entityName": "Box001 (2)",
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        },
+        {
+          "_tag": {
+            "type": "UGCSceneEntity",
+            "resourceId": ""
+          },
+          "_entityId": "E46gqa44",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "position": {
+            "x": 123.54075622558594,
+            "y": 0,
+            "z": -7.654751300811768
+          },
+          "scale": {
+            "x": 300,
+            "y": 70,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 90,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [
+            "MeshRender",
+            "ColliderShape",
+            "Collider"
+          ],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "materials": [
+            null
+          ],
+          "colliders": [
+            {
+              "enable": true,
+              "colliderType": "Box",
+              "meshUUID": null,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "size": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "isTrigger": false,
+              "radius": 0.5,
+              "height": 1,
+              "physicalMaterialUUID": null,
+              "isConvexIfMesh": false
+            }
+          ],
+          "IsNPC": false,
+          "isCreateAsEmpty": false,
+          "Rigidbody": {
+            "Type": 1,
+            "Mass": 1,
+            "CenterOfMass": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "UseGravity": true,
+            "Drag": 0.05,
+            "AngularDrag": 0.05,
+            "FreezePosX": false,
+            "FreezeRotX": false,
+            "FreezePosY": false,
+            "FreezeRotY": false,
+            "FreezePosZ": false,
+            "FreezeRotZ": false
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "CustomLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {},
+            "MeshRender": {},
+            "ColliderShape": {},
+            "Collider": {}
+          },
+          "propsData": {},
+          "entityVersion": 3,
+          "mesh": null,
+          "_entityName": "Box001 (1)",
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        },
+        {
+          "_tag": {
+            "type": "UGCSceneEntity",
+            "resourceId": ""
+          },
+          "_entityId": "3qJg791C",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "position": {
+            "x": -124.34510803222656,
+            "y": 0,
+            "z": -7.65500020980835
+          },
+          "scale": {
+            "x": 300,
+            "y": 70,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 90,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [
+            "MeshRender",
+            "ColliderShape",
+            "Collider"
+          ],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "materials": [
+            null
+          ],
+          "colliders": [
+            {
+              "enable": true,
+              "colliderType": "Box",
+              "meshUUID": null,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "size": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "isTrigger": false,
+              "radius": 0.5,
+              "height": 1,
+              "physicalMaterialUUID": null,
+              "isConvexIfMesh": false
+            }
+          ],
+          "IsNPC": false,
+          "isCreateAsEmpty": false,
+          "Rigidbody": {
+            "Type": 1,
+            "Mass": 1,
+            "CenterOfMass": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "UseGravity": true,
+            "Drag": 0.05,
+            "AngularDrag": 0.05,
+            "FreezePosX": false,
+            "FreezeRotX": false,
+            "FreezePosY": false,
+            "FreezeRotY": false,
+            "FreezePosZ": false,
+            "FreezeRotZ": false
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "CustomLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {},
+            "MeshRender": {},
+            "ColliderShape": {},
+            "Collider": {}
+          },
+          "propsData": {},
+          "entityVersion": 3,
+          "mesh": null,
+          "_entityName": "Box001 (3)",
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        }
+      ],
+      "prefabVariant": null,
+      "activeValue": {
+        "selfValue": true,
+        "valueTag": "activeValue"
+      },
+      "unlockedValue": null,
+      "editorLockValue": false,
+      "editorVisibleValue": true,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "BTPath": [
+        null
+      ],
+      "visible": true,
+      "VisibilityLayer": 0,
+      "modelOptimization": 0,
+      "streamingLayer": "",
+      "attributes": [
+        2,
+        4
+      ],
+      "isTrigger": false,
+      "collidable": true,
+      "physicalLayer": 0,
+      "physicalMaterial": null,
+      "aoiSetting": 0,
+      "initialTypes": {},
+      "componentList": [],
+      "entityTagData": {
+        "tagPointers": []
+      },
+      "materials": [
+        null
+      ],
+      "colliders": [],
+      "IsNPC": false,
+      "isCreateAsEmpty": true,
+      "Rigidbody": {
+        "Type": 1,
+        "Mass": 1,
+        "CenterOfMass": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "UseGravity": true,
+        "Drag": 0.05,
+        "AngularDrag": 0.05,
+        "FreezePosX": false,
+        "FreezeRotX": false,
+        "FreezePosY": false,
+        "FreezeRotY": false,
+        "FreezePosZ": false,
+        "FreezeRotZ": false
+      },
+      "ecaScripts": [],
+      "ecaProps": {
+        "CustomLevelObject": {},
+        "LevelObject": {},
+        "Transform": {},
+        "Entity": {},
+        "Visibility": {}
+      },
+      "propsData": {},
+      "entityVersion": 3,
+      "_entityName": "DeathTriggers"
     }
   ],
   "prefabVariant": null,

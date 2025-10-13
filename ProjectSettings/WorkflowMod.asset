@@ -300,7 +300,7 @@
           },
           "editorLockValue": false,
           "editorVisibleValue": true,
-          "gameDuration": 900,
+          "gameDuration": 60,
           "ecaScripts": [],
           "ecaProps": {
             "Phase": {},
@@ -309,6 +309,28 @@
           "modId": 18,
           "_entityName": "LastShrink",
           "phaseIndex": 2227
+        },
+        {
+          "_tag": {
+            "type": "ff.PhaseEntity1",
+            "resourceId": "Phase"
+          },
+          "_entityId": "A8bSx8cg",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": null,
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "gameDuration": 900,
+          "ecaScripts": [],
+          "ecaProps": {
+            "Phase": {},
+            "Entity": {}
+          },
+          "modId": 18,
+          "_entityName": "DeathMatch",
+          "phaseIndex": 306
         },
         {
           "_tag": {
@@ -409,28 +431,22 @@
       "type": "ff.PhaseEntity1",
       "resourceId": "Phase"
     },
-    "_entityId": "0rpR1Bnz",
+    "_entityId": "A8bSx8cg",
     "children": [],
     "prefabVariant": null,
-    "activeValue": {
-      "selfValue": true,
-      "valueTag": "activeValue"
-    },
-    "unlockedValue": {
-      "selfValue": true,
-      "valueTag": "unlockedValue"
-    },
+    "activeValue": null,
+    "unlockedValue": null,
     "editorLockValue": false,
     "editorVisibleValue": true,
-    "gameDuration": 15,
+    "gameDuration": 900,
     "ecaScripts": [],
     "ecaProps": {
       "Phase": {},
       "Entity": {}
     },
     "modId": 18,
-    "_entityName": "FirstBorderDelay",
-    "phaseIndex": 750
+    "_entityName": "DeathMatch",
+    "phaseIndex": 306
   },
   "roundCount": 4,
   "discriminator": "ISceneLike",

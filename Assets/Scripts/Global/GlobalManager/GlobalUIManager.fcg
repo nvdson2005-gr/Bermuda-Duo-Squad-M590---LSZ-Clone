@@ -60,7 +60,7 @@ graph GlobalUIManager {
     func CreateInGameScoreBoard(player entity<Player>){
         CreateBuiltInUI(out var createdUI, player, EResInternalHud.MultiTeamScoreBoard as BuiltInUIType)
         createdUI<UIMultipleTeamLeaderboardV2>.Players = globalEntity<TeamData>.GetSortedPlayersGroup()
-        createdUI<UIMultipleTeamLeaderboardV2>.Ranks = List<int>{1, 2, 3}
+        createdUI<UIMultipleTeamLeaderboardV2>.Ranks = List<int>{1, 2, 3, 4}
         createdUI<UIMultipleTeamLeaderboardV2>.TotalScores = globalEntity<TeamData>.GetSortedScores()
         createdUI<UIMultipleTeamLeaderboardV2>.ScoreTypeNames = List<string>{LocString{"MULTI_SCBOARD_KILL", List<string>{}}, LocString{"MULTI_SCBOARD_DEATH", List<string>{}}, LocString{"MULTI_SCBOARD_DMG", List<string>{}}}
         var playerScoreList = List<List<int>>{}
@@ -130,9 +130,18 @@ graph GlobalUIManager {
     @param player The player entity to set the visibility for
     @param isVisible The visibility state to set
     */
-    func SetVisibilityEventUI(player entity<Player>, isVisible bool) {
+    async func SetVisibilityEventUI(player entity<Player>, isVisible bool) {
         if (Map.ContainKey(eventUIDict, player)) {
-            eventUIDict[player]<CustomUI>.IsVisible = isVisible
+            // eventUIDict[player]<CustomUI>.IsVisible = isVisible
+            var eWidget = GetWidgetFromCustomUI(player, eventUIDict[player], EResUIEventUI.EVENT_BACKGROUND as CustomUIWidgetID)
+            if eWidget<UIWidget>.Active == isVisible {
+                return
+            }
+            if isVisible {
+                start globalEntity<GlobalAnimationManager>.DOOpenEventUI(eWidget)
+            } else {
+                start globalEntity<GlobalAnimationManager>.DOCloseEventUI(eWidget)
+            }
         }
     }
 
@@ -652,6 +661,11 @@ graph GlobalUIManager {
     @param teamSorted: The list of teams sorted by their scores
     */
     func CreateEndGameHUD(player entity<Player>, playerTeam entity<Team>, resultStatus int, teamSorted List<entity<Team>>){
+        if player<PlayerUI>.isShownEndGameHUD == false {
+            player<PlayerUI>.isShownEndGameHUD = true
+        } else {
+            return
+        }
         CreateBuiltInUI(out var createdUI2, player, EResInternalHud.MultiTeamMatchResultHud as BuiltInUIType)
         var teamNameList = List<string>{}
         var pointList = List<int>{}
@@ -795,6 +809,10 @@ graph GlobalUIManager {
         if (Map.ContainKey(voteUIDict, player)) {
             DestroyCustomUI(voteUIDict[player]) // Destroy the vote UI
             Map.Remove(voteUIDict, player) // Remove the vote UI from the dictionary after destroying it
+        }
+        if Map.ContainKey(eventUIDict, player) {
+            DestroyCustomUI(eventUIDict[player]) // Destroy the event UI
+            Map.Remove(eventUIDict, player) // Remove the event UI from the dictionary after destroying it
         }
     }
 

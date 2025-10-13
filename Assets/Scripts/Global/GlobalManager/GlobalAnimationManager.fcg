@@ -72,16 +72,43 @@ graph GlobalAnimationManager {
             return
         }
         WaitForMillisecond(delay)
-        var iter int = increaseFrom
-        widget<UIWidgetLabel>.Content = ToString(iter)
-        var tweenDuration int = duration / (increaseTo - increaseFrom)
-        while iter < increaseTo {
-            iter = iter + 1
-            widget<UIWidgetLabel>.Content = ToString(iter)
-            WaitForMillisecond(tweenDuration)
-        }
+        // var iter int = increaseFrom
+        // widget<UIWidgetLabel>.Content = ToString(iter)
+        // var tweenDuration int = duration / (increaseTo - increaseFrom)
+        // while iter < increaseTo {
+        //     iter = iter + 1
+        //     widget<UIWidgetLabel>.Content = ToString(iter)
+        //     WaitForMillisecond(tweenDuration)
+        // }
         // CreateTween(widget, UIWidgetLabel.Content, increaseFrom, increaseTo, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 8000, out var contentTween, true)
         // Destroy(contentTween)
         widget<UIWidgetLabel>.Content = ToString(increaseTo)
+    }
+
+    async func DOOpenEventUI(widget entity<UIWidget>){
+        var height = widget<UIWidget>.Height
+        widget<UIWidget>.Active = true
+        widget<UIWidgetImage>.Alpha = 0.0
+        CreateTween(widget, UIWidgetImage.Alpha, 0.0, 1.0, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 300, out var alphaTween, true)
+        CreateTween(widget, UIWidget.Height, 0, height, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 300, out var heightTween, true)
+        WaitForMillisecond(1000)
+        Destroy(alphaTween)
+        Destroy(heightTween)
+        widget<UIWidget>.Height = height
+        widget<UIWidgetImage>.Alpha = 1.0 
+    }
+
+    async func DOCloseEventUI(widget entity<UIWidget>){
+        var height = widget<UIWidget>.Height
+        widget<UIWidget>.Active = true
+        widget<UIWidgetImage>.Alpha = 1.0
+        CreateTween(widget, UIWidgetImage.Alpha, 1.0, 0.0, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 300, out var alphaTween, true)
+        CreateTween(widget, UIWidget.Height, height, 0, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 300, out var heightTween, true)
+        WaitForMillisecond(1000)
+        Destroy(alphaTween)
+        Destroy(heightTween)
+        widget<UIWidget>.Height = height
+        widget<UIWidgetImage>.Alpha = 0.0
+        widget<UIWidget>.Active = false
     }
 }

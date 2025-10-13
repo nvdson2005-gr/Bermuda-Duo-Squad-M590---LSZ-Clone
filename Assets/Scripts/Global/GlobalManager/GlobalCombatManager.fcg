@@ -24,7 +24,7 @@ import "../../Player/PlayerUI.fcg" as PlayerUI
 import "../../Player/PlayerRandomEventHandler.fcg" as PlayerRandomEventHandler
 graph GlobalCombatManager {
     teamsAlive List<Team> = List<Team>{} // List of teams that are still alive in the combat phase
-    allDroppedItems List<entity<ItemBase>> = List<entity<ItemBase>>{} // List of all dropped items on ground in each round
+    // allDroppedItems List<entity<ItemBase>> = List<entity<ItemBase>>{} // List of all dropped items on ground in each round
     teamRanking List<entity<Team>> = List<entity<Team>>{} // List of teams in ranking order
     // When the combat phase starts, activate the timer also
     event OnPhaseStart(phase entity<Phase>) {
@@ -83,16 +83,16 @@ graph GlobalCombatManager {
         }
     }
 
-    func AddItemToList(item entity<ItemBase>) {
-        Append(allDroppedItems, item)
-    }
+    // func AddItemToList(item entity<ItemBase>) {
+    //     Append(allDroppedItems, item)
+    // }
 
-    func ClearAllItemsOnGround(){
-        for index, item in allDroppedItems {
-            // LogError("Destroyed item: " + item)
-            Destroy(item)
-        }
-    }
+    // func ClearAllItemsOnGround(){
+    //     for index, item in allDroppedItems {
+    //         // LogError("Destroyed item: " + item)
+    //         Destroy(item)
+    //     }
+    // }
 
     /* Check if the combat phase should end
        This function checks the current state of the teams and determines if the combat phase should end.
@@ -112,7 +112,7 @@ graph GlobalCombatManager {
                 if team == true {
                     // globalEntity<TargetAndCombatTimer>.ResetTimer()
                     // LogInfo("<GlobalCombatManager.fcg>: Team " + index + " is the last team standing.")
-                    ClearAllItemsOnGround()
+                    // ClearAllItemsOnGround()
                     DispatchEvent(CombatEnd, thisEntity, List<object>{GetAllTeams()[index]})
                     return
                 }
@@ -120,7 +120,7 @@ graph GlobalCombatManager {
         }
         // Exception: No team wins
         if(teamCount == 0) {
-            ClearAllItemsOnGround()
+            // ClearAllItemsOnGround()
             // globalEntity<TargetAndCombatTimer>.ResetTimer()
             DispatchEvent(NoTeamWinException, thisEntity, List<object>{})
         }

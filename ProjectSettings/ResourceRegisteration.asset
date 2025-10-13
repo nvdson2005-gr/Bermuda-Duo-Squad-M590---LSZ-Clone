@@ -549,6 +549,10 @@
             {
               "id": "pfuNIAEG",
               "scriptName": "EVENT_CONTENT"
+            },
+            {
+              "id": "3xc2fD0k",
+              "scriptName": "EVENT_BACKGROUND"
             }
           ]
         }

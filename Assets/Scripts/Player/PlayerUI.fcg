@@ -15,6 +15,7 @@ import "Convert.fcc" as Convert
 import "../Global/GlobalData/CombatRoundCounter.fcg" as CombatRoundCounter
 import "Player.fcc" as Player
 graph PlayerUI {
+    isShownEndGameHUD bool = false
     borderNotiUI entity<BuiltInUI>
     lastRoundNotiUI entity<UICountdownReminder>
     gunCombosThisRound List<List<ItemIDType>> = List<List<ItemIDType>>{}

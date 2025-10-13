@@ -38,7 +38,6 @@ import "Convert.fcc" as Convert
 import "../../Player/PlayerSoundManager.fcg" as PlayerSoundManager
 import "../../Player/PlayerUI.fcg" as PlayerUI
 graph GlobalGameManager {
-    // winPoints int = 3 // Number of points required to win the game
     availableStages int = 11 // Number of available stages in the game, goes together with the number of safe zones and spawn point groups in GlobalSafeZones.cfg and SpawnPoints.cfg
     prepPhaseDuration int = 15 // Use this to customize the buying phase duration
     phaseDuration Map<EPhase, float> = Map<EPhase, float>{}
@@ -193,7 +192,8 @@ graph GlobalGameManager {
         isRoundEnded = true
         if (winningTeam == nil) {
             // LogError("There is no team winning this round")
-            EndCurrentPhase()
+            // EndCurrentPhase()
+            SwitchPhase(EPhase.EndCombat)
         }
         // LogInfo("<GlobalGameManager.fcg>: Round ended. Winning team: " + winningTeam) // Debug Info
         // globalEntity<GlobalUIManager>.CreatePlusAnimation(winningTeam)
@@ -217,6 +217,7 @@ graph GlobalGameManager {
         for index, player in GetAllPlayers() {
             ClearBackpack(player)
             player<PlayerSoundManager>.StopAllLoopingSounds()
+            start globalEntity<GlobalUIManager>.SetVisibilityEventUI(player, false)
         }
         if CheckWinningCondition() {
             isMatchEnded = true
