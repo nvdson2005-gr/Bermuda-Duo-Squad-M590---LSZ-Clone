@@ -37,7 +37,7 @@ graph PlayerRandomEventHandler {
             return
         }
         mutexLock = true
-        if currentBodyScale > 0.75 {
+        if currentBodyScale > 0.85 {
             currentBodyScale = currentBodyScale - 0.02
             var skeleton entity<Skeleton> = thisEntity<Player>.Skeleton
             if skeleton == nil {
@@ -45,16 +45,17 @@ graph PlayerRandomEventHandler {
                 mutexLock = false
                 return
             }
-            skeleton<Skeleton>.Head<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            skeleton<Skeleton>.LeftArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            skeleton<Skeleton>.RightArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            skeleton<Skeleton>.LeftHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            skeleton<Skeleton>.RightHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            skeleton<Skeleton>.Body<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.Head<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.LeftArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.RightArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.LeftHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.RightHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.Body<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
             // skeleton<Skeleton>.LeftLeg<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
             // skeleton<Skeleton>.RightLeg<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
             // skeleton<Skeleton>.LeftFoot<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
             // skeleton<Skeleton>.RightFoot<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            DispatchEventWithPlatform(OnResizePlayer, thisEntity, PlatformType.Client,List<object>{Vector3{currentBodyScale, currentBodyScale, currentBodyScale}})
         }
         WaitForMillisecond(50)
         mutexLock = false
@@ -65,7 +66,7 @@ graph PlayerRandomEventHandler {
             return
         }
         mutexLock = true
-        if currentBodyScale <= 1.3 {
+        if currentBodyScale <= 1.25 {
             currentBodyScale = currentBodyScale + 0.03
             var skeleton entity<Skeleton> = thisEntity<Player>.Skeleton
             if skeleton == nil {
@@ -73,16 +74,13 @@ graph PlayerRandomEventHandler {
                 mutexLock = false
                 return
             }
-            skeleton<Skeleton>.Head<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            skeleton<Skeleton>.LeftArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            skeleton<Skeleton>.RightArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            skeleton<Skeleton>.LeftHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            skeleton<Skeleton>.RightHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            skeleton<Skeleton>.Body<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            // skeleton<Skeleton>.LeftLeg<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            // skeleton<Skeleton>.RightLeg<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            // skeleton<Skeleton>.LeftFoot<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-            // skeleton<Skeleton>.RightFoot<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.Head<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.LeftArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.RightArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.LeftHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.RightHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            // skeleton<Skeleton>.Body<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+            DispatchEventWithPlatform(OnResizePlayer, thisEntity, PlatformType.Client,List<object>{Vector3{currentBodyScale, currentBodyScale, currentBodyScale}})
         }
         WaitForMillisecond(50)
         mutexLock = false
@@ -98,16 +96,17 @@ graph PlayerRandomEventHandler {
         if skeleton == nil {
             // LogError("Skeleton is nil for player: " + thisEntity<Player>.NickName)
         }
-        skeleton<Skeleton>.Head<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-        skeleton<Skeleton>.LeftArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-        skeleton<Skeleton>.RightArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-        skeleton<Skeleton>.LeftHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-        skeleton<Skeleton>.RightHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-        skeleton<Skeleton>.Body<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-        skeleton<Skeleton>.LeftLeg<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-        skeleton<Skeleton>.RightLeg<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-        skeleton<Skeleton>.LeftFoot<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
-        skeleton<Skeleton>.RightFoot<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.Head<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.LeftArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.RightArm<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.LeftHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.RightHand<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.Body<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.LeftLeg<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.RightLeg<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.LeftFoot<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.RightFoot<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        DispatchEventWithPlatform(OnResizePlayer, thisEntity, PlatformType.Client,List<object>{Vector3{currentBodyScale, currentBodyScale, currentBodyScale}})
         WaitForMillisecond(50)
         mutexLock = false
     }

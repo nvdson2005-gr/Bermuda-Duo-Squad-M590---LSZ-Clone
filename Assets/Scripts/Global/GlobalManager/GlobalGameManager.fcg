@@ -281,6 +281,18 @@ graph GlobalGameManager {
         for index, team in winningTeams {
             if globalEntity<TeamData>.GetTeamTotalPoint(team) < globalEntity<TeamData>.GetTeamTotalPoint(winningTeams[0]) || team == winningTeams[0] {
                 continue
+            } else {
+                if globalEntity<TeamData>.GetTeamWinningTimes(team) < globalEntity<TeamData>.GetTeamWinningTimes(winningTeams[0]) {
+                    continue
+                } else {
+                    if globalEntity<TeamData>.GetTeamKills()[team] < globalEntity<TeamData>.GetTeamKills()[winningTeams[0]] {
+                        continue
+                    } else {
+                        if globalEntity<TeamData>.GetTeamBooyah(team) < globalEntity<TeamData>.GetTeamBooyah(winningTeams[0]) {
+                            continue
+                        } 
+                    }
+                }
             }
             Append(returnList, team)
         }

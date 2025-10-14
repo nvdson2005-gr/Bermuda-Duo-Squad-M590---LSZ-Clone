@@ -26,7 +26,7 @@
   "HalfwayJoinNumberLimit": true,
   "EnableFreeQuit": false,
   "PriorityFullStartMatch": true,
-  "AllowHangUpTime": 20,
+  "AllowHangUpTime": 5,
   "EnableRuntimeDynamicNavMesh": false,
   "EnableHackCheck": false,
   "modOpen": true,

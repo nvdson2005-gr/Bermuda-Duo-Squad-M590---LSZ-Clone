@@ -10,6 +10,8 @@ import "List.fcc" as List
 import "Scene.fcc" as Scene
 import "Map.fcc" as Map
 import "./GlobalConfig.fcg" as GlobalConfig
+import "Workflow.fcc" as Workflow
+import "Math.fcc" as Math
 graph SpawnPoints {
     spawnDict Map<int, List<entity<SpawnPosition>>> // Map to store spawn points with round IDs, goes with the Safe Zone ID
     spawnPoints List<object>  // List to keep track of all spawn points
@@ -18,17 +20,43 @@ graph SpawnPoints {
     // Initialize the list of spawn names
     spawnNames List<string> = List<string>{LocString{"STAGE_1", List<string>{}}, LocString{"STAGE_2", List<string>{}}, LocString{"STAGE_3", List<string>{}}, LocString{"STAGE_4", List<string>{}}, LocString{"STAGE_5", List<string>{}}, LocString{"STAGE_6", List<string>{}}, LocString{"STAGE_7", List<string>{}}, LocString{"STAGE_8", List<string>{}}, LocString{"STAGE_9", List<string>{}}, LocString{"STAGE_10", List<string>{}}, LocString{"STAGE_11", List<string>{}}} // List to keep track of spawn point names
 
+    // Spawn patterns, generated with the Latin Square algorithm
+    spawnPatterns List<List<int>> = List<List<int>>{}
+    lastPatternIndex int = -1
+
     // Initialize the spawn points and positions
     event OnGameStart() {
         spawnPoints = List<object>{} // Initialize the list of spawn points at the start of the game
         spawnPositions = List<Vector3>{} // Initialize the list of spawn positions
         spawnDict = Map<int, List<entity<SpawnPosition>>>{} // Initialize the map of spawn points
+        spawnPatterns = List<List<int>>{} // Initialize the list of spawn patterns
         if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
             spawnDict[0] = GetChildren(EResSceneOLD_PEAK.SpawnPoints as entity<Entity>) as List<entity<SpawnPosition>>
+            spawnPatterns = GenerateLatinSquare(List.Length(spawnDict[0]))
         } else {
             // LogError("<SpawnPoints.fcg<OnGameStart()>>: Invalid map chosen")
             return
         }
+    }
+
+    // event OnPhaseStart(phase entity<Phase>) {
+    //     for index, spawnList in spawnPatterns {
+    //         LogError("Spawn list: " + spawnList)
+    //     }
+    // }
+
+    func GenerateLatinSquare(max int) List<List<int>> {
+        var square = List<List<int>>{}
+        for i = 0, max, 1 {
+            var row = List<int>{}
+            for j = 0, max, 1 {
+                var value = (i + j) % max
+                Append(row, value)
+            }
+            Append(square, row)
+        }
+        LogError("Square: " + square)
+        return square
     }
 
     /*
@@ -38,9 +66,25 @@ graph SpawnPoints {
     */
     func GetSpawnPositionForRound(round int) List<Vector3> {
         if GlobalConfig.MAP_CHOSEN == EResScene.OLD_PEAK {
+            // var positions = List<Vector3>{}
+            // for index, spawnPoint in spawnDict[0] {
+            //     Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
+            // }
+            if lastPatternIndex == -1 {
+                lastPatternIndex = RandomInt(0, List.Length(spawnPatterns))
+            } else {
+                var i = RandomInt(0, List.Length(spawnPatterns))
+                if i == lastPatternIndex {
+                    i = (i + 1) % List.Length(spawnPatterns)
+                }
+                lastPatternIndex = i
+            }
             var positions = List<Vector3>{}
-            for index, spawnPoint in spawnDict[0] {
-                Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
+            // for index, spawnPoint in spawnDict[lastPatternIndex] {
+            //     Append(positions, spawnPoint<SpawnPosition>.AvailablePoint)
+            // }
+            for index, spawnIndex in spawnPatterns[lastPatternIndex] {
+                Append(positions, spawnDict[0][spawnIndex]<SpawnPosition>.AvailablePoint)
             }
             return positions
         } else {

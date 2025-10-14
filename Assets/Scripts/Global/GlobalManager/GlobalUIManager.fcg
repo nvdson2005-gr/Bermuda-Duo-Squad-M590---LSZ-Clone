@@ -100,7 +100,9 @@ graph GlobalUIManager {
         }
         if (!Map.ContainKey(eventUIDict, player)) {
             eventUIDict[player] = eventUI // Associate the player with their event UI
-            eventUIDict[player]<CustomUI>.IsVisible = false // Set the event UI to be invisible initially
+            eventUIDict[player]<CustomUI>.IsVisible = true// Set the event UI to be invisible initially
+            var eWidget = GetWidgetFromCustomUI(player, eventUI, EResUIEventUI.EVENT_BACKGROUND as CustomUIWidgetID)
+            eWidget<UIWidget>.Active = false
             return true
         } else {
             // LogWarning("<GlobalUIManager.fcg>: Event UI already registered for player: " + player<Entity>.Name) // Warning Info
@@ -132,15 +134,14 @@ graph GlobalUIManager {
     */
     async func SetVisibilityEventUI(player entity<Player>, isVisible bool) {
         if (Map.ContainKey(eventUIDict, player)) {
-            // eventUIDict[player]<CustomUI>.IsVisible = isVisible
             var eWidget = GetWidgetFromCustomUI(player, eventUIDict[player], EResUIEventUI.EVENT_BACKGROUND as CustomUIWidgetID)
             if eWidget<UIWidget>.Active == isVisible {
                 return
             }
             if isVisible {
-                start globalEntity<GlobalAnimationManager>.DOOpenEventUI(eWidget)
+                start globalEntity<GlobalAnimationManager>.DOOpenEventUI(eWidget, eventUIDict[player])
             } else {
-                start globalEntity<GlobalAnimationManager>.DOCloseEventUI(eWidget)
+                start globalEntity<GlobalAnimationManager>.DOCloseEventUI(eWidget, eventUIDict[player])
             }
         }
     }

@@ -87,6 +87,23 @@
       "apiTargetV2": "both",
       "version": 45,
       "key": "signal_93346066"
+    },
+    "signal_82864697": {
+      "name": "OnResizePlayer",
+      "eventType": 0,
+      "enitityType": "Component",
+      "typeID": 100005,
+      "props": [
+        {
+          "name": "Scale",
+          "value": "Vector3",
+          "key": 1
+        }
+      ],
+      "propCount": 1,
+      "apiTargetV2": "both",
+      "version": 45,
+      "key": "signal_82864697"
     }
   },
   "customName": {
@@ -94,7 +111,8 @@
     "NoTeamWinException": "signal_76192606",
     "CombatEnd": "signal_86504563",
     "PlaySoundInClient": "signal_86426040",
-    "OnChoosingWeapon": "signal_93346066"
+    "OnChoosingWeapon": "signal_93346066",
+    "OnResizePlayer": "signal_82864697"
   },
   "children": []
 }

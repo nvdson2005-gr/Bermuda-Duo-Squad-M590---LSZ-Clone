@@ -85,29 +85,31 @@ graph GlobalAnimationManager {
         widget<UIWidgetLabel>.Content = ToString(increaseTo)
     }
 
-    async func DOOpenEventUI(widget entity<UIWidget>){
-        var height = widget<UIWidget>.Height
+    async func DOOpenEventUI(widget entity<UIWidget>, parent entity<CustomUI>){
+        // parent<CustomUI>.IsVisible = true 
         widget<UIWidget>.Active = true
         widget<UIWidgetImage>.Alpha = 0.0
+        widget<UIWidget>.Height = 0
         CreateTween(widget, UIWidgetImage.Alpha, 0.0, 1.0, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 300, out var alphaTween, true)
-        CreateTween(widget, UIWidget.Height, 0, height, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 300, out var heightTween, true)
+        CreateTween(widget, UIWidget.Height, 0, 100, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 300, out var heightTween, true)
         WaitForMillisecond(1000)
         Destroy(alphaTween)
         Destroy(heightTween)
-        widget<UIWidget>.Height = height
+        widget<UIWidget>.Height = 100
         widget<UIWidgetImage>.Alpha = 1.0 
     }
 
-    async func DOCloseEventUI(widget entity<UIWidget>){
-        var height = widget<UIWidget>.Height
+    async func DOCloseEventUI(widget entity<UIWidget>, parent entity<CustomUI>){
+        // parent<CustomUI>.IsVisible = false
         widget<UIWidget>.Active = true
         widget<UIWidgetImage>.Alpha = 1.0
+        widget<UIWidget>.Height = 100
         CreateTween(widget, UIWidgetImage.Alpha, 1.0, 0.0, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 300, out var alphaTween, true)
-        CreateTween(widget, UIWidget.Height, height, 0, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 300, out var heightTween, true)
+        CreateTween(widget, UIWidget.Height, 100, 0, TweenStyle.Once, CreateCurve(List<float>{0, 0, 1, 1}), 300, out var heightTween, true)
         WaitForMillisecond(1000)
         Destroy(alphaTween)
         Destroy(heightTween)
-        widget<UIWidget>.Height = height
+        widget<UIWidget>.Height = 0
         widget<UIWidgetImage>.Alpha = 0.0
         widget<UIWidget>.Active = false
     }

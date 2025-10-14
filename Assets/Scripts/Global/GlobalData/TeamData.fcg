@@ -180,9 +180,9 @@ graph TeamData {
                     } else if !List.Contain(currentActiveTeams, currentMaxTeam) {
                         currentMaxTeam = team
                     } 
-                    if teamBooyah[team as entity<Team>] > teamBooyah[currentMaxTeam as entity<Team>] {
+                    if teamWinningTimes[team as entity<Team>] > teamWinningTimes[currentMaxTeam as entity<Team>] {
                         currentMaxTeam = team
-                    } else if teamBooyah[team as entity<Team>] == teamBooyah[currentMaxTeam as entity<Team>] {
+                    } else if teamWinningTimes[team as entity<Team>] == teamWinningTimes[currentMaxTeam as entity<Team>] {
                         if teamKills[team as entity<Team>] > teamKills[currentMaxTeam as entity<Team>] {
                             currentMaxTeam = team
                         }

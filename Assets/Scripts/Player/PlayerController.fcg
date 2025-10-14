@@ -21,6 +21,7 @@ import "../Global/GlobalManager/GlobalCombatManager.fcg" as GlobalCombatManager
 import "../Global/GlobalManager/GlobalUIManager.fcg" as GlobalUIManager
 import "Workflow.fcc" as Workflow
 import "Convert.fcc" as Convert
+import "Animation.fcc" as Animation
 graph PlayerController {
     playerShopHUD entity<BuiltInUI>; // Variable to hold the player's shop HUD
 

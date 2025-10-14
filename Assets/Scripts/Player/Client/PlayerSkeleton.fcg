@@ -1,0 +1,26 @@
+import "StdLibrary.fcc" as StdLib
+import "EditorGenLib.fcc" as EditorLib
+import "Avatar.fcc" as Avatar
+
+[platform_client]
+graph PlayerSkeleton {
+    //Executed when entity is created
+    event OnAwake() {
+        // var cur = GetSkeletonPartByName(thisEntity, "bone_Root")
+        // var cur2 = GetSkeletonPartByName(thisEntity, "bone_Spine1")
+        // cur<SkeletonPart>.BoneScale = Vector3{2, 2, 2} 
+        // cur2<SkeletonPart>.BoneScale = Vector3{0.5, 0.5, 0.5}
+    }
+
+    event OnResizePlayer(Scale Vector3) {
+        LogWarning("<PlayerSkeleton.fcg>: OnResizePlayer: " + Scale)
+        var cur = GetSkeletonPartByName(thisEntity, "bone_Root")
+        cur<SkeletonPart>.BoneScale = Scale
+        // var cur2 = GetSkeletonPartByName(thisEntity,"bone_Spine1");
+        // cur2<SkeletonPart>.BoneScale = Scale
+        // skeleton<Skeleton>.LeftLeg<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.RightLeg<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.LeftFoot<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+        // skeleton<Skeleton>.RightFoot<SkeletonPart>.BoneScale = Vector3{currentBodyScale, currentBodyScale, currentBodyScale}
+    }
+}

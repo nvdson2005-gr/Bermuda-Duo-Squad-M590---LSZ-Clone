@@ -105,6 +105,14 @@
         "type": "GFileRefer"
       },
       "fileType": "ugcscript"
+    },
+    {
+      "fileId": "6yb9er7krru-mgqd9h8t-y3tgijnmnon",
+      "filePath": "Assets\\Scripts\\Player\\Client\\PlayerSkeleton.fcg",
+      "_tag": {
+        "type": "GFileRefer"
+      },
+      "fileType": "ugcscript"
     }
   ],
   "avatarInfo": null,

@@ -113,14 +113,15 @@ graph GlobalPreparationPhaseManager {
         globalEntity<SpawnPoints>.SetSpawnPointsActiveStatusForRound(randomStageIndex, true); // Activate spawn points of the current stage
 
         for index, team in GetAllTeams() {
-            var randomIndex = RandomInt(0, List.Length(spawnPositions)) // Get a random index in spawn list
-            var randomPosition = spawnPositions[randomIndex] // Get the random spawn position
+            // var randomIndex = RandomInt(0, List.Length(spawnPositions)) // Get a random index in spawn list
+            // var randomPosition = spawnPositions[randomIndex] // Get the random spawn position
+            var randomPosition = spawnPositions[index] // Get the random spawn position
             // Use a loop to make sure all players in the team are teleported to the same position
             for index, player in team<Team>.AllTeammates {
                 Teleport(player, randomPosition, player<PlayerUtils>.GetRotationToDestination(globalEntity<GlobalSafeZones>.GetSafeZoneStartPoint(), randomPosition)) // Teleport the player to the random position
                 ReviveAtNextFrame(player) // Revive the player at the next frame
             }
-            RemoveAt(spawnPositions, randomIndex) // Remove the used spawn position from the list
+            // RemoveAt(spawnPositions, randomIndex) // Remove the used spawn position from the list
         }
 
         // LogInfo("<GlobalPreparationPhaseManager.fcg>: Waiting for " + duration + " milliseconds")
