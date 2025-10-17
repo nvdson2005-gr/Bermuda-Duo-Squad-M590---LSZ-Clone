@@ -86,7 +86,7 @@
           },
           "editorLockValue": false,
           "editorVisibleValue": true,
-          "gameDuration": 20,
+          "gameDuration": 15,
           "ecaScripts": [
             {
               "fileId": "hpzmb3xb8pp-mfklo00c-0v7profgka9m",
@@ -318,8 +318,14 @@
           "_entityId": "A8bSx8cg",
           "children": [],
           "prefabVariant": null,
-          "activeValue": null,
-          "unlockedValue": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": {
+            "selfValue": true,
+            "valueTag": "unlockedValue"
+          },
           "editorLockValue": false,
           "editorVisibleValue": true,
           "gameDuration": 900,
@@ -431,22 +437,37 @@
       "type": "ff.PhaseEntity1",
       "resourceId": "Phase"
     },
-    "_entityId": "A8bSx8cg",
+    "_entityId": "SB3CG21V",
     "children": [],
     "prefabVariant": null,
-    "activeValue": null,
-    "unlockedValue": null,
+    "activeValue": {
+      "selfValue": true,
+      "valueTag": "activeValue"
+    },
+    "unlockedValue": {
+      "selfValue": true,
+      "valueTag": "unlockedValue"
+    },
     "editorLockValue": false,
     "editorVisibleValue": true,
-    "gameDuration": 900,
-    "ecaScripts": [],
+    "gameDuration": 15,
+    "ecaScripts": [
+      {
+        "fileId": "hpzmb3xb8pp-mfklo00c-0v7profgka9m",
+        "filePath": "Assets\\Scripts\\Phases\\VotePhaseManager.fcg",
+        "_tag": {
+          "type": "GFileRefer"
+        },
+        "fileType": "ugcscript"
+      }
+    ],
     "ecaProps": {
       "Phase": {},
       "Entity": {}
     },
     "modId": 18,
-    "_entityName": "DeathMatch",
-    "phaseIndex": 306
+    "_entityName": "Vote",
+    "phaseIndex": 4457
   },
   "roundCount": 4,
   "discriminator": "ISceneLike",
