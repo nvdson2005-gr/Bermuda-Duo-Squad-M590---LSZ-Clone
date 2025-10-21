@@ -46,6 +46,7 @@ graph GlobalAnimationManager {
             contentWidget<UIWidgetLabel>.Content = ToString(increaseTo)
             return
         }
+        contentWidget<UIWidgetLabel>.Content = ToString(increaseTo - increaseValue)
         widget<UIWidgetLabel>.Alpha = 1.0
         widget<UIWidgetLabel>.Content = "+" + ToString(increaseValue)
 
