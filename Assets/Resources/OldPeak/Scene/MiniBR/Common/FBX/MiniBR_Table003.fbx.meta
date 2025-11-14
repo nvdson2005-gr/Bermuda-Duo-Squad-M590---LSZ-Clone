@@ -5,7 +5,7 @@
   },
   "subDynamicResources": {},
   "subLOD": {},
-  "version": "1.5.2",
+  "version": "1.6.1",
   "manifest": {
     "Meshes": [
       {
@@ -55,5 +55,8 @@
       ]
     }
   },
-  "globalscale": 1
+  "globalscale": 1,
+  "subColliderLOD": {
+    "cao5gastlej-luuph12s-3mkr0mxnpg5-MiniBR_Table003.~@FFFUB": 0
+  }
 }

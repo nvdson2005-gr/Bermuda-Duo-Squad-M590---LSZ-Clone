@@ -256,7 +256,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -402,7 +403,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -548,7 +550,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -694,7 +697,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -840,7 +844,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -986,7 +991,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -1132,7 +1138,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -1278,7 +1285,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -1424,7 +1432,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -1570,7 +1579,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -1716,7 +1726,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -1862,7 +1873,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -2008,7 +2020,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -2154,7 +2167,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -2300,7 +2314,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -2446,7 +2461,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -2592,7 +2608,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -2738,7 +2755,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -2884,7 +2902,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -3030,7 +3049,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -3176,7 +3196,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -3322,7 +3343,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -3468,7 +3490,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             }
           ],
           "activeValue": {
@@ -3556,7 +3579,8 @@
             "tagPointers": []
           },
           "propsData": {},
-          "aoiSetting": 0
+          "aoiSetting": 0,
+          "prefabVariant": null
         },
         {
           "_tag": {
@@ -3707,7 +3731,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -3851,7 +3876,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -3995,7 +4021,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -4139,7 +4166,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -4283,7 +4311,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -4427,7 +4456,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -4571,7 +4601,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -4715,7 +4746,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -4859,7 +4891,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -5003,7 +5036,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -5147,7 +5181,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -5291,7 +5326,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -5435,7 +5471,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -5579,7 +5616,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -5723,7 +5761,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -5867,7 +5906,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -6011,7 +6051,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -6155,7 +6196,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -6299,7 +6341,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -6443,7 +6486,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -6587,7 +6631,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -6731,7 +6776,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -6875,7 +6921,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -7019,7 +7066,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -7163,7 +7211,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -7307,7 +7356,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -7451,7 +7501,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -7595,7 +7646,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -7739,7 +7791,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -7883,7 +7936,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -8026,7 +8080,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -8169,7 +8224,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -8312,7 +8368,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -8455,7 +8512,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -8598,7 +8656,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -8741,7 +8800,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -8884,7 +8944,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -9027,7 +9088,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -9170,7 +9232,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -9314,7 +9377,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             }
           ],
           "activeValue": {
@@ -9402,7 +9466,8 @@
             "tagPointers": []
           },
           "propsData": {},
-          "aoiSetting": 0
+          "aoiSetting": 0,
+          "prefabVariant": null
         },
         {
           "_tag": {
@@ -9553,7 +9618,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -9697,7 +9763,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -9841,7 +9908,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -9985,7 +10053,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -10129,7 +10198,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -10273,7 +10343,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -10417,7 +10488,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -10561,7 +10633,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -10705,7 +10778,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -10849,7 +10923,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -10993,7 +11068,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -11137,7 +11213,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -11281,7 +11358,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -11425,7 +11503,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -11569,7 +11648,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -11713,7 +11793,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -11857,7 +11938,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -12001,7 +12083,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -12145,7 +12228,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -12289,7 +12373,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -12433,7 +12518,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -12577,7 +12663,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -12721,7 +12808,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -12865,7 +12953,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -13009,7 +13098,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -13153,7 +13243,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -13297,7 +13388,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -13441,7 +13533,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -13585,7 +13678,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -13728,7 +13822,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -13871,7 +13966,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -14014,7 +14110,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -14158,7 +14255,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             }
           ],
           "activeValue": {
@@ -14246,7 +14344,8 @@
             "tagPointers": []
           },
           "propsData": {},
-          "aoiSetting": 0
+          "aoiSetting": 0,
+          "prefabVariant": null
         },
         {
           "_tag": {
@@ -14396,7 +14495,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -14539,7 +14639,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -14682,7 +14783,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -14825,7 +14927,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -14968,7 +15071,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -15111,7 +15215,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -15254,7 +15359,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -15397,7 +15503,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -15540,7 +15647,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -15683,7 +15791,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -15826,7 +15935,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -15969,7 +16079,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -16112,7 +16223,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -16255,7 +16367,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -16398,7 +16511,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             }
           ],
           "activeValue": {
@@ -16486,7 +16600,8 @@
             "tagPointers": []
           },
           "propsData": {},
-          "aoiSetting": 0
+          "aoiSetting": 0,
+          "prefabVariant": null
         },
         {
           "_tag": {
@@ -16636,7 +16751,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -16779,7 +16895,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -16922,7 +17039,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -17065,7 +17183,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -17209,7 +17328,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -17353,7 +17473,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -17496,7 +17617,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -17639,7 +17761,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -17782,7 +17905,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -17925,7 +18049,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -18068,7 +18193,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -18211,7 +18337,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -18354,7 +18481,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -18497,7 +18625,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -18640,7 +18769,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -18783,7 +18913,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -18926,7 +19057,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -19069,7 +19201,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -19212,7 +19345,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             }
           ],
           "activeValue": {
@@ -19300,7 +19434,8 @@
             "tagPointers": []
           },
           "propsData": {},
-          "aoiSetting": 0
+          "aoiSetting": 0,
+          "prefabVariant": null
         },
         {
           "_tag": {
@@ -19452,7 +19587,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -19605,7 +19741,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -19758,7 +19895,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -19911,7 +20049,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             }
           ],
           "activeValue": {
@@ -19999,7 +20138,8 @@
             "tagPointers": []
           },
           "propsData": {},
-          "aoiSetting": 0
+          "aoiSetting": 0,
+          "prefabVariant": null
         },
         {
           "_tag": {
@@ -20159,7 +20299,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -20312,7 +20453,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -20465,7 +20607,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -20618,7 +20761,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -20771,7 +20915,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -20923,7 +21068,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -21076,7 +21222,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             },
             {
               "_tag": {
@@ -21229,7 +21376,8 @@
                 "tagPointers": []
               },
               "propsData": {},
-              "aoiSetting": 0
+              "aoiSetting": 0,
+              "prefabVariant": null
             }
           ],
           "activeValue": {
@@ -21317,7 +21465,8 @@
             "tagPointers": []
           },
           "propsData": {},
-          "aoiSetting": 0
+          "aoiSetting": 0,
+          "prefabVariant": null
         }
       ],
       "prefabVariant": {
@@ -41307,7 +41456,7 @@
       "physicalMaterial": null,
       "initialTypes": {},
       "componentList": [],
-      "tempIndex": 120,
+      "tempIndex": 1,
       "itemID": 215,
       "seParent": null,
       "ecaScripts": [
@@ -41709,7 +41858,7 @@
       "entityTagData": {
         "tagPointers": []
       },
-      "tempIndex": 121,
+      "tempIndex": 2,
       "itemID": 143,
       "seParent": null,
       "ecaScripts": [
@@ -41798,7 +41947,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 122,
+          "tempIndex": 3,
           "itemID": 143,
           "seParent": null,
           "ecaScripts": [],
@@ -41871,7 +42020,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 123,
+          "tempIndex": 4,
           "itemID": 143,
           "seParent": null,
           "ecaScripts": [],
@@ -41944,7 +42093,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 124,
+          "tempIndex": 5,
           "itemID": 143,
           "seParent": null,
           "ecaScripts": [],
@@ -42017,7 +42166,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 125,
+          "tempIndex": 6,
           "itemID": 143,
           "seParent": null,
           "ecaScripts": [],
@@ -42090,7 +42239,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 126,
+          "tempIndex": 7,
           "itemID": 143,
           "seParent": null,
           "ecaScripts": [],
@@ -43566,7 +43715,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 127,
+          "tempIndex": 8,
           "itemID": 192,
           "seParent": null,
           "ecaScripts": [
@@ -43634,7 +43783,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 128,
+          "tempIndex": 9,
           "itemID": 278,
           "seParent": null,
           "ecaScripts": [
@@ -43699,7 +43848,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 129,
+          "tempIndex": 10,
           "itemID": 278,
           "seParent": null,
           "ecaScripts": [
@@ -43768,7 +43917,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 130,
+          "tempIndex": 11,
           "itemID": 4,
           "seParent": null,
           "ecaScripts": [
@@ -43835,7 +43984,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 131,
+          "tempIndex": 12,
           "itemID": 8,
           "seParent": null,
           "ecaScripts": [
@@ -43902,7 +44051,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 132,
+          "tempIndex": 13,
           "itemID": 193,
           "seParent": null,
           "ecaScripts": [
@@ -43969,7 +44118,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 133,
+          "tempIndex": 14,
           "itemID": 43,
           "seParent": null,
           "ecaScripts": [
@@ -44036,7 +44185,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 134,
+          "tempIndex": 15,
           "itemID": 6,
           "seParent": null,
           "ecaScripts": [
@@ -44103,7 +44252,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 135,
+          "tempIndex": 16,
           "itemID": 24,
           "seParent": null,
           "ecaScripts": [
@@ -44170,7 +44319,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 136,
+          "tempIndex": 17,
           "itemID": 95,
           "seParent": null,
           "ecaScripts": [
@@ -44237,7 +44386,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 137,
+          "tempIndex": 18,
           "itemID": 275,
           "seParent": null,
           "ecaScripts": [
@@ -44304,7 +44453,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 138,
+          "tempIndex": 19,
           "itemID": 6,
           "seParent": null,
           "ecaScripts": [
@@ -44371,7 +44520,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 139,
+          "tempIndex": 20,
           "itemID": 24,
           "seParent": null,
           "ecaScripts": [
@@ -44440,7 +44589,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 140,
+          "tempIndex": 21,
           "itemID": 9,
           "seParent": null,
           "ecaScripts": [
@@ -44509,7 +44658,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 141,
+          "tempIndex": 22,
           "itemID": 193,
           "seParent": null,
           "ecaScripts": [
@@ -44578,7 +44727,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 142,
+          "tempIndex": 23,
           "itemID": 2,
           "seParent": null,
           "ecaScripts": [
@@ -44645,7 +44794,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 143,
+          "tempIndex": 24,
           "itemID": 2,
           "seParent": null,
           "ecaScripts": [
@@ -44714,7 +44863,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 144,
+          "tempIndex": 25,
           "itemID": 2,
           "seParent": null,
           "ecaScripts": [
@@ -44785,7 +44934,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 145,
+          "tempIndex": 26,
           "itemID": 1,
           "seParent": null,
           "ecaScripts": [
@@ -44977,7 +45126,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 146,
+          "tempIndex": 27,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45047,7 +45196,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 147,
+          "tempIndex": 28,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45121,7 +45270,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 148,
+          "tempIndex": 29,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45191,7 +45340,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 149,
+          "tempIndex": 30,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45265,7 +45414,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 150,
+          "tempIndex": 31,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45337,7 +45486,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 151,
+          "tempIndex": 32,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45409,7 +45558,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 152,
+          "tempIndex": 33,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45481,7 +45630,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 153,
+          "tempIndex": 34,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45553,7 +45702,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 154,
+          "tempIndex": 35,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45625,7 +45774,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 155,
+          "tempIndex": 36,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45697,7 +45846,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 156,
+          "tempIndex": 37,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45769,7 +45918,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 157,
+          "tempIndex": 38,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45841,7 +45990,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 158,
+          "tempIndex": 39,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45913,7 +46062,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 159,
+          "tempIndex": 40,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -45985,7 +46134,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 160,
+          "tempIndex": 41,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46057,7 +46206,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 161,
+          "tempIndex": 42,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46129,7 +46278,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 162,
+          "tempIndex": 43,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46201,7 +46350,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 163,
+          "tempIndex": 44,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46273,7 +46422,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 164,
+          "tempIndex": 45,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46345,7 +46494,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 165,
+          "tempIndex": 46,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46417,7 +46566,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 166,
+          "tempIndex": 47,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46489,7 +46638,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 167,
+          "tempIndex": 48,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46561,7 +46710,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 168,
+          "tempIndex": 49,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46633,7 +46782,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 169,
+          "tempIndex": 50,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46703,7 +46852,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 170,
+          "tempIndex": 51,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46775,7 +46924,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 171,
+          "tempIndex": 52,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46849,7 +46998,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 172,
+          "tempIndex": 53,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46919,7 +47068,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 173,
+          "tempIndex": 54,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -46991,7 +47140,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 174,
+          "tempIndex": 55,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47065,7 +47214,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 175,
+          "tempIndex": 56,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47135,7 +47284,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 176,
+          "tempIndex": 57,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47209,7 +47358,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 177,
+          "tempIndex": 58,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47279,7 +47428,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 178,
+          "tempIndex": 59,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47353,7 +47502,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 179,
+          "tempIndex": 60,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47423,7 +47572,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 180,
+          "tempIndex": 61,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47497,7 +47646,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 181,
+          "tempIndex": 62,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47567,7 +47716,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 182,
+          "tempIndex": 63,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47641,7 +47790,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 183,
+          "tempIndex": 64,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47711,7 +47860,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 184,
+          "tempIndex": 65,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47785,7 +47934,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 185,
+          "tempIndex": 66,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47855,7 +48004,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 186,
+          "tempIndex": 67,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47929,7 +48078,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 187,
+          "tempIndex": 68,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -47999,7 +48148,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 188,
+          "tempIndex": 69,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48073,7 +48222,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 189,
+          "tempIndex": 70,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48143,7 +48292,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 190,
+          "tempIndex": 71,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48217,7 +48366,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 191,
+          "tempIndex": 72,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48287,7 +48436,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 192,
+          "tempIndex": 73,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48361,7 +48510,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 193,
+          "tempIndex": 74,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48431,7 +48580,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 194,
+          "tempIndex": 75,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48505,7 +48654,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 195,
+          "tempIndex": 76,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48577,7 +48726,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 196,
+          "tempIndex": 77,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48649,7 +48798,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 197,
+          "tempIndex": 78,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48719,7 +48868,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 198,
+          "tempIndex": 79,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48793,7 +48942,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 199,
+          "tempIndex": 80,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48865,7 +49014,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 200,
+          "tempIndex": 81,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -48937,7 +49086,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 201,
+          "tempIndex": 82,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49007,7 +49156,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 202,
+          "tempIndex": 83,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49081,7 +49230,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 203,
+          "tempIndex": 84,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49153,7 +49302,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 204,
+          "tempIndex": 85,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49225,7 +49374,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 205,
+          "tempIndex": 86,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49295,7 +49444,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 206,
+          "tempIndex": 87,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49369,7 +49518,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 207,
+          "tempIndex": 88,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49439,7 +49588,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 208,
+          "tempIndex": 89,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49511,7 +49660,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 209,
+          "tempIndex": 90,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49585,7 +49734,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 210,
+          "tempIndex": 91,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49657,7 +49806,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 211,
+          "tempIndex": 92,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49729,7 +49878,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 212,
+          "tempIndex": 93,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49801,7 +49950,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 213,
+          "tempIndex": 94,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49871,7 +50020,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 214,
+          "tempIndex": 95,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -49945,7 +50094,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 215,
+          "tempIndex": 96,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50015,7 +50164,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 216,
+          "tempIndex": 97,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50089,7 +50238,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 217,
+          "tempIndex": 98,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50159,7 +50308,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 218,
+          "tempIndex": 99,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50233,7 +50382,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 219,
+          "tempIndex": 100,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50305,7 +50454,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 220,
+          "tempIndex": 101,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50377,7 +50526,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 221,
+          "tempIndex": 102,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50447,7 +50596,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 222,
+          "tempIndex": 103,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50521,7 +50670,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 223,
+          "tempIndex": 104,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50591,7 +50740,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 224,
+          "tempIndex": 105,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50663,7 +50812,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 225,
+          "tempIndex": 106,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50737,7 +50886,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 226,
+          "tempIndex": 107,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50807,7 +50956,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 227,
+          "tempIndex": 108,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50881,7 +51030,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 228,
+          "tempIndex": 109,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -50951,7 +51100,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 229,
+          "tempIndex": 110,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51023,7 +51172,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 230,
+          "tempIndex": 111,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51097,7 +51246,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 231,
+          "tempIndex": 112,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51167,7 +51316,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 232,
+          "tempIndex": 113,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51241,7 +51390,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 233,
+          "tempIndex": 114,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51313,7 +51462,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 234,
+          "tempIndex": 115,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51385,7 +51534,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 235,
+          "tempIndex": 116,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -51457,7 +51606,7 @@
           "entityTagData": {
             "tagPointers": []
           },
-          "tempIndex": 236,
+          "tempIndex": 117,
           "itemID": 387,
           "seParent": null,
           "ecaScripts": [
@@ -52145,6 +52294,864 @@
       "propsData": {},
       "entityVersion": 3,
       "_entityName": "DeathTriggers"
+    },
+    {
+      "_entityName": "LeaderboardPositions",
+      "_tag": {
+        "type": "UGCSceneEntity",
+        "resourceId": "Primitive/Empty"
+      },
+      "_entityId": "Nd1h6UDS",
+      "children": [
+        {
+          "_entityName": "Billboard",
+          "_tag": {
+            "type": "SceneEditEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "vtvkCjlG",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "position": {
+            "x": -12.993557929992676,
+            "y": 47.43885803222656,
+            "z": 15.15307331085205
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            2,
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "tempIndex": 118,
+          "itemID": 253,
+          "seParent": null,
+          "ecaScripts": [
+            null
+          ],
+          "ecaProps": {
+            "DummyLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {},
+            "Collider": {}
+          }
+        },
+        {
+          "_entityName": "Billboard (1)",
+          "_tag": {
+            "type": "SceneEditEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "uMcifxra",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "position": {
+            "x": -22.01129722595215,
+            "y": 47.43899917602539,
+            "z": 15.152999877929688
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            2,
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "tempIndex": 119,
+          "itemID": 253,
+          "seParent": null,
+          "ecaScripts": [
+            null
+          ],
+          "ecaProps": {
+            "DummyLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {},
+            "Collider": {}
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        },
+        {
+          "_entityName": "Billboard (2)",
+          "_tag": {
+            "type": "SceneEditEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "XgXJ8J5t",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "position": {
+            "x": -30.26114845275879,
+            "y": 47.43899917602539,
+            "z": 3.701526641845703
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            2,
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "tempIndex": 120,
+          "itemID": 253,
+          "seParent": null,
+          "ecaScripts": [
+            null
+          ],
+          "ecaProps": {
+            "DummyLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {},
+            "Collider": {}
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        },
+        {
+          "_entityName": "Billboard (3)",
+          "_tag": {
+            "type": "SceneEditEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "qDz4qC0d",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "position": {
+            "x": -16.852643966674805,
+            "y": 47.43899917602539,
+            "z": -12.431742668151855
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            2,
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "tempIndex": 121,
+          "itemID": 253,
+          "seParent": null,
+          "ecaScripts": [
+            null
+          ],
+          "ecaProps": {
+            "DummyLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {},
+            "Collider": {}
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        },
+        {
+          "_entityName": "Billboard (4)",
+          "_tag": {
+            "type": "SceneEditEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "yK8Iugi6",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": false,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "position": {
+            "x": -2.2614221572875977,
+            "y": 47.43899917602539,
+            "z": 2.2880022525787354
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            2,
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "tempIndex": 122,
+          "itemID": 253,
+          "seParent": null,
+          "ecaScripts": [
+            null
+          ],
+          "ecaProps": {
+            "DummyLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {},
+            "Collider": {}
+          },
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        },
+        {
+          "_entityName": "RankLB",
+          "_tag": {
+            "type": "UGCSceneEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "AJM09oT0",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "position": {
+            "x": -12.99356,
+            "y": 50,
+            "z": 15.15307
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            2,
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "materials": [
+            null
+          ],
+          "colliders": [],
+          "IsNPC": false,
+          "isCreateAsEmpty": true,
+          "Rigidbody": {
+            "Type": 1,
+            "Mass": 1,
+            "CenterOfMass": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "UseGravity": true,
+            "Drag": 0.05,
+            "AngularDrag": 0.05,
+            "FreezePosX": false,
+            "FreezeRotX": false,
+            "FreezePosY": false,
+            "FreezeRotY": false,
+            "FreezePosZ": false,
+            "FreezeRotZ": false
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "CustomLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {}
+          },
+          "propsData": {},
+          "entityVersion": 3
+        },
+        {
+          "_entityName": "HMELB",
+          "_tag": {
+            "type": "UGCSceneEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "aZAOKtUn",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "position": {
+            "x": -30.26115,
+            "y": 50,
+            "z": 3.701527
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            2,
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "materials": [
+            null
+          ],
+          "colliders": [],
+          "IsNPC": false,
+          "isCreateAsEmpty": true,
+          "Rigidbody": {
+            "Type": 1,
+            "Mass": 1,
+            "CenterOfMass": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "UseGravity": true,
+            "Drag": 0.05,
+            "AngularDrag": 0.05,
+            "FreezePosX": false,
+            "FreezeRotX": false,
+            "FreezePosY": false,
+            "FreezeRotY": false,
+            "FreezePosZ": false,
+            "FreezeRotZ": false
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "CustomLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {}
+          },
+          "propsData": {},
+          "entityVersion": 3,
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        },
+        {
+          "_entityName": "ADMLB",
+          "_tag": {
+            "type": "UGCSceneEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "xVUhXcgh",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "position": {
+            "x": -16.85264,
+            "y": 50,
+            "z": -12.43174
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            2,
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "materials": [
+            null
+          ],
+          "colliders": [],
+          "IsNPC": false,
+          "isCreateAsEmpty": true,
+          "Rigidbody": {
+            "Type": 1,
+            "Mass": 1,
+            "CenterOfMass": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "UseGravity": true,
+            "Drag": 0.05,
+            "AngularDrag": 0.05,
+            "FreezePosX": false,
+            "FreezeRotX": false,
+            "FreezePosY": false,
+            "FreezeRotY": false,
+            "FreezePosZ": false,
+            "FreezeRotZ": false
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "CustomLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {}
+          },
+          "propsData": {},
+          "entityVersion": 3,
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        },
+        {
+          "_entityName": "HeadshotLB",
+          "_tag": {
+            "type": "UGCSceneEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "vLTFkdkR",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "position": {
+            "x": -2.261422,
+            "y": 50,
+            "z": 2.288002
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            2,
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "materials": [
+            null
+          ],
+          "colliders": [],
+          "IsNPC": false,
+          "isCreateAsEmpty": true,
+          "Rigidbody": {
+            "Type": 1,
+            "Mass": 1,
+            "CenterOfMass": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "UseGravity": true,
+            "Drag": 0.05,
+            "AngularDrag": 0.05,
+            "FreezePosX": false,
+            "FreezeRotX": false,
+            "FreezePosY": false,
+            "FreezeRotY": false,
+            "FreezePosZ": false,
+            "FreezeRotZ": false
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "CustomLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {}
+          },
+          "propsData": {},
+          "entityVersion": 3,
+          "editorLockValue": false,
+          "editorVisibleValue": true
+        },
+        {
+          "_entityName": "PersonalStatsLB",
+          "_tag": {
+            "type": "UGCSceneEntity",
+            "resourceId": "Primitive/Empty"
+          },
+          "_entityId": "UHvjn1RX",
+          "children": [],
+          "prefabVariant": null,
+          "activeValue": {
+            "selfValue": true,
+            "valueTag": "activeValue"
+          },
+          "unlockedValue": null,
+          "editorLockValue": false,
+          "editorVisibleValue": true,
+          "position": {
+            "x": -24,
+            "y": 50,
+            "z": 15
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "BTPath": [
+            null
+          ],
+          "visible": true,
+          "VisibilityLayer": 0,
+          "modelOptimization": 0,
+          "streamingLayer": "",
+          "attributes": [
+            2,
+            4
+          ],
+          "isTrigger": false,
+          "collidable": true,
+          "physicalLayer": 0,
+          "physicalMaterial": null,
+          "aoiSetting": 0,
+          "initialTypes": {},
+          "componentList": [],
+          "entityTagData": {
+            "tagPointers": []
+          },
+          "materials": [
+            null
+          ],
+          "colliders": [],
+          "IsNPC": false,
+          "isCreateAsEmpty": true,
+          "Rigidbody": {
+            "Type": 1,
+            "Mass": 1,
+            "CenterOfMass": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "UseGravity": true,
+            "Drag": 0.05,
+            "AngularDrag": 0.05,
+            "FreezePosX": false,
+            "FreezeRotX": false,
+            "FreezePosY": false,
+            "FreezeRotY": false,
+            "FreezePosZ": false,
+            "FreezeRotZ": false
+          },
+          "ecaScripts": [],
+          "ecaProps": {
+            "CustomLevelObject": {},
+            "LevelObject": {},
+            "Transform": {},
+            "Entity": {},
+            "Visibility": {}
+          },
+          "propsData": {},
+          "entityVersion": 3
+        }
+      ],
+      "prefabVariant": null,
+      "activeValue": {
+        "selfValue": true,
+        "valueTag": "activeValue"
+      },
+      "unlockedValue": null,
+      "editorLockValue": false,
+      "editorVisibleValue": true,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "BTPath": [
+        null
+      ],
+      "visible": true,
+      "VisibilityLayer": 0,
+      "modelOptimization": 0,
+      "streamingLayer": "",
+      "attributes": [
+        2,
+        4
+      ],
+      "isTrigger": false,
+      "collidable": true,
+      "physicalLayer": 0,
+      "physicalMaterial": null,
+      "aoiSetting": 0,
+      "initialTypes": {},
+      "componentList": [],
+      "entityTagData": {
+        "tagPointers": []
+      },
+      "materials": [
+        null
+      ],
+      "colliders": [],
+      "IsNPC": false,
+      "isCreateAsEmpty": true,
+      "Rigidbody": {
+        "Type": 1,
+        "Mass": 1,
+        "CenterOfMass": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "UseGravity": true,
+        "Drag": 0.05,
+        "AngularDrag": 0.05,
+        "FreezePosX": false,
+        "FreezeRotX": false,
+        "FreezePosY": false,
+        "FreezeRotY": false,
+        "FreezePosZ": false,
+        "FreezeRotZ": false
+      },
+      "ecaScripts": [],
+      "ecaProps": {
+        "CustomLevelObject": {},
+        "LevelObject": {},
+        "Transform": {},
+        "Entity": {},
+        "Visibility": {}
+      },
+      "propsData": {},
+      "entityVersion": 3
     }
   ],
   "prefabVariant": null,
@@ -52202,4 +53209,4 @@
     }
   }
 }
-//"{FE:{"v":"1.14.3883376","c":{"FF":5001},"s":100}
+//"{FE:{"v":"1.15.4008519","c":{"FF":5001},"s":100}

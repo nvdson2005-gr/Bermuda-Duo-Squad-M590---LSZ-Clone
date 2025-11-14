@@ -4,7 +4,7 @@
     "Common": ""
   },
   "subDynamicResources": {},
-  "version": "1.5.2",
+  "version": "1.6.1",
   "manifest": {
     "Meshes": [
       {
@@ -58,5 +58,8 @@
     "cc9hbic01e-lui4xao4-tl97gluiftg": "cc9hbic01e-lui4xao4-tl97gluiftg_preview.png"
   },
   "subLOD": {},
-  "globalscale": 1
+  "globalscale": 1,
+  "subColliderLOD": {
+    "cc9hbic01e-lui4xao4-tl97gluiftg-MiniBR_Building001.~@FFFUB": 0
+  }
 }

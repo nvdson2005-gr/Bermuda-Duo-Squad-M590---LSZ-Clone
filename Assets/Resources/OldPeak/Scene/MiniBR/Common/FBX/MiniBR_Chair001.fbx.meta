@@ -5,7 +5,7 @@
   },
   "subDynamicResources": {},
   "subLOD": {},
-  "version": "1.5.2",
+  "version": "1.6.1",
   "manifest": {
     "Meshes": [
       {
@@ -55,5 +55,8 @@
       ]
     }
   },
-  "globalscale": 1
+  "globalscale": 1,
+  "subColliderLOD": {
+    "bj2g3evzo1j-luupgz66-vyj3kabfpe-MiniBR_Chair001.~@FFFUB": 0
+  }
 }

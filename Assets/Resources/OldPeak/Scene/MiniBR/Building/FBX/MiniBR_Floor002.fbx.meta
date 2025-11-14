@@ -4,7 +4,7 @@
     "Common": ""
   },
   "subDynamicResources": {},
-  "version": "1.5.2",
+  "version": "1.6.1",
   "manifest": {
     "Meshes": [
       {
@@ -63,5 +63,8 @@
     "0vi2djhcwcnq-lui4xd4e-799b4miz7c5": "0vi2djhcwcnq-lui4xd4e-799b4miz7c5_preview.png"
   },
   "subLOD": {},
-  "globalscale": 1
+  "globalscale": 1,
+  "subColliderLOD": {
+    "0vi2djhcwcnq-lui4xd4e-799b4miz7c5-MiniBR_Floor002.~@FFFUB": 0
+  }
 }

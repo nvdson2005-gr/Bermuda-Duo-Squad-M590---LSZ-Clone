@@ -37,6 +37,7 @@ import "../../Team/Team.fcg" as TeamFCG
 import "Convert.fcc" as Convert
 import "../../Player/PlayerSoundManager.fcg" as PlayerSoundManager
 import "../../Player/PlayerUI.fcg" as PlayerUI
+import "../GlobalData/GlobalLeaderboard.fcg" as GlobalLeaderboard
 graph GlobalGameManager {
     availableStages int = 11 // Number of available stages in the game, goes together with the number of safe zones and spawn point groups in GlobalSafeZones.cfg and SpawnPoints.cfg
     prepPhaseDuration int = 11 // Use this to customize the buying phase duration
@@ -228,13 +229,18 @@ graph GlobalGameManager {
             var allWinningTeams = GetAllWinningTeams()
             // LogInfo("<GlobalGameManager.fcg>: Team(s) " + allWinningTeams + " have won the game!") // Debug Info
             for index, player in GetAllPlayers() {
+                if List.Contain(allWinningTeams, player<Player>.HostTeam) {
+                    start globalEntity<GlobalLeaderboard>.StorePlayerDataToDatabase(player, globalEntity<PlayerData>.GetPlayerData(player)[0], globalEntity<PlayerData>.GetPlayerData(player)[1], 1, true)
+                } else {
+                    start globalEntity<GlobalLeaderboard>.StorePlayerDataToDatabase(player, globalEntity<PlayerData>.GetPlayerData(player)[0], globalEntity<PlayerData>.GetPlayerData(player)[1], 1, false)
+                }
                 player<PlayerSoundManager>.StopAllLoopingSounds()
                 globalEntity<GlobalUIManager>.UnregisterAllUIs(player) // Unregister all UIs for the player
                 start globalEntity<GlobalUIManager>.CreateLastRoundHUD(allWinningTeams, player) // Create the last round HUD for all players
                 globalEntity<GlobalSoundManager>.PlayEndMatchSound(player)            
             }
-            WaitForMillisecond(3000)
-            SwitchPhase(EPhase.End)
+            // WaitForMillisecond(3000)
+            // SwitchPhase(EPhase.End)
         } else {
             wait globalEntity<GlobalUIManager>.CreateEndRoundHUD(winningTeam); // Create the end round HUD for all players
             start globalEntity<GlobalUIManager>.UpdateFullScoreBoardWinTeam(winningTeam);
@@ -368,13 +374,16 @@ graph GlobalGameManager {
     */
     async func MatchEndHandler(winningTeam entity<Team>){
         isMatchEnded = true
-        // LogInfo("<GlobalGameManager.fcg>: Team " + winningTeam<Entity> + " has won the game!") // Debug Info
+        DisableSafeZone()
+        LogInfo("<GlobalGameManager.fcg>: Team " + winningTeam<Entity> + " has won the game!") // Debug Info
         for index, player in GetAllPlayers() {
+            start globalEntity<GlobalLeaderboard>.StorePlayerDataToDatabase(player, globalEntity<PlayerData>.GetPlayerData(player)[0], globalEntity<PlayerData>.GetPlayerData(player)[1], 1, true)
             globalEntity<GlobalUIManager>.UnregisterAllUIs(player) // Unregister all UIs for the player
             start globalEntity<GlobalUIManager>.CreateLastRoundHUD(List<entity<Team>>{winningTeam}, player) // Create the last round HUD for all players
             globalEntity<GlobalSoundManager>.PlayEndMatchSound(player)            
         }
-        WaitForMillisecond(5000)
-        SwitchPhase(EPhase.End)
+        SwitchPhase(EPhase.MatchEndNotification)
+        // WaitForMillisecond(5000)
+        // SwitchPhase(EPhase.End)
     }
 }

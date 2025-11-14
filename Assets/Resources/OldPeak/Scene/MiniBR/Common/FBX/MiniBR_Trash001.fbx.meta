@@ -5,7 +5,7 @@
   },
   "subDynamicResources": {},
   "subLOD": {},
-  "version": "1.5.2",
+  "version": "1.6.1",
   "manifest": {
     "Meshes": [
       {
@@ -55,5 +55,8 @@
       ]
     }
   },
-  "globalscale": 1
+  "globalscale": 1,
+  "subColliderLOD": {
+    "1akbx5hwo7t-luuph1dg-5959blga21u-MiniBR_Trash001.~@FFFUB": 0
+  }
 }

@@ -22,16 +22,16 @@ graph TeamData {
         teamTotalPoints = Map<entity<Team>, int>{} // Initialize the team total points map
     }
 
-    event OnPhaseEnd(phase entity<Phase>) {
-        if phase<Phase>.Index == EPhase.EndCombat {
-            for index, team in GetAllTeams() {
-                LogError(team + " winning times: " + teamWinningTimes[team])
-                LogError(team + " booyah: " + teamBooyah[team])
-                LogError(team + " kills: " + teamKills[team])
-                LogError(team + " total points: " + teamTotalPoints[team])
-            }
-        }
-    }
+    // event OnPhaseEnd(phase entity<Phase>) {
+        // if phase<Phase>.Index == EPhase.EndCombat {
+        //     for index, team in GetAllTeams() {
+        //         LogError(team + " winning times: " + teamWinningTimes[team])
+        //         LogError(team + " booyah: " + teamBooyah[team])
+        //         LogError(team + " kills: " + teamKills[team])
+        //         LogError(team + " total points: " + teamTotalPoints[team])
+        //     }
+        // }
+    // }
 
     /* Initialize the team points map with zero points for each team.
        This function should be called at the start of the game.

@@ -8,7 +8,7 @@ import "List.fcc" as List
 import "../../Team/TeamCurrentRoundData.fcg" as TeamCurrentRoundData
 import "Hostility.fcc" as Hostility
 graph PlayerData {
-    // The list has 3 members: Kills, Deaths, Damage respectively to their indexes
+    // The list has 4 members: Kills, Deaths, Damage, Headshots respectively to their indexes
     playerDataDict Map<entity<Player>, List<int>> // Map to store player data such as KDA and damage dealt.
 
     // EVENTS
@@ -23,7 +23,7 @@ graph PlayerData {
     */
     func RegisterPlayer(player entity<Player>) {
         if (!Map.ContainKey(playerDataDict, player)) {
-            playerDataDict[player] = List<int>{0, 0, 0, 0} // Initialize Kills, Deaths, Assists, Damage
+            playerDataDict[player] = List<int>{0, 0, 0, 0} // Initialize Kills, Deaths, Damage, Headshots
         }
     }
 
@@ -94,6 +94,17 @@ graph PlayerData {
         if (Map.ContainKey(playerDataDict, player)) {
             playerDataDict[player][1] = playerDataDict[player][1] + 1 // Increase Deaths
             // LogInfo("<PlayerData.fcg>: Death increased for " + player<Player>.NickName)
+        }
+    }
+
+    /*
+    Increase the headshot count data of a player.
+    @param player: The player entity to increase the headshot count for
+    */
+    func IncreaseHeadshots(player entity<Player>) {
+        if (Map.ContainKey(playerDataDict, player)) {
+            playerDataDict[player][3] = playerDataDict[player][3] + 1 // Increase Headshots
+            // LogInfo("<PlayerData.fcg>: Headshot increased for " + player<Player>.NickName)
         }
     }
 

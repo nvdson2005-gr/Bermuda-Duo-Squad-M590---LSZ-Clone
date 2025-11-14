@@ -35,10 +35,11 @@ graph PlayerController {
        - Remove all drop items
        - As SetDropStatus is true in order to keep player's weapons, items other than weapons are manually deleted using RemoveAllDropItems()
     */
-    event OnPlayerBeEliminated(player entity<Player>) {
-        if(player == thisEntity) {
-            player<PlayerUtils>.RemoveAllDropItems(player);
+    event OnEliminated(attacker entity<Entity>, damageType DamageType, damagedBodyPart DamagedBodyPartType) {
+        if damagedBodyPart == DamagedBodyPartType.Head && attacker == thisEntity {
+            globalEntity<PlayerData>.IncreaseHeadshots(thisEntity as entity<Player>)
         }
+        thisEntity<PlayerUtils>.RemoveAllDropItems(thisEntity as entity<Player>)
     }
 
     // On Player Knocked Down, update mini scoreboard

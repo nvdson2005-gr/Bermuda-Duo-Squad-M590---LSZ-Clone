@@ -4,7 +4,7 @@
     "Common": ""
   },
   "subDynamicResources": {},
-  "version": "1.5.2",
+  "version": "1.6.1",
   "manifest": {
     "Meshes": [
       {
@@ -63,5 +63,8 @@
     "q3u18fun68k-lui4xc7k-rgm03ce26rn": "q3u18fun68k-lui4xc7k-rgm03ce26rn_preview.png"
   },
   "subLOD": {},
-  "globalscale": 1
+  "globalscale": 1,
+  "subColliderLOD": {
+    "q3u18fun68k-lui4xc7k-rgm03ce26rn-MiniBR_Building006.~@FFFUB": 0
+  }
 }

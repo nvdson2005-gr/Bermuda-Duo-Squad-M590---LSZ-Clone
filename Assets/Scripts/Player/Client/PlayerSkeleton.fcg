@@ -13,7 +13,7 @@ graph PlayerSkeleton {
     }
 
     event OnResizePlayer(Scale Vector3) {
-        LogWarning("<PlayerSkeleton.fcg>: OnResizePlayer: " + Scale)
+        // LogWarning("<PlayerSkeleton.fcg>: OnResizePlayer: " + Scale)
         var cur = GetSkeletonPartByName(thisEntity, "bone_Root")
         cur<SkeletonPart>.BoneScale = Scale
         // var cur2 = GetSkeletonPartByName(thisEntity,"bone_Spine1");
